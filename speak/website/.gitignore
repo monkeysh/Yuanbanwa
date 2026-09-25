@@ -1,0 +1,18 @@
+.DS_Store
+*.log
+node_modules/
+.env
+.env.local
+.env.*.local
+dist/
+build/
+.vscode/
+.idea/
+
+# ElevenLabs 生成音频体积较大，由内容脚本再生成并通过白名单部署。
+audio/
+
+# 仅供本地验证的 SOE 页面不得进入生产发布或版本库。
+_soe*.html
+_preview.html
+._*

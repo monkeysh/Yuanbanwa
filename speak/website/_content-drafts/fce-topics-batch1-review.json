@@ -1,0 +1,21 @@
+{
+  "reviews": [
+    {
+      "tid": "fce-education",
+      "part": "part2",
+      "idx": 3,
+      "verdict": "fix",
+      "issue": "使用'whereas'作为衔接词时位置不当，显得不自然，不符合口语习惯。",
+      "suggest": "The second picture, by contrast, shows a young person studying alone at home, following a lesson on their laptop."
+    },
+    {
+      "tid": "fce-ambitions",
+      "part": "part2",
+      "idx": 5,
+      "verdict": "fix",
+      "issue": "'Whereas'单独起句略显书面化，在FCE口语中更常用'On the other hand'或'In contrast'。",
+      "suggest": "In contrast, the traveller seems willing to take risks and gather experiences, even if it means giving up a certain amount of stability."
+    }
+  ],
+  "overall": "整体内容地道、符合B2难度，仅有两处衔接词使用不够自然，稍作调整即可达到理想效果。"
+}

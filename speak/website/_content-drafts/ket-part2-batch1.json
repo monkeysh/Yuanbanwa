@@ -1,0 +1,348 @@
+{
+  "_note": "⚠️ 按 GPT 终审(引 Cambridge A2 Key handbook)重构:现行 KET Part 2 = 两名考生看【5幅图】,各自谈喜欢/不喜欢+原因,回应对方,**不要求达成一致**;不是'提方案→共同决定'的角色扮演。旧稿(约时间/定计划/组订单)属生活情景剧,题型错。本稿:每话题覆盖5个活动/事物,各说喜好与理由,互相回应(Really?/Me too/What about you?),结尾各说最喜欢的(可不同)。A2 难度不变,长度加到10-11句(旧稿44-56词半分钟太短)。",
+  "ket-hobbies": {
+    "task": "**Part 2** 你和另一位考生看五幅周末活动图(看电影、打羽毛球、骑车、阅读、玩电脑游戏)。说说你们喜欢或不喜欢这些活动、为什么,并回应对方 —— **不需要共同决定周末做什么**,两人喜好不同很正常。",
+    "part2": [
+      {
+        "en": "Do you like these hobbies? I really like badminton.",
+        "zh": "你喜欢这些爱好吗？我很喜欢打羽毛球。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. I play badminton with my brother every weekend.",
+        "zh": "我也是。我每个周末都和我弟弟打羽毛球。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about the cinema? I don't like films very much.",
+        "zh": "那看电影呢？我不太喜欢电影。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I love films because they help me relax.",
+        "zh": "真的吗？我很喜欢电影，因为能让我放松。",
+        "voice": "chris"
+      },
+      {
+        "en": "I prefer reading. It's quiet and I can do it at home.",
+        "zh": "我更喜欢阅读。很安静，在家就能做。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Reading is OK, but cycling is more fun for me.",
+        "zh": "阅读还行，但对我来说骑车更有意思。",
+        "voice": "chris"
+      },
+      {
+        "en": "I'm not very good at cycling, so I don't like it much.",
+        "zh": "我骑车不太行，所以不太喜欢。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Do you like computer games?",
+        "zh": "你喜欢玩电脑游戏吗？",
+        "voice": "chris"
+      },
+      {
+        "en": "Yes, I play them sometimes, but my favourite is still badminton.",
+        "zh": "喜欢，有时候玩，不过我最喜欢的还是羽毛球。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Cycling is my favourite. It's fun and it's free.",
+        "zh": "骑车是我的最爱。有意思，还不花钱。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-food": {
+    "task": "**Part 2** 你和另一位考生看五幅食物图(面条、沙拉、披萨、水果、冰淇淋)。说说你们喜欢或不喜欢哪些、为什么,并回应对方 —— **不需要真的点一份餐**。",
+    "part2": [
+      {
+        "en": "Do you like these foods? I really like noodles.",
+        "zh": "你喜欢这些食物吗？我很喜欢面条。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. My mum makes noodles every week.",
+        "zh": "我也是。我妈妈每周都做面条。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about salad? I don't like it very much.",
+        "zh": "沙拉呢？我不太喜欢。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I like salad because it's healthy.",
+        "zh": "真的吗？我喜欢沙拉，因为很健康。",
+        "voice": "chris"
+      },
+      {
+        "en": "Pizza is my favourite. It's delicious and we can share it.",
+        "zh": "披萨是我的最爱。好吃，还能一起分着吃。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Pizza is nice, but it isn't very healthy.",
+        "zh": "披萨不错，但不太健康。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like fruit?",
+        "zh": "你喜欢水果吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, I eat fruit every day. Apples are the best.",
+        "zh": "喜欢，我每天都吃水果。苹果最好。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like ice cream more, but only in summer.",
+        "zh": "我更喜欢冰淇淋，不过只在夏天吃。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Salad is my favourite. What about you?",
+        "zh": "沙拉是我的最爱。你呢？",
+        "voice": "chris"
+      },
+      {
+        "en": "Noodles! I can eat them every day.",
+        "zh": "面条！我能天天吃。",
+        "voice": "rosie"
+      }
+    ]
+  },
+  "ket-holidays": {
+    "task": "**Part 2** 你和另一位考生看五幅度假图(海边、山区、城市、露营、看望亲戚)。说说你们喜欢或不喜欢哪些、为什么,并回应对方 —— **不需要共同选出去哪儿**。",
+    "part2": [
+      {
+        "en": "Do you like these holidays? I love the beach.",
+        "zh": "你喜欢这些度假方式吗？我很喜欢海边。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. I like swimming in the sea.",
+        "zh": "我也是。我喜欢在海里游泳。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about the mountains? I think they're cooler in summer.",
+        "zh": "山里呢？我觉得夏天山里更凉快。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's true, but I don't like walking a lot.",
+        "zh": "确实，不过我不喜欢走很多路。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like city holidays?",
+        "zh": "你喜欢去城市度假吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Not really. Cities are busy and noisy.",
+        "zh": "不太喜欢。城市又忙又吵。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like camping because it's fun with friends.",
+        "zh": "我喜欢露营，因为和朋友一起很好玩。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I don't like camping. It's cold at night!",
+        "zh": "我不喜欢露营。晚上很冷！",
+        "voice": "chris"
+      },
+      {
+        "en": "What about visiting your grandparents?",
+        "zh": "那去看望祖父母呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I like that a lot. My grandma cooks great food.",
+        "zh": "我很喜欢。我奶奶做的饭很好吃。",
+        "voice": "chris"
+      },
+      {
+        "en": "The beach is my favourite. I love swimming in the sea.",
+        "zh": "海边是我的最爱。我喜欢在海里游泳。",
+        "voice": "rosie"
+      }
+    ]
+  },
+  "ket-sports": {
+    "task": "**Part 2** 你和另一位考生看五幅运动图(篮球、游泳、跑步、足球、骑车)。说说你们喜欢或不喜欢这些运动、为什么(有趣/容易/难/花钱),并回应对方 —— **不需要约时间一起运动**。",
+    "part2": [
+      {
+        "en": "Do you like these sports? I really like swimming.",
+        "zh": "你喜欢这些运动吗？我很喜欢游泳。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. I go swimming every Sunday.",
+        "zh": "我也是。我每周日都去游泳。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about basketball? I'm not very good at it.",
+        "zh": "篮球呢？我打得不太好。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I love basketball. I play it with my friends.",
+        "zh": "真的吗？我很喜欢篮球，和朋友一起打。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like running because it's easy and free.",
+        "zh": "我喜欢跑步，因为简单又免费。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Running is boring for me. Football is more exciting.",
+        "zh": "跑步我觉得无聊。足球更刺激。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like cycling?",
+        "zh": "你喜欢骑车吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, but bikes are expensive.",
+        "zh": "喜欢，不过自行车很贵。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's true, bikes can be expensive. Swimming is still my favourite.",
+        "zh": "确实，自行车挺贵的。我最喜欢的还是游泳。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I'd choose football. What about you?",
+        "zh": "我会选足球。你呢？",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-festivals": {
+    "task": "**Part 2** 你和另一位考生看五幅节庆活动图(包饺子、家庭聚餐、看烟花、装饰房间、送礼物)。说说你们喜欢或不喜欢这些活动、为什么,并回应对方 —— **不需要决定把哪些活动都做一遍**。",
+    "part2": [
+      {
+        "en": "Do you like these festival activities? I love making dumplings.",
+        "zh": "你喜欢这些过节活动吗？我很喜欢包饺子。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. My grandma makes the best ones.",
+        "zh": "我也是。我奶奶包得最好。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about watching fireworks? I think they're beautiful.",
+        "zh": "看烟花呢？我觉得很漂亮。",
+        "voice": "rosie"
+      },
+      {
+        "en": "They're nice, but it's very cold outside at night.",
+        "zh": "是挺好，不过晚上外面很冷。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like family dinners?",
+        "zh": "你喜欢家庭聚餐吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, because I can see all my cousins.",
+        "zh": "喜欢，因为能见到我所有的表兄弟姐妹。",
+        "voice": "chris"
+      },
+      {
+        "en": "I don't really like decorating the house. It takes a long time.",
+        "zh": "我不太喜欢装饰房子。太花时间了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I think it's fun. I do it with my sister.",
+        "zh": "真的吗？我觉得挺好玩。我和我姐一起弄。",
+        "voice": "chris"
+      },
+      {
+        "en": "Giving presents is my favourite. I like seeing people happy.",
+        "zh": "送礼物是我最喜欢的。我喜欢看别人开心。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Making dumplings is my favourite because my family does it together.",
+        "zh": "包饺子是我的最爱，因为全家一起做。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-family": {
+    "task": "**Part 2** 你和另一位考生看五幅家庭活动图(野餐、一起做饭、踢足球、看电影、看望祖父母)。说说你们喜欢或不喜欢这些活动、为什么,并回应对方 —— **不需要安排具体哪天去**。",
+    "part2": [
+      {
+        "en": "Do you like these family activities? I really like picnics.",
+        "zh": "你喜欢这些家庭活动吗？我很喜欢野餐。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. My little brother loves running in the park.",
+        "zh": "我也是。我弟弟喜欢在公园里跑来跑去。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about cooking together? I'm not very good at it.",
+        "zh": "一起做饭呢？我做得不太好。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I like it. My dad teaches me how to cook.",
+        "zh": "真的吗？我喜欢。我爸教我做饭。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like playing football with your family?",
+        "zh": "你喜欢和家人踢足球吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, it's fun because we can all play together.",
+        "zh": "喜欢，很好玩，因为大家都能一起玩。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like watching films at home. It's relaxing.",
+        "zh": "我喜欢在家看电影。很放松。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Films are OK, but I prefer doing something active.",
+        "zh": "电影还行，不过我更喜欢做点运动。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about visiting your grandparents?",
+        "zh": "那去看望祖父母呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I love that. My grandpa tells me funny stories.",
+        "zh": "我很喜欢。我爷爷会给我讲有趣的故事。",
+        "voice": "chris"
+      },
+      {
+        "en": "Picnics are my favourite. We can eat and play outside.",
+        "zh": "野餐是我的最爱。能在外面吃东西还能玩。",
+        "voice": "rosie"
+      }
+    ]
+  }
+}

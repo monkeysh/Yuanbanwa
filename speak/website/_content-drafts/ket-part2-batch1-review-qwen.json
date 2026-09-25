@@ -1,0 +1,44 @@
+{
+  "officialFormat": "现行 A2 Key (KET) Speaking Part 2 是‘协作任务’（Collaborative Task）。考官向两名考生展示一张包含5个不同选项的图片卡（例如：5种不同的爱好、食物或地点），并给出一个具体问题（如：'Which of these hobbies do you like?' 或 'Tell each other which hobby you like and why.'）。考生需轮流表达个人偏好及理由，并进行互动。关键点：1. 考生不需要达成一致意见；2. 重点在于交换信息和表达观点；3. 考官通常只给指令，不介入对话，除非时间过长或冷场。",
+  "typeVerdict": "不是全真 Part 2。主要偏差：1. 缺失视觉刺激：官方考试必须基于‘图片卡’（Visual Stimulus），而文本中仅通过语言列举，缺乏‘看图说话’的语境；2. 交互模式偏差：官方要求考生直接互相询问和回答（'Ask each other...'），而非像剧本一样一人一句机械轮换；3. 结构僵化：真实考试中，考生应自然地从一张图过渡到另一张，而不是严格按顺序遍历所有选项，且不需要最后强行总结‘For me, X is the best’作为结束语，而是自然结束交流。",
+  "levelVerdict": "难度总体符合 A2 水平，词汇和句型简单清晰。但部分表达略显生硬，不够地道自然，存在为了凑对话而重复逻辑的情况。",
+  "fixes": [
+    {
+      "tid": "ket-hobbies",
+      "idx": 8,
+      "issue": "逻辑断层。B问A是否喜欢电脑游戏，A回答Yes但紧接着说最爱羽毛球，话题跳跃突兀，缺乏连接词。",
+      "suggest": "建议改为：'Yes, I play them sometimes. But my favourite is still badminton.'"
+    },
+    {
+      "tid": "ket-food",
+      "idx": 10,
+      "issue": "冗余结尾。B已经说了Salad最好，又问A最喜欢什么，A再回答Noodles。在真实互动中，这显得像采访而非平等交流。",
+      "suggest": "建议删除第10-11句，或在第9句后自然结束，如：'Ice cream is great for summer!'"
+    },
+    {
+      "tid": "ket-holidays",
+      "idx": 2,
+      "issue": "指代不明。'These holidays' 在没有图片的情况下很模糊。且B的回答未直接回应喜好，而是直接说活动。",
+      "suggest": "建议增加对图片的描述感，如：'I like the beach holiday because I can swim in the sea.'"
+    },
+    {
+      "tid": "ket-sports",
+      "idx": 7,
+      "issue": "问答脱节。A问B是否喜欢骑行，B回答Yes但抱怨贵，A直接同意并回到自己喜好，缺乏对B观点的进一步互动（如建议便宜的车或表示理解）。",
+      "suggest": "建议A回应：'That's true. Bikes can be expensive. My favourite is still swimming.'"
+    },
+    {
+      "tid": "ket-festivals",
+      "idx": 0,
+      "issue": "文化特定性风险。'Making dumplings' 是特定文化活动，虽然A2允许个人经验，但作为通用考题，应确保图片背景清晰。",
+      "suggest": "无语法错误，但需确保考生理解图片内容。语言表达自然。"
+    },
+    {
+      "tid": "ket-family",
+      "idx": 7,
+      "issue": "表达略显消极。'I get bored after an hour' 对于A2考生稍显复杂且语气略重，可能影响互动氛围。",
+      "suggest": "建议改为更温和的表达：'Films are OK, but I prefer doing active things.'"
+    }
+  ],
+  "overall": "内容语言难度适中，但形式上是“ scripted dialogue ”而非真实的“ collaborative task ”，缺乏图片依托和自然互动的流动性，需调整以模拟真实考试的即兴性和视觉依赖性。"
+}

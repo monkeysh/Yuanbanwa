@@ -1,0 +1,34 @@
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# macOS
+.DS_Store
+
+# Secrets (API keys, etc.)
+scripts/.env
+*.env.local
+
+# 腾讯云 SOE 凭据(勿提交)
+Speak/Config/SOESecrets.swift
+
+# 内容音频(84M/1546文件,可由 scripts/burn_ket_audio.mjs 幂等重烧,不入版本控制)
+Speak/Resources/audio/
+# 音频手动备份快照
+audio-backup-0.9/

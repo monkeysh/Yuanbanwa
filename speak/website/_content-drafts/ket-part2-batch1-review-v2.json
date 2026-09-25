@@ -1,0 +1,447 @@
+{
+  "reviews": [
+    {
+      "tid": "ket-hobbies#1",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#2",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#3",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#4",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#5",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#6",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#7",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#8",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#9",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-hobbies#10",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#1",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#2",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#3",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#4",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#5",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#6",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#7",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#8",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#9",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#10",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-food#11",
+      "idx": 11,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#1",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#2",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#3",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#4",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#5",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#6",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#7",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#8",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#9",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#10",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-holidays#11",
+      "idx": 11,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#1",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#2",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#3",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#4",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#5",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#6",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#7",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#8",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#9",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-sports#10",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#1",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#2",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#3",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#4",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#5",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#6",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#7",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#8",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#9",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-festivals#10",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#1",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#2",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#3",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#4",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#5",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#6",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#7",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#8",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#9",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#10",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-family#11",
+      "idx": 11,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    }
+  ],
+  "typeVerdict": "题型判定：所有话题均符合官方Part2要求——围绕5项活动/物品表达喜好及原因，互相回应，无共同决定或角色扮演。",
+  "overall": "总评：对话地道，语法准确，A2难度适中，长度足够，完全符合官方题型规范。"
+}

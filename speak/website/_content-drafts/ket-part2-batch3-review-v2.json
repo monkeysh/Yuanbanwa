@@ -1,0 +1,426 @@
+{
+  "reviews": [
+    {
+      "tid": "ket-personal",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-personal",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-travel",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-daily",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-home",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-friends",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 1,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 2,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 3,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 4,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 5,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 6,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 7,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 8,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 9,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "tid": "ket-transport",
+      "idx": 10,
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    }
+  ],
+  "typeVerdict": "此对话完全符合A2 Key Speaking Part 2题型，自然流畅地讨论了五个图片/话题，相互回应，表达喜好及理由。",
+  "overall": "整体语言地道，语法正确，风格贴近母语青少年，无中式英语或机械感，适合A2水平。"
+}

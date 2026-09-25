@@ -1,0 +1,384 @@
+'use strict';
+// Speak 发音评测代理 v2 · 腾讯云「口语评测(新版)」SOE-N WebSocket 直连
+// 前端仍是一次性 POST {refText, voiceData(16k PCM base64)};后端内部建 WS、分片推流、收流式结果。
+// 依赖:ws(npm i ws)。运行:pm2。只监听 127.0.0.1:4006,由 nginx /api/soe 反代。
+const http = require('http');
+const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
+let WebSocket;
+try { WebSocket = require('ws'); } catch (e) { console.error('缺少 ws 模块,请在本目录 npm i ws'); }
+
+// 读 .env
+try {
+  fs.readFileSync(path.join(__dirname, '.env'), 'utf8').split('\n').forEach(l => {
+    const m = l.match(/^\s*([A-Z_]+)\s*=\s*(.*)$/);
+    if (m) process.env[m[1]] = m[2].trim().replace(/^["']|["']$/g, '');
+  });
+} catch (e) { console.warn('no .env'); }
+
+const APP_ID     = process.env.SOE_APP_ID;
+const SECRET_ID  = process.env.SOE_SECRET_ID;
+const SECRET_KEY = process.env.SOE_SECRET_KEY;
+const COEFF      = parseFloat(process.env.SOE_SCORE_COEFF || '1.0');   // 1.0 儿童宽松 .. 4.0 成人严格
+const ENGINE     = process.env.SOE_ENGINE || '16k_en';
+const SEND_MS    = parseInt(process.env.SOE_SEND_INTERVAL_MS || '5', 10); // rec_mode=1 分片间隔(超速会被断连,报错就调大)
+const PORT       = parseInt(process.env.PORT || '4006', 10);
+const ALLOW_ORIGIN = process.env.ALLOW_ORIGIN || 'https://speak.yuanbanwa.top';
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// 按官方 PDF/Python SDK 验证过的签名 + URL 构造
+// opts 可覆盖 evalMode(1=整句 / 3=自由说,开放式作答用)与 coeff(1.0 最宽松 .. 4.0 最严格),
+// 便于按场景取不同口径,也便于线下标定实测。缺省仍是原来的整句 + 环境变量系数。
+function buildSoeUrl(refText, opts = {}) {
+  const now = Math.floor(Date.now() / 1000);
+  const voiceId = crypto.randomUUID();
+  const evalMode = [0, 1, 2, 3].includes(opts.evalMode) ? opts.evalMode : 1;
+  const coeff = (typeof opts.coeff === 'number' && opts.coeff >= 1 && opts.coeff <= 4) ? opts.coeff : COEFF;
+  const params = {
+    eval_mode: evalMode,          // 1=整句 / 3=自由说
+    expired: now + 86400,
+    nonce: now,
+    ref_text: refText,
+    rec_mode: 1,                  // 一次性(录音识别),发完整音频
+    score_coeff: coeff,
+    secretid: SECRET_ID,
+    server_engine_type: ENGINE,   // 16k_en
+    timestamp: now,
+    voice_format: 0,              // pcm
+    voice_id: voiceId,
+  };
+  const keys = Object.keys(params).sort();                                   // 字典序
+  const signStr = `soe.cloud.tencent.com/soe/api/${APP_ID}?` + keys.map(k => `${k}=${params[k]}`).join('&'); // 原始值,不 encode
+  const sig = crypto.createHmac('sha1', SECRET_KEY).update(signStr).digest('base64');
+  const query = keys.map(k => `${encodeURIComponent(k)}=${encodeURIComponent(params[k])}`).join('&');
+  return `wss://soe.cloud.tencent.com/soe/api/${APP_ID}?${query}&signature=${encodeURIComponent(sig)}`;
+}
+
+function callSOE(refText, pcm, opts = {}) {
+  return new Promise((resolve, reject) => {
+    const url = buildSoeUrl(refText, opts);
+    const ws = new WebSocket(url);
+    let lastResult = null, done = false;
+    const finish = (fn, arg) => { if (done) return; done = true; clearTimeout(to); try { ws.close(); } catch (e) {} fn(arg); };
+    const to = setTimeout(() => finish(reject, new Error('SOE 超时(30s)')), 30000);
+    ws.on('open', () => {
+      try {
+        // rec_mode=1(录音识别):整段音频必须作为「单个数据包」一次性发,不能分片
+        ws.send(pcm);
+        ws.send(JSON.stringify({ type: 'end' }));
+      } catch (e) { finish(reject, e); }
+    });
+    ws.on('message', data => {
+      let msg; try { msg = JSON.parse(data.toString()); } catch (e) { return; }
+      if (typeof msg.code === 'number' && msg.code !== 0) return finish(reject, new Error(msg.message || ('SOE code ' + msg.code)));
+      if (msg.result != null && msg.result !== '') lastResult = msg.result; // 缓存最后一条 result
+      if (msg.final === 1) finish(resolve, lastResult);
+    });
+    ws.on('error', e => finish(reject, e));
+    ws.on('close', () => finish(resolve, lastResult)); // final 没到但连接关了,用最后 result
+  });
+}
+
+// result 可能是干净 JSON 对象,也可能是 Go struct-dump 字符串(见研究的坑)。尽力解析,并把原始值回传调试。
+function normalize(r) {
+  if (r == null) return { parsed: false };
+  let obj = r;
+  if (typeof r === 'string') { try { obj = JSON.parse(r); } catch (e) { return { parsed: false, raw: r }; } }
+  if (typeof obj !== 'object') return { parsed: false, raw: r };
+  return {
+    parsed: true,
+    suggestedScore: obj.SuggestedScore, pronAccuracy: obj.PronAccuracy,
+    pronFluency: obj.PronFluency, pronCompletion: obj.PronCompletion,
+    words: (obj.Words || []).map(w => ({
+      word: w.Word, accuracy: w.PronAccuracy,
+      phones: (w.PhoneInfo || w.PhoneInfos || []).map(p => ({ phone: p.Phone, accuracy: p.PronAccuracy })),
+    })),
+    raw: r,
+  };
+}
+
+// ─── 模拟考官(DeepSeek-chat)────────────────────────────────────
+// POST /api/soe/chat:AI 演剑桥考官,学生自由作答。无状态:客户端带完整对话历史。
+// mode=exam  → {reaction, question, isEnd}  考官回应+下一问
+// mode=report→ {overall, tips[]}            考后中文点评
+const DEEPSEEK_KEY = process.env.DEEPSEEK_API_KEY;
+// 每场题量按级别(用户反馈 6 太少,含热身+深挖完整弧线):KET 短快 / PET·FCE 略长。
+// 真实 KET/PET/FCE Part1 本就 5-6 题,降低题量让 AI 的自然结束点和 maxQ 一致,不打架。
+const examMaxQ = e => (e === 'FCE' ? 8 : e === 'PET' ? 7 : 6);
+// 真实剑桥 Part 1 样题(风格锚点,喂给考官模仿难度/句式,治"提问不地道")。
+const SAMPLE_Q = {
+  KET: ["What's your name?", 'How old are you?', 'Where do you live?', 'Do you have any brothers or sisters?', 'What do you do after school?', "What's your favourite food?", 'Do you like sport?', 'What did you do last weekend?'],
+  PET: ['Tell me something about your hometown.', 'What do you enjoy doing in your free time?', 'How do you usually get to school?', 'What kind of music do you like?', 'Tell me about your best friend.', 'What are you going to do next weekend?', 'Do you prefer books or films? Why?'],
+  FCE: ['What do you enjoy most about where you live?', 'How do you usually spend your weekends?', 'How important are your friends to you?', 'What kind of holidays do you prefer?', 'Tell me about your plans for the future.', 'Do you think young people read enough these days?'],
+};
+// 8 个切入角度:客户端每场随机选一个,让"再练一次"问到不同的题(用户要 7-10 套变化)。
+// ⚠️ 这里是「切入维度」,不是具体话题。旧版拿具体话题(家人/食物/学校…)当角度,
+//    进「聊聊我的家人」场景随机到"食物"就跳题,场景话题形同虚设。
+//    改成维度后:维度 × 任何场景话题都成立 —— 永不跳题,且每场问法明显不同。
+// ⚠️ 维度池必须按级别定制 —— 双 AI(v4pro+Qwen)独立审出的核心问题:
+//    "困难挑战"和"给人建议"对 A2(KET)学生根本答不上,AI 生成时就退化成最简单的
+//    习惯/事实问题("给人建议"→"你通常点什么?"),维度标签形同虚设。
+//    故:KET 只放 A2 答得上的具体维度;PET 加观点/建议;FCE 才上困难/推荐。
+const VARIANTS_BY_EXAM = {
+  KET: [   // A2:具体、可见、能用一两句答出来
+    'their everyday habits and routines around this topic',
+    'how often they do it, and when',
+    'who they usually do it with',
+    'what they like about it — and a simple reason why',
+    'a simple choice within this topic (this one or that one, and why)',
+    'a place connected to this topic — where they go or where it happens',
+    'what they did last time (a simple past experience)',
+    'what they are going to do next time (a simple future plan)',
+  ],
+  PET: [   // B1:可以谈观点、给简单建议
+    'their everyday habits and routines around this topic',
+    'a specific personal experience or memory connected to this topic',
+    'what they like or dislike about it — always following up with "why"',
+    'their opinion: whether they agree or disagree and why — e.g. "Do you think ___ is important? Why?" (must ask what they THINK, not what they do)',
+    'a comparison or choice within this topic (this one vs that one, and why)',
+    'how it has changed over time, or their plans around it for the future',
+    'simple advice they would give a friend — e.g. "What advice would you give a friend who ___?" (must literally ask for advice, not their own habit)',
+    'the people around this topic — who they do it with and why',
+  ],
+  FCE: [   // B2:抽象维度全开
+    'their everyday habits and routines around this topic',
+    'a specific personal experience or memory connected to this topic',
+    'what they like or dislike about it — always following up with "why"',
+    'their opinion: whether they agree or disagree and why — e.g. "Do you think ___ is important? Why?" (must ask what they THINK, not what they do)',
+    'a comparison or choice within this topic (this one vs that one, and why)',
+    'how it has changed over time, or their plans around it for the future',
+    'any difficulties, problems or challenges around this topic — ask it head-on, e.g. "What is the most difficult part of ___?" / "Have you ever had trouble with ___?" (do NOT drift into future plans or general preferences)',
+    'what they would recommend or advise someone else — e.g. "What would you advise someone who ___?" / "What would you recommend to a friend who ___?" (must literally ask for advice, not their own habit)',
+  ],
+};
+// ⚠️ 每个维度都必须能当「开场题」。曾放过"人物"(与家人话题重复)和"从上句挖细节"
+//    (依赖 history,第一题无从下手),结果三个维度全退化成 "How many people are in your family?"。
+//    追问深挖靠下面 ADAPT 段(一半以上问题基于学生上句),不占用维度位。
+// 通用开场黑名单:prompt 已明令禁止,但 LLM 不 100% 遵守(同 sanitizeReaction 的教训),
+// 故第一题命中这些就打回重问 —— 不赌自觉,代码兜底。
+const GENERIC_OPENER = /^(what'?s your name|what is your name|how old are you|where are you from|where do you live|how are you)\b/i;
+
+// 纯追问兜底:"Can you tell me more (about that)?" 这类没有信息点的空壳追问,
+// 真实考官不会当正式题问(v4pro 审核逐题确认)。命中直接视为复读,走判重打回。
+const BARE_FOLLOWUP = /^(can|could) you (tell|say) (me )?(a bit |a little )?more\b|^anything else\b|^is there anything else\b/i;
+
+// 复读兜底:用户验收实测,AI 会把同一个问题连问 5 次(尤其学生答得敷衍时),
+// prompt 里写了 "never repeat one already asked" 也不管用 —— 同 GENERIC_OPENER 的
+// 教训,软约束一律靠代码兜底。用「实词集合的 Jaccard 相似度」判重:去掉功能词后
+// 重合 ≥0.7 视为同题(能抓住 "What do you usually do with your friends after school?"
+// 与 "What do you and your friends usually do after school?" 这种换汤不换药)。
+const STOPWORDS = new Set(['a','an','the','do','does','did','you','your','yours','i','me','my','we','us','our','is','are','was','were','be','been','to','of','in','on','at','for','with','and','or','but','that','this','it','its','so','if','about','can','could','would','will','shall','what','when','where','who','why','how','tell','more','some','any','very','really','usually','like','there','they','them','their']);
+function contentWords(q) {
+  return new Set(String(q).toLowerCase().replace(/[^a-z\s']/g, ' ').split(/\s+/)
+    .filter(w => w.length > 1 && !STOPWORDS.has(w)));
+}
+function tooSimilar(q, asked) {
+  const a = contentWords(q);
+  if (a.size === 0) return false;
+  for (const prev of asked) {
+    const b = contentWords(prev);
+    if (b.size === 0) continue;
+    let inter = 0;
+    for (const w of a) if (b.has(w)) inter++;
+    const union = a.size + b.size - inter;
+    if (union > 0 && inter / union >= 0.7) return true;
+  }
+  return false;
+}
+
+async function deepseek(messages, maxTokens) {
+  const ctrl = new AbortController();
+  const to = setTimeout(() => ctrl.abort(), 25000);
+  try {
+    const r = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST', signal: ctrl.signal,
+      headers: { Authorization: `Bearer ${DEEPSEEK_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'deepseek-chat', messages, temperature: 0.7,
+        max_tokens: maxTokens, response_format: { type: 'json_object' }, stream: false }),
+    });
+    if (!r.ok) { const e = new Error('DeepSeek HTTP ' + r.status); e.status = r.status; throw e; }
+    const d = await r.json();
+    return JSON.parse(d.choices[0].message.content);
+  } finally { clearTimeout(to); }
+}
+
+// 纯考官兜底:DeepSeek 对"禁止夸奖"这类软约束不 100% 遵守(实测仍冒 Great!/
+// That's a nice choice.)。reaction 用代码白名单强制中立——不信任 LLM 自觉。
+function sanitizeReaction(raw, isEnd) {
+  const s = String(raw || '').trim();
+  if (isEnd) return s || "Thank you. That's the end of the test.";
+  if (!s) return '';
+  // 含任何评价/夸奖/感叹 → 直接清空(考官不点评,直接下一问)
+  const banned = /\b(great|nice|lovely|wonderful|interesting|cool|amazing|good|well\s*done|excellent|perfect|fantastic|brilliant|super|awesome|clever|beautiful|simple|impressive|fun|delicious|exciting)\b/i;
+  if (banned.test(s) || s.includes('!')) return '';
+  // 只放行极简中立衔接,其它长句一律清空
+  if (/^(ok,?\s*)?thank you\.?$/i.test(s)) return s.replace(/\s+/g, ' ');
+  return '';
+}
+
+async function examinerTurn(b) {
+  const exam = ['KET', 'PET', 'FCE'].includes(b.exam) ? b.exam : 'KET';
+  const topic = String(b.topic || 'personal information').slice(0, 80);
+  const level = exam === 'KET' ? 'A2 (Cambridge Key)' : exam === 'PET' ? 'B1 (Cambridge Preliminary)' : 'B2 (Cambridge First)';
+  const maxQ = examMaxQ(exam);
+  const pool = VARIANTS_BY_EXAM[exam] || VARIANTS_BY_EXAM.KET;   // 维度池按级别取(A2 不给困难/建议)
+  const variant = Number.isInteger(b.variant) ? ((((b.variant) % pool.length) + pool.length) % pool.length) : 0;
+  const angle = pool[variant];
+  const history = Array.isArray(b.history) ? b.history.slice(-12) : []; // [{q,a}...]
+  const asked = history.length;
+  // PET/FCE 官方口语中考官主导的是 Part 1(个人问答)+ Part 4(观点/评价讨论):
+  // 前半场 Part 1 风格,后半场转 Part 4 风格(仍扣同一话题)。PET 后半 B1 观点;
+  // FCE 后半 B2 评价式(优劣/多大程度同意/变化推测)。KET 无 Part 4,保持原弧线。
+  const partLabel = exam === 'KET' ? 'Part 1 interview' : 'Part 1 interview and Part 4 discussion (the two interviewer-led parts)';
+  const arcSection = exam === 'PET'
+    ? `Run the session as a natural two-phase ARC mirroring the real PET exam (interviewer-led parts):
+1) Questions 1-4 — Part 1 style: personal facts, habits and simple likes around "${topic}", always following up with "Why?" where natural.
+2) Questions 5-${maxQ} — Part 4 style: move to OPINIONS on the SAME area — "Do you think ...? Why? / Why not?", "Some people say ... What do you think?", simple agree/disagree, comparing views. Keep wording short and B1.
+Switch to phase 2 even if earlier answers were short; in phase 2 still build on what they actually said.`
+    : exam === 'FCE'
+    ? `Run the session as a natural two-phase ARC mirroring the real FCE exam (interviewer-led parts):
+1) Questions 1-3 — Part 1 style: personal questions about their life, experiences and preferences around "${topic}", with quick "Why?" follow-ups.
+2) Questions 4-${maxQ} — Part 4 style: broader, more EVALUATIVE discussion on the SAME area — opinions with reasons, advantages vs disadvantages, "Some people believe ... How far do you agree?", speculation about how things are changing. Clear B2 wording; expect extended answers and probe them.
+Switch to phase 2 even if earlier answers were short; keep building on what they actually said.`
+    : `Run the interview as a natural ARC that BUILDS — not random disconnected questions. This is what separates a good examiner from a quiz:
+1) Warm-up (first 1-2 questions): simple facts — name, age, where they live.
+2) Daily life: school or work, daily routine, weekends.
+3) Likes & reasons: what they enjoy — and ALWAYS follow with "Why?" or "Can you tell me more about that?".
+4) Go deeper: pick a SPECIFIC detail they mentioned earlier and dig into it.`;
+  const sys = `You are a Cambridge ${exam} Speaking examiner running a real ${partLabel} on the topic "${topic}". Professional, calm, strictly NEUTRAL — like a real examiner, NOT a friendly tutor. Ask questions; do not chat, praise or teach.
+
+IMPORTANT — how to read the topic: "${topic}" names a scene or SUBJECT AREA, not a task. Ask Part 1 questions about that AREA as it relates to the candidate's own life, habits, tastes and opinions. NEVER quiz them on the mechanics of the activity itself.
+  · topic "Ordering at a café" → ask about food they like, eating out, favourite cafés. NOT "Do you enjoy ordering?" / "Is ordering difficult?" / "How would you order a coffee?"
+  · topic "Buying a T-shirt" → ask about clothes, shopping, style. NOT "Is buying a T-shirt hard?"
+  · topic "Asking the way" → ask about their town, getting around, places they go. NOT "Is asking for directions difficult?"
+If a question would sound strange to a real teenager, it is wrong — ask about their life in that area instead.
+Also: do NOT open with a yes/no precondition (e.g. "Do you have a pet?", "Do you like your home?"). Assume the candidate has some experience with this area and ask from the angle directly, so the very first question already gives them something to talk about.
+
+THIS SESSION: stay firmly ON the subject area "${topic}" — EVERY question must relate to it, never drift onto an unrelated subject. Within that topic, approach it from this specific angle: ${angle}. Your VERY FIRST question must already be about "${topic}" AND clearly reflect this angle — make it specific to the angle, NOT the most generic opener for the topic (e.g. for a family topic, "How many people are there in your family?" is too generic — ask something that shows the angle). Do NOT open with "What's your name?" or age; assume the warm-up is done. The student practises this same topic many times, so each session MUST feel clearly different from the last.
+
+REAL Cambridge ${exam} Part 1 questions look like these — match their style, length and difficulty exactly:
+${(SAMPLE_Q[exam] || SAMPLE_Q.KET).map(q => '· ' + q).join('\n')}
+
+${arcSection}
+
+ADAPT to the candidate:
+- Very short / empty / struggling answer → ask something EASIER and more concrete, or gently invite more.
+- Full answer → go ONE step deeper on the SAME topic before moving on.
+- AT LEAST HALF of your questions MUST be follow-ups that build on what they ACTUALLY just said. Chaining 2-3 questions on one topic is exactly what a real examiner does (they said "I play football" → "Who do you play with?" → "Where do you usually play?"). Do NOT jump to a new unrelated topic every turn.
+- BUT: if the candidate keeps giving the same (or nearly the same) short answer, dig into that detail AT MOST ONCE, then MOVE ON — switch tense (what did you do last time...), switch people (your family instead of your friends), or switch to a different sub-topic. A real examiner never echoes the candidate's phrase back as yet another question.
+- Every question must add a NEW information point not covered by any earlier question — never re-ask the same thing with reshuffled words.
+
+Rules:
+- Level: strictly ${level}. One short spoken question, just like the samples.
+- Answers come from speech recognition and may contain errors — never correct or comment on them.
+- Asked ${asked} of ${maxQ} questions so far.
+- Reply ONLY strict JSON: {"reaction": string, "question": string, "questionZh": string, "isEnd": boolean}
+  - questionZh: 上面 question 的简体中文翻译(口语化、准确)。这是给英语水平不够的学生看的提示 —— **只要 question 非空,questionZh 就必须给出中文,绝不能留空**;question 为空时才给 ""。
+  - reaction: SHORT NEUTRAL only, or empty. Allowed: "Thank you.", "OK, thank you.", "". About HALF should be "". NEVER praise/evaluate/exclaim (no Lovely/Great/Nice/Interesting/etc.). First turn: "".
+  - question: exactly ONE question, one sentence, never repeat one already asked.
+  - Never ask a bare follow-up with no content, like "Can you tell me more about that?" — every question needs a concrete focus (what / where / who / when / why / which). Also self-check wording: no clumsy doubling like "do this hobby together with your friends" (say "do it with your friends").
+  - When ${asked} >= ${maxQ}: reaction = "Thank you. That's the end of the test.", question = "", isEnd = true.
+- English only. No Chinese. JSON only.`;
+  const messages = [{ role: 'system', content: sys }];
+  history.forEach(h => {
+    messages.push({ role: 'assistant', content: JSON.stringify({ reaction: '', question: h.q, questionZh: '', isEnd: false }) });
+    messages.push({ role: 'user', content: h.a || '(no answer)' });
+  });
+  if (asked === 0) messages.push({ role: 'user', content: '(The test starts now. Ask your first Part 1 question directly, no greeting or small talk.)' });
+  let out = await deepseek(messages, 200);
+  // 兜底:第一题若冒出通用开场(姓名/年龄/哪里人),打回让它按维度重问一次。
+  if (asked === 0 && GENERIC_OPENER.test(String(out.question || '').trim())) {
+    messages.push({ role: 'assistant', content: JSON.stringify(out) });
+    messages.push({ role: 'user', content: `That opening question is too generic and is not allowed. Ask a DIFFERENT first question, specifically about "${topic}", clearly reflecting this angle: ${angle}.` });
+    out = await deepseek(messages, 200);
+  }
+  // 兜底:复读同一个问题(实测连问 5 次)。判重则打回重问,最多两次;
+  // 两次都还在复读,就顺势收场,绝不把重复题再抛给学生。
+  const askedQs = history.map(h => h.q).filter(Boolean);
+  for (let retry = 0; retry < 2; retry++) {
+    const q = String(out.question || '').trim();
+    if (!q || (!tooSimilar(q, askedQs) && !BARE_FOLLOWUP.test(q))) break;
+    messages.push({ role: 'assistant', content: JSON.stringify(out) });
+    messages.push({ role: 'user', content: `You already asked that. Ask a question about a DIFFERENT aspect of "${topic}" — do not reuse the wording or the content words of any earlier question. If the candidate's answers have been short or repetitive, move to a new sub-topic instead of digging into the same one.` });
+    out = await deepseek(messages, 200);
+  }
+  if (tooSimilar(String(out.question || '').trim(), askedQs)) {
+    out.question = ''; out.isEnd = true;   // 无解就收场,下面 isEnd 分支会清 question
+  }
+  // 兜底:AI 不遵守 maxQ——代码强制(同 sanitizeReaction 教训,不赌自觉)。
+  let isEnd = !!out.isEnd;
+  let question = String(out.question || '');
+  if (asked >= maxQ) isEnd = true;         // 到量强制结束
+  if (!question && !isEnd) isEnd = true;    // AI 不给问题=想收,顺势结束(防"既不结束也没问题"卡死)
+  if (isEnd) question = '';                 // 结束清空 question:防 AI 把结束语塞 reaction+question 导致前端重复 append
+  let questionZh = isEnd ? '' : String(out.questionZh || '');
+  // 中文兜底:AI 多轮后常漏 questionZh,补一次翻译保证学生看得懂(英语不够是刚需)。
+  if (question && !questionZh) {
+    try {
+      const tr = await deepseek([{ role: 'system', content: '把下面英文口语问题翻译成简体中文,输出 JSON {"zh":"译文"},口语化准确' }, { role: 'user', content: question }], 120);
+      questionZh = String(tr.zh || '');
+    } catch (e) { /* 兜底失败就留空,前端不显示中文那条,不影响功能 */ }
+  }
+  return { reaction: sanitizeReaction(out.reaction, isEnd), question, questionZh, isEnd };
+}
+
+async function examReport(b) {
+  const exam = ['KET', 'PET', 'FCE'].includes(b.exam) ? b.exam : 'KET';
+  const level = exam === 'KET' ? 'A2' : exam === 'PET' ? 'B1' : 'B2';
+  const history = Array.isArray(b.history) ? b.history.slice(0, 12) : [];
+  const qa = history.map((h, i) => `Q${i + 1}: ${h.q}\nA${i + 1}: ${h.a || '(未作答)'}`).join('\n');
+  const sys = `你是亲切的少儿剑桥 ${exam} 口语教练。下面是一场模拟 Part 1 问答转写(考生答案来自语音识别,可能有识别误差,聚焦内容不苛拼写)。
+输出严格 JSON:
+{
+  "overall": "2-3句中文总评,先肯定再指方向,口吻温暖鼓励",
+  "tips": ["具体到考生某个回答的可操作建议","建议2","建议3"],
+  "models": [
+    {"q": "考官问题原文(英文)", "model": "一个贴合 ${level} 水平的优秀英文示范回答:2-3句,自然、地道、比考生答得更完整,让学员照着学"}
+  ]
+}
+models 挑考生答得较弱或最值得提升的 3-4 个问题给范文(不必每题都给);model 必须是英文、符合 ${level} 级别、可直接模仿。只输出 JSON,不要多余文字。`;
+  const out = await deepseek([{ role: 'system', content: sys }, { role: 'user', content: qa }], 900);
+  const models = Array.isArray(out.models)
+    ? out.models.filter(m => m && m.q && m.model).map(m => ({ q: String(m.q), model: String(m.model) })).slice(0, 4)
+    : [];
+  return {
+    overall: String(out.overall || ''),
+    tips: Array.isArray(out.tips) ? out.tips.map(String).slice(0, 4) : [],
+    models,
+  };
+}
+
+async function handleChat(res, cors, b) {
+  if (!DEEPSEEK_KEY) { res.writeHead(500, cors); return res.end(JSON.stringify({ error: '未配置 DEEPSEEK_API_KEY(改 .env 后 pm2 restart speak-soe)' })); }
+  const out = b.mode === 'report' ? await examReport(b) : await examinerTurn(b);
+  res.writeHead(200, cors); res.end(JSON.stringify(out));
+}
+
+const server = http.createServer((req, res) => {
+  const cors = { 'Access-Control-Allow-Origin': ALLOW_ORIGIN, 'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type', 'Content-Type': 'application/json' };
+  if (req.method === 'GET') { res.writeHead(200, cors); return res.end(JSON.stringify({ ok: true, ver: 'ws+chat', hasKey: !!(APP_ID && SECRET_ID && SECRET_KEY), hasAppId: !!APP_ID, hasChat: !!DEEPSEEK_KEY, engine: ENGINE, coeff: COEFF })); }
+  if (req.method === 'OPTIONS') { res.writeHead(200, cors); return res.end(); }
+  if (req.method !== 'POST') { res.writeHead(405, cors); return res.end(JSON.stringify({ error: 'POST only' })); }
+  const isChat = (req.url || '').includes('/chat');
+  let body = '';
+  req.on('data', c => { body += c; if (body.length > 12 * 1024 * 1024) req.destroy(); });
+  req.on('end', async () => {
+    try {
+      const b = JSON.parse(body || '{}');
+      if (isChat) return await handleChat(res, cors, b);
+      if (!APP_ID || !SECRET_ID || !SECRET_KEY) { res.writeHead(500, cors); return res.end(JSON.stringify({ error: '未配置 SOE_APP_ID/SOE_SECRET_ID/SOE_SECRET_KEY(改 .env 后 pm2 restart speak-soe)' })); }
+      const refText = (b.refText || '').trim(), voiceData = b.voiceData;
+      if (!refText || !voiceData) { res.writeHead(400, cors); return res.end(JSON.stringify({ error: '缺少 refText 或 voiceData' })); }
+      const pcm = Buffer.from(voiceData, 'base64');
+      // evalMode/coeff 可选覆盖:开放式作答(考官)用自由说,跟读用整句;
+      // 系数按场景调严格度。不传则沿用默认。
+      const result = await callSOE(refText, pcm, { evalMode: b.evalMode, coeff: b.coeff });
+      const n = normalize(result);
+      res.writeHead(200, cors); res.end(JSON.stringify(n));
+    } catch (e) { res.writeHead(502, cors); res.end(JSON.stringify({ error: String(e.message || e) })); }
+  });
+});
+server.listen(PORT, '127.0.0.1', () => console.log(`[speak-soe ws+chat] listening 127.0.0.1:${PORT}, engine=${ENGINE}`));

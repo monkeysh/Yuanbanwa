@@ -1,0 +1,206 @@
+{
+  "deepseek": {
+    "issues": [
+      {
+        "scene": "KET·认识新朋友",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "问题问的是'你觉得交新朋友容易吗？'，这是观点看法，不是给人建议，维度标注错误。",
+        "suggest_en": "What advice would you give to someone who wants to make new friends?",
+        "suggest_zh": "你会给想交新朋友的人什么建议？"
+      },
+      {
+        "scene": "KET·在快餐店点餐",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "问题问的是'你去咖啡馆通常点什么？'，这是日常习惯，不是给人建议，维度标注错误。",
+        "suggest_en": "What would you recommend someone to order at a café?",
+        "suggest_zh": "你会推荐别人在咖啡馆点什么？"
+      },
+      {
+        "scene": "KET·周末做什么",
+        "dim": "困难挑战",
+        "type": "C",
+        "reason": "问题问的是'你空闲时间喜欢做什么？'，这是喜好/日常习惯，不是困难挑战，维度标注错误。",
+        "suggest_en": "What is the most difficult thing about finding things to do in your free time?",
+        "suggest_zh": "在空闲时间找事情做最困难的是什么？"
+      },
+      {
+        "scene": "KET·周末做什么",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "问题问的是'你空闲时间通常做什么？'，这是日常习惯，不是给人建议，维度标注错误。",
+        "suggest_en": "What advice would you give to someone who has too much free time?",
+        "suggest_zh": "你会给空闲时间太多的人什么建议？"
+      },
+      {
+        "scene": "KET·聊聊日常作息",
+        "dim": "困难挑战",
+        "type": "C",
+        "reason": "问题问的是'你早上通常几点起床？'，这是日常习惯，不是困难挑战，维度标注错误。",
+        "suggest_en": "What is the most difficult part of your morning routine?",
+        "suggest_zh": "你早晨作息中最困难的部分是什么？"
+      },
+      {
+        "scene": "KET·聊聊天气和季节",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "问题问的是'你们国家的天气怎么样？'，这是描述事实，不是给人建议，维度标注错误。",
+        "suggest_en": "What advice would you give to a visitor about what clothes to bring for the weather in your country?",
+        "suggest_zh": "你会建议游客带什么衣服来应对你国家的天气？"
+      },
+      {
+        "scene": "KET·我的宠物朋友",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "问题问的是'你家里有宠物吗？'，这是日常习惯/事实，不是给人建议，维度标注错误。",
+        "suggest_en": "What advice would you give to someone who wants to get a pet for the first time?",
+        "suggest_zh": "你会给第一次想养宠物的人什么建议？"
+      },
+      {
+        "scene": "KET·假期去哪玩",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "问题问的是'你上次假期去了哪里？'，这是过去经历，不是给人建议，维度标注错误。",
+        "suggest_en": "What holiday destination would you recommend to a friend?",
+        "suggest_zh": "你会推荐朋友去哪个度假地？"
+      },
+      {
+        "scene": "KET·长大想做什么",
+        "dim": "困难挑战",
+        "type": "C",
+        "reason": "问题问的是'你将来想做什么工作？'，这是未来规划/偏好，不是困难挑战，维度标注错误。",
+        "suggest_en": "What do you think will be the most difficult part of getting your dream job?",
+        "suggest_zh": "你觉得得到梦想的工作最困难的部分是什么？"
+      }
+    ],
+    "overall": "这批考官问题整体质量一般，主要毛病是维度标注错误较多，尤其在KET级别，多个问题被错误地归入'给人建议'或'困难挑战'维度，实际问的是日常习惯或观点，导致维度不符；此外，部分问题在不同场景下内容重复。PET和FCE级别问题相对较好。"
+  },
+  "qwen": {
+    "issues": [
+      {
+        "scene": "KET·买一件 T 恤",
+        "dim": "给人建议",
+        "type": "B",
+        "reason": "对A2级别学生来说，'给想买T恤的人提建议'过于抽象且缺乏语境。日常买T恤是极简单的行为，学生很难想出有实质内容的'建议'，容易冷场或回答'I don't know'。",
+        "suggest_en": "What is important to you when you buy a T-shirt?",
+        "suggest_zh": "你买T恤时看重什么？"
+      },
+      {
+        "scene": "KET·在快餐店点餐",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "维度标注为'给人建议'，但问题问的是'你通常点什么'，这是典型的'个人习惯/喜好'问题，维度与内容完全不符。",
+        "suggest_en": "What would you recommend to a friend visiting this café for the first time?",
+        "suggest_zh": "你会向第一次来这家咖啡馆的朋友推荐什么？"
+      },
+      {
+        "scene": "KET·周末做什么",
+        "dim": "困难挑战",
+        "type": "C",
+        "reason": "维度标注为'困难挑战'，但问题问的是'你喜欢做什么'，这是'个人喜好'问题，维度与内容不符。",
+        "suggest_en": "Is it ever difficult for you to decide what to do in your free time?",
+        "suggest_zh": "你空闲时间决定做什么会有困难吗？"
+      },
+      {
+        "scene": "KET·周末做什么",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "维度标注为'给人建议'，但问题问的是'你通常做什么'，这是'个人习惯'问题，维度与内容不符。",
+        "suggest_en": "What activity would you suggest to a friend who is bored?",
+        "suggest_zh": "你会向感到无聊的朋友建议什么活动？"
+      },
+      {
+        "scene": "PET·聊聊兴趣爱好",
+        "dim": "困难挑战",
+        "type": "D",
+        "reason": "剑桥口语考试不会问'用英语谈论某事有什么困难'这种元认知问题（Meta-question）。考官关注的是考生的语言能力本身，而不是考生对语言学习困难的反思。这更像雅思口语Part 3或课堂反馈，不像PET Part 1。",
+        "suggest_en": "Do you find it difficult to make time for your hobbies?",
+        "suggest_zh": "你觉得挤出时间发展爱好有困难吗？"
+      },
+      {
+        "scene": "FCE·健康与生活",
+        "dim": "困难挑战",
+        "type": "D",
+        "reason": "FCE (B2) Part 1 虽然涉及个人观点，但直接问'你最近有什么健康问题'过于私人且像医生问诊。考官通常会问更普遍的挑战或习惯，避免让考生尴尬或无话可说（如果考生很健康）。",
+        "suggest_en": "What do you find most challenging about keeping fit?",
+        "suggest_zh": "你觉得保持健康最具挑战性的是什么？"
+      },
+      {
+        "scene": "PET·温馨一家人",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "场景是'家人'，维度是'给人建议'，但问题却是'给想交朋友的人提建议'。话题跑题，从家庭跳到了友谊，逻辑断裂。",
+        "suggest_en": "What advice would you give to someone who wants to spend more quality time with their family?",
+        "suggest_zh": "你会给想与家人共度更多高质量时光的人什么建议？"
+      },
+      {
+        "scene": "KET·聊聊我的家人",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "同上，场景是'家人'，问题却是关于'交朋友'的建议。话题不一致。",
+        "suggest_en": "What is a good way to show love to your family?",
+        "suggest_zh": "向家人表达爱意的好方法是什么？"
+      },
+      {
+        "scene": "KET·聊聊日常作息",
+        "dim": "困难挑战",
+        "type": "C",
+        "reason": "维度标注为'困难挑战'，但问题问的是'几点起床'，这是纯粹的'事实/习惯'问题，完全没有涉及'困难'。",
+        "suggest_en": "Is it difficult for you to get up early in the morning?",
+        "suggest_zh": "早上早起对你来说困难吗？"
+      },
+      {
+        "scene": "KET·聊聊天气和季节",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "维度标注为'给人建议'，但问题问的是'你们国家天气如何'，这是'描述/事实'问题，与建议无关。",
+        "suggest_en": "What clothes would you advise a tourist to bring to your country?",
+        "suggest_zh": "你会建议游客带什么衣服来你的国家？"
+      },
+      {
+        "scene": "KET·我的宠物朋友",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "维度标注为'给人建议'，但问题问的是'你有宠物吗'，这是'Yes/No事实'问题，与建议无关。且该问题与同场景下的'日常习惯'问题重复。",
+        "suggest_en": "What advice would you give to someone who wants to buy a pet?",
+        "suggest_zh": "你会给想买宠物的人什么建议？"
+      },
+      {
+        "scene": "KET·假期去哪玩",
+        "dim": "给人建议",
+        "type": "C",
+        "reason": "维度标注为'给人建议'，但问题问的是'上次假期去了哪'，这是'过去经历/事实'问题，与建议无关。",
+        "suggest_en": "Where would you recommend a friend go for a holiday?",
+        "suggest_zh": "你会推荐朋友去哪里度假？"
+      },
+      {
+        "scene": "KET·怎么去",
+        "dim": "观点看法",
+        "type": "A",
+        "reason": "中文翻译缺失，且英文问题 'Do you like walking to places?' 略显生硬。通常我们会说 'walking to school/work' 或 'walking around town'。'Walking to places' 听起来不自然。",
+        "suggest_en": "Do you enjoy walking to school or other places?",
+        "suggest_zh": "你喜欢走路去学校或其他地方吗？"
+      },
+      {
+        "scene": "KET·长大想做什么",
+        "dim": "困难挑战",
+        "type": "C",
+        "reason": "维度标注为'困难挑战'，但问题问的是'将来想做什么工作'，这是'未来计划/喜好'问题，未涉及任何困难。",
+        "suggest_en": "What do you think will be the most difficult part of your future job?",
+        "suggest_zh": "你觉得你未来的工作中最难的部分是什么？"
+      }
+    ],
+    "overall": "这批问题主要毛病在于「维度标签」与「实际问题」严重错位（C类错误最多），大量标为'给人建议'或'困难挑战'的问题实际上只是在问个人习惯或事实；此外，部分KET级别问题对于'建议'维度的设计不符合该级别学生的认知水平（B类），且存在少量不符合真实考试语境的元认知问题（D类）。"
+  },
+  "agreedKeys": [
+    "KET·在快餐店点餐|给人建议",
+    "KET·周末做什么|困难挑战",
+    "KET·周末做什么|给人建议",
+    "KET·聊聊日常作息|困难挑战",
+    "KET·聊聊天气和季节|给人建议",
+    "KET·我的宠物朋友|给人建议",
+    "KET·假期去哪玩|给人建议",
+    "KET·长大想做什么|困难挑战"
+  ]
+}

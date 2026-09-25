@@ -1,0 +1,90 @@
+[
+  {
+    "base": "self-intro_entry_add1",
+    "text": "I'm a student."
+  },
+  {
+    "base": "self-intro_entry_add2",
+    "text": "I love music."
+  },
+  {
+    "base": "self-intro_entry_add3",
+    "text": "I have a big family."
+  },
+  {
+    "base": "self-intro_entry_add4",
+    "text": "I like drawing."
+  },
+  {
+    "base": "self-intro_beginner_add1",
+    "text": "I'm studying at university."
+  },
+  {
+    "base": "self-intro_beginner_add2",
+    "text": "My major is computer science."
+  },
+  {
+    "base": "self-intro_beginner_add3",
+    "text": "I live with my family."
+  },
+  {
+    "base": "self-intro_beginner_add4",
+    "text": "I have a younger brother."
+  },
+  {
+    "base": "self-intro_beginner_add5",
+    "text": "In my free time, I like hiking."
+  },
+  {
+    "base": "self-intro_beginner_add6",
+    "text": "I'm learning to play the piano."
+  },
+  {
+    "base": "self-intro_intermediate_add1",
+    "text": "Outside of work, I'm really into photography."
+  },
+  {
+    "base": "self-intro_intermediate_add2",
+    "text": "I'm the eldest of three kids."
+  },
+  {
+    "base": "self-intro_intermediate_add3",
+    "text": "I'm doing a part-time master's in design."
+  },
+  {
+    "base": "self-intro_intermediate_add4",
+    "text": "My work is mostly about solving problems for users."
+  },
+  {
+    "base": "self-intro_intermediate_add5",
+    "text": "My parents live nearby, so we have dinner together often."
+  },
+  {
+    "base": "self-intro_intermediate_add6",
+    "text": "On weekends, I usually go rock climbing."
+  },
+  {
+    "base": "self-intro_advanced_add1",
+    "text": "I've recently gotten into long-distance running — it's become a bit of an obsession."
+  },
+  {
+    "base": "self-intro_advanced_add2",
+    "text": "I'm juggling a full-time role with an evening MBA."
+  },
+  {
+    "base": "self-intro_advanced_add3",
+    "text": "I come from a family of teachers, so education runs deep for me."
+  },
+  {
+    "base": "self-intro_advanced_add4",
+    "text": "My work has shifted more toward mentoring junior designers lately."
+  },
+  {
+    "base": "self-intro_advanced_add5",
+    "text": "When I'm not working, you'll usually find me experimenting in the kitchen."
+  },
+  {
+    "base": "self-intro_advanced_add6",
+    "text": "My partner and I just moved into a place closer to my parents."
+  }
+]

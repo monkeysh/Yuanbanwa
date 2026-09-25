@@ -1,0 +1,12 @@
+{
+  "reviews": [
+    {
+      "tid": "ket-festivals",
+      "idx": 7,
+      "verdict": "fix",
+      "issue": "说话人错误：第7句应为♀女（Lily）提问，当前标记为♂男导致对话逻辑混乱。句子本身英文正确。",
+      "suggest": "Which festival do you like, Tom?"
+    }
+  ],
+  "overall": "整体对话自然流畅，词汇和句型符合A2水平，仅有一处说话人标记错误需修正。"
+}

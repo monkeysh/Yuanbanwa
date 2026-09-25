@@ -1,0 +1,674 @@
+[
+  {
+    "base": "directions_entry_1",
+    "text": "Where's the station?"
+  },
+  {
+    "base": "directions_entry_2",
+    "text": "Is it far?"
+  },
+  {
+    "base": "directions_entry_3",
+    "text": "This way?"
+  },
+  {
+    "base": "directions_entry_4",
+    "text": "Left or right?"
+  },
+  {
+    "base": "directions_intermediate_1",
+    "text": "Sorry to bother you — where's the nearest subway?"
+  },
+  {
+    "base": "directions_intermediate_2",
+    "text": "Am I going the right way?"
+  },
+  {
+    "base": "directions_intermediate_3",
+    "text": "Is it easier to walk or take a bus?"
+  },
+  {
+    "base": "directions_intermediate_4",
+    "text": "Could you show me on the map?"
+  },
+  {
+    "base": "directions_intermediate_5",
+    "text": "So I go straight and then turn left?"
+  },
+  {
+    "base": "directions_intermediate_6",
+    "text": "Is there a landmark I should look for?"
+  },
+  {
+    "base": "directions_intermediate_7",
+    "text": "How far is it, roughly?"
+  },
+  {
+    "base": "directions_intermediate_8",
+    "text": "I think I'm a little lost."
+  },
+  {
+    "base": "directions_advanced_1",
+    "text": "I'm trying to find the art museum, but I think I've been walking in circles."
+  },
+  {
+    "base": "directions_advanced_2",
+    "text": "Would it be quicker to cut through the park?"
+  },
+  {
+    "base": "directions_advanced_3",
+    "text": "Is this within walking distance, or should I grab a cab?"
+  },
+  {
+    "base": "directions_advanced_4",
+    "text": "I'm not familiar with this area at all."
+  },
+  {
+    "base": "directions_advanced_5",
+    "text": "Could you point me toward the main road?"
+  },
+  {
+    "base": "directions_advanced_6",
+    "text": "Does this street eventually lead downtown?"
+  },
+  {
+    "base": "directions_advanced_7",
+    "text": "I'll just follow the signs from there."
+  },
+  {
+    "base": "directions_advanced_8",
+    "text": "You've been really helpful — thanks a lot."
+  },
+  {
+    "base": "directions_advanced_9",
+    "text": "I should be able to find it now."
+  },
+  {
+    "base": "taxi_entry_1",
+    "text": "Are you free?"
+  },
+  {
+    "base": "taxi_entry_2",
+    "text": "To this address."
+  },
+  {
+    "base": "taxi_entry_3",
+    "text": "How much?"
+  },
+  {
+    "base": "taxi_entry_4",
+    "text": "Here is fine."
+  },
+  {
+    "base": "taxi_intermediate_1",
+    "text": "Could you take me to the airport, please?"
+  },
+  {
+    "base": "taxi_intermediate_2",
+    "text": "Do you know how to get to this hotel?"
+  },
+  {
+    "base": "taxi_intermediate_3",
+    "text": "About how much will it cost?"
+  },
+  {
+    "base": "taxi_intermediate_4",
+    "text": "Could we take the faster route?"
+  },
+  {
+    "base": "taxi_intermediate_5",
+    "text": "I'm running a bit late, actually."
+  },
+  {
+    "base": "taxi_intermediate_6",
+    "text": "Could you pull over just up ahead?"
+  },
+  {
+    "base": "taxi_intermediate_7",
+    "text": "Do you take cards, or cash only?"
+  },
+  {
+    "base": "taxi_intermediate_8",
+    "text": "Keep the change, thanks."
+  },
+  {
+    "base": "taxi_advanced_1",
+    "text": "Would you mind avoiding the highway? The traffic's usually terrible this time of day."
+  },
+  {
+    "base": "taxi_advanced_2",
+    "text": "I have a flight at six, so I need to be there by four thirty."
+  },
+  {
+    "base": "taxi_advanced_3",
+    "text": "Is the meter running, or is it a flat rate to the airport?"
+  },
+  {
+    "base": "taxi_advanced_4",
+    "text": "Could you drop me at Departures, not Arrivals?"
+  },
+  {
+    "base": "taxi_advanced_5",
+    "text": "I think there might be a quicker way through the side streets."
+  },
+  {
+    "base": "taxi_advanced_6",
+    "text": "Sorry, could you turn the AC up a little?"
+  },
+  {
+    "base": "taxi_advanced_7",
+    "text": "Could I get a receipt for the full amount?"
+  },
+  {
+    "base": "taxi_advanced_8",
+    "text": "Thanks for getting me here so quickly."
+  },
+  {
+    "base": "taxi_advanced_9",
+    "text": "Have a good rest of your day."
+  },
+  {
+    "base": "checkout_entry_1",
+    "text": "Just these, please."
+  },
+  {
+    "base": "checkout_entry_2",
+    "text": "Card, please."
+  },
+  {
+    "base": "checkout_entry_3",
+    "text": "A bag, please."
+  },
+  {
+    "base": "checkout_entry_4",
+    "text": "Thank you!"
+  },
+  {
+    "base": "checkout_intermediate_1",
+    "text": "Hi, that's everything for today."
+  },
+  {
+    "base": "checkout_intermediate_2",
+    "text": "Is it okay if I pay by card?"
+  },
+  {
+    "base": "checkout_intermediate_3",
+    "text": "Could I get a couple of bags?"
+  },
+  {
+    "base": "checkout_intermediate_4",
+    "text": "Sorry, I don't have a member card."
+  },
+  {
+    "base": "checkout_intermediate_5",
+    "text": "Is this item on sale?"
+  },
+  {
+    "base": "checkout_intermediate_6",
+    "text": "I think that one scanned twice."
+  },
+  {
+    "base": "checkout_intermediate_7",
+    "text": "Could I have the receipt, please?"
+  },
+  {
+    "base": "checkout_intermediate_8",
+    "text": "Thanks, have a good one."
+  },
+  {
+    "base": "checkout_advanced_1",
+    "text": "Sorry, I think there's a mistake — this rang up higher than the shelf price."
+  },
+  {
+    "base": "checkout_advanced_2",
+    "text": "Would you mind if I split this between two cards?"
+  },
+  {
+    "base": "checkout_advanced_3",
+    "text": "Do you know if these are buy-one-get-one this week?"
+  },
+  {
+    "base": "checkout_advanced_4",
+    "text": "I'll leave the bags — I brought my own."
+  },
+  {
+    "base": "checkout_advanced_5",
+    "text": "Could you double-bag the heavy stuff?"
+  },
+  {
+    "base": "checkout_advanced_6",
+    "text": "Actually, could you take this one off? I changed my mind."
+  },
+  {
+    "base": "checkout_advanced_7",
+    "text": "Is there a self-checkout, or is this the only line?"
+  },
+  {
+    "base": "checkout_advanced_8",
+    "text": "Thanks for your patience with all that."
+  },
+  {
+    "base": "checkout_advanced_9",
+    "text": "Have a great rest of your shift."
+  },
+  {
+    "base": "airport-checkin_entry_1",
+    "text": "Checking in, please."
+  },
+  {
+    "base": "airport-checkin_entry_2",
+    "text": "Here's my passport."
+  },
+  {
+    "base": "airport-checkin_entry_3",
+    "text": "One bag to check."
+  },
+  {
+    "base": "airport-checkin_entry_4",
+    "text": "Window seat, please."
+  },
+  {
+    "base": "airport-checkin_intermediate_1",
+    "text": "Hi, I'm on the flight to London."
+  },
+  {
+    "base": "airport-checkin_intermediate_2",
+    "text": "Is there any way to get an aisle seat?"
+  },
+  {
+    "base": "airport-checkin_intermediate_3",
+    "text": "How many bags can I check for free?"
+  },
+  {
+    "base": "airport-checkin_intermediate_4",
+    "text": "Is my bag within the weight limit?"
+  },
+  {
+    "base": "airport-checkin_intermediate_5",
+    "text": "Could I take this one as carry-on?"
+  },
+  {
+    "base": "airport-checkin_intermediate_6",
+    "text": "Do you know if the flight's on time?"
+  },
+  {
+    "base": "airport-checkin_intermediate_7",
+    "text": "Which gate should I head to?"
+  },
+  {
+    "base": "airport-checkin_intermediate_8",
+    "text": "Thanks so much for your help."
+  },
+  {
+    "base": "airport-checkin_advanced_1",
+    "text": "Hi, I'm checking in for the connecting flight to Tokyo — will my bags go all the way through?"
+  },
+  {
+    "base": "airport-checkin_advanced_2",
+    "text": "Is there a chance of an upgrade if there are seats available?"
+  },
+  {
+    "base": "airport-checkin_advanced_3",
+    "text": "My bag's slightly over — how much is the excess?"
+  },
+  {
+    "base": "airport-checkin_advanced_4",
+    "text": "Could you seat me and my friend together?"
+  },
+  {
+    "base": "airport-checkin_advanced_5",
+    "text": "I have a tight connection — how long is the layover?"
+  },
+  {
+    "base": "airport-checkin_advanced_6",
+    "text": "Is there lounge access with this ticket?"
+  },
+  {
+    "base": "airport-checkin_advanced_7",
+    "text": "Where do I go through security from here?"
+  },
+  {
+    "base": "airport-checkin_advanced_8",
+    "text": "Thanks, you've made that really easy."
+  },
+  {
+    "base": "airport-checkin_advanced_9",
+    "text": "I'll head straight to the gate then."
+  },
+  {
+    "base": "subway_entry_1",
+    "text": "Which line?"
+  },
+  {
+    "base": "subway_entry_2",
+    "text": "One ticket, please."
+  },
+  {
+    "base": "subway_entry_3",
+    "text": "Which stop?"
+  },
+  {
+    "base": "subway_entry_4",
+    "text": "Thank you!"
+  },
+  {
+    "base": "subway_intermediate_1",
+    "text": "Which line goes to the city center?"
+  },
+  {
+    "base": "subway_intermediate_2",
+    "text": "How much is a single ride?"
+  },
+  {
+    "base": "subway_intermediate_3",
+    "text": "Do you sell a day pass?"
+  },
+  {
+    "base": "subway_intermediate_4",
+    "text": "Is this the right platform for downtown?"
+  },
+  {
+    "base": "subway_intermediate_5",
+    "text": "Which stop do I get off at?"
+  },
+  {
+    "base": "subway_intermediate_6",
+    "text": "How many stops is that from here?"
+  },
+  {
+    "base": "subway_intermediate_7",
+    "text": "Do I need to transfer anywhere?"
+  },
+  {
+    "base": "subway_intermediate_8",
+    "text": "Thanks a lot for your help."
+  },
+  {
+    "base": "subway_advanced_1",
+    "text": "Sorry, I'm a bit confused — do I take the express or the local to get there?"
+  },
+  {
+    "base": "subway_advanced_2",
+    "text": "If I miss this one, how long until the next train?"
+  },
+  {
+    "base": "subway_advanced_3",
+    "text": "Is my ticket still valid after I transfer?"
+  },
+  {
+    "base": "subway_advanced_4",
+    "text": "Which exit is closest to the museum?"
+  },
+  {
+    "base": "subway_advanced_5",
+    "text": "Does this line run all night, or does it stop?"
+  },
+  {
+    "base": "subway_advanced_6",
+    "text": "I think I got on going the wrong direction."
+  },
+  {
+    "base": "subway_advanced_7",
+    "text": "Is it faster to change here or stay on?"
+  },
+  {
+    "base": "subway_advanced_8",
+    "text": "Great, that's really helpful — thank you."
+  },
+  {
+    "base": "subway_advanced_9",
+    "text": "I'll get off in three stops then."
+  },
+  {
+    "base": "delivery_entry_1",
+    "text": "I'd like to order."
+  },
+  {
+    "base": "delivery_entry_2",
+    "text": "Two pizzas, please."
+  },
+  {
+    "base": "delivery_entry_3",
+    "text": "How long?"
+  },
+  {
+    "base": "delivery_entry_4",
+    "text": "Leave it at the door."
+  },
+  {
+    "base": "delivery_intermediate_1",
+    "text": "Hi, I'd like to place a delivery order."
+  },
+  {
+    "base": "delivery_intermediate_2",
+    "text": "Could I get a large pepperoni pizza?"
+  },
+  {
+    "base": "delivery_intermediate_3",
+    "text": "Do you have any vegetarian options?"
+  },
+  {
+    "base": "delivery_intermediate_4",
+    "text": "How long will delivery take?"
+  },
+  {
+    "base": "delivery_intermediate_5",
+    "text": "What's the delivery fee?"
+  },
+  {
+    "base": "delivery_intermediate_6",
+    "text": "Can I pay when it arrives?"
+  },
+  {
+    "base": "delivery_intermediate_7",
+    "text": "Could you leave it at the front door?"
+  },
+  {
+    "base": "delivery_intermediate_8",
+    "text": "Thanks, I'll tip in the app."
+  },
+  {
+    "base": "delivery_advanced_1",
+    "text": "Hi, could I add a note to leave the order at the door and just text me?"
+  },
+  {
+    "base": "delivery_advanced_2",
+    "text": "Is it possible to get that with no onions and extra cheese?"
+  },
+  {
+    "base": "delivery_advanced_3",
+    "text": "One of the items last time was missing — could you double-check the order?"
+  },
+  {
+    "base": "delivery_advanced_4",
+    "text": "Roughly what time should I expect it?"
+  },
+  {
+    "base": "delivery_advanced_5",
+    "text": "Do you deliver to this address, or am I out of the zone?"
+  },
+  {
+    "base": "delivery_advanced_6",
+    "text": "Could the driver call when they're downstairs?"
+  },
+  {
+    "base": "delivery_advanced_7",
+    "text": "Is there a minimum order for free delivery?"
+  },
+  {
+    "base": "delivery_advanced_8",
+    "text": "Thanks, that all sounds good."
+  },
+  {
+    "base": "delivery_advanced_9",
+    "text": "I really appreciate it."
+  },
+  {
+    "base": "thanks_entry_1",
+    "text": "Thank you!"
+  },
+  {
+    "base": "thanks_entry_2",
+    "text": "Thanks a lot."
+  },
+  {
+    "base": "thanks_entry_3",
+    "text": "You're so kind."
+  },
+  {
+    "base": "thanks_entry_4",
+    "text": "I appreciate it."
+  },
+  {
+    "base": "thanks_intermediate_1",
+    "text": "Thank you so much for your help."
+  },
+  {
+    "base": "thanks_intermediate_2",
+    "text": "I really appreciate you doing this."
+  },
+  {
+    "base": "thanks_intermediate_3",
+    "text": "That was really kind of you."
+  },
+  {
+    "base": "thanks_intermediate_4",
+    "text": "You didn't have to, but thank you."
+  },
+  {
+    "base": "thanks_intermediate_5",
+    "text": "This means a lot to me."
+  },
+  {
+    "base": "thanks_intermediate_6",
+    "text": "I owe you one."
+  },
+  {
+    "base": "thanks_intermediate_7",
+    "text": "Thanks again, really."
+  },
+  {
+    "base": "thanks_intermediate_8",
+    "text": "Let me know if I can return the favor."
+  },
+  {
+    "base": "thanks_advanced_1",
+    "text": "I honestly don't know what I would have done without your help."
+  },
+  {
+    "base": "thanks_advanced_2",
+    "text": "You went out of your way for me, and I won't forget it."
+  },
+  {
+    "base": "thanks_advanced_3",
+    "text": "I can't thank you enough for stepping in like that."
+  },
+  {
+    "base": "thanks_advanced_4",
+    "text": "That really took a weight off my shoulders."
+  },
+  {
+    "base": "thanks_advanced_5",
+    "text": "Please let me treat you to lunch sometime."
+  },
+  {
+    "base": "thanks_advanced_6",
+    "text": "I'll make sure to pay it forward."
+  },
+  {
+    "base": "thanks_advanced_7",
+    "text": "It's people like you who make a bad day better."
+  },
+  {
+    "base": "thanks_advanced_8",
+    "text": "Thank you, from the bottom of my heart."
+  },
+  {
+    "base": "thanks_advanced_9",
+    "text": "I really mean it."
+  },
+  {
+    "base": "apology_entry_1",
+    "text": "I'm sorry."
+  },
+  {
+    "base": "apology_entry_2",
+    "text": "My bad."
+  },
+  {
+    "base": "apology_entry_3",
+    "text": "Sorry I'm late."
+  },
+  {
+    "base": "apology_entry_4",
+    "text": "It won't happen again."
+  },
+  {
+    "base": "apology_intermediate_1",
+    "text": "I'm really sorry for the delay."
+  },
+  {
+    "base": "apology_intermediate_2",
+    "text": "Sorry to keep you waiting."
+  },
+  {
+    "base": "apology_intermediate_3",
+    "text": "I didn't mean to do that."
+  },
+  {
+    "base": "apology_intermediate_4",
+    "text": "That was my mistake, I'm sorry."
+  },
+  {
+    "base": "apology_intermediate_5",
+    "text": "I hope I didn't offend you."
+  },
+  {
+    "base": "apology_intermediate_6",
+    "text": "Please forgive me for that."
+  },
+  {
+    "base": "apology_intermediate_7",
+    "text": "I'll make it up to you."
+  },
+  {
+    "base": "apology_intermediate_8",
+    "text": "Thanks for being so understanding."
+  },
+  {
+    "base": "apology_advanced_1",
+    "text": "I owe you an apology — I should have let you know sooner."
+  },
+  {
+    "base": "apology_advanced_2",
+    "text": "There's really no excuse, and I take full responsibility."
+  },
+  {
+    "base": "apology_advanced_3",
+    "text": "I feel terrible about the mix-up, and I want to make it right."
+  },
+  {
+    "base": "apology_advanced_4",
+    "text": "I completely understand if you're frustrated with me."
+  },
+  {
+    "base": "apology_advanced_5",
+    "text": "It won't happen again — you have my word."
+  },
+  {
+    "base": "apology_advanced_6",
+    "text": "Is there anything I can do to fix this?"
+  },
+  {
+    "base": "apology_advanced_7",
+    "text": "I really value our relationship, and I'm sorry I let you down."
+  },
+  {
+    "base": "apology_advanced_8",
+    "text": "Thank you for hearing me out."
+  },
+  {
+    "base": "apology_advanced_9",
+    "text": "I appreciate your patience with me."
+  }
+]

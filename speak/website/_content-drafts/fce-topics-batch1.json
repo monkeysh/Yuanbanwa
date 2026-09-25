@@ -1,0 +1,105 @@
+{
+  "_note": "FCE 新话题第一批(3个)。结构:Part1对话8句(♀考官问/♂考生答,答句2-3句B2深度) + Part2独白7句(♀考生图片对比)。声线 part1问=rosie/答=chris,part2全rosie。待 v4pro 双卡审后 splice 为 cambridge/FCE 场景。",
+  "fce-relationships": {
+    "meta": {
+      "title": "人际关系与友谊",
+      "subtitle": "Relationships and Friendship",
+      "description": "FCE 高频话题:交友方式、维系友谊、什么算好朋友。Part 1 深答 + Part 2 两类友谊对比独白。",
+      "learn": ["讲清交友倾向与理由", "谈友谊的维系与价值", "对比独处友谊 vs 群体社交", "用 Personally 表个人看法"],
+      "examTip": "**考法** 人际关系是 FCE 高频话题。Part 1 考官会问你的交友方式、如何维系老友、什么样才算好朋友,回答给出 2 句左右并说明理由(常用现在时+现在完成时)。Part 2 常给「两人独处 vs 群体聚会」的对比图,用 whereas / on the other hand 对比,结尾用 Personally 表个人看法。",
+      "templates": [
+        { "en": "I'd say I have ___ rather than ___.", "zh": "澄清交友倾向" },
+        { "en": "It matters a great deal to me because ___.", "zh": "强调重要性" },
+        { "en": "For me, it comes down to ___.", "zh": "总结关键要素" },
+        { "en": "Personally, I'd say ___, since ___.", "zh": "表个人观点" }
+      ]
+    },
+    "part1": [
+      { "en": "Do you have a large group of friends, or just a few close ones?", "zh": "你朋友很多,还是只有几个亲密的?", "voice": "rosie" },
+      { "en": "I'd say I have a small circle of close friends rather than lots of acquaintances. I find it much easier to be myself around people who really know me.", "zh": "我会说我有一小圈亲密朋友,而不是一堆泛泛之交。在真正了解我的人面前,我更容易做自己。", "voice": "chris" },
+      { "en": "How important is it to you to keep in touch with old friends?", "zh": "和老朋友保持联系对你有多重要?", "voice": "rosie" },
+      { "en": "It matters a great deal to me. Even if we don't speak for months, there's a real comfort in knowing they'll still be there when it counts.", "zh": "对我非常重要。即使几个月不联系,一想到关键时刻他们仍会在,就让人很安心。", "voice": "chris" },
+      { "en": "Do you think it's possible to make genuine friends online?", "zh": "你觉得能在网上交到真心朋友吗?", "voice": "rosie" },
+      { "en": "Absolutely, though it does take time. I've met people through shared hobbies online who've become just as close as my offline friends.", "zh": "当然,不过确实需要时间。我在网上因共同爱好认识的人,有些已经和我线下的朋友一样亲近。", "voice": "chris" },
+      { "en": "What do you think makes someone a good friend?", "zh": "你觉得什么样的人算好朋友?", "voice": "rosie" },
+      { "en": "For me, it comes down to trust and being a good listener. A real friend sticks around when things get difficult, not just when it's fun.", "zh": "对我来说,关键在于信任和会倾听。真朋友在困难时也不离开,而不只是在开心时才在。", "voice": "chris" }
+    ],
+    "part2": [
+      { "en": "Both photographs show people spending time together, but the nature of their relationships looks quite different." , "zh": "两张照片都展示人们共处,但关系的性质看起来很不一样。" },
+      { "en": "In the first picture, two friends are sitting in a café, deep in conversation and clearly enjoying each other's company.", "zh": "第一张照片里,两个朋友坐在咖啡馆里,聊得很投入,显然很享受彼此的陪伴。" },
+      { "en": "The second image, by contrast, shows a large group at what looks like a party, all laughing and celebrating together.", "zh": "相比之下,第二张展示的是一大群人在类似聚会的场合,一起说笑、庆祝。" },
+      { "en": "The pair in the café might be catching up after a long time apart, sharing something personal that matters to them both.", "zh": "咖啡馆里那两个人可能是久别重逢在叙旧,分享着对彼此都重要的私事。" },
+      { "en": "On the other hand, the group in the second photo seem more focused on enjoying themselves together than building individual connections.", "zh": "另一方面,第二张里的那群人似乎更在意一起玩乐,而非建立一对一的联系。" },
+      { "en": "I imagine people value both kinds of relationship, because we need close friends to confide in as well as a wider circle to enjoy ourselves with.", "zh": "我想人们对两种关系都很看重,因为我们既需要能倾诉的密友,也需要一个能一起玩乐的更大圈子。" },
+      { "en": "Personally, I'd say the quieter, one-to-one friendship looks more meaningful to me, since that's usually where the deepest bonds are formed.", "zh": "就我个人而言,那种安静的一对一友谊对我更有意义,因为最深的情谊通常正是在那里建立的。" }
+    ]
+  },
+  "fce-education": {
+    "meta": {
+      "title": "教育与学习",
+      "subtitle": "Education and Learning",
+      "description": "FCE 高频话题:学习方式、课堂 vs 自学、教育的意义。Part 1 深答 + Part 2 学习场景对比独白。",
+      "learn": ["谈学习方式与偏好", "评价考试与实践的价值", "对比传统课堂 vs 在线自学", "用 whereas 展开对比"],
+      "examTip": "**考法** 教育是 FCE 常考话题。Part 1 考官会问你喜欢的学习方式、考试是否重要、学校教育的价值,回答要给理由和例子。Part 2 常给「课堂上课 vs 独自在线学习」的对比图,用 whereas / while 对比两种方式的利弊,结尾表明个人偏好。",
+      "templates": [
+        { "en": "I learn best when ___.", "zh": "说学习方式" },
+        { "en": "There's a lot to be said for ___.", "zh": "肯定某种做法" },
+        { "en": "While ___ suits some people, I personally prefer ___.", "zh": "对比后表偏好" },
+        { "en": "At the end of the day, what matters most is ___.", "zh": "归纳核心" }
+      ]
+    },
+    "part1": [
+      { "en": "How do you prefer to study — on your own or with others?", "zh": "你更喜欢怎么学习——自己学还是和别人一起?", "voice": "rosie" },
+      { "en": "It really depends on the subject, but on the whole I learn best on my own, in a quiet place where I can focus without any distractions.", "zh": "这其实要看科目,但总体上我一个人在安静、没干扰的地方学得最好。", "voice": "chris" },
+      { "en": "Do you think exams are a fair way to measure ability?", "zh": "你觉得考试是衡量能力的公平方式吗?", "voice": "rosie" },
+      { "en": "Not entirely, to be honest. They show how well you perform under pressure, but they don't always capture creativity or practical skills.", "zh": "老实说,不完全公平。考试能看出你在压力下的表现,却未必能反映创造力或实际能力。", "voice": "chris" },
+      { "en": "Have you ever learned something useful outside of school?", "zh": "你有没有在学校之外学到过有用的东西?", "voice": "rosie" },
+      { "en": "Definitely. I taught myself to edit videos through online tutorials, and it's turned out to be far more useful than I ever expected.", "zh": "当然。我通过网上教程自学了剪辑视频,结果发现它比我预想的有用得多。", "voice": "chris" },
+      { "en": "How important do you think it is to keep learning as an adult?", "zh": "你觉得成年后继续学习有多重要?", "voice": "rosie" },
+      { "en": "I'd say it's essential these days. The world changes so quickly that if you stop learning, you can fall behind before you even realise it.", "zh": "我觉得如今这是必需的。世界变化太快,你一旦停止学习,可能还没察觉就已经落后了。", "voice": "chris" }
+    ],
+    "part2": [
+      { "en": "Both pictures show different approaches to learning, one based on direct interaction and the other on independent study.", "zh": "两张照片展示了两种不同的学习方式,一种基于直接互动,另一种基于自主学习。" },
+      { "en": "In the first one, a class of students is listening to a teacher, who seems to be explaining something at the front of the room.", "zh": "第一张里,一班学生在听老师讲课,老师似乎正在教室前面讲解着什么。" },
+      { "en": "The second picture, by contrast, shows a young person studying alone at home, following a lesson on their laptop.", "zh": "相比之下,第二张展示的是一个年轻人独自在家,跟着笔记本电脑上的课程学习。" },
+      { "en": "The students in the classroom have the advantage of asking questions directly and learning from one another.", "zh": "教室里的学生有个好处,就是能直接提问、彼此学习。" },
+      { "en": "On the other hand, the person studying online can work at their own pace and revisit anything they find difficult.", "zh": "另一方面,在线学习的人可以按自己的节奏来,任何觉得难的地方都能反复看。" },
+      { "en": "I think both approaches are valuable, since some people thrive on interaction while others concentrate better in their own space.", "zh": "我觉得两种方式各有价值,有些人在互动中如鱼得水,另一些人则在自己的空间里更专注。" },
+      { "en": "Personally, I'd choose a mix of the two, because the discipline of a classroom combined with the flexibility of online study would suit me best.", "zh": "就我个人而言,我会选两者结合,因为课堂的纪律加上在线学习的灵活最适合我。" }
+    ]
+  },
+  "fce-ambitions": {
+    "meta": {
+      "title": "理想与未来",
+      "subtitle": "Ambitions and the Future",
+      "description": "FCE 高频话题:未来计划、梦想职业、成功的定义。Part 1 深答 + Part 2 追梦场景对比独白。",
+      "learn": ["谈未来计划与理由", "定义成功与幸福", "对比稳定 vs 冒险的人生路", "用条件句谈设想"],
+      "examTip": "**考法** 理想与未来是 FCE 常考话题。Part 1 考官会问你的未来计划、想从事的工作、如何定义成功,回答多用 would like to / hope to / be planning to,并给理由。Part 2 常给「稳定工作 vs 追逐梦想」的对比图,用条件句(If...)设想不同选择,结尾表明自己的价值取向。",
+      "templates": [
+        { "en": "In the long run, I'd like to ___.", "zh": "谈长远目标" },
+        { "en": "What matters more to me than money is ___.", "zh": "谈价值排序" },
+        { "en": "If I had the chance, I would ___.", "zh": "条件句设想" },
+        { "en": "Success, to me, means ___ rather than ___.", "zh": "定义成功" }
+      ]
+    },
+    "part1": [
+      { "en": "Do you have a clear idea of what you'd like to do in the future?", "zh": "你对未来想做什么有清晰的想法吗?", "voice": "rosie" },
+      { "en": "Roughly, yes. In the long run I'd like to work in something creative, though I'm still keeping my options open for now.", "zh": "大致有。长远来看我想做点有创造性的工作,不过目前我还在保留各种可能。", "voice": "chris" },
+      { "en": "Is earning a lot of money important to you?", "zh": "赚很多钱对你重要吗?", "voice": "rosie" },
+      { "en": "It's nice to be comfortable, of course, but what matters more to me than money is doing something I actually find meaningful.", "zh": "生活宽裕当然好,但对我来说比钱更重要的,是做一件我真正觉得有意义的事。", "voice": "chris" },
+      { "en": "If you could live anywhere in the world, where would it be?", "zh": "如果你能住在世界任何地方,会选哪里?", "voice": "rosie" },
+      { "en": "If I had the chance, I'd live somewhere by the coast. Being near the sea has always helped me think clearly and feel more relaxed.", "zh": "如果有机会,我想住在海边。靠近大海总能让我思路清晰、更放松。", "voice": "chris" },
+      { "en": "How would you define a successful life?", "zh": "你会怎样定义成功的人生?", "voice": "rosie" },
+      { "en": "For me, success means having good relationships and being content with what I do, rather than simply climbing to the top of a career ladder.", "zh": "对我而言,成功是拥有好的人际关系、对自己所做的事感到满足,而不只是爬到职业阶梯的顶端。", "voice": "chris" }
+    ],
+    "part2": [
+      { "en": "Both images seem to capture people at an important turning point in their lives, but their choices look very different.", "zh": "两张照片似乎都捕捉到人们人生的重要转折点,但他们的选择看起来很不一样。" },
+      { "en": "In the first picture, a young woman in an office looks settled and confident, as though she's built a stable career.", "zh": "第一张里,一位年轻女性在办公室里显得安稳自信,仿佛已经建立起稳定的事业。" },
+      { "en": "The second one, on the other hand, shows someone travelling with a backpack, apparently chasing a very different kind of dream.", "zh": "第二张则展示一个背着背包旅行的人,显然在追逐一种截然不同的梦想。" },
+      { "en": "The woman in the office may well value security and a steady income, which could allow her to plan ahead with more confidence.", "zh": "办公室里的女性很可能看重安全感和稳定收入,这让她能有底气地规划未来。" },
+      { "en": "In contrast, the traveller seems willing to take risks and gather experiences, even if it means giving up a certain amount of stability.", "zh": "相比之下,那位旅行者似乎愿意冒险、去积累经历,哪怕这意味着放弃一定的稳定。" },
+      { "en": "If I'm honest, I can see the appeal of both, since we all have to balance our dreams against the need to feel secure.", "zh": "说实话,两者的吸引力我都能理解,因为我们都得在梦想和安全感之间寻找平衡。" },
+      { "en": "Personally, I'd lean towards the traveller's path while I'm young, because I believe experiences shape us far more than possessions ever could.", "zh": "就我个人而言,趁年轻我更倾向旅行者的道路,因为我相信经历对人的塑造远胜过任何财物。" }
+    ]
+  }
+}

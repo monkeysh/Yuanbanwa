@@ -1,0 +1,731 @@
+{
+  "_note": "批次B2:剩余7个薄场景补 entry(4)/intermediate(9)/advanced(11) 三档,现有 beginner 不动。遵循 docs/日常场景内容生产检查清单:一档=一条连贯叙事线;entry 是最简活命句(可与 beginner 核心动作重合,但更短更简单——不要为了避重复写成更难的边角料);台词表形态只写学员自己的话;美式英语。设计原则:advanced 档一律写「真实会遇到的麻烦」而不是走顺流程——星巴克取错单/漏单、酒店账单争议与未披露的 resort fee、行李没到、误机改签、CBP 二次问话、家长会问 ELL 与学业下滑、长期缺勤与补作业。customs 场景尤其敏感:美国 CBP 问话要如实、简短、不主动多说;食品必须主动申报(不报被查到罚款),现金超一万美元要申报且**同行人合计**,处方药带医生证明——这些都写进台词。parent-meeting 用了美国学校真实术语 ELL / reclassification / independent study contract,对中国家长最有用。",
+  "starbucks": {
+    "entry": [
+      {
+        "en": "A latte, please.",
+        "zh": "一杯拿铁，谢谢。"
+      },
+      {
+        "en": "Medium, please.",
+        "zh": "中杯，谢谢。"
+      },
+      {
+        "en": "For here.",
+        "zh": "在店里喝。"
+      },
+      {
+        "en": "That's it, thanks.",
+        "zh": "就这些，谢谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Can I get a grande iced latte with oat milk?",
+        "zh": "我要一杯大杯冰拿铁，换燕麦奶。"
+      },
+      {
+        "en": "Light ice, please.",
+        "zh": "少冰，谢谢。"
+      },
+      {
+        "en": "Could you make that half-caff?",
+        "zh": "能做成半低因的吗？"
+      },
+      {
+        "en": "No whipped cream, thanks.",
+        "zh": "不要奶油，谢谢。"
+      },
+      {
+        "en": "Can I add an extra shot?",
+        "zh": "能加一份浓缩吗？"
+      },
+      {
+        "en": "Is the seasonal drink still available?",
+        "zh": "季节限定还有吗？"
+      },
+      {
+        "en": "It's for here — could I get it in a mug?",
+        "zh": "在店里喝——能用马克杯装吗？"
+      },
+      {
+        "en": "The name is Wei — W-E-I.",
+        "zh": "名字是 Wei——W-E-I。"
+      },
+      {
+        "en": "I'll grab it at the end of the bar.",
+        "zh": "我到吧台那头去取。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I placed a mobile order about ten minutes ago under Wei.",
+        "zh": "你好，我大概十分钟前用手机下的单，名字是 Wei。"
+      },
+      {
+        "en": "I don't see it on the counter — could you check if it went through?",
+        "zh": "台子上没看到——能帮我查一下订单有没有成功吗？"
+      },
+      {
+        "en": "It should be a grande cold brew with oat milk and no sweetener.",
+        "zh": "应该是一杯大杯冷萃，燕麦奶，不加糖。"
+      },
+      {
+        "en": "Actually, this one has whole milk — I asked for oat.",
+        "zh": "这杯好像是全脂牛奶——我要的是燕麦奶。"
+      },
+      {
+        "en": "I have a dairy allergy, so I can't drink this one.",
+        "zh": "我对乳制品过敏，所以这杯我不能喝。"
+      },
+      {
+        "en": "Would you mind remaking it?",
+        "zh": "能麻烦重做一杯吗？"
+      },
+      {
+        "en": "No rush — I can see how busy you are.",
+        "zh": "不着急——我看得出你们很忙。"
+      },
+      {
+        "en": "Could you add a shot to the new one?",
+        "zh": "新的那杯能加一份浓缩吗？"
+      },
+      {
+        "en": "Should I hand this one back, or just leave it here?",
+        "zh": "这杯我是还给你，还是就放这儿？"
+      },
+      {
+        "en": "Do my stars still count if you remake it?",
+        "zh": "重做的话我的星星还算吗？"
+      },
+      {
+        "en": "Thanks for taking care of that.",
+        "zh": "谢谢你帮我处理。"
+      }
+    ]
+  },
+  "hotel-checkout": {
+    "entry": [
+      {
+        "en": "I'd like to check out.",
+        "zh": "我要退房。"
+      },
+      {
+        "en": "Here's my key.",
+        "zh": "这是我的房卡。"
+      },
+      {
+        "en": "Can I get a receipt?",
+        "zh": "能给我张收据吗？"
+      },
+      {
+        "en": "Thank you.",
+        "zh": "谢谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Checking out of room 412.",
+        "zh": "412 房退房。"
+      },
+      {
+        "en": "Could you email me the receipt instead of printing it?",
+        "zh": "收据能发我邮箱吗？不用打印。"
+      },
+      {
+        "en": "Could you go over the charges with me?",
+        "zh": "能跟我核对一下费用吗？"
+      },
+      {
+        "en": "What's this fifty-dollar charge here?",
+        "zh": "这笔五十美元是什么费用？"
+      },
+      {
+        "en": "I never used the minibar.",
+        "zh": "我没用过迷你吧。"
+      },
+      {
+        "en": "I was told that fee would be waived.",
+        "zh": "当时说这笔费用会免掉的。"
+      },
+      {
+        "en": "Could you hold my bags until five?",
+        "zh": "能帮我把行李寄存到五点吗？"
+      },
+      {
+        "en": "Is there a charge for that?",
+        "zh": "寄存收费吗？"
+      },
+      {
+        "en": "Could you call me a cab to the airport?",
+        "zh": "能帮我叫辆去机场的车吗？"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I'm checking out of 412, but I'd like to go over a few charges first.",
+        "zh": "你好，我 412 房退房，不过想先核对几笔费用。"
+      },
+      {
+        "en": "I was quoted one-eighty a night, and this shows two-ten.",
+        "zh": "我订的是每晚一百八，这上面写的是两百一。"
+      },
+      {
+        "en": "I booked through the app — I still have the confirmation email.",
+        "zh": "我是在 App 上订的——确认邮件我还留着。"
+      },
+      {
+        "en": "Would you mind pulling up the original reservation?",
+        "zh": "能麻烦调出原始预订记录吗？"
+      },
+      {
+        "en": "There's also a resort fee that wasn't disclosed when I booked.",
+        "zh": "还有一笔度假村费，我订房时没被告知。"
+      },
+      {
+        "en": "I understand it's standard here, but it wasn't shown on the app.",
+        "zh": "我理解这是你们的惯例，但 App 上没显示。"
+      },
+      {
+        "en": "Could you check with a manager on that one?",
+        "zh": "这一笔能跟经理确认一下吗？"
+      },
+      {
+        "en": "My points also don't seem to have posted for this stay.",
+        "zh": "这次入住的积分好像也没到账。"
+      },
+      {
+        "en": "Could you make sure my member number is on the folio?",
+        "zh": "能确认一下账单上有我的会员号吗？"
+      },
+      {
+        "en": "If it's easier, could you email me the final bill once it's adjusted?",
+        "zh": "如果方便的话，调整好之后把最终账单发我邮箱？"
+      },
+      {
+        "en": "Thanks for taking the time to sort that out.",
+        "zh": "谢谢你花时间帮我处理。"
+      }
+    ]
+  },
+  "baggage": {
+    "entry": [
+      {
+        "en": "Two bags to check.",
+        "zh": "托运两件。"
+      },
+      {
+        "en": "Is this too heavy?",
+        "zh": "这个超重了吗？"
+      },
+      {
+        "en": "Where do I pick them up?",
+        "zh": "在哪儿取行李？"
+      },
+      {
+        "en": "Thank you.",
+        "zh": "谢谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "I'm checking two bags to Shanghai.",
+        "zh": "我托运两件行李到上海。"
+      },
+      {
+        "en": "Is the second bag included, or is there a fee?",
+        "zh": "第二件包含在内吗，还是要另收费？"
+      },
+      {
+        "en": "What's the weight limit for each one?",
+        "zh": "每件的重量限制是多少？"
+      },
+      {
+        "en": "This one's a few pounds over — can I move something to my carry-on?",
+        "zh": "这件超了几磅——我能拿点东西放随身包里吗？"
+      },
+      {
+        "en": "I have a laptop and some medication in my carry-on.",
+        "zh": "我随身包里有笔记本电脑和一些药。"
+      },
+      {
+        "en": "Could you tag this one as fragile?",
+        "zh": "这件能贴易碎标签吗？"
+      },
+      {
+        "en": "Are they checked all the way through, or do I claim them in Tokyo?",
+        "zh": "行李是直挂到底，还是要在东京取出来？"
+      },
+      {
+        "en": "Which carousel will they come out on?",
+        "zh": "行李在哪个转盘出来？"
+      },
+      {
+        "en": "Thanks — where's security from here?",
+        "zh": "谢谢——从这儿怎么去安检？"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, my bag didn't come out on the carousel.",
+        "zh": "你好，我的行李没有从转盘上出来。"
+      },
+      {
+        "en": "It was checked in Los Angeles on flight 288.",
+        "zh": "是在洛杉矶托运的，288 航班。"
+      },
+      {
+        "en": "Here's my claim tag and my boarding pass.",
+        "zh": "这是我的行李条和登机牌。"
+      },
+      {
+        "en": "It's a large black hardshell with a red ribbon on the handle.",
+        "zh": "是个黑色大号硬壳箱，拉杆上系了根红丝带。"
+      },
+      {
+        "en": "There's medication inside that I need tonight.",
+        "zh": "里面有我今晚就要吃的药。"
+      },
+      {
+        "en": "Could you check whether it's still in LA or already on the way?",
+        "zh": "能查一下它还在洛杉矶，还是已经在路上了吗？"
+      },
+      {
+        "en": "If it comes in tomorrow, can you deliver it to my hotel?",
+        "zh": "如果明天到，能送到我酒店吗？"
+      },
+      {
+        "en": "What can I be reimbursed for if I have to buy things tonight?",
+        "zh": "如果我今晚必须买些东西，哪些能报销？"
+      },
+      {
+        "en": "Do I need to keep all the receipts?",
+        "zh": "所有收据都要留着吗？"
+      },
+      {
+        "en": "Could I get a reference number for this report?",
+        "zh": "能给我这次登记的编号吗？"
+      },
+      {
+        "en": "What's the best number to call if I don't hear from you?",
+        "zh": "如果没收到你们消息，打哪个电话最合适？"
+      }
+    ]
+  },
+  "gate": {
+    "entry": [
+      {
+        "en": "Where's gate B12?",
+        "zh": "B12 登机口在哪儿？"
+      },
+      {
+        "en": "Is this the right gate?",
+        "zh": "这是对的登机口吗？"
+      },
+      {
+        "en": "Has boarding started?",
+        "zh": "开始登机了吗？"
+      },
+      {
+        "en": "Thank you.",
+        "zh": "谢谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Excuse me, has the gate for flight 288 changed?",
+        "zh": "请问，288 航班换登机口了吗？"
+      },
+      {
+        "en": "The board says B12, but the screen here shows B20.",
+        "zh": "大屏上写的是 B12，但这儿的屏幕显示 B20。"
+      },
+      {
+        "en": "How long does it take to get to the B gates from here?",
+        "zh": "从这儿到 B 区登机口要多久？"
+      },
+      {
+        "en": "Do I need to take the shuttle, or can I walk?",
+        "zh": "我需要坐摆渡车吗，还是走过去就行？"
+      },
+      {
+        "en": "Is boarding still on time?",
+        "zh": "登机时间还是准点吗？"
+      },
+      {
+        "en": "I'm in group four — should I line up now?",
+        "zh": "我是第四组——现在就该排队吗？"
+      },
+      {
+        "en": "Is there somewhere to fill my water bottle nearby?",
+        "zh": "附近有能接水的地方吗？"
+      },
+      {
+        "en": "Do I have time to grab a coffee?",
+        "zh": "我还来得及买杯咖啡吗？"
+      },
+      {
+        "en": "Thanks — I'll head over now.",
+        "zh": "谢谢——我这就过去。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, my connecting flight was delayed and I just missed this one.",
+        "zh": "你好，我的转机航班延误了，刚错过这班。"
+      },
+      {
+        "en": "I landed at the C gates about ten minutes after boarding closed.",
+        "zh": "我落地在 C 区登机口，比停止登机晚了大概十分钟。"
+      },
+      {
+        "en": "Is there anything else going to Shanghai tonight?",
+        "zh": "今晚还有别的航班飞上海吗？"
+      },
+      {
+        "en": "What's the earliest one tomorrow morning?",
+        "zh": "明天早上最早的一班是几点？"
+      },
+      {
+        "en": "Could you put me on standby for that one?",
+        "zh": "能帮我把那班排候补吗？"
+      },
+      {
+        "en": "Will there be a change fee, since the delay was on your end?",
+        "zh": "延误是你们这边造成的，还会收改签费吗？"
+      },
+      {
+        "en": "My checked bag was on the original flight — where will it end up?",
+        "zh": "我托运的行李在原航班上——它最后会去哪儿？"
+      },
+      {
+        "en": "If I have to stay overnight, does the airline cover a hotel?",
+        "zh": "如果我必须过夜，航空公司提供住宿吗？"
+      },
+      {
+        "en": "Could I get a meal voucher while I wait?",
+        "zh": "等待期间能给我一张餐券吗？"
+      },
+      {
+        "en": "Could you write down the new confirmation number for me?",
+        "zh": "能把新的确认号写给我吗？"
+      },
+      {
+        "en": "Thanks for working through all that with me.",
+        "zh": "谢谢你陪我把这些都理清楚。"
+      }
+    ]
+  },
+  "customs": {
+    "entry": [
+      {
+        "en": "Here's my passport.",
+        "zh": "这是我的护照。"
+      },
+      {
+        "en": "I'm visiting family.",
+        "zh": "我来探亲。"
+      },
+      {
+        "en": "Two weeks.",
+        "zh": "两周。"
+      },
+      {
+        "en": "Nothing to declare.",
+        "zh": "没有需要申报的。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "I'm here to visit my daughter.",
+        "zh": "我是来看我女儿的。"
+      },
+      {
+        "en": "She's a student at UCLA.",
+        "zh": "她在加州大学洛杉矶分校读书。"
+      },
+      {
+        "en": "I'll be staying about three weeks.",
+        "zh": "我大概待三周。"
+      },
+      {
+        "en": "I'm staying at her apartment in Westwood.",
+        "zh": "我住在她在 Westwood 的公寓。"
+      },
+      {
+        "en": "Here's the address.",
+        "zh": "这是地址。"
+      },
+      {
+        "en": "This is my second time in the U.S.",
+        "zh": "这是我第二次来美国。"
+      },
+      {
+        "en": "I'm not bringing any food or plants.",
+        "zh": "我没有携带任何食品或植物。"
+      },
+      {
+        "en": "Here's my return ticket.",
+        "zh": "这是我的回程机票。"
+      },
+      {
+        "en": "Thank you, officer.",
+        "zh": "谢谢你，官员先生。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Yes, officer — I understand.",
+        "zh": "是的，官员先生——我明白。"
+      },
+      {
+        "en": "I'm here for my daughter's graduation, and then we'll travel for a week.",
+        "zh": "我来参加女儿的毕业典礼，之后我们会旅行一周。"
+      },
+      {
+        "en": "My return flight is on the twenty-eighth.",
+        "zh": "我的回程航班是二十八号。"
+      },
+      {
+        "en": "She's covering my stay, and I have my own funds as well.",
+        "zh": "她负责我在这边的开销，我自己也带了钱。"
+      },
+      {
+        "en": "I'm retired, so I won't be working while I'm here.",
+        "zh": "我已经退休了，在这边不会工作。"
+      },
+      {
+        "en": "I do have some dried mushrooms in my checked bag — should I declare those?",
+        "zh": "我托运行李里有一些干香菇——需要申报吗？"
+      },
+      {
+        "en": "I'd rather declare it than get it wrong.",
+        "zh": "我宁愿申报，也不想弄错。"
+      },
+      {
+        "en": "These are prescription medications, and I have my doctor's letter.",
+        "zh": "这些是处方药，我带了医生开的证明。"
+      },
+      {
+        "en": "Together my daughter and I are carrying about twelve thousand dollars.",
+        "zh": "我和我女儿加起来带了大约一万二千美元。"
+      },
+      {
+        "en": "I understand — I'll fill out the form.",
+        "zh": "我明白——我会填这张表。"
+      },
+      {
+        "en": "Thank you for explaining that.",
+        "zh": "谢谢你的说明。"
+      }
+    ]
+  },
+  "parent-meeting": {
+    "entry": [
+      {
+        "en": "I'm Nova's mom.",
+        "zh": "我是 Nova 的妈妈。"
+      },
+      {
+        "en": "Nice to meet you.",
+        "zh": "很高兴见到你。"
+      },
+      {
+        "en": "How is she doing?",
+        "zh": "她表现怎么样？"
+      },
+      {
+        "en": "Thank you.",
+        "zh": "谢谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Hi, I'm Nova's mother — thanks for meeting with us.",
+        "zh": "你好，我是 Nova 的妈妈——谢谢你抽时间见我们。"
+      },
+      {
+        "en": "How is she doing in class overall?",
+        "zh": "她在课堂上整体表现怎么样？"
+      },
+      {
+        "en": "Is she keeping up with the reading?",
+        "zh": "阅读她跟得上吗？"
+      },
+      {
+        "en": "Does she participate, or is she pretty quiet?",
+        "zh": "她会主动发言吗，还是比较安静？"
+      },
+      {
+        "en": "English is her second language, so I want to make sure she's not falling behind.",
+        "zh": "英语是她的第二语言，我想确认她没有掉队。"
+      },
+      {
+        "en": "What can we do at home to support her?",
+        "zh": "我们在家能做些什么来帮她？"
+      },
+      {
+        "en": "Is there anything she's struggling with that we should know about?",
+        "zh": "有什么她学得吃力、我们应该知道的吗？"
+      },
+      {
+        "en": "How does she get along with the other kids?",
+        "zh": "她和其他孩子相处得怎么样？"
+      },
+      {
+        "en": "Thank you — this was really helpful.",
+        "zh": "谢谢你——这次谈话对我们很有帮助。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Thanks for making time — I have a few things I'd like to go over.",
+        "zh": "谢谢你抽时间——我有几件事想跟你谈。"
+      },
+      {
+        "en": "Her last report card showed a drop in math, and I'd like to understand why.",
+        "zh": "她上次成绩单数学下滑了，我想弄清楚原因。"
+      },
+      {
+        "en": "Is that a comprehension issue, or is she just not finishing the work?",
+        "zh": "是理解上有问题，还是只是作业没做完？"
+      },
+      {
+        "en": "She's still in the ELL program — how is she progressing toward reclassification?",
+        "zh": "她还在 ELL 项目里——离转出（reclassification）还有多远？"
+      },
+      {
+        "en": "Does the language support pull her out of any core instruction?",
+        "zh": "语言辅导会占用她主课的时间吗？"
+      },
+      {
+        "en": "If she needs extra help, what's available at the school?",
+        "zh": "如果她需要额外辅导，学校有什么资源？"
+      },
+      {
+        "en": "Is there a tutoring program, or would we arrange that ourselves?",
+        "zh": "学校有辅导项目吗，还是要我们自己安排？"
+      },
+      {
+        "en": "Who should I contact if I want to follow up during the semester?",
+        "zh": "学期中间我想跟进的话，该联系谁？"
+      },
+      {
+        "en": "What's the best way to reach you — email or the parent portal?",
+        "zh": "联系你最方便的方式是什么——邮件还是家长端？"
+      },
+      {
+        "en": "Could you send me a summary of what we discussed?",
+        "zh": "能把我们今天谈的内容整理一份发给我吗？"
+      },
+      {
+        "en": "Thank you — I really appreciate your time.",
+        "zh": "谢谢你——真的很感谢你花时间。"
+      }
+    ]
+  },
+  "sick-leave": {
+    "entry": [
+      {
+        "en": "My daughter is sick today.",
+        "zh": "我女儿今天生病了。"
+      },
+      {
+        "en": "She won't be at school.",
+        "zh": "她今天不去学校。"
+      },
+      {
+        "en": "Her name is Nova Chen.",
+        "zh": "她叫 Nova Chen。"
+      },
+      {
+        "en": "Thank you.",
+        "zh": "谢谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Hi, I'm calling to report an absence for Nova Chen in Ms. Lee's class.",
+        "zh": "你好，我来给 Lee 老师班上的 Nova Chen 请假。"
+      },
+      {
+        "en": "She has a fever and a bad cough.",
+        "zh": "她发烧，咳嗽也很厉害。"
+      },
+      {
+        "en": "She won't be in today or tomorrow.",
+        "zh": "她今天和明天都不会去。"
+      },
+      {
+        "en": "I'll bring a doctor's note when she comes back.",
+        "zh": "她回来时我会带医生证明。"
+      },
+      {
+        "en": "Could you let her teacher know?",
+        "zh": "能麻烦通知她的老师吗？"
+      },
+      {
+        "en": "Is there a way to get her homework while she's out?",
+        "zh": "她不在的这几天，作业怎么拿？"
+      },
+      {
+        "en": "Does she need to be fever-free before she comes back?",
+        "zh": "她需要退烧之后才能回学校吗？"
+      },
+      {
+        "en": "Should I call again tomorrow, or does this cover both days?",
+        "zh": "明天我还要再打一次吗，还是这次两天都算上了？"
+      },
+      {
+        "en": "Thanks very much.",
+        "zh": "非常感谢。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I'd like to go over Nova's absences this month.",
+        "zh": "你好，我想核对一下 Nova 这个月的缺勤。"
+      },
+      {
+        "en": "She's missed four days with the flu, and I want to make sure they're excused.",
+        "zh": "她因为流感缺了四天，我想确认这些都算准假。"
+      },
+      {
+        "en": "I sent the doctor's notes through the parent portal — did those come through?",
+        "zh": "医生证明我通过家长端上传了——你们收到了吗？"
+      },
+      {
+        "en": "I got an automated attendance letter, and I'd like to clear that up.",
+        "zh": "我收到一封系统发的考勤信，想把这件事说清楚。"
+      },
+      {
+        "en": "Is there a point where absences start affecting her record?",
+        "zh": "缺勤到什么程度会开始影响她的记录？"
+      },
+      {
+        "en": "She has make-up work from two classes — who coordinates that?",
+        "zh": "她有两门课要补作业——这个由谁安排？"
+      },
+      {
+        "en": "Her teacher mentioned an independent study contract — how does that work?",
+        "zh": "她老师提到过独立学习协议——那是怎么运作的？"
+      },
+      {
+        "en": "If she's out more than five days, does anything change?",
+        "zh": "如果她缺勤超过五天，会有什么不同吗？"
+      },
+      {
+        "en": "She has a doctor's appointment Friday morning, so she'll be in after lunch.",
+        "zh": "她周五上午有医生预约，午饭后才能到校。"
+      },
+      {
+        "en": "Should I sign her in at the front office when she gets here?",
+        "zh": "她到校时我需要去前台登记吗？"
+      },
+      {
+        "en": "Thanks for helping me figure all this out.",
+        "zh": "谢谢你帮我把这些都弄清楚。"
+      }
+    ]
+  }
+}

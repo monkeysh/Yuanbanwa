@@ -1,0 +1,782 @@
+{
+  "self-intro#beginner": {
+    "sceneId": "self-intro",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "self-intro#intermediate": {
+    "sceneId": "self-intro",
+    "tierLevel": "intermediate",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 9
+  },
+  "self-intro#entry": {
+    "sceneId": "self-intro",
+    "tierLevel": "entry",
+    "track": "daily",
+    "exam": null,
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3
+    ],
+    "total": 4
+  },
+  "starbucks#beginner": {
+    "sceneId": "starbucks",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "restaurant#entry": {
+    "sceneId": "restaurant",
+    "tierLevel": "entry",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 4
+  },
+  "restaurant#beginner": {
+    "sceneId": "restaurant",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 10
+  },
+  "directions#beginner": {
+    "sceneId": "directions",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "self-intro#advanced": {
+    "sceneId": "self-intro",
+    "tierLevel": "advanced",
+    "track": "daily",
+    "exam": null,
+    "type": "dialogue",
+    "maleIndexes": [
+      6
+    ],
+    "total": 11
+  },
+  "checkout#beginner": {
+    "sceneId": "checkout",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "restaurant#advanced": {
+    "sceneId": "restaurant",
+    "tierLevel": "advanced",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 11
+  },
+  "restaurant#intermediate": {
+    "sceneId": "restaurant",
+    "tierLevel": "intermediate",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 9
+  },
+  "hotel#intermediate": {
+    "sceneId": "hotel",
+    "tierLevel": "intermediate",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 10
+  },
+  "hotel#entry": {
+    "sceneId": "hotel",
+    "tierLevel": "entry",
+    "track": "daily",
+    "exam": null,
+    "type": "dialogue",
+    "maleIndexes": [
+      2
+    ],
+    "total": 4
+  },
+  "hotel#beginner": {
+    "sceneId": "hotel",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 9
+  },
+  "unwell#beginner": {
+    "sceneId": "unwell",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "taxi#beginner": {
+    "sceneId": "taxi",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "hotel#advanced": {
+    "sceneId": "hotel",
+    "tierLevel": "advanced",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 11
+  },
+  "airport-checkin#beginner": {
+    "sceneId": "airport-checkin",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "baggage#beginner": {
+    "sceneId": "baggage",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "gate#beginner": {
+    "sceneId": "gate",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 6
+  },
+  "subway#beginner": {
+    "sceneId": "subway",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "customs#beginner": {
+    "sceneId": "customs",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "delivery#beginner": {
+    "sceneId": "delivery",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "hotel-checkout#beginner": {
+    "sceneId": "hotel-checkout",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "price-check#beginner": {
+    "sceneId": "price-check",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 6
+  },
+  "appointment#beginner": {
+    "sceneId": "appointment",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "phone-call#beginner": {
+    "sceneId": "phone-call",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "pharmacy#beginner": {
+    "sceneId": "pharmacy",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "parent-meeting#beginner": {
+    "sceneId": "parent-meeting",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "teacher-conference#entry": {
+    "sceneId": "teacher-conference",
+    "tierLevel": "entry",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 4
+  },
+  "teacher-conference#beginner": {
+    "sceneId": "teacher-conference",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "teacher-conference#intermediate": {
+    "sceneId": "teacher-conference",
+    "tierLevel": "intermediate",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 10
+  },
+  "teacher-conference#advanced": {
+    "sceneId": "teacher-conference",
+    "tierLevel": "advanced",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 11
+  },
+  "sick-leave#beginner": {
+    "sceneId": "sick-leave",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 6
+  },
+  "first-meeting#entry": {
+    "sceneId": "first-meeting",
+    "tierLevel": "entry",
+    "track": "daily",
+    "exam": null,
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3
+    ],
+    "total": 4
+  },
+  "thanks#beginner": {
+    "sceneId": "thanks",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "first-meeting#advanced": {
+    "sceneId": "first-meeting",
+    "tierLevel": "advanced",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 11
+  },
+  "first-meeting#beginner": {
+    "sceneId": "first-meeting",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "first-meeting#intermediate": {
+    "sceneId": "first-meeting",
+    "tierLevel": "intermediate",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 10
+  },
+  "apology#beginner": {
+    "sceneId": "apology",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "decline#entry": {
+    "sceneId": "decline",
+    "tierLevel": "entry",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 4
+  },
+  "decline#advanced": {
+    "sceneId": "decline",
+    "tierLevel": "advanced",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 11
+  },
+  "ask-help#beginner": {
+    "sceneId": "ask-help",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 6
+  },
+  "decline#intermediate": {
+    "sceneId": "decline",
+    "tierLevel": "intermediate",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 9
+  },
+  "lost#beginner": {
+    "sceneId": "lost",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "decline#beginner": {
+    "sceneId": "decline",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "dialogue",
+    "maleIndexes": [
+      6
+    ],
+    "total": 7
+  },
+  "police#beginner": {
+    "sceneId": "police",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 8
+  },
+  "emergency-call#beginner": {
+    "sceneId": "emergency-call",
+    "tierLevel": "beginner",
+    "track": "daily",
+    "exam": null,
+    "type": "monologue",
+    "maleIndexes": [],
+    "total": 7
+  },
+  "ket-food#beginner": {
+    "sceneId": "ket-food",
+    "tierLevel": "beginner",
+    "track": "cambridge",
+    "exam": "KET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "ket-travel#beginner": {
+    "sceneId": "ket-travel",
+    "tierLevel": "beginner",
+    "track": "cambridge",
+    "exam": "KET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "ket-personal#beginner": {
+    "sceneId": "ket-personal",
+    "tierLevel": "beginner",
+    "track": "cambridge",
+    "exam": "KET",
+    "type": "dialogue",
+    "maleIndexes": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "total": 8
+  },
+  "ket-shopping#beginner": {
+    "sceneId": "ket-shopping",
+    "tierLevel": "beginner",
+    "track": "cambridge",
+    "exam": "KET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-daily#part1": {
+    "sceneId": "pet-daily",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "ket-school#beginner": {
+    "sceneId": "ket-school",
+    "tierLevel": "beginner",
+    "track": "cambridge",
+    "exam": "KET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-travel#part1": {
+    "sceneId": "pet-travel",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-hobbies#part1": {
+    "sceneId": "pet-hobbies",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-shopping#part1": {
+    "sceneId": "pet-shopping",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "ket-hobbies#beginner": {
+    "sceneId": "ket-hobbies",
+    "tierLevel": "beginner",
+    "track": "cambridge",
+    "exam": "KET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-school#part1": {
+    "sceneId": "pet-school",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-food#part1": {
+    "sceneId": "pet-food",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "fce-technology#part1": {
+    "sceneId": "fce-technology",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "FCE",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "fce-work#part1": {
+    "sceneId": "fce-work",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "FCE",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "fce-environment#part1": {
+    "sceneId": "fce-environment",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "FCE",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "fce-travel#part1": {
+    "sceneId": "fce-travel",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "FCE",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "fce-health#part1": {
+    "sceneId": "fce-health",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "FCE",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "fce-entertainment#part1": {
+    "sceneId": "fce-entertainment",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "FCE",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-health#part1": {
+    "sceneId": "pet-health",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-weather#part1": {
+    "sceneId": "pet-weather",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-technology#part1": {
+    "sceneId": "pet-technology",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-entertainment#part1": {
+    "sceneId": "pet-entertainment",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-work#part1": {
+    "sceneId": "pet-work",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  },
+  "pet-family#part1": {
+    "sceneId": "pet-family",
+    "tierLevel": "part1",
+    "track": "cambridge",
+    "exam": "PET",
+    "type": "dialogue",
+    "maleIndexes": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "total": 8
+  }
+}

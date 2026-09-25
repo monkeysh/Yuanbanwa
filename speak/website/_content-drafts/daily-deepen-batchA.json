@@ -1,0 +1,835 @@
+{
+  "_note": "日常薄场景补档 批次A(8个生活刚需)· v3 —— 按 5 视角对抗验证重构。核心修正:**一档 = 一条连贯叙事线,不是知识点清单**。v2 把每个场景的所有高频表达堆进 advanced 档,导致硬性矛盾(药已配好 vs 需事前授权 vs 缺货;要退货 vs 要补差价 vs 换货;还没到诊所 vs 已在面诊)。v3 每档只讲一个故事,被砍掉的知识点宁可不要,也不制造前后打架的台词。其余修正:①安全——台词表的句子顺序就是学员的行为顺序,失能信息与救护车请求必须前置且用陈述句(不能问『我该不该打』),问费用必须排在处置之后;②entry 档是给英语最差的人用的,必须给出正确的处置出口(剧痛呕吐→ER、钱包丢→先挂失卡、当街被抢→先报警);③对话对象全程一致(911接线员 / 到场警察 / 领馆 各自独立成档);④美式地道(schedule 不 book、slower 不 more slowly、the same doctor 不 provider、insurance company 不 insurer、take care of 不 sort out、taking new patients 不 accepting);⑤删掉放错场景的反诈骗句(本档是自己拨出的电话,不存在 incoming call)。保留现有 beginner 档不动。规格 entry 4 / intermediate 9 / advanced 11。",
+  "pharmacy": {
+    "entry": [
+      {
+        "en": "I have a cough.",
+        "zh": "我咳嗽。"
+      },
+      {
+        "en": "Where's the cold medicine?",
+        "zh": "感冒药在哪儿？"
+      },
+      {
+        "en": "Do I need a prescription for this?",
+        "zh": "这个需要处方吗？"
+      },
+      {
+        "en": "Just this, thanks.",
+        "zh": "就要这个，谢谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Hi, I'm here to pick up a prescription.",
+        "zh": "你好，我来取处方药。"
+      },
+      {
+        "en": "It's under Chen — C-H-E-N.",
+        "zh": "登记名是 Chen——C-H-E-N。"
+      },
+      {
+        "en": "Sure — my date of birth is May twelfth, nineteen eighty-five.",
+        "zh": "好的——我的出生日期是 1985 年 5 月 12 日。"
+      },
+      {
+        "en": "Does my insurance cover this one?",
+        "zh": "我的保险能覆盖这个药吗？"
+      },
+      {
+        "en": "Is there a generic version that's cheaper?",
+        "zh": "有没有便宜一些的仿制药？"
+      },
+      {
+        "en": "I take a daily antihistamine for allergies — is that a problem with this?",
+        "zh": "我每天吃一种抗组胺的过敏药——和这个会有冲突吗？"
+      },
+      {
+        "en": "Are there any foods or drinks I should avoid while I'm taking this?",
+        "zh": "吃这个药期间，有什么食物或饮料要避开吗？"
+      },
+      {
+        "en": "I'm out of refills. Could you contact my doctor for a new prescription?",
+        "zh": "我的续配次数用完了。能帮我联系医生重开处方吗？"
+      },
+      {
+        "en": "If it doesn't help, I'll check with my doctor.",
+        "zh": "要是没效果，我再去问我的医生。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I'm here to pick up a prescription — I got the text that it's ready.",
+        "zh": "你好，我来取处方药——我收到短信说配好了。"
+      },
+      {
+        "en": "Last time my copay was twenty dollars — is it the same this time?",
+        "zh": "上次我的自付额是二十美元——这次一样吗？"
+      },
+      {
+        "en": "That's a lot higher than usual. Could you run it through my insurance again?",
+        "zh": "这比平时高不少。能麻烦你再用我的保险走一遍吗？"
+      },
+      {
+        "en": "I just switched plans, so the card on file is probably out of date.",
+        "zh": "我刚换了保险计划，你们存档的卡应该已经过期了。"
+      },
+      {
+        "en": "Here's my new card — could you try it with this one?",
+        "zh": "这是我的新卡——能用这张试一下吗？"
+      },
+      {
+        "en": "If it's still that much, is there a manufacturer coupon or discount program?",
+        "zh": "如果还是这么贵，有厂家优惠券或折扣项目吗？"
+      },
+      {
+        "en": "While you're in there, my doctor mentioned a lower dose — could you check what was actually sent over?",
+        "zh": "顺便，我的医生提过要开小剂量的——能帮我核对一下实际开过来的是什么吗？"
+      },
+      {
+        "en": "Could you also set this up on auto-refill for me?",
+        "zh": "能顺便帮我设置成自动续药吗？"
+      },
+      {
+        "en": "And I'm traveling next month — can you make a note that I may need to fill it early?",
+        "zh": "还有我下个月要出门——能备注一下我可能需要提前配药吗？"
+      },
+      {
+        "en": "Are there any side effects I should watch for at this dose?",
+        "zh": "这个剂量有什么副作用需要留意吗？"
+      },
+      {
+        "en": "Great — I'll wait right here while you reprocess it.",
+        "zh": "好的——你重新处理，我就在这儿等。"
+      }
+    ]
+  },
+  "unwell": {
+    "entry": [
+      {
+        "en": "I feel sick.",
+        "zh": "我不舒服。"
+      },
+      {
+        "en": "I have a bad stomachache.",
+        "zh": "我肚子疼得厉害。"
+      },
+      {
+        "en": "I need to see a doctor.",
+        "zh": "我需要看医生。"
+      },
+      {
+        "en": "I need to go to the emergency room.",
+        "zh": "我需要去急诊室。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Hi, I'd like to see someone today if possible.",
+        "zh": "你好，如果可以的话我想今天就看医生。"
+      },
+      {
+        "en": "I've never been in before — are you taking new patients?",
+        "zh": "我以前没来过——你们现在收新病人吗？"
+      },
+      {
+        "en": "It started two days ago and it's getting worse.",
+        "zh": "两天前开始的，而且越来越严重。"
+      },
+      {
+        "en": "I have a fever, a sore throat, and a bad headache.",
+        "zh": "我发烧、喉咙痛，还有严重的头痛。"
+      },
+      {
+        "en": "I took some ibuprofen this morning but it didn't help much.",
+        "zh": "我今天早上吃了布洛芬，但没什么用。"
+      },
+      {
+        "en": "I'm not allergic to anything as far as I know.",
+        "zh": "据我所知我没有任何过敏。"
+      },
+      {
+        "en": "Are you in network with my plan, and what will my copay be?",
+        "zh": "你们在我的保险网络内吗？我的自付额是多少？"
+      },
+      {
+        "en": "How long is the wait, roughly?",
+        "zh": "大概要等多久？"
+      },
+      {
+        "en": "Thank you — I'll wait right here.",
+        "zh": "谢谢——我就在这儿等。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "I need to see someone right away — the pain keeps getting worse.",
+        "zh": "我需要马上看医生——这个疼一直在加重。"
+      },
+      {
+        "en": "It's in the lower right side of my abdomen, and it's sharp.",
+        "zh": "在我腹部的右下方，是那种刺痛。"
+      },
+      {
+        "en": "On a scale of one to ten, it's about a seven.",
+        "zh": "一到十分的话，大概七分。"
+      },
+      {
+        "en": "It comes and goes, but the episodes are getting closer together.",
+        "zh": "是一阵一阵的，但发作间隔越来越短。"
+      },
+      {
+        "en": "I haven't been able to keep any food down since last night.",
+        "zh": "从昨晚开始我吃什么吐什么。"
+      },
+      {
+        "en": "I came alone, and I'm too dizzy to drive myself anywhere.",
+        "zh": "我是一个人来的，头晕得没法自己开车去别的地方。"
+      },
+      {
+        "en": "I'm on medication for high blood pressure — I can show you the bottle.",
+        "zh": "我在吃降压药——我可以把药瓶给你看。"
+      },
+      {
+        "en": "Can you evaluate me here, or do I need imaging somewhere else?",
+        "zh": "你们这儿能给我做评估吗，还是我需要去别处做影像检查？"
+      },
+      {
+        "en": "If I need the ER, could someone call an ambulance for me?",
+        "zh": "如果我需要去急诊室，能有人帮我叫救护车吗？"
+      },
+      {
+        "en": "If you do send me home, what symptoms should bring me straight back?",
+        "zh": "如果让我回家，出现什么症状我要立刻回来？"
+      },
+      {
+        "en": "Once you've ruled out anything urgent, could you tell me roughly what the tests will cost?",
+        "zh": "等你们排除了紧急情况，能大概告诉我这些检查要多少钱吗？"
+      }
+    ]
+  },
+  "phone-call": {
+    "entry": [
+      {
+        "en": "Hi, is this customer service?",
+        "zh": "你好，这里是客服吗？"
+      },
+      {
+        "en": "Sorry, the line keeps cutting out.",
+        "zh": "抱歉，电话一直断断续续。"
+      },
+      {
+        "en": "Could you speak a little slower?",
+        "zh": "能说慢一点吗？"
+      },
+      {
+        "en": "Thanks. Bye.",
+        "zh": "谢谢，再见。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Hi, I'm calling about an order I placed last week.",
+        "zh": "你好，我想问一下我上周下的订单。"
+      },
+      {
+        "en": "I'd like to speak to a representative.",
+        "zh": "我想转人工客服。"
+      },
+      {
+        "en": "Sure, my order number is 4-8-2-6-1.",
+        "zh": "好的，我的订单号是 4-8-2-6-1。"
+      },
+      {
+        "en": "Sorry, could you spell that for me?",
+        "zh": "抱歉，能帮我拼一下吗？"
+      },
+      {
+        "en": "Let me grab a pen — go ahead.",
+        "zh": "我拿支笔——你说吧。"
+      },
+      {
+        "en": "So just to confirm, it'll arrive by Friday?",
+        "zh": "所以我确认一下，周五之前会到，对吗？"
+      },
+      {
+        "en": "If we get disconnected, could you call me back at this number?",
+        "zh": "万一断线了，能打这个号码回拨给我吗？"
+      },
+      {
+        "en": "Could you email me a confirmation?",
+        "zh": "能给我发一封确认邮件吗？"
+      },
+      {
+        "en": "What should I do if it still hasn't arrived by Friday?",
+        "zh": "如果周五还没到，我该怎么办？"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I've been on hold for about twenty minutes — I hope you can help me figure this out.",
+        "zh": "你好，我已经等了大概二十分钟——希望你能帮我把这事弄清楚。"
+      },
+      {
+        "en": "I've called twice about this already, so I'd rather not start from scratch.",
+        "zh": "这件事我已经打过两次电话了，所以我不想再从头讲一遍。"
+      },
+      {
+        "en": "Could you pull up the notes from my previous call?",
+        "zh": "能调出我上次来电的记录吗？"
+      },
+      {
+        "en": "I was told it would be resolved within three business days, and it's now been eight.",
+        "zh": "当时说三个工作日内解决，现在已经八天了。"
+      },
+      {
+        "en": "I understand it's not your fault — I just need to know what happens next.",
+        "zh": "我理解这不是你的问题——我只是想知道接下来会怎么处理。"
+      },
+      {
+        "en": "Is there a supervisor I could speak with about this?",
+        "zh": "这件事我能跟主管谈谈吗？"
+      },
+      {
+        "en": "Before you transfer me, could you stay on the line until someone picks up?",
+        "zh": "转接之前，能麻烦你别挂，等有人接了再走吗？"
+      },
+      {
+        "en": "Could you add a note to my account so I don't have to explain this again?",
+        "zh": "能在我的账户里加个备注吗？这样我下次就不用再解释一遍了。"
+      },
+      {
+        "en": "So the refund will be back on my card in five to seven days. Is that right?",
+        "zh": "所以退款五到七天会回到我卡上。对吗？"
+      },
+      {
+        "en": "Could you send that to my email so I have it in writing?",
+        "zh": "能把这个发到我邮箱吗？我好有个书面记录。"
+      },
+      {
+        "en": "I appreciate you staying on this with me.",
+        "zh": "谢谢你一直帮我跟进这件事。"
+      }
+    ]
+  },
+  "appointment": {
+    "entry": [
+      {
+        "en": "I need an appointment.",
+        "zh": "我需要预约。"
+      },
+      {
+        "en": "Could you text me the address?",
+        "zh": "能把地址发短信给我吗？"
+      },
+      {
+        "en": "Do I need to bring my insurance card?",
+        "zh": "我需要带保险卡吗？"
+      },
+      {
+        "en": "Great, I'll take it.",
+        "zh": "好的，我就订这个。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Hi, I'd like to schedule a cleaning with Dr. Lee if she's available.",
+        "zh": "你好，如果 Lee 医生有空，我想约个洗牙。"
+      },
+      {
+        "en": "Do you validate parking, and which garage should I use?",
+        "zh": "你们能给停车盖章吗？我该停哪个停车楼？"
+      },
+      {
+        "en": "Does my dental plan cover a routine cleaning, and will I owe anything out of pocket?",
+        "zh": "我的牙科保险涵盖常规洗牙吗？我需要自付多少？"
+      },
+      {
+        "en": "Anything after three works, since I pick up my kid at two-thirty.",
+        "zh": "三点以后都行，因为我两点半要去接孩子。"
+      },
+      {
+        "en": "Could you put me on the waitlist if something opens up sooner?",
+        "zh": "如果有更早的空位，能把我放进候补名单吗？"
+      },
+      {
+        "en": "Do I need to fill out any forms before I come in?",
+        "zh": "来之前我需要填什么表格吗？"
+      },
+      {
+        "en": "How early should I get there for my first visit?",
+        "zh": "第一次去我该提前多久到？"
+      },
+      {
+        "en": "I'll need a Mandarin interpreter for the appointment. Could you arrange one?",
+        "zh": "这次就诊我需要普通话翻译。能帮我安排一位吗？"
+      },
+      {
+        "en": "Perfect — see you on the fourteenth.",
+        "zh": "太好了——十四号见。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I have an appointment on Thursday that I need to move.",
+        "zh": "你好，我周四有个预约需要改期。"
+      },
+      {
+        "en": "Something came up at work, so I can't make that time anymore.",
+        "zh": "工作上有事，那个时间我去不了了。"
+      },
+      {
+        "en": "I'm calling the moment I found out, but I realize this is less than twenty-four hours' notice.",
+        "zh": "我是一知道就打来的，但我明白这已经不到二十四小时了。"
+      },
+      {
+        "en": "Is there any way to waive the fee, since this is my first time rescheduling?",
+        "zh": "考虑到这是我第一次改期，有办法免掉费用吗？"
+      },
+      {
+        "en": "What's the next opening you have with the same doctor?",
+        "zh": "同一位医生下一个空位是什么时候？"
+      },
+      {
+        "en": "I'd rather wait for her than see someone else, if that's not too far out.",
+        "zh": "如果不用等太久，我宁愿等她，也不换别人。"
+      },
+      {
+        "en": "Could you double-check that my insurance is still active on your end?",
+        "zh": "能帮我再确认一下，你们那边我的保险还是有效的吗？"
+      },
+      {
+        "en": "Last time there was a mix-up with my referral — has that been cleared up?",
+        "zh": "上次我的转诊单出过差错——那件事解决了吗？"
+      },
+      {
+        "en": "If the referral expires before the new appointment, will I need a new one?",
+        "zh": "如果转诊单在新预约之前过期了，我需要重新开吗？"
+      },
+      {
+        "en": "Could you confirm the new time by email so I have it in writing?",
+        "zh": "能把新时间用邮件确认一下吗，我好有个书面记录。"
+      },
+      {
+        "en": "Thanks for working with me on that.",
+        "zh": "谢谢你帮我协调这件事。"
+      }
+    ]
+  },
+  "price-check": {
+    "entry": [
+      {
+        "en": "How much is this?",
+        "zh": "这个多少钱？"
+      },
+      {
+        "en": "Is there a cheaper option?",
+        "zh": "有便宜一点的吗？"
+      },
+      {
+        "en": "Does this come in another color?",
+        "zh": "这个有别的颜色吗？"
+      },
+      {
+        "en": "I'll go with this one.",
+        "zh": "我就要这个。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Excuse me, is this the sale price or the regular price?",
+        "zh": "请问这是折后价还是原价？"
+      },
+      {
+        "en": "Is that the price before tax?",
+        "zh": "这是税前价格吗？"
+      },
+      {
+        "en": "Is that price per pound, or is it per item?",
+        "zh": "那个价格是按磅算还是按件算？"
+      },
+      {
+        "en": "Do you have this in a medium in the back?",
+        "zh": "库房里还有中号的吗？"
+      },
+      {
+        "en": "Do you price-match other stores?",
+        "zh": "你们跟别的商店比价吗？"
+      },
+      {
+        "en": "Is there a student or member discount?",
+        "zh": "有学生折扣或会员折扣吗？"
+      },
+      {
+        "en": "Is this final sale, or can I still return it?",
+        "zh": "这个是特价不退不换，还是还能退？"
+      },
+      {
+        "en": "Could I get a gift receipt with that?",
+        "zh": "能给我开一张礼品小票吗？"
+      },
+      {
+        "en": "That works — I'll go ahead and get it.",
+        "zh": "可以——那我就买了。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I bought this last week and I'd like to return it.",
+        "zh": "你好，这个我上周买的，我想退货。"
+      },
+      {
+        "en": "I don't have the receipt, but could you look it up with the card I paid with?",
+        "zh": "我没带小票，但能用我付款的那张卡查到吗？"
+      },
+      {
+        "en": "The tags are still on, and I never used it.",
+        "zh": "吊牌还在，我一次都没用过。"
+      },
+      {
+        "en": "I'd prefer a refund to the original card rather than store credit.",
+        "zh": "我希望退回原卡，而不是 store credit。"
+      },
+      {
+        "en": "I know the sale has ended, but your website says returns are good for fourteen days.",
+        "zh": "我知道折扣已经结束了，但你们网站上写退货期限是十四天。"
+      },
+      {
+        "en": "Would you mind checking with a manager on that?",
+        "zh": "能麻烦你跟经理确认一下吗？"
+      },
+      {
+        "en": "If a refund isn't possible, could I exchange it for a different color instead?",
+        "zh": "如果退不了，我能换成别的颜色吗？"
+      },
+      {
+        "en": "Do you have that color in the store, or would I have to order it?",
+        "zh": "那个颜色店里有货吗，还是得订？"
+      },
+      {
+        "en": "Is the warranty handled through you or through the manufacturer?",
+        "zh": "保修是你们负责还是找厂家？"
+      },
+      {
+        "en": "And if the refund goes through instead, how long until it shows up on my card?",
+        "zh": "如果最后是退款，多久能显示在我卡上？"
+      },
+      {
+        "en": "Thanks — I appreciate you taking care of that.",
+        "zh": "谢谢——谢谢你帮我处理好。"
+      }
+    ]
+  },
+  "ask-help": {
+    "entry": [
+      {
+        "en": "Can you help me?",
+        "zh": "你能帮我一下吗？"
+      },
+      {
+        "en": "What does this button do?",
+        "zh": "这个按钮是干什么的？"
+      },
+      {
+        "en": "Where do I start?",
+        "zh": "我该从哪儿开始？"
+      },
+      {
+        "en": "Thanks a lot.",
+        "zh": "非常感谢。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Excuse me, am I supposed to check in at this machine first?",
+        "zh": "请问，我是不是要先在这台机器上签到？"
+      },
+      {
+        "en": "I'm new here and still figuring things out.",
+        "zh": "我刚来，很多事还在摸索。"
+      },
+      {
+        "en": "Is there someone here who speaks Mandarin?",
+        "zh": "这儿有会说普通话的人吗？"
+      },
+      {
+        "en": "I can't get this machine to take my card.",
+        "zh": "这台机器读不了我的卡。"
+      },
+      {
+        "en": "Would you mind walking me through it once?",
+        "zh": "能麻烦你带我走一遍流程吗？"
+      },
+      {
+        "en": "Let me try it myself, and you can tell me if I'm doing anything wrong.",
+        "zh": "我自己试一遍，做错了你告诉我。"
+      },
+      {
+        "en": "So I tap here first, and then choose the amount?",
+        "zh": "所以我先点这里，然后选金额，对吗？"
+      },
+      {
+        "en": "That makes much more sense now.",
+        "zh": "现在清楚多了。"
+      },
+      {
+        "en": "You've been really helpful.",
+        "zh": "你帮了大忙。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Sorry to interrupt — I know you're busy, but I'm stuck on something.",
+        "zh": "不好意思打断一下——我知道你很忙，但我卡在一个问题上。"
+      },
+      {
+        "en": "The machine charged my card, but it didn't print anything.",
+        "zh": "机器扣了我的卡，但什么都没打出来。"
+      },
+      {
+        "en": "Could you check whether the payment actually went through before I try again?",
+        "zh": "在我再试一次之前，能帮我确认这笔钱到底扣成功了没有吗？"
+      },
+      {
+        "en": "I don't want to be charged twice.",
+        "zh": "我不想被扣两次钱。"
+      },
+      {
+        "en": "I have a photo of the screen right before it froze — would that help?",
+        "zh": "我拍了它卡住之前的屏幕照片——那个有用吗？"
+      },
+      {
+        "en": "So if I understand right, I just wait for it to drop off my statement?",
+        "zh": "所以如果我理解得没错，我只要等它从账单上自动撤掉，对吗？"
+      },
+      {
+        "en": "Let me repeat that back to make sure I've got it.",
+        "zh": "我复述一遍，确认我记对了。"
+      },
+      {
+        "en": "If it's still there next week, who should I contact?",
+        "zh": "如果下周它还在，我该联系谁？"
+      },
+      {
+        "en": "Is there a support number I can call, or does it have to be in person?",
+        "zh": "有客服电话我可以打吗，还是必须本人到场？"
+      },
+      {
+        "en": "Could I get your name, in case I need to reference this later?",
+        "zh": "能告诉我你的名字吗？万一之后我需要提到这次沟通。"
+      },
+      {
+        "en": "You've saved me a lot of trouble — thank you.",
+        "zh": "你帮我省了好多麻烦——谢谢你。"
+      }
+    ]
+  },
+  "lost": {
+    "entry": [
+      {
+        "en": "I can't find my wallet.",
+        "zh": "我找不到我的钱包了。"
+      },
+      {
+        "en": "I think I left it here.",
+        "zh": "我想我落在这儿了。"
+      },
+      {
+        "en": "I need to call my bank right away.",
+        "zh": "我得马上给银行打电话。"
+      },
+      {
+        "en": "Thank you so much.",
+        "zh": "太感谢了。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "Hi, I think I left my bag here about an hour ago.",
+        "zh": "你好，我想我大概一小时前把包落在这儿了。"
+      },
+      {
+        "en": "It's a black backpack with a laptop inside.",
+        "zh": "是个黑色双肩包，里面有台笔记本电脑。"
+      },
+      {
+        "en": "I was sitting by the window near the entrance.",
+        "zh": "我当时坐在靠近入口的窗边。"
+      },
+      {
+        "en": "Has anyone turned anything in today?",
+        "zh": "今天有人送来失物吗？"
+      },
+      {
+        "en": "Could you check in the back or ask one of your coworkers?",
+        "zh": "能查一下后面，或者问问你同事吗？"
+      },
+      {
+        "en": "Do you have security cameras here? Could you save the footage in case the police need it?",
+        "zh": "这儿有监控吗？能麻烦你把录像保存下来吗，万一警察需要。"
+      },
+      {
+        "en": "Could I leave my name and number in case it shows up?",
+        "zh": "我能留个姓名和电话吗？万一找到了。"
+      },
+      {
+        "en": "Is there a number I could call later to follow up?",
+        "zh": "有电话号码吗？我晚点可以再跟进。"
+      },
+      {
+        "en": "Thanks — I'll check back this evening.",
+        "zh": "谢谢——我今晚再来看看。"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Hi, I need to replace my lost Chinese passport. What's the process?",
+        "zh": "你好，我的中国护照丢了，需要补办。流程是怎样的？"
+      },
+      {
+        "en": "I've already retraced my steps and checked with the places I visited.",
+        "zh": "我已经原路找过一遍，也问过去过的地方了。"
+      },
+      {
+        "en": "I'm not sure whether I lost it or it was stolen. Does that change what I need to do?",
+        "zh": "我不确定是丢了还是被偷了。这会影响我要办的手续吗？"
+      },
+      {
+        "en": "Do you need a police report, or is a written statement enough?",
+        "zh": "你们需要警方报案记录吗，还是一份书面声明就够了？"
+      },
+      {
+        "en": "What documents do I need to upload through the consular services app?",
+        "zh": "我需要通过领事服务的 APP 上传哪些材料？"
+      },
+      {
+        "en": "Will I need to come in to have my fingerprints taken?",
+        "zh": "我需要本人到馆采集指纹吗？"
+      },
+      {
+        "en": "I have a photo of the passport page on my phone — would that help?",
+        "zh": "我手机里有护照页的照片——那个有用吗？"
+      },
+      {
+        "en": "I need to return to China in five days. Would a travel document be faster than a new passport?",
+        "zh": "我五天后必须回中国。旅行证会比补办护照更快吗？"
+      },
+      {
+        "en": "My U.S. visa was in that passport — will I have to reapply for it outside the country?",
+        "zh": "我的美国签证在那本护照里——我需要在境外重新申请吗？"
+      },
+      {
+        "en": "Could you tell me the address and the hours?",
+        "zh": "能告诉我地址和办公时间吗？"
+      },
+      {
+        "en": "Thank you — that's much clearer now.",
+        "zh": "谢谢你——现在清楚多了。"
+      }
+    ]
+  },
+  "police": {
+    "entry": [
+      {
+        "en": "Call 911, please.",
+        "zh": "请打 911。"
+      },
+      {
+        "en": "Someone just stole my bag.",
+        "zh": "有人刚偷了我的包。"
+      },
+      {
+        "en": "He ran that way.",
+        "zh": "他往那边跑了。"
+      },
+      {
+        "en": "I can describe him.",
+        "zh": "我能描述他的样子。"
+      }
+    ],
+    "intermediate": [
+      {
+        "en": "I need police at 123 Main Street, apartment 4B — someone broke into my apartment and may still be inside.",
+        "zh": "我需要警察来 Main Street 123 号 4B 公寓——有人闯进了我家，可能还在里面。"
+      },
+      {
+        "en": "I got home a few minutes ago and found the door open.",
+        "zh": "我几分钟前到家，发现门开着。"
+      },
+      {
+        "en": "I haven't gone inside — I don't know if anyone is still in there.",
+        "zh": "我没进去——我不知道里面是不是还有人。"
+      },
+      {
+        "en": "I'm outside the building now, in a safe place.",
+        "zh": "我现在在楼外，在一个安全的地方。"
+      },
+      {
+        "en": "Can you send officers right away?",
+        "zh": "能马上派警察过来吗？"
+      },
+      {
+        "en": "My number is 213-555-0142, in case we get cut off.",
+        "zh": "我的电话是 213-555-0142，万一断线了。"
+      },
+      {
+        "en": "I'll stay on the line until they get here.",
+        "zh": "我会一直不挂断，等他们到。"
+      },
+      {
+        "en": "Should I wait out front so they can see me?",
+        "zh": "我要在楼前等着，好让他们看到我吗？"
+      },
+      {
+        "en": "Is there anything I shouldn't touch when we go in?",
+        "zh": "等我们进去之后，有什么是我不该碰的吗？"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Thanks for coming out so quickly, officer.",
+        "zh": "谢谢你们这么快就赶到，警官。"
+      },
+      {
+        "en": "Could I have a Mandarin interpreter, please?",
+        "zh": "能给我安排一位普通话翻译吗？"
+      },
+      {
+        "en": "I got home around six and found the door open, so I waited outside until you arrived.",
+        "zh": "我大概六点到家，发现门开着，就在外面等到你们来。"
+      },
+      {
+        "en": "Now that I've been inside with you, I can see my laptop and some cash are missing.",
+        "zh": "刚才跟你们一起进去看过，我发现笔记本电脑和一些现金不见了。"
+      },
+      {
+        "en": "I have the serial number for the laptop and photos of the other items.",
+        "zh": "我有笔记本电脑的序列号，还有其他物品的照片。"
+      },
+      {
+        "en": "The building manager said he can pull the hallway footage if you request it.",
+        "zh": "楼管说如果你们要求，他可以调取走廊的监控录像。"
+      },
+      {
+        "en": "Could you give me the DR number for this report?",
+        "zh": "能给我这次报案的 DR 编号吗？"
+      },
+      {
+        "en": "My insurance company will need documentation — can I start the claim with that number?",
+        "zh": "我的保险公司需要证明材料——我能用这个编号先开理赔吗？"
+      },
+      {
+        "en": "How do I request a copy of the full report later on?",
+        "zh": "之后我怎么申请一份完整报告的副本？"
+      },
+      {
+        "en": "Is there anything I should do to secure the place tonight?",
+        "zh": "今晚我需要做些什么来保障住处安全吗？"
+      },
+      {
+        "en": "If I notice anything else missing, who should I contact?",
+        "zh": "如果我发现还少了别的东西，该联系谁？"
+      }
+    ]
+  }
+}

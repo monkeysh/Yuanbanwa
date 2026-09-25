@@ -1,0 +1,783 @@
+{
+  "_note": "FCE Part3 协作讨论(12话题×12句)。官方2015 revision Part3:中心问题+5个written prompts;两阶段=约2分钟discussion(可只深入讨论部分prompts,不必机械全盖)+约1分钟decision(向协商决定推进,真实协商后保留分歧不失分,但必须认真尝试)。本批:句1-8=讨论阶段(深入3-4个prompts,justification/example/speculation),句9=考生自然转场进决策,句9-12=协商决策;8组一致+4组礼貌保留分歧;12组开场各不同;B2语言(情态推测/评价/礼貌反对)。♀rosie ♂chris交替。",
+  "fce-technology": {
+    "task": "**Part 3** 任务卡中心问题:科技如何改变了人们的社交方式?文字提示:即时消息、社交媒体、视频通话、在线游戏、网络社群。先讨论这些方式各自的影响(约2分钟,可深入谈其中几项),再进入决策:哪一种对青少年的影响最大?",
+    "part3": [
+      {
+        "en": "So, the question is how technology has changed the way we socialise. Where shall we start?",
+        "zh": "问题是科技如何改变了我们的社交方式。我们从哪儿说起？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Let's take instant messaging first — it's probably the one we all use most.",
+        "zh": "先说即时消息吧——这可能是我们用得最多的。",
+        "voice": "chris"
+      },
+      {
+        "en": "Definitely. It keeps conversations going all day, although people sometimes hide behind texts instead of talking face to face.",
+        "zh": "没错。它让聊天一整天不间断，不过有时人们会躲在文字后面，而不是面对面交流。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's a fair point. Social media goes even further — it lets you present a version of yourself to hundreds of people at once.",
+        "zh": "有道理。社交媒体走得更远——它让你一次向几百个人展示一个「你的版本」。",
+        "voice": "chris"
+      },
+      {
+        "en": "Which isn't always healthy, is it? Comparing your real life with the perfect lives people present online can really affect your confidence.",
+        "zh": "但这并不总是健康的，对吧？拿自己的真实生活和别人网上展示的完美生活比，很影响自信。",
+        "voice": "rosie"
+      },
+      {
+        "en": "True, whereas video calls feel much more genuine — you see real faces and real reactions.",
+        "zh": "确实，相比之下视频通话就真实多了——你看到的是真实的脸和真实的反应。",
+        "voice": "chris"
+      },
+      {
+        "en": "My grandparents would agree — video calls are the only reason they feel close to us during term time.",
+        "zh": "我爷爷奶奶肯定同意——学期里视频通话是他们觉得和我们亲近的唯一原因。",
+        "voice": "rosie"
+      },
+      {
+        "en": "And we shouldn't forget online gaming — for lots of teenagers it's where friendships actually happen now.",
+        "zh": "还有在线游戏也不能忽略——对很多青少年来说，友谊现在真的是在游戏里发生的。",
+        "voice": "chris"
+      },
+      {
+        "en": "OK, if we had to choose the one with the biggest influence on teenagers, which would it be?",
+        "zh": "好，如果必须选一个对青少年影响最大的，会是哪个？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I'd say social media, because it shapes how they see themselves, not just how they talk.",
+        "zh": "我会说社交媒体，因为它塑造的是他们怎么看自己，而不只是怎么聊天。",
+        "voice": "chris"
+      },
+      {
+        "en": "I was going to argue for messaging, but you're right — social media changes opinions, habits, even moods.",
+        "zh": "我本来想说即时消息，但你说得对——社交媒体改变的是观点、习惯，甚至情绪。",
+        "voice": "rosie"
+      },
+      {
+        "en": "So we agree: social media has the biggest influence, for better or worse.",
+        "zh": "那我们达成一致：社交媒体影响最大，无论是好是坏。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-environment": {
+    "task": "**Part 3** 任务卡中心问题:这些环保做法,普通人做起来各有多容易?文字提示:减少塑料、乘公共交通、节约能源、购买本地食物、二手消费。先讨论这些做法的可行性(约2分钟),再进入决策:哪一种最容易长期坚持?",
+    "part3": [
+      {
+        "en": "The question here is how easy these environmental actions are for ordinary people to take. Where shall we start?",
+        "zh": "这里的问题是：这些环保做法对普通人来说各有多容易做到。我们从哪个开始？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Reducing plastic seems the obvious place to begin — everyone talks about it.",
+        "zh": "减少塑料似乎是最顺理成章的起点——人人都在谈这个。",
+        "voice": "chris"
+      },
+      {
+        "en": "They do, but talking is easier than doing. Almost everything in a supermarket comes wrapped in plastic.",
+        "zh": "是啊，但说比做容易。超市里几乎所有东西都是塑料包装。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Exactly, so it partly depends on shops, not just on us. Taking the bus, on the other hand, is a choice we make every day.",
+        "zh": "没错，所以这部分取决于商家，不只是我们。而坐公交则是我们每天都能自己做的选择。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's true, although in smaller towns the buses run so rarely that people can hardly rely on them.",
+        "zh": "确实，不过在小城镇公交班次太少，人们很难指望它。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Fair enough. What about saving energy at home? Switching things off costs nothing and actually saves money.",
+        "zh": "有道理。那在家节约能源呢？随手关电器不花一分钱，还能省钱。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like that one — it's the kind of small habit you barely notice once you've built it.",
+        "zh": "这条我喜欢——这是那种一旦养成就几乎注意不到的小习惯。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Buying second-hand is similar: it feels normal very quickly, and it prevents a lot of waste.",
+        "zh": "二手消费也类似：很快就会觉得理所当然，还能避免大量浪费。",
+        "voice": "chris"
+      },
+      {
+        "en": "Right, so let's decide — which of these is the easiest to keep up in the long run?",
+        "zh": "好，那我们来定——这些做法里哪个最容易长期坚持？",
+        "voice": "rosie"
+      },
+      {
+        "en": "For me, it's saving energy, precisely because you see the reward immediately in a lower electricity bill.",
+        "zh": "我选节约能源，正因为你能立刻在变少的电费单上看到回报。",
+        "voice": "chris"
+      },
+      {
+        "en": "Hmm, I'd have said second-hand shopping, but a habit with an instant reward probably lasts longer.",
+        "zh": "嗯，我本来想说二手消费，但有即时回报的习惯可能坚持得更久。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then saving energy it is — small, invisible, but it never stops working.",
+        "zh": "那就定节约能源——微小、不起眼，但它永远在起作用。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-work": {
+    "task": "**Part 3** 任务卡中心问题:这些因素分别会怎样影响一个人的职业选择?文字提示:薪水、兴趣、工作与生活平衡、发展空间、社会价值。先讨论这些因素(约2分钟),再进入决策:哪一个最重要?",
+    "part3": [
+      {
+        "en": "We need to discuss how these factors can influence someone's choice of career. Shall I start with salary?",
+        "zh": "我们要讨论这些因素会怎样影响一个人的职业选择。我先从薪水说起？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Go ahead — it's the factor everyone thinks about first, even if they pretend not to.",
+        "zh": "说吧——这是每个人最先想到的因素，哪怕嘴上不承认。",
+        "voice": "chris"
+      },
+      {
+        "en": "Well, a good salary gives you security, but on its own it doesn't make you enjoy Monday mornings.",
+        "zh": "嗯，高薪能给你安全感，但光有它并不能让你喜欢周一早晨。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's where interest comes in — if you love what you do, the effort feels much lighter.",
+        "zh": "这就轮到兴趣了——如果你热爱所做的事，付出就轻松得多。",
+        "voice": "chris"
+      },
+      {
+        "en": "But passion alone can be risky, can't it? Plenty of people love things that don't pay the bills.",
+        "zh": "不过光有热情也有风险，对吧？很多人热爱的事情养不活自己。",
+        "voice": "rosie"
+      },
+      {
+        "en": "True. Work-life balance might be the factor people underestimate most — burnout can ruin even a dream job.",
+        "zh": "没错。工作与生活的平衡可能是被低估得最厉害的因素——过劳能毁掉哪怕是梦想中的工作。",
+        "voice": "chris"
+      },
+      {
+        "en": "I completely agree, and career development matters too — a job with no future starts to feel like a trap.",
+        "zh": "我完全同意，发展空间也很重要——一份没有前景的工作会渐渐让人觉得像陷阱。",
+        "voice": "rosie"
+      },
+      {
+        "en": "So most of these connect with each other, which makes the choice genuinely difficult.",
+        "zh": "所以这些因素大多是相互关联的，这才让选择变得真正困难。",
+        "voice": "chris"
+      },
+      {
+        "en": "It does. Still, we have to pick the single most important one — what's your call?",
+        "zh": "确实。不过我们还是得选出最重要的一个——你的选择是？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Honestly, I'd put work-life balance first, because without your health and time, nothing else can be enjoyed.",
+        "zh": "说实话，我会把工作与生活平衡放第一，因为没有健康和时间，其他一切都无从享受。",
+        "voice": "chris"
+      },
+      {
+        "en": "I see your point, but I'd still choose interest — it's what keeps you motivated and learning throughout your career.",
+        "zh": "我明白你的意思，但我还是会选兴趣——是它让你在整个职业生涯里保持动力、不断学习。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's a strong point. I still think balance matters, but interest probably has more influence over a whole career, so let's go with that.",
+        "zh": "这点很有说服力。我仍然觉得平衡重要，但就整个职业生涯而言，兴趣的影响可能更大——那我们就选它。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-travel": {
+    "task": "**Part 3** 任务卡中心问题:旅行为什么让人受益?文字提示:了解不同文化、练习语言、变得独立、放松身心、结识新朋友。先讨论这些好处(约2分钟),再进入决策:哪一项收获最大?",
+    "part3": [
+      {
+        "en": "The question is why travelling is good for people. Which of these benefits speaks to you most?",
+        "zh": "问题是旅行为什么对人有益。这些好处里哪条最打动你？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Learning about different cultures, without a doubt — food, festivals, even how people queue.",
+        "zh": "毫无疑问是了解不同文化——饮食、节日，甚至人们排队的方式。",
+        "voice": "chris"
+      },
+      {
+        "en": "Ha, queuing says a lot about a country! And once you're there, you can't avoid practising the language either.",
+        "zh": "哈，排队方式还真能说明一个国家！而且身在当地，你想不练语言都难。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Exactly — ordering dinner in another language teaches you more than a month of classes.",
+        "zh": "正是——用外语点一顿晚餐，比上一个月的课学得还多。",
+        "voice": "chris"
+      },
+      {
+        "en": "Travelling also forces you to become independent: reading maps, solving problems, managing money.",
+        "zh": "旅行还逼着你变得独立：看地图、解决问题、管好钱。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Especially when something goes wrong! Missing a train abroad teaches you to stay calm very quickly.",
+        "zh": "尤其是出岔子的时候！在国外错过一趟火车，能让你飞快学会保持冷静。",
+        "voice": "chris"
+      },
+      {
+        "en": "And of course some people travel simply to relax — lying on a beach is a benefit in itself.",
+        "zh": "当然也有人旅行纯粹是为了放松——躺在沙滩上本身就是一种收获。",
+        "voice": "rosie"
+      },
+      {
+        "en": "It is, though I'd say the friendships you make on the road often outlast the suntan.",
+        "zh": "是的，不过我觉得旅途上交到的朋友，往往比晒出的肤色留得更久。",
+        "voice": "chris"
+      },
+      {
+        "en": "Nice way to put it! So, decision time — which benefit is the greatest overall?",
+        "zh": "说得真好！那到决策时间了——总体来看哪项收获最大？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I'd go for independence, because it changes who you are, not just what you know.",
+        "zh": "我选独立，因为它改变的是你这个人，而不只是你知道的东西。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's persuasive. Cultural understanding was my first instinct, but independence stays with you everywhere.",
+        "zh": "有说服力。我的第一反应是文化理解，但独立性走到哪儿都跟着你。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then we both say independence — travel as a training ground for life.",
+        "zh": "那我们都选独立——旅行就是人生的训练场。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-entertainment": {
+    "task": "**Part 3** 任务卡中心问题:人们为什么选择不同的娱乐方式?文字提示:流媒体追剧、现场演出、电子游戏、读书、观看体育比赛。先讨论这些方式的吸引力(约2分钟),再进入决策:哪一种最值得花时间?",
+    "part3": [
+      {
+        "en": "Our question is why people choose such different kinds of entertainment. Let's compare a few.",
+        "zh": "我们的问题是人们为什么选择如此不同的娱乐方式。来比较几种吧。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Streaming is the easy answer — a whole series is waiting for you the moment you sit down.",
+        "zh": "流媒体是最省事的答案——你一坐下，整部剧都在等着你。",
+        "voice": "chris"
+      },
+      {
+        "en": "Which is exactly its danger: one more episode always turns into three more hours.",
+        "zh": "而这恰恰是它的危险之处：「再看一集」总会变成「再看三小时」。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Guilty! Live concerts are the opposite — expensive and inconvenient, but the atmosphere is unrepeatable.",
+        "zh": "说的就是我！现场演出正相反——又贵又麻烦，但那种氛围无法复制。",
+        "voice": "chris"
+      },
+      {
+        "en": "There's something about sharing a moment with thousands of people that a screen can't give you.",
+        "zh": "和几千人共享同一个瞬间的感觉，屏幕给不了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Gaming gives you something else again — you're not watching the story, you're inside it.",
+        "zh": "游戏给的又是另一种东西——你不是在看故事，而是身在故事之中。",
+        "voice": "chris"
+      },
+      {
+        "en": "Fair, though books have been doing that for centuries, just with your imagination as the console.",
+        "zh": "有道理，不过书几百年来一直在做这件事，只是主机换成了你的想象力。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Ha! I knew you'd defend reading. Watching live sport pulls in huge audiences too, though it's never really been my thing.",
+        "zh": "哈！我就知道你会为读书辩护。看体育比赛也吸引着大批观众，不过我一直不太感冒。",
+        "voice": "chris"
+      },
+      {
+        "en": "So, decision time — maybe we should judge them by what they leave behind: some entertainment empties you, some fills you up.",
+        "zh": "那么到决策时间了——也许该看它们留下什么：有的娱乐让你被掏空，有的让你被充实。",
+        "voice": "rosie"
+      },
+      {
+        "en": "By that standard I'd pick reading, even though I spend far more hours gaming.",
+        "zh": "按这个标准我会选读书，尽管我花在游戏上的时间多得多。",
+        "voice": "chris"
+      },
+      {
+        "en": "Same here — books demand more from you, but they give more back.",
+        "zh": "我也是——书对你要求更多，但回馈也更多。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Agreed then: reading is the one most worth our time, with a concert now and then as a treat.",
+        "zh": "那就一致了：读书最值得花时间，偶尔再看场演出犒劳自己。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-health": {
+    "task": "**Part 3** 任务卡中心问题:这些因素分别如何帮助人保持健康的生活方式?文字提示:充足睡眠、均衡饮食、规律运动、管理压力、定期体检。先讨论这些因素(约2分钟),再进入决策:哪一项最容易被人忽视?",
+    "part3": [
+      {
+        "en": "The card asks how each of these factors helps people maintain a healthy lifestyle. Shall we start with sleep?",
+        "zh": "卡片问的是这些因素分别如何帮助人保持健康的生活方式。我们先从睡眠说起？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Sleep, definitely. Everything falls apart when you've only had five hours.",
+        "zh": "肯定是睡眠。只睡五个小时的话，一切都会垮掉。",
+        "voice": "chris"
+      },
+      {
+        "en": "Absolutely — and yet students treat sleep as the first thing to sacrifice before exams.",
+        "zh": "完全同意——可学生们偏偏把睡眠当成考前第一个牺牲品。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Which is ironic, since a tired brain remembers almost nothing. What about diet?",
+        "zh": "这很讽刺，因为疲惫的大脑几乎记不住东西。那饮食呢？",
+        "voice": "chris"
+      },
+      {
+        "en": "A balanced diet matters, though I'd say most people know the theory and just find it hard to follow.",
+        "zh": "均衡饮食很重要，不过我觉得大多数人都懂道理，只是难做到。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Same with exercise — gyms are full in January and empty by March.",
+        "zh": "运动也一样——健身房一月人满为患，三月就空空荡荡。",
+        "voice": "chris"
+      },
+      {
+        "en": "Ha, true! But stress management is different — many people don't even realise it's a health issue.",
+        "zh": "哈，太真实了！但压力管理不一样——很多人根本没意识到它是个健康问题。",
+        "voice": "rosie"
+      },
+      {
+        "en": "They treat headaches and bad moods as a normal part of life instead of warning signs.",
+        "zh": "他们把头疼和坏情绪当成生活的正常部分，而不是警示信号。",
+        "voice": "chris"
+      },
+      {
+        "en": "So, which of the five do we think is the most overlooked?",
+        "zh": "那么，五项里我们认为哪一项最容易被忽视？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I'd argue it's stress management, for exactly the reason you gave — it's invisible until it's serious.",
+        "zh": "我认为是压力管理，理由正是你刚说的——它在变严重之前是隐形的。",
+        "voice": "chris"
+      },
+      {
+        "en": "I was tempted to say check-ups, but you're right: stress does damage quietly every single day.",
+        "zh": "我本想说体检，但你是对的：压力每天都在悄悄造成伤害。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Stress management it is, then — the health habit nobody puts in their timetable.",
+        "zh": "那就定压力管理——这是没人写进日程表的健康习惯。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-relationships": {
+    "task": "**Part 3** 任务卡中心问题:什么让友谊长久?文字提示:相互信任、共同兴趣、坦诚沟通、困难时的支持、给彼此空间。先讨论这些因素(约2分钟),再进入决策:哪一项最重要?",
+    "part3": [
+      {
+        "en": "So what makes a friendship last? The card gives us five ingredients.",
+        "zh": "什么让友谊长久？卡片给了我们五种「配料」。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Trust has to be the foundation — without it, everything else is just acting.",
+        "zh": "信任必须是地基——没有它，其他一切都只是演戏。",
+        "voice": "chris"
+      },
+      {
+        "en": "I completely agree. But friendships often start with shared interests, don't they? You bond over the same music or team.",
+        "zh": "我完全同意。不过友谊往往是从共同兴趣开始的，对吧？因为同一种音乐或同一支球队走到一起。",
+        "voice": "rosie"
+      },
+      {
+        "en": "They start there, but interests change — my oldest friend and I like completely different things now.",
+        "zh": "开始是那样，但兴趣会变——我和我最老的朋友现在喜欢的东西完全不同。",
+        "voice": "chris"
+      },
+      {
+        "en": "And you're still close, which rather proves the point. What kept you together, then?",
+        "zh": "可你们依然亲密，这恰恰说明了问题。那是什么让你们没散？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Honest communication, I think — we argue sometimes, but we never pretend.",
+        "zh": "我想是坦诚的沟通——我们有时会争吵，但从不假装。",
+        "voice": "chris"
+      },
+      {
+        "en": "That takes courage. Support in hard times matters enormously too — that's when you learn who your real friends are.",
+        "zh": "那需要勇气。困难时的支持也极其重要——那时你才知道谁是真朋友。",
+        "voice": "rosie"
+      },
+      {
+        "en": "And giving each other space — clinging too tightly can suffocate even a good friendship.",
+        "zh": "还有给彼此空间——抓得太紧，再好的友谊也会窒息。",
+        "voice": "chris"
+      },
+      {
+        "en": "All five matter, clearly. But if we had to crown one as the most important, which would it be?",
+        "zh": "显然五个都重要。但如果必须选出最重要的一个，会是哪个？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Trust, for me — it's what makes honesty, support and space possible in the first place.",
+        "zh": "我选信任——正是它让坦诚、支持和空间成为可能。",
+        "voice": "chris"
+      },
+      {
+        "en": "You've convinced me. The others are branches; trust is the root.",
+        "zh": "你说服我了。其他都是枝干，信任才是根。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then it's settled — trust is what makes a friendship last.",
+        "zh": "那就定了——让友谊长久的是信任。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-education": {
+    "task": "**Part 3** 任务卡中心问题:什么最能帮助学生学得更好?文字提示:优秀的老师、小班教学、科技工具、动手实践、家庭支持。先讨论这些条件(约2分钟),再进入决策:哪一项影响最大?",
+    "part3": [
+      {
+        "en": "The question is what helps students learn best. Five ideas here — let's weigh them up.",
+        "zh": "问题是什么最能帮助学生学习。这里有五个选项——我们来掂量掂量。",
+        "voice": "rosie"
+      },
+      {
+        "en": "An inspiring teacher can change everything. I still remember exactly how my primary teacher explained fractions.",
+        "zh": "一位有感染力的老师能改变一切。我到现在都记得小学老师讲分数的样子。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's the thing about great teachers — you remember them decades later, not just the facts.",
+        "zh": "好老师就是这样——几十年后你记住的是他们这个人，而不只是知识点。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Small classes help too, because the teacher actually notices when you're lost.",
+        "zh": "小班教学也有用，因为老师真的能注意到你什么时候听懵了。",
+        "voice": "chris"
+      },
+      {
+        "en": "True, although small classes with a boring teacher still produce bored students!",
+        "zh": "没错，不过小班配上无聊的老师，教出来的还是无聊的学生！",
+        "voice": "rosie"
+      },
+      {
+        "en": "Ha! What do you make of technology, then — tablets, learning apps, all of that?",
+        "zh": "哈！那你怎么看科技——平板、学习类App这些？",
+        "voice": "chris"
+      },
+      {
+        "en": "Useful as a tool, but it's a servant, not a master. An app can't see that you're having a bad day.",
+        "zh": "作为工具很有用，但它是仆人不是主人。App 看不出你今天状态不好。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Nicely put. And hands-on practice makes knowledge stick — you understand a circuit by building one.",
+        "zh": "说得好。动手实践能让知识扎根——亲手搭一个电路，你才真正理解它。",
+        "voice": "chris"
+      },
+      {
+        "en": "So, decision time: which single factor has the greatest impact?",
+        "zh": "那么到决策时间了：哪一个因素影响最大？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I keep coming back to the teacher — every other factor works better with a good one in the room.",
+        "zh": "我总是绕回到老师身上——教室里有位好老师，其他所有因素都会更有效。",
+        "voice": "chris"
+      },
+      {
+        "en": "Agreed, though I'd add that family support is the invisible half — a child who's encouraged at home arrives ready to learn.",
+        "zh": "同意，不过我想补充：家庭支持是看不见的另一半——在家被鼓励的孩子，走进教室时已经准备好学习了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then our answer is the teacher first, with family support as the essential partner behind the scenes.",
+        "zh": "那我们的答案就是：老师第一，家庭支持是幕后不可缺少的搭档。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-ambitions": {
+    "task": "**Part 3** 任务卡中心问题:实现长远目标需要什么?文字提示:清晰的计划、坚持不懈、良师指导、一点运气、自信心。先讨论这些条件(约2分钟),再进入决策:哪一项最不可缺少?",
+    "part3": [
+      {
+        "en": "What does it take to achieve a long-term goal? The card lists five things.",
+        "zh": "实现一个长远目标需要什么？卡片列了五样东西。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A clear plan seems the logical start — without one, effort just leaks away in all directions.",
+        "zh": "清晰的计划似乎是合理的起点——没有它，努力就会四处漏掉。",
+        "voice": "chris"
+      },
+      {
+        "en": "But plans rarely survive reality, do they? Life keeps rewriting them.",
+        "zh": "不过计划很少能扛得住现实，对吧？生活总在不断改写它们。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Which is exactly why persistence matters more — the people who succeed are usually the ones who simply don't stop.",
+        "zh": "所以坚持才更重要——成功的人通常就是那些不肯停下来的人。",
+        "voice": "chris"
+      },
+      {
+        "en": "There's a lot of truth in that. A mentor can save you years, though, by pointing out the mistakes you can't see.",
+        "zh": "这话很有道理。不过良师能帮你省下好几年——他们能指出你自己看不见的错误。",
+        "voice": "rosie"
+      },
+      {
+        "en": "If you're lucky enough to find one! Which brings us to luck itself — does it deserve a place on this list?",
+        "zh": "前提是你有幸遇到！这就说到运气本身了——它配出现在这张单子上吗？",
+        "voice": "chris"
+      },
+      {
+        "en": "Honestly, yes. Being in the right place at the right time has launched many careers — but you can't rely on it.",
+        "zh": "老实说，配。天时地利成就过许多人——但你不能指望它。",
+        "voice": "rosie"
+      },
+      {
+        "en": "And confidence is what lets you act when the lucky moment appears, instead of hesitating.",
+        "zh": "而自信是让你在幸运时刻出现时敢于行动、而不是犹豫的东西。",
+        "voice": "chris"
+      },
+      {
+        "en": "Well argued. So which one is truly indispensable — the thing you cannot do without?",
+        "zh": "说得好。那哪一样是真正不可或缺、缺了就不行的？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Persistence, without question. Plans fail, mentors leave, luck runs out — determination remains.",
+        "zh": "毫无疑问是坚持。计划会失败，导师会离开，运气会用完——只有那份决心一直在。",
+        "voice": "chris"
+      },
+      {
+        "en": "I'd have chosen confidence, but I admit even confidence grows out of persisting through failures.",
+        "zh": "我本来会选自信，但我承认，连自信也是在一次次失败中坚持出来的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then persistence takes the crown — the engine that keeps every other quality running.",
+        "zh": "那桂冠就给坚持——它是让其他所有品质持续运转的引擎。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-lifestyle": {
+    "task": "**Part 3** 任务卡中心问题:怎样让快节奏的生活更平衡?文字提示:减少加班、数字排毒、培养爱好、坚持运动、多陪家人。先讨论这些做法(约2分钟),再进入决策:哪一项最该优先做?",
+    "part3": [
+      {
+        "en": "The card asks how people can make fast-paced lives more balanced. Quite a modern problem, isn't it?",
+        "zh": "卡片问人们如何让快节奏的生活更平衡。很「当代」的问题，对吧？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Very. Working less overtime would be the direct answer, but many people feel they simply can't refuse.",
+        "zh": "非常。少加班是最直接的答案，但很多人觉得根本没法拒绝。",
+        "voice": "chris"
+      },
+      {
+        "en": "Exactly — the pressure comes from the whole workplace culture, not just personal choice.",
+        "zh": "正是——压力来自整个职场文化，不只是个人选择。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A digital detox is more within our control: phone off after nine, and the evening suddenly doubles in length.",
+        "zh": "数字排毒就更在我们掌控之内：九点后关手机，晚上的时间瞬间翻倍。",
+        "voice": "chris"
+      },
+      {
+        "en": "I tried it for a week — it was uncomfortable for two days and wonderful afterwards.",
+        "zh": "我试过一周——头两天难受，之后美妙极了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's encouraging! Hobbies work in a similar way: an hour of painting or playing the guitar completely clears your head.",
+        "zh": "真让人心动！爱好也有类似作用：画一小时画或弹一小时吉他，头脑就完全清爽了。",
+        "voice": "chris"
+      },
+      {
+        "en": "And exercise does the same for the body — even a twenty-minute walk clears the fog.",
+        "zh": "运动对身体也是同理——哪怕散步二十分钟，脑子里的雾就散了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then there's family time, which is often what actually gets sacrificed first.",
+        "zh": "还有陪家人的时间——它往往才是最先被牺牲掉的。",
+        "voice": "chris"
+      },
+      {
+        "en": "Sadly true. So if someone could only start with one change, which should it be?",
+        "zh": "很遗憾，确实如此。那如果一个人只能先做一个改变，该是哪个？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I'd say the digital detox, because it automatically creates time for hobbies, exercise and family.",
+        "zh": "我会说数字排毒，因为它会自动为爱好、运动和家人腾出时间。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's clever — it creates time for three of the other changes: hobbies, exercise and family time.",
+        "zh": "这个想法妙——它为另外三项改变腾出了时间：爱好、运动和陪家人。",
+        "voice": "rosie"
+      },
+      {
+        "en": "So we recommend starting with a digital detox: one switch, several rewards.",
+        "zh": "那我们就推荐从数字排毒开始：关一个开关，收获好几份回报。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-food": {
+    "task": "**Part 3** 任务卡中心问题:人们的饮食习惯为什么在改变?文字提示:外卖流行、健康意识、环保饮食、烹饪节目、快节奏生活。先讨论这些原因(约2分钟),再进入决策:哪一个影响最大?",
+    "part3": [
+      {
+        "en": "Why are people's eating habits changing? The card offers five possible reasons.",
+        "zh": "人们的饮食习惯为什么在变？卡片给了五个可能的原因。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Delivery apps must be part of it — dinner now arrives faster than you can cook rice.",
+        "zh": "外卖 App 肯定是原因之一——现在晚饭送到的速度比你煮米饭还快。",
+        "voice": "chris"
+      },
+      {
+        "en": "Convenient, but it quietly changes what we consider a 'normal' meal — often saltier and greasier.",
+        "zh": "方便是方便，但它悄悄改变了我们对「一顿正常饭」的定义——往往更咸更油。",
+        "voice": "rosie"
+      },
+      {
+        "en": "On the other hand, health awareness is pushing in the opposite direction — sugar-free this, high-protein that.",
+        "zh": "另一方面，健康意识正把人往反方向推——这个无糖、那个高蛋白。",
+        "voice": "chris"
+      },
+      {
+        "en": "The two trends literally fight each other in the same shopping basket!",
+        "zh": "这两股潮流简直是在同一个购物篮里打架！",
+        "voice": "rosie"
+      },
+      {
+        "en": "Nicely observed. Sustainable eating is a newer trend — some of my friends have cut down on meat for the planet, not for their waistline.",
+        "zh": "观察得妙。可持续饮食是更新的潮流——我有些朋友少吃肉是为了地球，不是为了腰围。",
+        "voice": "chris"
+      },
+      {
+        "en": "And cooking shows have turned food into entertainment — people watch chefs for hours yet order takeaway for dinner.",
+        "zh": "烹饪节目则把食物变成了娱乐——人们看大厨看几个小时，晚饭却还是点外卖。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Ha! And the pace of modern life may well connect several of these trends.",
+        "zh": "哈！而现代生活的节奏，很可能正是把这几股潮流串起来的那条线。",
+        "voice": "chris"
+      },
+      {
+        "en": "So, time to decide: which of these has the biggest influence on how we eat?",
+        "zh": "那么该决定了：这些原因里哪个对我们的饮食影响最大？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I'd argue it's the fast pace of life — it's what makes delivery apps so irresistible in the first place.",
+        "zh": "我认为是快节奏生活——正是它让外卖 App 一开始就变得难以抗拒。",
+        "voice": "chris"
+      },
+      {
+        "en": "Convincing. I nearly said health awareness, but that's still a smaller force than simple lack of time.",
+        "zh": "有说服力。我差点选健康意识，但它的力量仍然比不过「没时间」这三个字。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Agreed — the pace of life shapes our plates more than anything else.",
+        "zh": "一致通过——塑造我们餐盘的，首先是生活的节奏。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "fce-money": {
+    "task": "**Part 3** 任务卡中心问题:年轻人应该如何学会管理金钱?文字提示:定额零花钱、做兼职、设储蓄目标、记账、学校理财课。先讨论这些办法(约2分钟),再进入决策:哪一种最有效?",
+    "part3": [
+      {
+        "en": "How should young people learn to manage money? Five methods on the card — let's dig in.",
+        "zh": "年轻人该如何学会管钱？卡片上有五种办法——我们来深入聊聊。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A fixed amount of pocket money teaches the first lesson: when it's gone, it's gone.",
+        "zh": "定额的零花钱教的是第一课：花完就没了。",
+        "voice": "chris"
+      },
+      {
+        "en": "A painful but effective lesson! Though some parents top it up anyway, which rather ruins the point.",
+        "zh": "痛苦但有效的一课！不过有些家长花完还会补，这就把意义全毁了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "True — the rule only works if it's actually a rule. A part-time job goes deeper, because earned money feels different from given money.",
+        "zh": "没错——规则只有真是规则才管用。兼职就更进一步，因为挣来的钱和给的钱感觉完全不同。",
+        "voice": "chris"
+      },
+      {
+        "en": "Completely different! You think twice about a pair of trainers when they cost ten hours of washing dishes.",
+        "zh": "完全不同！当一双运动鞋等于十小时刷盘子，你买之前一定会三思。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Exactly. Savings goals add direction — saving 'for a guitar' beats saving 'because you should'.",
+        "zh": "正是。储蓄目标则提供方向——「为一把吉他存钱」胜过「因为应该存所以存」。",
+        "voice": "chris"
+      },
+      {
+        "en": "And keeping a record of spending is eye-opening — most people have no idea where their money actually goes.",
+        "zh": "记账则让人大开眼界——大多数人根本不知道自己的钱到底去了哪儿。",
+        "voice": "rosie"
+      },
+      {
+        "en": "School lessons could tie all of this together, though lessons without practice tend to evaporate.",
+        "zh": "学校理财课能把这些都串起来，不过没有实践的课往往转眼就蒸发了。",
+        "voice": "chris"
+      },
+      {
+        "en": "So which single method works best for actually learning to manage money?",
+        "zh": "那么真正学会管钱，哪种办法最有效？",
+        "voice": "rosie"
+      },
+      {
+        "en": "The part-time job, I'd say — it teaches you how to earn money, value it and budget it, all at once.",
+        "zh": "我会说兼职——它同时教会你怎么挣钱、怎么珍惜钱、怎么规划钱。",
+        "voice": "chris"
+      },
+      {
+        "en": "Strong case. I'd pair it with a savings goal, so the earned money has somewhere meaningful to go.",
+        "zh": "很有力。我会再配上一个储蓄目标，让挣来的钱有个有意义的去处。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Perfect combination — earn it through work and put it towards a goal. The part-time job is still our main answer.",
+        "zh": "完美组合——靠劳动挣来，存向一个目标。兼职仍是我们的主答案。",
+        "voice": "chris"
+      }
+    ]
+  }
+}

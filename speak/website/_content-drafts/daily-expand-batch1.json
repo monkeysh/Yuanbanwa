@@ -1,0 +1,235 @@
+{
+  "_note": "daily 高频单档场景补齐 entry/intermediate/advanced 三档(初级 beginner 已存在,不动)。单人跟读,只烧 Rosie。难度梯度参照厚场景:entry=最简短句 / intermediate=更地道完整 / advanced=复杂情境自然口语。",
+  "directions": {
+    "entry": [
+      { "en": "Where's the station?", "zh": "车站在哪？" },
+      { "en": "Is it far?", "zh": "远吗？" },
+      { "en": "This way?", "zh": "这边吗？" },
+      { "en": "Left or right?", "zh": "左还是右？" }
+    ],
+    "intermediate": [
+      { "en": "Sorry to bother you — where's the nearest subway?", "zh": "抱歉打扰，最近的地铁站在哪？" },
+      { "en": "Am I going the right way?", "zh": "我走的方向对吗？" },
+      { "en": "Is it easier to walk or take a bus?", "zh": "走路方便还是坐公交方便？" },
+      { "en": "Could you show me on the map?", "zh": "能在地图上指给我看吗？" },
+      { "en": "So I go straight and then turn left?", "zh": "那我直走然后左转？" },
+      { "en": "Is there a landmark I should look for?", "zh": "有什么地标我可以找吗？" },
+      { "en": "How far is it, roughly?", "zh": "大概有多远？" },
+      { "en": "I think I'm a little lost.", "zh": "我好像有点迷路了。" }
+    ],
+    "advanced": [
+      { "en": "I'm trying to find the art museum, but I think I've been walking in circles.", "zh": "我想找美术馆，但好像一直在绕圈子。" },
+      { "en": "Would it be quicker to cut through the park?", "zh": "穿过公园会不会快一点？" },
+      { "en": "Is this within walking distance, or should I grab a cab?", "zh": "走得到吗，还是我该打个车？" },
+      { "en": "I'm not familiar with this area at all.", "zh": "我对这一带完全不熟。" },
+      { "en": "Could you point me toward the main road?", "zh": "能给我指一下大路的方向吗？" },
+      { "en": "Does this street eventually lead downtown?", "zh": "这条街最后能通到市中心吗？" },
+      { "en": "I'll just follow the signs from there.", "zh": "从那儿我就跟着路牌走。" },
+      { "en": "You've been really helpful — thanks a lot.", "zh": "你帮了大忙，非常感谢。" },
+      { "en": "I should be able to find it now.", "zh": "现在我应该能找到了。" }
+    ]
+  },
+  "taxi": {
+    "entry": [
+      { "en": "Are you free?", "zh": "有空吗（载客）？" },
+      { "en": "To this address.", "zh": "到这个地址。" },
+      { "en": "How much?", "zh": "多少钱？" },
+      { "en": "Here is fine.", "zh": "这儿就行。" }
+    ],
+    "intermediate": [
+      { "en": "Could you take me to the airport, please?", "zh": "能送我去机场吗？" },
+      { "en": "Do you know how to get to this hotel?", "zh": "你知道怎么去这家酒店吗？" },
+      { "en": "About how much will it cost?", "zh": "大概多少钱？" },
+      { "en": "Could we take the faster route?", "zh": "能走快一点的路线吗？" },
+      { "en": "I'm running a bit late, actually.", "zh": "其实我有点赶时间。" },
+      { "en": "Could you pull over just up ahead?", "zh": "能在前面停一下吗？" },
+      { "en": "Do you take cards, or cash only?", "zh": "能刷卡还是只收现金？" },
+      { "en": "Keep the change, thanks.", "zh": "不用找了，谢谢。" }
+    ],
+    "advanced": [
+      { "en": "Would you mind avoiding the highway? The traffic's usually terrible this time of day.", "zh": "能不走高速吗？这个点通常特别堵。" },
+      { "en": "I have a flight at six, so I need to be there by four thirty.", "zh": "我六点的飞机，得四点半到。" },
+      { "en": "Is the meter running, or is it a flat rate to the airport?", "zh": "是打表还是到机场一口价？" },
+      { "en": "Could you drop me at Departures, not Arrivals?", "zh": "能在出发层放我，不是到达层吗？" },
+      { "en": "I think there might be a quicker way through the side streets.", "zh": "我觉得走小路可能快一点。" },
+      { "en": "Sorry, could you turn the AC up a little?", "zh": "不好意思，能把空调开大点吗？" },
+      { "en": "Could I get a receipt for the full amount?", "zh": "能开一张全额发票吗？" },
+      { "en": "Thanks for getting me here so quickly.", "zh": "谢谢你这么快把我送到。" },
+      { "en": "Have a good rest of your day.", "zh": "祝你今天接下来一切顺利。" }
+    ]
+  },
+  "checkout": {
+    "entry": [
+      { "en": "Just these, please.", "zh": "就这些。" },
+      { "en": "Card, please.", "zh": "刷卡。" },
+      { "en": "A bag, please.", "zh": "要个袋子。" },
+      { "en": "Thank you!", "zh": "谢谢！" }
+    ],
+    "intermediate": [
+      { "en": "Hi, that's everything for today.", "zh": "你好，今天就这些。" },
+      { "en": "Is it okay if I pay by card?", "zh": "刷卡可以吗？" },
+      { "en": "Could I get a couple of bags?", "zh": "能给我几个袋子吗？" },
+      { "en": "Sorry, I don't have a member card.", "zh": "抱歉，我没有会员卡。" },
+      { "en": "Is this item on sale?", "zh": "这个在打折吗？" },
+      { "en": "I think that one scanned twice.", "zh": "那个好像扫了两次。" },
+      { "en": "Could I have the receipt, please?", "zh": "能给我发票吗？" },
+      { "en": "Thanks, have a good one.", "zh": "谢谢，再见。" }
+    ],
+    "advanced": [
+      { "en": "Sorry, I think there's a mistake — this rang up higher than the shelf price.", "zh": "不好意思，好像有点问题，这个比货架价贵了。" },
+      { "en": "Would you mind if I split this between two cards?", "zh": "能用两张卡分开付吗？" },
+      { "en": "Do you know if these are buy-one-get-one this week?", "zh": "你知道这些这周是不是买一送一吗？" },
+      { "en": "I'll leave the bags — I brought my own.", "zh": "袋子不用了，我自己带了。" },
+      { "en": "Could you double-bag the heavy stuff?", "zh": "重的东西能套两层袋子吗？" },
+      { "en": "Actually, could you take this one off? I changed my mind.", "zh": "其实这个能取消吗？我改主意了。" },
+      { "en": "Is there a self-checkout, or is this the only line?", "zh": "有自助结账吗，还是只有这条队？" },
+      { "en": "Thanks for your patience with all that.", "zh": "谢谢你耐心处理这些。" },
+      { "en": "Have a great rest of your shift.", "zh": "祝你接下来班上顺利。" }
+    ]
+  },
+  "airport-checkin": {
+    "entry": [
+      { "en": "Checking in, please.", "zh": "办理值机。" },
+      { "en": "Here's my passport.", "zh": "这是我的护照。" },
+      { "en": "One bag to check.", "zh": "一件行李托运。" },
+      { "en": "Window seat, please.", "zh": "要靠窗座位。" }
+    ],
+    "intermediate": [
+      { "en": "Hi, I'm on the flight to London.", "zh": "你好，我坐飞往伦敦的航班。" },
+      { "en": "Is there any way to get an aisle seat?", "zh": "有没有办法安排靠过道的座位？" },
+      { "en": "How many bags can I check for free?", "zh": "我可以免费托运几件行李？" },
+      { "en": "Is my bag within the weight limit?", "zh": "我的行李在限重内吗？" },
+      { "en": "Could I take this one as carry-on?", "zh": "这个能当手提行李带上吗？" },
+      { "en": "Do you know if the flight's on time?", "zh": "你知道航班准点吗？" },
+      { "en": "Which gate should I head to?", "zh": "我该去哪个登机口？" },
+      { "en": "Thanks so much for your help.", "zh": "非常感谢你的帮助。" }
+    ],
+    "advanced": [
+      { "en": "Hi, I'm checking in for the connecting flight to Tokyo — will my bags go all the way through?", "zh": "你好，我办理转往东京的联程，行李能直挂到底吗？" },
+      { "en": "Is there a chance of an upgrade if there are seats available?", "zh": "如果有空位，有机会升舱吗？" },
+      { "en": "My bag's slightly over — how much is the excess?", "zh": "我的行李稍微超重，超重费多少？" },
+      { "en": "Could you seat me and my friend together?", "zh": "能把我和朋友安排在一起吗？" },
+      { "en": "I have a tight connection — how long is the layover?", "zh": "我的转机时间很紧，中转有多久？" },
+      { "en": "Is there lounge access with this ticket?", "zh": "这张票能进休息室吗？" },
+      { "en": "Where do I go through security from here?", "zh": "从这儿我去哪里过安检？" },
+      { "en": "Thanks, you've made that really easy.", "zh": "谢谢，你让这一切很省心。" },
+      { "en": "I'll head straight to the gate then.", "zh": "那我直接去登机口了。" }
+    ]
+  },
+  "subway": {
+    "entry": [
+      { "en": "Which line?", "zh": "坐哪条线？" },
+      { "en": "One ticket, please.", "zh": "一张票。" },
+      { "en": "Which stop?", "zh": "在哪站下？" },
+      { "en": "Thank you!", "zh": "谢谢！" }
+    ],
+    "intermediate": [
+      { "en": "Which line goes to the city center?", "zh": "去市中心坐哪条线？" },
+      { "en": "How much is a single ride?", "zh": "单程多少钱？" },
+      { "en": "Do you sell a day pass?", "zh": "有一日票吗？" },
+      { "en": "Is this the right platform for downtown?", "zh": "去市中心是这个站台吗？" },
+      { "en": "Which stop do I get off at?", "zh": "我在哪一站下？" },
+      { "en": "How many stops is that from here?", "zh": "从这儿要坐几站？" },
+      { "en": "Do I need to transfer anywhere?", "zh": "我需要在哪里换乘吗？" },
+      { "en": "Thanks a lot for your help.", "zh": "非常感谢你的帮助。" }
+    ],
+    "advanced": [
+      { "en": "Sorry, I'm a bit confused — do I take the express or the local to get there?", "zh": "不好意思，我有点糊涂，去那儿坐快车还是慢车？" },
+      { "en": "If I miss this one, how long until the next train?", "zh": "如果错过这班，下一班要等多久？" },
+      { "en": "Is my ticket still valid after I transfer?", "zh": "换乘之后我的票还有效吗？" },
+      { "en": "Which exit is closest to the museum?", "zh": "哪个出口离博物馆最近？" },
+      { "en": "Does this line run all night, or does it stop?", "zh": "这条线是通宵运营还是会停运？" },
+      { "en": "I think I got on going the wrong direction.", "zh": "我好像坐反方向了。" },
+      { "en": "Is it faster to change here or stay on?", "zh": "在这儿换乘快还是不换快？" },
+      { "en": "Great, that's really helpful — thank you.", "zh": "太好了，帮了大忙，谢谢。" },
+      { "en": "I'll get off in three stops then.", "zh": "那我坐三站就下。" }
+    ]
+  },
+  "delivery": {
+    "entry": [
+      { "en": "I'd like to order.", "zh": "我想点餐。" },
+      { "en": "Two pizzas, please.", "zh": "两份披萨。" },
+      { "en": "How long?", "zh": "要多久？" },
+      { "en": "Leave it at the door.", "zh": "放在门口。" }
+    ],
+    "intermediate": [
+      { "en": "Hi, I'd like to place a delivery order.", "zh": "你好，我想点一个外卖。" },
+      { "en": "Could I get a large pepperoni pizza?", "zh": "来一个大份意式辣香肠披萨。" },
+      { "en": "Do you have any vegetarian options?", "zh": "有素食选项吗？" },
+      { "en": "How long will delivery take?", "zh": "配送大概要多久？" },
+      { "en": "What's the delivery fee?", "zh": "配送费多少？" },
+      { "en": "Can I pay when it arrives?", "zh": "能到付吗？" },
+      { "en": "Could you leave it at the front door?", "zh": "能放在前门吗？" },
+      { "en": "Thanks, I'll tip in the app.", "zh": "谢谢，我在 App 里给小费。" }
+    ],
+    "advanced": [
+      { "en": "Hi, could I add a note to leave the order at the door and just text me?", "zh": "你好，能备注放门口、给我发条短信就行吗？" },
+      { "en": "Is it possible to get that with no onions and extra cheese?", "zh": "能做成不加洋葱、多加芝士吗？" },
+      { "en": "One of the items last time was missing — could you double-check the order?", "zh": "上次少送了一样，这次能核对一下订单吗？" },
+      { "en": "Roughly what time should I expect it?", "zh": "大概什么时间能到？" },
+      { "en": "Do you deliver to this address, or am I out of the zone?", "zh": "你们送这个地址吗，还是超范围了？" },
+      { "en": "Could the driver call when they're downstairs?", "zh": "骑手到楼下能打个电话吗？" },
+      { "en": "Is there a minimum order for free delivery?", "zh": "免配送费有起送金额吗？" },
+      { "en": "Thanks, that all sounds good.", "zh": "谢谢，这些都没问题。" },
+      { "en": "I really appreciate it.", "zh": "真的很感谢。" }
+    ]
+  },
+  "thanks": {
+    "entry": [
+      { "en": "Thank you!", "zh": "谢谢！" },
+      { "en": "Thanks a lot.", "zh": "非常感谢。" },
+      { "en": "You're so kind.", "zh": "你人真好。" },
+      { "en": "I appreciate it.", "zh": "我很感激。" }
+    ],
+    "intermediate": [
+      { "en": "Thank you so much for your help.", "zh": "非常感谢你的帮助。" },
+      { "en": "I really appreciate you doing this.", "zh": "真的很感谢你这么做。" },
+      { "en": "That was really kind of you.", "zh": "你真是太好了。" },
+      { "en": "You didn't have to, but thank you.", "zh": "你本不必这样，但还是谢谢你。" },
+      { "en": "This means a lot to me.", "zh": "这对我意义重大。" },
+      { "en": "I owe you one.", "zh": "我欠你一个人情。" },
+      { "en": "Thanks again, really.", "zh": "再次感谢，真心的。" },
+      { "en": "Let me know if I can return the favor.", "zh": "有需要我回报的尽管说。" }
+    ],
+    "advanced": [
+      { "en": "I honestly don't know what I would have done without your help.", "zh": "老实说，没有你的帮助我真不知道该怎么办。" },
+      { "en": "You went out of your way for me, and I won't forget it.", "zh": "你特意为我费了心，我不会忘记的。" },
+      { "en": "I can't thank you enough for stepping in like that.", "zh": "你这样出手相助，我怎么谢都不够。" },
+      { "en": "That really took a weight off my shoulders.", "zh": "这真是帮我卸下了一块心头大石。" },
+      { "en": "Please let me treat you to lunch sometime.", "zh": "改天一定让我请你吃个午饭。" },
+      { "en": "I'll make sure to pay it forward.", "zh": "我一定会把这份好意传递下去。" },
+      { "en": "It's people like you who make a bad day better.", "zh": "正是有你这样的人，糟糕的一天才会变好。" },
+      { "en": "Thank you, from the bottom of my heart.", "zh": "谢谢你，发自内心地感谢。" },
+      { "en": "I really mean it.", "zh": "我是真心的。" }
+    ]
+  },
+  "apology": {
+    "entry": [
+      { "en": "I'm sorry.", "zh": "对不起。" },
+      { "en": "My bad.", "zh": "是我的错。" },
+      { "en": "Sorry I'm late.", "zh": "抱歉我迟到了。" },
+      { "en": "It won't happen again.", "zh": "不会再发生了。" }
+    ],
+    "intermediate": [
+      { "en": "I'm really sorry for the delay.", "zh": "非常抱歉我耽误了。" },
+      { "en": "Sorry to keep you waiting.", "zh": "抱歉让你久等了。" },
+      { "en": "I didn't mean to do that.", "zh": "我不是故意的。" },
+      { "en": "That was my mistake, I'm sorry.", "zh": "那是我的错，对不起。" },
+      { "en": "I hope I didn't offend you.", "zh": "希望我没有冒犯到你。" },
+      { "en": "Please forgive me for that.", "zh": "那件事请原谅我。" },
+      { "en": "I'll make it up to you.", "zh": "我会补偿你的。" },
+      { "en": "Thanks for being so understanding.", "zh": "谢谢你这么体谅。" }
+    ],
+    "advanced": [
+      { "en": "I owe you an apology — I should have let you know sooner.", "zh": "我该向你道歉，我该早点告诉你的。" },
+      { "en": "There's really no excuse, and I take full responsibility.", "zh": "这确实没有借口，我承担全部责任。" },
+      { "en": "I feel terrible about the mix-up, and I want to make it right.", "zh": "这次搞混我很过意不去，我想把它弥补好。" },
+      { "en": "I completely understand if you're frustrated with me.", "zh": "如果你对我感到失望，我完全理解。" },
+      { "en": "It won't happen again — you have my word.", "zh": "不会再发生了，我向你保证。" },
+      { "en": "Is there anything I can do to fix this?", "zh": "有什么我能做的来弥补吗？" },
+      { "en": "I really value our relationship, and I'm sorry I let you down.", "zh": "我很珍惜我们的关系，很抱歉让你失望了。" },
+      { "en": "Thank you for hearing me out.", "zh": "谢谢你听我把话说完。" },
+      { "en": "I appreciate your patience with me.", "zh": "感谢你对我的耐心。" }
+    ]
+  }
+}

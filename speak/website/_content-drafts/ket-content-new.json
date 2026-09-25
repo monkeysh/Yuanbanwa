@@ -1,0 +1,446 @@
+[
+  {
+    "id": "ket-family",
+    "topicKey": "family",
+    "title": "聊聊我的家人",
+    "subtitle": "My family and friends",
+    "description": "这段对话帮你练习用A2口语介绍家人、朋友和周末活动，KET常考这类日常话题。",
+    "learn": [
+      "介绍家庭成员",
+      "表达与谁最亲近",
+      "描述周末活动"
+    ],
+    "examPart": "话题拓展｜认识我的家人",
+    "examTip": "**考法** 在KET口语考试中，“家庭与朋友”是Part 1常考话题，考官可能会问“Who do you live with?”或“Tell me about your best friend.”。这段是生活对话拓展，不是真实Speaking Part 1考场流程。真实Part 1是考官问、考生答。\n**掌握** 核心句型：There is/are… / I live with… / I’m closest to… / My best friend’s name is… / We often… / I like/love doing…\n**注意** 回答时切勿只蹦单词，要用完整短句，比如“I live with my mum and dad.”，而不是只说“Mum and dad.”。",
+    "templates": [
+      {
+        "en": "There are ___ people in my family.",
+        "zh": "说家里几口人"
+      },
+      {
+        "en": "I live with my ___.",
+        "zh": "说和谁住"
+      },
+      {
+        "en": "My best friend's name is ___.",
+        "zh": "说朋友名字"
+      },
+      {
+        "en": "We often ___ at weekends.",
+        "zh": "说周末常做活动"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "How many people are there in your family, Lily?",
+        "zh": "莉莉，你家有几口人？",
+        "male": true
+      },
+      {
+        "en": "There are four. I live with my parents and my little brother.",
+        "zh": "四口人。我和父母还有弟弟住在一起。",
+        "male": false
+      },
+      {
+        "en": "Who are you closest to in your family?",
+        "zh": "家里你和谁最亲？",
+        "male": true
+      },
+      {
+        "en": "I'm closest to my mum because she always listens to me.",
+        "zh": "我和妈妈最亲，因为她总是听我说话。",
+        "male": false
+      },
+      {
+        "en": "What's your best friend's name?",
+        "zh": "你最好的朋友叫什么名字？",
+        "male": true
+      },
+      {
+        "en": "Her name's Amy. We like playing together.",
+        "zh": "她叫艾米。我们喜欢一起玩。",
+        "male": false
+      },
+      {
+        "en": "What do you do with your family and friends at weekends?",
+        "zh": "周末你和家人朋友都做什么？",
+        "male": true
+      },
+      {
+        "en": "We often go to the park or have a picnic.",
+        "zh": "我们经常去公园或者野餐。",
+        "male": false
+      }
+    ]
+  },
+  {
+    "id": "ket-daily",
+    "topicKey": "daily",
+    "title": "聊聊日常作息",
+    "subtitle": "Daily routine",
+    "description": "Tom和Lily聊日常作息，练询问起床睡觉，对比周末活动，掌握KET时间表达。",
+    "learn": [
+      "询问起床和睡觉时间",
+      "描述上学交通方式",
+      "比较平时和周末作息"
+    ],
+    "examPart": "话题拓展｜日常作息对话",
+    "examTip": "**考法** 在 A2 Key / KET 口语中，\"日常作息\"常出现在 Part 1 的个人信息问答中，考官可能会问 \"What time do you get up?\" \"How do you go to school?\" 或 \"What do you do at weekends?\"。这段是生活对话拓展，不是真实 Speaking Part 1 考场流程。真实 Part 1 是考官问、考生答，不是两个学生互相采访。\n**掌握** 需掌握的核心 A2 句型/词汇：What time...? / I usually... / I walk to school / I go to school by... / At weekends, I... / like doing / so I can... / get up, go to bed, have breakfast。\n**注意** 回答时使用完整短句，如 \"I get up at 7 o'clock.\"，不要只说 \"7 o'clock.\"，这样更符合 KET 口语中的完整回答要求。",
+    "templates": [
+      {
+        "en": "What time do you usually ___?",
+        "zh": "询问日常活动时间"
+      },
+      {
+        "en": "I ___ to school.",
+        "zh": "描述上学交通方式"
+      },
+      {
+        "en": "At weekends, I ___.",
+        "zh": "谈论周末活动"
+      },
+      {
+        "en": "I go to bed at ___.",
+        "zh": "说睡觉时间"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "What time do you usually get up on school days?",
+        "zh": "你上学日通常几点起床？",
+        "male": true
+      },
+      {
+        "en": "I get up at seven and have a quick breakfast.",
+        "zh": "我七点起床，然后很快地吃早餐。",
+        "male": false
+      },
+      {
+        "en": "How do you go to school in the morning?",
+        "zh": "你早上怎么去上学？",
+        "male": true
+      },
+      {
+        "en": "I usually walk to school with my best friend.",
+        "zh": "我通常和我最好的朋友走路去学校。",
+        "male": false
+      },
+      {
+        "en": "At weekends, I sleep late. What about you?",
+        "zh": "周末我会睡懒觉。你呢？",
+        "male": true
+      },
+      {
+        "en": "I like to play outside with my friends at the weekend.",
+        "zh": "我周末喜欢和朋友们在外面玩。",
+        "male": false
+      },
+      {
+        "en": "What time do you go to bed?",
+        "zh": "你几点睡觉？",
+        "male": true
+      },
+      {
+        "en": "I go to bed at nine, so I can get up early.",
+        "zh": "我九点睡觉，这样我就能早起。",
+        "male": false
+      }
+    ]
+  },
+  {
+    "id": "ket-weather",
+    "topicKey": "weather",
+    "title": "聊聊天气和季节",
+    "subtitle": "Weather & seasons",
+    "description": "练一练问今天天气、说说你最喜欢的季节，KET 话题里常聊不同天气穿什么、能做什么活动。",
+    "learn": [
+      "问天气和答天气",
+      "描述季节和天气",
+      "说喜欢做的事"
+    ],
+    "examPart": "话题拓展｜天气知多少",
+    "examTip": "**考法** 天气与季节是 A2 Key / KET 常见生活话题，可能出现在 Part 1 的个人问答中，也可以作为 Part 2 讨论图片或提示时的相关表达。请注意，这段是生活对话拓展，不是真实 Speaking Part 1 考场流程。真实 Part 1 是考官问、考生答，不是两个学生互相聊天。\n**掌握** What's the weather like? / It's sunny and warm. / I like spring because... / I can wear... / I love doing... / In summer, I often...\n**注意** 回答时用完整短句，比如 \"It's raining.\"，不要只说 \"Rain.\"；可以加一个简单原因，让回答更丰富。",
+    "templates": [
+      {
+        "en": "What's the weather like ___?",
+        "zh": "问某时/某地的天气"
+      },
+      {
+        "en": "I like ___ because it's ___ and I can ___.",
+        "zh": "说喜欢哪个季节及原因"
+      },
+      {
+        "en": "When it's ___, I wear ___.",
+        "zh": "说特定天气穿什么"
+      },
+      {
+        "en": "My favourite season is ___ because I love ___.",
+        "zh": "介绍最喜欢的季节"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "What's the weather like today?",
+        "zh": "今天天气怎么样？",
+        "male": true
+      },
+      {
+        "en": "It's sunny and warm. Great for a walk!",
+        "zh": "天气晴朗温暖。很适合散步！",
+        "male": false
+      },
+      {
+        "en": "Yes, I love sunny days. What's your favourite season?",
+        "zh": "是啊，我喜欢晴天。你最喜欢的季节是什么？",
+        "male": true
+      },
+      {
+        "en": "I like spring because flowers are everywhere.",
+        "zh": "我喜欢春天，因为到处是花。",
+        "male": false
+      },
+      {
+        "en": "Spring is nice! What do you wear in spring?",
+        "zh": "春天很棒！你春天穿什么？",
+        "male": true
+      },
+      {
+        "en": "I wear a light jacket and jeans.",
+        "zh": "我穿薄夹克和牛仔裤。",
+        "male": false
+      },
+      {
+        "en": "And what do you like doing in spring?",
+        "zh": "那你春天喜欢做什么？",
+        "male": true
+      },
+      {
+        "en": "I love flying kites in the park.",
+        "zh": "我喜欢在公园放风筝。",
+        "male": false
+      }
+    ]
+  },
+  {
+    "id": "ket-health",
+    "topicKey": "health",
+    "title": "聊聊健康吧",
+    "subtitle": "Stay healthy",
+    "description": "这段对话练习如何表达身体不舒服、询问情况，以及谈论保持健康的方法，KET 常考健康话题。",
+    "learn": [
+      "表达哪里不舒服",
+      "询问朋友状况",
+      "说说健康好习惯"
+    ],
+    "examPart": "话题拓展｜健康小对话",
+    "examTip": "**考法** 健康话题在 A2 Key / KET 口语中常出现，比如考官可能会问 \"How do you stay healthy?\" 或 \"What do you do when you're ill?\" 这段是生活对话拓展，不是真实 Speaking Part 1 考场流程。真实 Part 1 是考官问、考生答，不是两个学生互相聊天。\n**掌握** 核心 A2 句型/词：I've got a… / Do you need to see a doctor? / You should… / What do you do to stay healthy? / I ride my bike… / eat fruit / do exercise / stay healthy\n**注意** 回答时尽量用完整短句，比如 \"I've got a headache.\"，不要只说 \"Headache.\"，这样更符合 KET 口语中完整回答的要求。",
+    "templates": [
+      {
+        "en": "I've got a ___.",
+        "zh": "说哪里不舒服"
+      },
+      {
+        "en": "Do you ___ every day?",
+        "zh": "问对方每天做什么保持健康"
+      },
+      {
+        "en": "I need to ___ more.",
+        "zh": "表达需要多做什么"
+      },
+      {
+        "en": "You should ___ and ___.",
+        "zh": "给健康建议"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "Hi, how are you feeling today?",
+        "zh": "嗨，你今天感觉怎么样？",
+        "male": true
+      },
+      {
+        "en": "Not so good. I've got a headache.",
+        "zh": "不太好。我头疼。",
+        "male": false
+      },
+      {
+        "en": "Oh dear. Do you need to see a doctor?",
+        "zh": "哎呀。你需要看医生吗？",
+        "male": true
+      },
+      {
+        "en": "I think I'll just rest for now.",
+        "zh": "我想我现在就休息一下。",
+        "male": false
+      },
+      {
+        "en": "You should drink some water and lie down.",
+        "zh": "你应该喝点水，躺下。",
+        "male": true
+      },
+      {
+        "en": "Thanks. What do you do to stay healthy?",
+        "zh": "谢谢。你做什么来保持健康？",
+        "male": false
+      },
+      {
+        "en": "I ride my bike every day and eat fruit.",
+        "zh": "我每天骑自行车，也吃水果。",
+        "male": true
+      },
+      {
+        "en": "That's great. I need to do more exercise too.",
+        "zh": "太棒了。我也需要多锻炼。",
+        "male": false
+      }
+    ]
+  },
+  {
+    "id": "ket-home",
+    "topicKey": "home",
+    "title": "聊聊我温馨的家",
+    "subtitle": "My home",
+    "description": "练习描述住所、房间数量和最喜欢的房间，KET 常考家庭介绍话题。",
+    "learn": [
+      "描述住所类型",
+      "说说家里几个房间",
+      "聊聊最喜欢的房间"
+    ],
+    "examPart": "话题拓展｜我的家",
+    "examTip": "**考法** KET 口语 Part 1 可能问到关于家的问题，如 Where do you live? How many rooms are there? 这段是生活对话拓展，不是真实 Speaking Part 1 考场流程。真实 Part 1 是考官问、考生答。\n**掌握** 核心 A2 句型/词：I live in a… / There are… / My favourite room is… / I’ve got… / because… / flat / house / garden / bedroom / living room / cosy\n**注意** 回答用完整短句，别只蹦单词，比如问 Where do you live? 要答 I live in a flat. 而不是只说 Flat。",
+    "templates": [
+      {
+        "en": "I live in a ___.",
+        "zh": "描述住所类型，如公寓或房子"
+      },
+      {
+        "en": "There are ___ rooms in my home.",
+        "zh": "介绍家里有几个房间"
+      },
+      {
+        "en": "My favourite room is the ___ because ___.",
+        "zh": "说明最喜欢的房间及原因"
+      },
+      {
+        "en": "I have got a ___ in my room.",
+        "zh": "描述自己房间里的物品"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "Hi, Lily! Where do you live?",
+        "zh": "嗨，莉莉！你住在哪里？",
+        "male": true
+      },
+      {
+        "en": "I live in a flat near the park. And you?",
+        "zh": "我住在公园附近的一套公寓里。你呢？",
+        "male": false
+      },
+      {
+        "en": "I live in a house with a garden.",
+        "zh": "我住在一栋带花园的房子里。",
+        "male": true
+      },
+      {
+        "en": "That's nice! How many rooms are there?",
+        "zh": "真好！有多少个房间？",
+        "male": false
+      },
+      {
+        "en": "There are five rooms. My favourite is my bedroom.",
+        "zh": "有五个房间。我最喜欢的是我的卧室。",
+        "male": true
+      },
+      {
+        "en": "What's in your bedroom?",
+        "zh": "你的卧室里有什么？",
+        "male": false
+      },
+      {
+        "en": "I've got a big desk and some posters on the wall.",
+        "zh": "我有一张大书桌，墙上挂着一些海报。",
+        "male": true
+      },
+      {
+        "en": "Cool! I like my living room because it's cosy.",
+        "zh": "酷！我喜欢我家的客厅，因为那里很舒适。",
+        "male": false
+      }
+    ]
+  },
+  {
+    "id": "ket-animals",
+    "topicKey": "animals",
+    "title": "我的宠物朋友",
+    "subtitle": "Furry Friends",
+    "description": "练习谈论有没有宠物、描述宠物外貌和爱好，KET口语动物话题常考内容。",
+    "learn": [
+      "问朋友有无宠物",
+      "描述宠物外貌",
+      "说宠物喜欢做的事"
+    ],
+    "examPart": "话题拓展｜说说我的宠物",
+    "examTip": "**考法** 在KET口语中，动物与宠物是常考话题。考官可能问“Do you have any pets?”或“What's your favourite animal?”。请注意，这段对话是生活对话拓展，模拟朋友聊天，不是真实Speaking Part 1考场流程。真实Part 1是考官问、考生答。\n**掌握** 应重点掌握询问和描述宠物的句型：Do you have...? / I've got... / What does... look like? / ... likes doing...；以及常用形容词：friendly, cute, white, big, small 等。\n**注意** 回答时要使用完整短句，如“I have a cat.”，不要只说“cat”。尝试用“because”简单解释原因。",
+    "templates": [
+      {
+        "en": "I've got a ___.",
+        "zh": "说我有什么宠物"
+      },
+      {
+        "en": "My pet's name is ___.",
+        "zh": "说宠物叫什么"
+      },
+      {
+        "en": "My ___ is ___ and ___.",
+        "zh": "描述宠物颜色和特征"
+      },
+      {
+        "en": "I don't have a pet, but I love ___.",
+        "zh": "说我没有宠物但喜欢什么动物"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "Do you have any pets?",
+        "zh": "你有宠物吗？",
+        "male": false
+      },
+      {
+        "en": "Yes, I have a cat. Her name is Mimi.",
+        "zh": "有，我有一只猫。她叫咪咪。",
+        "male": true
+      },
+      {
+        "en": "What does she look like?",
+        "zh": "她长什么样？",
+        "male": false
+      },
+      {
+        "en": "She's white with big blue eyes.",
+        "zh": "她是白色的，有一双大大的蓝眼睛。",
+        "male": true
+      },
+      {
+        "en": "What does she like doing?",
+        "zh": "她喜欢做什么？",
+        "male": false
+      },
+      {
+        "en": "She loves playing with a ball.",
+        "zh": "她喜欢玩球。",
+        "male": true
+      },
+      {
+        "en": "I don't have a pet, but I like dogs.",
+        "zh": "我没有宠物，但我喜欢狗。",
+        "male": false
+      },
+      {
+        "en": "Dogs are great. They are very friendly.",
+        "zh": "狗很棒。它们非常友好。",
+        "male": true
+      }
+    ]
+  }
+]
