@@ -22,6 +22,7 @@ ROOT_FILES=(
   scenes.json
   terms.html
   privacy.html
+  support.html
 )
 ASSET_FILES=(
   assets/app-icon-180.png

@@ -86,7 +86,7 @@ for (const [pattern, message] of [
   if (pattern.test(indexHtml)) fail(message);
 }
 
-for (const file of ['terms.html', 'privacy.html']) {
+for (const file of ['terms.html', 'privacy.html', 'support.html']) {
   if (!fs.existsSync(path.join(ROOT, file))) fail(`缺少生产协议页：${file}`);
 }
 

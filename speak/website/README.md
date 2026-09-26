@@ -28,7 +28,7 @@ npm run preview
 - `audio/` — Rosie / Chris 音频
 - `scripts/validate_site.mjs` — 内容、音频、关键回归与进度迁移校验
 - `scripts/build.mjs` — 生产构建；输出到被忽略的 `dist/`
-- `terms.html` / `privacy.html` — 用户协议与隐私说明
+- `terms.html` / `privacy.html` / `support.html` — 用户协议、隐私说明与帮助支持页（App Store 支持 URL）
 - `deploy-speak.sh` — 严格白名单构建和部署脚本
 - `ops/speak-soe/` — 独立的 SOE 服务硬化方案；满足认证前置条件前不得上线
 - `docs/HANDOFF-P0-P1-2026-07-11.md` — 本轮 P0 / P1 接力说明

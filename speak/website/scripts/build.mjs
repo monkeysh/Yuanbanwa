@@ -75,7 +75,7 @@ for (const forbidden of ['unpkg.com', 'text/babel', 'react.development.js', 'bab
 }
 
 fs.writeFileSync(path.join(DIST, 'index.html'), productionHtml);
-for (const file of ['scenes.json', 'terms.html', 'privacy.html']) {
+for (const file of ['scenes.json', 'terms.html', 'privacy.html', 'support.html']) {
   fs.copyFileSync(path.join(ROOT, file), path.join(DIST, file));
 }
 for (const file of ['app-icon-180.png']) {

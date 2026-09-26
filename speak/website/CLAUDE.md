@@ -58,7 +58,7 @@ bash deploy-speak.sh             # production mutation; requires explicit user a
 
 `deploy-speak.sh` 每次都会重新构建，并仅允许以下生产载荷：
 
-- `index.html`、`scenes.json`、`terms.html`、`privacy.html`、`build-manifest.json`
+- `index.html`、`scenes.json`、`terms.html`、`privacy.html`、`support.html`、`build-manifest.json`
 - 单个哈希化 app bundle 与本地 React / ReactDOM vendor bundle
 - `assets/app-icon-180.png`
 - `audio/rosie/*.mp3`、`audio/chris/*.mp3`
