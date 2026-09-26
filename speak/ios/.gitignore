@@ -25,8 +25,7 @@ Package.resolved
 scripts/.env
 *.env.local
 
-# 腾讯云 SOE 凭据(勿提交)
-Speak/Config/SOESecrets.swift
+# 腾讯云 SOE 凭据只放在服务器 .env;App 经 https://speak.yuanbanwa.top/api/soe 代理评测,不再内嵌密钥
 
 # 内容音频(84M/1546文件,可由 scripts/burn_ket_audio.mjs 幂等重烧,不入版本控制)
 Speak/Resources/audio/

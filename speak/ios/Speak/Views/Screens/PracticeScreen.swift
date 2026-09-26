@@ -697,7 +697,7 @@ struct PracticeScreen: View {
             }
             Task { @MainActor in
                 do {
-                    let soe = try await TencentSOE.evaluate(wavURL: wavURL, refText: sentence.en)
+                    let soe = try await SOEClient.evaluate(wavURL: wavURL, refText: sentence.en)
                     // 防呆②:SOE 正常返回但一个词都没识别到(静音/太轻) → 引导重读,不出 0 分。
                     if soe.words.isEmpty {
                         scoring = false

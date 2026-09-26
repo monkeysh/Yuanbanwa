@@ -4,7 +4,6 @@ struct HomeScreen: View {
     @Binding var path: NavigationPath
     @EnvironmentObject var theme: ThemeManager
     @EnvironmentObject var store: AppStore
-    @EnvironmentObject var auth: AuthManager
 
     private var continueScene: SpeakScene {
         SceneRepository.shared.scene(id: "restaurant") ?? SceneRepository.shared.scenes[1]
@@ -52,7 +51,7 @@ struct HomeScreen: View {
                 .font(AppFont.zh(size: 13))
                 .foregroundStyle(theme.palette.inkSoft)
                 .tracking(0.5)
-            Text("早上好，\(auth.account?.nickname ?? "学员")")
+            Text("早上好，学员")
                 .font(AppFont.enSerif(size: 28, weight: .bold))
                 .foregroundStyle(theme.palette.ink)
             HStack(spacing: 0) {

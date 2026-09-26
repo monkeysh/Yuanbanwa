@@ -4,7 +4,7 @@ Yuanbanwa.top 英语学习站点仓库。当前包含「原版娃口语 / Speak�
 
 - `speak/website/` — 原版娃口语 Web 端（React 18 单页应用，esbuild 生产构建）。**先读 `speak/website/CLAUDE.md`**，它定义了产品范围、数据模型、构建与部署约束。
 - `speak/website/ops/speak-soe/` — 腾讯云 SOE 代理服务硬化版（Node 18+，`npm test`）。
-- `speak/ios/` — SwiftUI iOS 版（Xcode / xcodegen）。Linux 云端会话里没有 Xcode，只能阅读和修改代码，不能编译。
+- `speak/ios/` — SwiftUI iOS 版（Xcode / xcodegen）。Linux 云端会话里没有 Xcode，只能阅读和修改代码，不能编译；改过 `project.yml` 或增删文件后，用户需在 Mac 上 `xcodegen generate` 再构建。iOS 的发音评测与 Web 端一样走 `/api/soe` 代理，App 内不含腾讯云密钥，也没有账号体系。
 
 ## 云端会话（Claude Code on the web）
 

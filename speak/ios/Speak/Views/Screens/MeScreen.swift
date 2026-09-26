@@ -3,9 +3,7 @@ import SwiftUI
 struct MeScreen: View {
     @EnvironmentObject var theme: ThemeManager
     @EnvironmentObject var store: AppStore
-    @EnvironmentObject var auth: AuthManager
 
-    @State private var showSignOutConfirm = false
     // 学习数据 S2:成长数据从真实 session 日志聚合;进页时刷新一次
     @State private var growth = GrowthStats()
 
@@ -24,7 +22,7 @@ struct MeScreen: View {
                 ExamLogPanel(growth: growth)
                 voicePicker
                 themePicker
-                signOutRow
+                aboutRows
                 Spacer(minLength: 40)
             }
             .padding(.bottom, 60)
@@ -49,7 +47,7 @@ struct MeScreen: View {
                     .foregroundStyle(.white)
             }
             VStack(alignment: .leading, spacing: 2) {
-                Text(auth.account?.nickname ?? "学员")
+                Text("学员")
                     .font(AppFont.zh(size: 20, weight: .semibold))
                     .foregroundStyle(p.ink)
                 Text(subtitleLine)
@@ -262,50 +260,57 @@ struct MeScreen: View {
         .buttonStyle(.plain)
     }
 
-    private var signOutRow: some View {
+    // 关于:用户协议 / 隐私政策入口(App Store 审核与国内监管都要求可点开)+ 版本号。
+    private var aboutRows: some View {
         let p = theme.palette
-        return Button {
-            Haptics.tap()
-            showSignOutConfirm = true
-        } label: {
+        return VStack(spacing: 0) {
+            aboutLink("用户协议", url: PrivacyConsent.termsURL)
+            Divider().overlay(p.line)
+            aboutLink("隐私政策", url: PrivacyConsent.privacyURL)
+            Divider().overlay(p.line)
             HStack {
+                Text("版本")
+                    .font(AppFont.zh(size: 14))
+                    .foregroundStyle(p.ink)
                 Spacer()
-                Text("退出登录")
-                    .font(AppFont.zh(size: 13, weight: .medium))
-                    .foregroundStyle(p.danger)
-                Spacer()
+                Text(PrivacyConsent.appVersionLabel)
+                    .font(AppFont.enSans(size: 13))
+                    .foregroundStyle(p.inkSoft)
             }
-            .padding(.vertical, 14)
-            .background(
-                RoundedRectangle(cornerRadius: 16, style: .continuous).fill(p.surface)
-                    .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(p.line, lineWidth: 1))
-            )
+            .padding(.horizontal, 16)
+            .padding(.vertical, 13)
         }
-        .buttonStyle(.plain)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous).fill(p.surface)
+                .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(p.line, lineWidth: 1))
+        )
         .padding(.horizontal, 20)
         .padding(.top, 10)
-        .confirmationDialog("退出登录后需要重新输入手机号和验证码",
-                            isPresented: $showSignOutConfirm, titleVisibility: .visible) {
-            Button("确认退出", role: .destructive) {
-                Haptics.warning()
-                withAnimation { auth.signOut() }
+    }
+
+    private func aboutLink(_ title: String, url: URL) -> some View {
+        let p = theme.palette
+        return Link(destination: url) {
+            HStack {
+                Text(title)
+                    .font(AppFont.zh(size: 14))
+                    .foregroundStyle(p.ink)
+                Spacer()
+                Image(systemName: "arrow.up.right")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(p.inkSoft)
             }
-            Button("取消", role: .cancel) {}
+            .padding(.horizontal, 16)
+            .padding(.vertical, 13)
         }
     }
 
     // MARK: - Helpers
 
-    private var avatarInitial: String {
-        // Prefer nickname initial (usually a digit in 学员1234), fall back to "N".
-        guard let nick = auth.account?.nickname, let ch = nick.first else { return "N" }
-        return String(ch)
-    }
+    private var avatarInitial: String { "学" }
 
     private var subtitleLine: String {
-        guard let acct = auth.account else { return "初级学习者" }
-        let days = Int(Date().timeIntervalSince(acct.signedInAt) / 86400)
-        return "加入 \(max(0, days)) 天 · 初级学习者"
+        "已开口 \(store.totalSentencesPracticed) 句 · 初级学习者"
     }
 
     private func heatColor(_ v: Int, p: Palette) -> Color {

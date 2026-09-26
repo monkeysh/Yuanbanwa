@@ -35,8 +35,6 @@ settings:
     INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: 把你录下的语音转成文字，用来做发音相似度评分。录音处理完全在设备本地进行。
     ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-    # 腾讯云 SOE SDK 是 ObjC,靠 bridging header 让 Swift 调用
-    SWIFT_OBJC_BRIDGING_HEADER: Speak/Speak-Bridging-Header.h
 
 targets:
   Speak:
@@ -57,13 +55,3 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yuanbanwa.speak
         PRODUCT_NAME: Speak
-    dependencies:
-      - framework: Frameworks/QCloudSOE.xcframework
-        embed: true
-      - framework: Frameworks/VoiceCommon.xcframework
-        embed: true
-      # SOE SDK 是 C++,需链 libc++(否则缺 ___gxx_personality_v0)+ 音频系统框架
-      - sdk: libc++.tbd
-      - sdk: CoreAudio.framework
-      - sdk: CoreAudioKit.framework
-      - sdk: AudioToolbox.framework

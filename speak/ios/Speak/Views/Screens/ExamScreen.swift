@@ -142,7 +142,7 @@ struct ExamScreen: View {
         // 完整度恒满分、分数虚高(用户验收实测"答得又短又差照样高分")。
         if let wav = recorder.lastRecordedFileURL {
             Task {
-                if let soe = try? await TencentSOE.evaluate(wavURL: wav, refText: text, mode: .freeSpeak), !soe.words.isEmpty {
+                if let soe = try? await SOEClient.evaluate(wavURL: wav, refText: text, mode: .freeSpeak), !soe.words.isEmpty {
                     await MainActor.run { pronScores.append(soe) }
                 }
             }
