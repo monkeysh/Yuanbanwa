@@ -17,6 +17,10 @@ const globalSentenceIds = new Set();
 let sentenceCount = 0;
 let rosieCount = 0;
 let chrisCount = 0;
+// audio/ 不进版本库（见 .gitignore）。只有显式设置 SPEAK_ALLOW_MISSING_AUDIO=1 的开发环境
+// （例如 Claude Code 云端会话）才把“音频文件不存在”降级为警告；默认仍然严格失败。
+const ALLOW_MISSING_AUDIO = process.env.SPEAK_ALLOW_MISSING_AUDIO === '1';
+let missingAudioCount = 0;
 
 for (const scene of data.scenes || []) {
   if (!scene.id) fail('发现缺少 id 的场景');
@@ -62,7 +66,8 @@ for (const scene of data.scenes || []) {
       const audioPath = sentence.audio?.[preferredVoice] || sentence.audio?.rosie || sentence.audio?.chris;
       if (!audioPath) fail(`句子没有有效首选音频：${label}`);
       if (!fs.existsSync(path.join(ROOT, 'audio', audioPath))) {
-        fail(`音频文件不存在：${label} -> audio/${audioPath}`);
+        if (!ALLOW_MISSING_AUDIO) fail(`音频文件不存在：${label} -> audio/${audioPath}`);
+        missingAudioCount += 1;
       }
       if (preferredVoice === 'chris') chrisCount += 1;
       else rosieCount += 1;
@@ -185,7 +190,10 @@ if (progressContext.__Progress.sceneProgress(legacyScene, rereadProgress) !== 75
   fail('新增句子后完成度没有按显式 ID 正确回落');
 }
 
-console.log(`OK: ${sceneIds.size} 个场景，${sentenceCount} 条分档句子，${rosieCount} 条 Rosie + ${chrisCount} 条 Chris 首选音频均有效`);
+if (missingAudioCount) {
+  console.log(`WARN: SPEAK_ALLOW_MISSING_AUDIO=1，跳过了 ${missingAudioCount} 个缺失音频文件的存在性检查（audio/ 不在版本库中，勿据此部署）`);
+}
+console.log(`OK: ${sceneIds.size} 个场景，${sentenceCount} 条分档句子，${rosieCount} 条 Rosie + ${chrisCount} 条 Chris 首选音频${missingAudioCount ? '引用完整' : '均有效'}`);
 console.log('OK: 假分/伪超管/伪验证码检查通过');
 console.log('OK: matchWords 精确、缩写与重复词回归通过');
 console.log('OK: v1 进度/复练引用可一次性迁移；新增句子不会自动完成');

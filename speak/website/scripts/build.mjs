@@ -81,7 +81,15 @@ for (const file of ['scenes.json', 'terms.html', 'privacy.html']) {
 for (const file of ['app-icon-180.png']) {
   fs.copyFileSync(path.join(ROOT, 'assets', file), path.join(DIST, 'assets', file));
 }
-fs.cpSync(path.join(ROOT, 'audio'), path.join(DIST, 'audio'), { recursive: true });
+const audioDir = path.join(ROOT, 'audio');
+if (fs.existsSync(audioDir)) {
+  fs.cpSync(audioDir, path.join(DIST, 'audio'), { recursive: true });
+} else if (process.env.SPEAK_ALLOW_MISSING_AUDIO === '1') {
+  // audio/ 不进版本库；只有开发环境（例如 Claude Code 云端会话）允许无音频构建，产物不得部署。
+  console.warn('WARN: audio/ 不存在，SPEAK_ALLOW_MISSING_AUDIO=1，dist/ 未包含音频，仅供开发预览，不可部署');
+} else {
+  throw new Error('缺少 audio/ 目录：生产构建必须包含音频（开发环境可设置 SPEAK_ALLOW_MISSING_AUDIO=1 跳过）');
+}
 
 const manifest = {
   builtAt: new Date().toISOString(),
