@@ -1,5 +1,5 @@
 {
-  "_note": "批次B2 · v2(已采纳 3 视角对抗验证 31条/17必改;CBP 与一致性两个视角因额度中断,另用 Codex 专审补齐)。重大修正:①**customs entry 去掉「Nothing to declare」**——中国家长入境几乎必带茶叶干货月饼,把这句当最简默认句等于教英语最差的学员做虚假申报(罚款300起+留记录),改成主动申报的最简句;②**星巴克杯型口径统一**——中国『中杯』=Tall、『大杯』=Grande,在美国说 Medium 店员按 Grande 出杯,全文件统一用星巴克术语并在中文标注;③**gate 改签用 confirm 不用 standby**——航司原因的 misconnect 走 involuntary rebooking,是「给你确认座位」的权利,主动要 standby 等于放弃座位去排候补;④**customs 现金合计挂到同机同行的人**(女儿在美读书不在入境航班上,原设定不成立);⑤酒店积分退房后 3-10 天才入账、前台无权手动补,改成当场唯一能做的「确认会员号挂在这次入住」;⑥folio/member number 是酒店内部行话,住客说 the bill / rewards number;⑦resort fee 中文不能译「度假村费」(普通城市酒店都收,译错学员会以为与己无关而跳过);⑧baggage 不在出发地柜台问到达地转盘号(值机员答不了);⑨entry 第4句不再浪费在 Thank you 上——entry 只有4个名额,必须凑成「只会这4句也能把事办成」;⑩starbucks 冰饮线不能要 mug(mug 专配热饮),整档改热饮。",
+  "_note": "批次B2 · v2(已采纳 3 视角对抗验证 31条/17必改;CBP 与一致性两个视角因额度中断,另用 Codex 专审补齐)。重大修正:①**customs entry 去掉「Nothing to declare」**——中国家长入境几乎必带茶叶干货月饼,把这句当最简默认句等于教英语最差的学员做虚假申报(罚款300起+留记录),改成主动申报的最简句;②**星巴克杯型口径统一**——中国『中杯』=Tall、『大杯』=Grande,在美国说 Medium 店员按 Grande 出杯,全文件统一用星巴克术语并在中文标注;③**gate 改签用 confirm 不用 standby**——航司原因的 misconnect 走 involuntary rebooking,是「给你确认座位」的权利,主动要 standby 等于放弃座位去排候补;④**customs 现金合计挂到同机同行的人**(女儿在美读书不在入境航班上,原设定不成立);⑤酒店积分退房后 3-10 天才入账、前台无权手动补,改成当场唯一能做的「确认会员号挂在这次入住」;⑥folio/member number 是酒店内部行话,住客说 the bill / rewards number;⑦resort fee 中文不能译「度假村费」(普通城市酒店都收,译错学员会以为与己无关而跳过);⑧baggage 不在出发地柜台问到达地转盘号(值机员答不了);⑨entry 第4句不再浪费在 Thank you 上——entry 只有4个名额,必须凑成「只会这4句也能把事办成」;⑩starbucks 冰饮线不能要 mug(mug 专配热饮),整档改热饮。 ｜ v3(2026-09-26 Claude 复核 + CBP 专审):①5 处与现有初级档字面完全重复(自检脚本会报错):baggage 入门「Thank you.」、customs 入门「Here's my passport.」与中级「Here's my return ticket.」、sick-leave 中级「Could you let her teacher know?」「Thanks very much.」,全部替换为新动作;②CBP:现金申报补「in cash」;「I'm retired, so I won't be working」是画蛇添足的主动澄清,改为只答所问「I'm retired.」;补「No meat or fruit — just the tea and mushrooms.」(肉制品/水果是最常见违禁项,中国家长必被问);入门档末句改为申请中文翻译(CBP 有语言服务);officer 中文由「长官」改「警官」;③hotel-checkout 高级档:加州 2024-07 起生效的 SB 478 要求强制杂费计入标价,「我理解这是惯例」改为「在加州这笔费用本应计入房价」,交涉更有依据;④parent-meeting 入门第 4 句按本批次自定规则不浪费在 Thank you,改为申请中文翻译(学区有语言服务义务)。starbucks / gate 无问题。",
   "starbucks": {
     "entry": [
       {
@@ -183,8 +183,8 @@
         "zh": "还有一笔 resort fee（酒店强制杂费），我订房时没被告知。"
       },
       {
-        "en": "I understand it's standard here, but it wasn't shown on the app.",
-        "zh": "我理解这是你们的惯例，但 App 上没显示。"
+        "en": "In California, that fee is supposed to be included in the price up front.",
+        "zh": "在加州，这笔费用本应一开始就算进房价里。"
       },
       {
         "en": "Could you check with a manager on that one?",
@@ -223,8 +223,8 @@
         "zh": "第二件行李要多少钱？"
       },
       {
-        "en": "Thank you.",
-        "zh": "谢谢。"
+        "en": "All the way to Shanghai?",
+        "zh": "直挂到上海吗？"
       }
     ],
     "intermediate": [
@@ -419,10 +419,6 @@
   "customs": {
     "entry": [
       {
-        "en": "Here's my passport.",
-        "zh": "这是我的护照。"
-      },
-      {
         "en": "I'm visiting family.",
         "zh": "我来探亲。"
       },
@@ -433,6 +429,10 @@
       {
         "en": "I have some food in my bag.",
         "zh": "我包里有食品。"
+      },
+      {
+        "en": "Could I have a Mandarin interpreter?",
+        "zh": "能给我安排一位中文翻译吗？"
       }
     ],
     "intermediate": [
@@ -465,18 +465,18 @@
         "zh": "我托运行李里有一些茶叶和干香菇。"
       },
       {
-        "en": "Here's my return ticket.",
-        "zh": "这是我的回程机票。"
+        "en": "No meat or fruit — just the tea and mushrooms.",
+        "zh": "没有肉类和水果——只有茶叶和香菇。"
       },
       {
         "en": "Thank you, officer.",
-        "zh": "谢谢您，长官。"
+        "zh": "谢谢您，警官。"
       }
     ],
     "advanced": [
       {
         "en": "Of course, officer.",
-        "zh": "好的，长官。"
+        "zh": "好的，警官。"
       },
       {
         "en": "I'm here for my daughter's graduation, and then we'll travel for a week.",
@@ -491,8 +491,8 @@
         "zh": "她负责我在这边的开销，我自己也带了钱。"
       },
       {
-        "en": "I'm retired, so I won't be working while I'm here.",
-        "zh": "我已经退休了，在这边不会工作。"
+        "en": "I'm retired.",
+        "zh": "我已经退休了。"
       },
       {
         "en": "I do have dried mushrooms and some tea in my checked bag.",
@@ -507,8 +507,8 @@
         "zh": "这些是处方药，我带了医生开的证明。"
       },
       {
-        "en": "My husband and I are traveling together, and between us we're carrying about twelve thousand dollars.",
-        "zh": "我和我先生是一起来的，我们俩加起来带了大约一万二千美元。"
+        "en": "My husband and I are traveling together, and between us we're carrying about twelve thousand dollars in cash.",
+        "zh": "我和我先生是一起来的，我们俩加起来带了大约一万二千美元现金。"
       },
       {
         "en": "I understand — I'll fill out the form.",
@@ -535,8 +535,8 @@
         "zh": "能再说一遍吗？"
       },
       {
-        "en": "Thank you for your help.",
-        "zh": "谢谢你的帮助。"
+        "en": "Is there a Mandarin interpreter available?",
+        "zh": "有中文翻译吗？"
       }
     ],
     "intermediate": [
@@ -661,8 +661,8 @@
         "zh": "她回来时我会带医生证明。"
       },
       {
-        "en": "Could you let her teacher know?",
-        "zh": "能麻烦通知她的老师吗？"
+        "en": "Do I need to send an email too, or is this call enough?",
+        "zh": "我还需要再发一封邮件吗，还是打这个电话就够了？"
       },
       {
         "en": "Is there a way to get her homework while she's out?",
@@ -677,8 +677,8 @@
         "zh": "明天我还要再打一次吗，还是这次两天都算上了？"
       },
       {
-        "en": "Thanks very much.",
-        "zh": "非常感谢。"
+        "en": "Thanks — I'll call again if anything changes.",
+        "zh": "谢谢——有变化我再打电话。"
       }
     ],
     "advanced": [

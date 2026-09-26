@@ -1,5 +1,5 @@
 {
-  "_note": "批次B1 · v2(已采纳 4 视角对抗验证 41 条/21必改)。三个成体系硬伤已修:①**美国车险不赔车内私人物品**——车损走 comprehensive,背包/笔记本走 renter's/homeowner's 的 off-premises 条款(另计免赔额),v1 把这段推理建在不存在的前提上,学员照念会以为东西没人赔而放弃索赔;②**三条报案渠道必须分清**——911 只用于正在发生/刚发生且嫌疑人可能在附近;已结束、无嫌疑人的车内失窃走非紧急线 1-877-ASK-LAPD 或 CORS 网上报案,警察多半不到现场;③**DR number 与 incident number 不是一回事**——电话当场给的是 incident number,保险要的 DR number 要等报告入档后下发,网上报案先拿临时受理号。安全行为链重排:先离开孤立位置→报警→等待期间才取证问监控;不徒手碰玻璃(留给警察/玻璃店);嫌疑人在场时绝不走出掩体(v1 让学员到店门口挥手是错的)。补入整批最大缺口:背包里有家门钥匙+行驶证(印着家庭住址),洛杉矶砸车后接着入室盗窃是已知链条,当天必须换锁。术语:侧窗砸碎是 replacement 不是 repair;加州**没有**法定零免赔玻璃险,侧窗更换 200-450 美元常低于 500 美元免赔额、通常不值得走车险。",
+  "_note": "批次B1 · v2(已采纳 4 视角对抗验证 41 条/21必改)。三个成体系硬伤已修:①**美国车险不赔车内私人物品**——车损走 comprehensive,背包/笔记本走 renter's/homeowner's 的 off-premises 条款(另计免赔额),v1 把这段推理建在不存在的前提上,学员照念会以为东西没人赔而放弃索赔;②**三条报案渠道必须分清**——911 只用于正在发生/刚发生且嫌疑人可能在附近;已结束、无嫌疑人的车内失窃走非紧急线 1-877-ASK-LAPD 或 CORS 网上报案,警察多半不到现场;③**DR number 与 incident number 不是一回事**——电话当场给的是 incident number,保险要的 DR number 要等报告入档后下发,网上报案先拿临时受理号。安全行为链重排:先离开孤立位置→报警→等待期间才取证问监控;不徒手碰玻璃(留给警察/玻璃店);嫌疑人在场时绝不走出掩体(v1 让学员到店门口挥手是错的)。补入整批最大缺口:背包里有家门钥匙+行驶证(印着家庭住址),洛杉矶砸车后接着入室盗窃是已知链条,当天必须换锁。术语:侧窗砸碎是 replacement 不是 repair;加州**没有**法定零免赔玻璃险,侧窗更换 200-450 美元常低于 500 美元免赔额、通常不值得走车险。 ｜ v3(2026-09-26 Claude 复核):①car-breakin 初级档与本场景前提冲突——初级说「警察在路上/等他们来」,而场景定位是已结束、无嫌疑人的车内失窃(警察多半不到现场),改为「已电话报案」+「玻璃碴留给玻璃店」+「监控录像找谁问」,学习要点同步;②emergency-call 入门档第 4 句改为申请中文翻译(911 有 Language Line,对英语最差的学员这是活命句;派人已由「有人正在撬车」隐含);③emergency-call 高级档:接应的白色厢型车既已出现,嫌疑人步行离开不合逻辑,改为上车驶离并报方向;回拨电话一句改换说法,避免与中级档字面重复。insurance-claim 无问题:comprehensive/deductible/renter's/supplement/rental reimbursement/claims history 口径均正确。",
   "emergency-call": {
     "_mode": "补档",
     "_line": "本场景定位 911:正在发生或刚发生且嫌疑人可能在附近。已结束的案子走 car-breakin 的非紧急线。",
@@ -17,8 +17,8 @@
         "zh": "有人正在撬一辆车。"
       },
       {
-        "en": "Please send someone now.",
-        "zh": "请马上派人过来。"
+        "en": "I need a Mandarin interpreter, please.",
+        "zh": "请给我安排一位中文翻译。"
       }
     ],
     "intermediate": [
@@ -69,8 +69,8 @@
         "zh": "我在洛杉矶第三街和佛蒙特街的超市——楼侧面的停车场。"
       },
       {
-        "en": "My callback number is 213-555-0142.",
-        "zh": "我的回拨电话是 213-555-0142。"
+        "en": "You can call me back at 213-555-0142 if we get cut off.",
+        "zh": "如果电话断了，可以打 213-555-0142 找我。"
       },
       {
         "en": "He's still there, next to a silver sedan a few rows in.",
@@ -93,8 +93,8 @@
         "zh": "他旁边倒着停了一辆白色厢型车，里面还坐着人。"
       },
       {
-        "en": "He's walking out toward Vermont now, on foot.",
-        "zh": "他现在正步行朝佛蒙特街方向走。"
+        "en": "He just got into the white van, and they're pulling out toward Vermont.",
+        "zh": "他刚上了那辆白色厢型车，他们正朝佛蒙特街方向开出去。"
       },
       {
         "en": "Yes, I can stay on the line until the officers get here.",
@@ -118,7 +118,7 @@
       "minutes": 4,
       "description": "洛杉矶最高频的一种案子：回到车前发现车窗被砸、包被拿走。安全撤离、报案、当天换锁、叫上门换玻璃。",
       "learn": [
-        "先离开孤立位置再报警，玻璃留给警察别徒手清",
+        "先离开孤立位置再报警，玻璃碴别徒手清，留给玻璃店",
         "无嫌疑人的车内失窃通常网上或电话报案，警察多半不到现场",
         "问报案编号给保险（网上报案先拿临时号）",
         "包里有钥匙和行驶证＝对方拿到住址，当天换锁",
@@ -145,8 +145,8 @@
     ],
     "beginner": [
       {
-        "en": "I've already called the police — they're on the way.",
-        "zh": "我已经报警了——他们在路上了。"
+        "en": "I've already called the police to report it.",
+        "zh": "我已经打电话报警了。"
       },
       {
         "en": "Someone smashed my passenger window.",
@@ -165,16 +165,16 @@
         "zh": "到处都是玻璃——我什么都没碰。"
       },
       {
-        "en": "I'm taking photos of everything, and I'll leave the glass for the police.",
-        "zh": "我把一切都拍下来，玻璃留给警察处理。"
+        "en": "I'm taking photos of everything, and I'll let the glass shop clean up the glass.",
+        "zh": "我把一切都拍下来，玻璃碴留给玻璃店来清理。"
       },
       {
         "en": "Excuse me, do you know if this lot has security cameras?",
         "zh": "打扰一下，你知道这个停车场有监控吗？"
       },
       {
-        "en": "I'll wait by the store entrance until they get here.",
-        "zh": "我在店门口等着，直到他们来。"
+        "en": "Who should I ask about the camera footage?",
+        "zh": "监控录像该找谁问？"
       }
     ],
     "intermediate": [
