@@ -33116,17 +33116,17 @@
       "subtitle": "Talking about daily life",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 27,
+      "sentenceCount": 29,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊日常作息 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊日常作息 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "说早上的习惯",
         "对比工作日和周末",
         "说做某事的频率"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 日常作息是 PET 口语 Part 1 的高频开场话题。考官常问你平时几点起床、工作日和周末有什么不同、晚上一般做什么。\n**怎么答** B1 学生不能只答一个词，要用完整句并给出理由或细节，比如「I usually get up at seven because I have to catch the bus.」。注意自如切换一般现在时和频率副词（always/usually/sometimes/hardly ever）。\n**场景** Part 2 看单图描述时，可能出现某人在家做家务或吃早餐的场景，要用现在进行时说清谁在做什么、在哪里。",
       "templates": [
         {
@@ -33392,7 +33392,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 7,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-daily-part2-1",
@@ -33560,6 +33560,67 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-daily_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-daily-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "Behind her, there is a white fridge with a few photos and notes stuck on the door.",
+              "zh": "她身后有一台白色冰箱，冰箱门上贴着几张照片和便条。",
+              "words": [
+                "Behind",
+                "her",
+                "there",
+                "is",
+                "a",
+                "white",
+                "fridge",
+                "with",
+                "a",
+                "few",
+                "photos",
+                "and",
+                "notes",
+                "stuck",
+                "on",
+                "the",
+                "door"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-daily_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-daily-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "Next to the cooker, there is a kettle and a few clean plates on the counter.",
+              "zh": "灶台旁边的台面上放着一个水壶和几个干净的盘子。",
+              "words": [
+                "Next",
+                "to",
+                "the",
+                "cooker",
+                "there",
+                "is",
+                "a",
+                "kettle",
+                "and",
+                "a",
+                "few",
+                "clean",
+                "plates",
+                "on",
+                "the",
+                "counter"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-daily_p2_09.mp3"
               }
             },
             {
@@ -33949,17 +34010,17 @@
       "subtitle": "Talking about free time",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 25,
+      "sentenceCount": 27,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊兴趣爱好 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊兴趣爱好 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "说空闲时喜欢做的事",
         "说爱好并给理由",
         "说想学但还不擅长的事"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**要点** 空闲时间和爱好几乎是 PET 口语 Part 1 必考内容。考官会问你喜欢做什么、什么时候做、为什么喜欢、是和别人一起还是自己做。B1 学生要能说出爱好的名称，并用 because/so 给出理由，还要会用 like/enjoy/be interested in + 动名词（enjoy playing, interested in drawing）。也常被问到「将来想学什么新爱好」，需要用 would like to 或 be going to。\n\n**注意** Part 2 单图可能是有人在弹吉他、踢球或画画，要用现在进行时描述动作，并用 maybe/probably 推测心情。",
       "templates": [
         {
@@ -34223,7 +34284,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 7,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-hobbies-part2-1",
@@ -34361,6 +34422,61 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-hobbies_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-hobbies-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "The boy with the guitar is wearing a blue cap and a white T-shirt.",
+              "zh": "弹吉他的男孩戴着一顶蓝色鸭舌帽，穿着白色T恤。",
+              "words": [
+                "The",
+                "boy",
+                "with",
+                "the",
+                "guitar",
+                "is",
+                "wearing",
+                "a",
+                "blue",
+                "cap",
+                "and",
+                "a",
+                "white",
+                "T-shirt"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-hobbies_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-hobbies-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "In the background, I can see some tall trees and a small pond.",
+              "zh": "背景里我能看到几棵高大的树和一个小池塘。",
+              "words": [
+                "In",
+                "the",
+                "background",
+                "I",
+                "can",
+                "see",
+                "some",
+                "tall",
+                "trees",
+                "and",
+                "a",
+                "small",
+                "pond"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-hobbies_p2_09.mp3"
               }
             },
             {
@@ -34724,17 +34840,17 @@
       "subtitle": "Talking about travel",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 26,
+      "sentenceCount": 29,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊旅行计划 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊旅行计划 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "讲去过的地方",
         "讲想去的地方",
         "讲旅行偏好"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 旅行与假期是 PET 口语的经典话题。Part 1 里考官常问你去过哪里、喜欢什么样的假期、下次想去哪。这里要灵活用过去时（讲去过的地方）和将来表达 be going to / would like to（讲计划）。\n**对策** B1 学生要避免只说地名，应补充原因和细节，比如「I went to the seaside because I love swimming.」。\n**场景** Part 2 看单图可能是海滩、机场或山里露营，要用 There is/are 和现在进行时说出地点、人物动作，并用 It looks like 和 probably 推测天气与心情，把句子用 and/but/so 连起来更连贯。",
       "templates": [
         {
@@ -34988,7 +35104,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 6,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-travel-part2-1",
@@ -35126,6 +35242,88 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-travel_p2_05.mp3"
+              }
+            },
+            {
+              "id": "pet-travel-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "The children have a red bucket and a small spade next to them.",
+              "zh": "孩子们旁边放着一个红色的小桶和一把小铲子。",
+              "words": [
+                "The",
+                "children",
+                "have",
+                "a",
+                "red",
+                "bucket",
+                "and",
+                "a",
+                "small",
+                "spade",
+                "next",
+                "to",
+                "them"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-travel_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-travel-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "There are a few other people swimming in the sea further away.",
+              "zh": "远一点的海里还有几个人在游泳。",
+              "words": [
+                "There",
+                "are",
+                "a",
+                "few",
+                "other",
+                "people",
+                "swimming",
+                "in",
+                "the",
+                "sea",
+                "further",
+                "away"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-travel_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-travel-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "Behind the family, I can see some white beach houses and a few palm trees.",
+              "zh": "在这家人身后，我能看到几栋白色的海滨小屋和几棵棕榈树。",
+              "words": [
+                "Behind",
+                "the",
+                "family",
+                "I",
+                "can",
+                "see",
+                "some",
+                "white",
+                "beach",
+                "houses",
+                "and",
+                "a",
+                "few",
+                "palm",
+                "trees"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-travel_p2_09.mp3"
               }
             },
             {
@@ -35512,17 +35710,17 @@
       "subtitle": "Talking about shopping",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 26,
+      "sentenceCount": 28,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊购物消费 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊购物消费 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "讲购物偏好并比较",
         "讲最近买的东西",
         "讲购物时关注什么"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 购物是 PET 口语 Part 1 常考话题，考官会问你喜欢去哪购物、网购还是逛店、上次买了什么。\n\n**怎么答** 回答要会用比较级（cheaper, more comfortable）和原因连接词来表达偏好，比如「I prefer shopping online because it's more convenient.」。B1 学生要能描述上次的购物经历（过去时），并给出评价。\n\n**场景** Part 2 单图常是超市、商场或市场，画面里有人在挑选、付钱或推购物车，要用现在进行时和 There is/are 描述货架、商品和人物，并用 maybe/I think 推测他们在买什么。",
       "templates": [
         {
@@ -35770,7 +35968,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 6,
+          "sentenceCount": 8,
           "sentences": [
             {
               "id": "pet-shopping-part2-1",
@@ -35915,6 +36113,65 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-shopping_p2_05.mp3"
+              }
+            },
+            {
+              "id": "pet-shopping-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "She is wearing a grey jumper and jeans, and she has a handbag on her shoulder.",
+              "zh": "她穿着灰色毛衣和牛仔裤，肩上挎着一个手提包。",
+              "words": [
+                "She",
+                "is",
+                "wearing",
+                "a",
+                "grey",
+                "jumper",
+                "and",
+                "jeans",
+                "and",
+                "she",
+                "has",
+                "a",
+                "handbag",
+                "on",
+                "her",
+                "shoulder"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-shopping_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-shopping-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "In her trolley, there are already some bottles of milk and a bag of apples.",
+              "zh": "她的购物车里已经有几瓶牛奶和一袋苹果。",
+              "words": [
+                "In",
+                "her",
+                "trolley",
+                "there",
+                "are",
+                "already",
+                "some",
+                "bottles",
+                "of",
+                "milk",
+                "and",
+                "a",
+                "bag",
+                "of",
+                "apples"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-shopping_p2_08.mp3"
               }
             },
             {
@@ -36304,17 +36561,17 @@
       "subtitle": "Talking about food",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 27,
+      "sentenceCount": 29,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊饮食外食 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊饮食外食 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "讲最喜欢的食物并给理由",
         "讲某一餐通常吃什么",
         "讲不喜欢的食物"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**场景** 饮食与外出就餐是 PET 口语 Part 1 的常见话题，考官会问你最喜欢的食物、平时谁做饭、喜不喜欢在外面吃。\n\n**怎么答** B1 学生要能用 because/so 解释喜好，用频率副词说习惯，还要会用一点 present perfect（Have you ever tried…?）。回答应给出具体例子，比如「I love noodles because they're tasty and easy to make.」。\n\n**考法** Part 2 单图常是一家人吃饭、餐厅或厨房做菜的场景，要用 There is/are、现在进行时描述桌上的食物和人物动作，并用 It looks like / probably 推测这是什么场合、大家心情如何。",
       "templates": [
         {
@@ -36555,7 +36812,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 7,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-food-part2-1",
@@ -36713,6 +36970,66 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-food_p2_05.mp3"
+              }
+            },
+            {
+              "id": "pet-food-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "The table is covered with a white cloth, and everyone has a glass of water.",
+              "zh": "桌上铺着白色桌布，每个人面前都有一杯水。",
+              "words": [
+                "The",
+                "table",
+                "is",
+                "covered",
+                "with",
+                "a",
+                "white",
+                "cloth",
+                "and",
+                "everyone",
+                "has",
+                "a",
+                "glass",
+                "of",
+                "water"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-food_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-food-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "Behind them, I can see a window with the curtains closed and a picture on the wall.",
+              "zh": "他们身后有一扇拉上窗帘的窗户，墙上还挂着一幅画。",
+              "words": [
+                "Behind",
+                "them",
+                "I",
+                "can",
+                "see",
+                "a",
+                "window",
+                "with",
+                "the",
+                "curtains",
+                "closed",
+                "and",
+                "a",
+                "picture",
+                "on",
+                "the",
+                "wall"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-food_p2_09.mp3"
               }
             },
             {
@@ -37107,17 +37424,17 @@
       "subtitle": "Talking about studies",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 25,
+      "sentenceCount": 27,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊学习计划 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊学习计划 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "讲最喜欢的科目并给理由",
         "讲未来的计划或愿望",
         "讲学习中的困难和打算"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 学习与未来计划在 PET 口语里既出现在 Part 1，也常作为收尾的展望话题。考官会问你最喜欢哪门课、为什么、将来想做什么。这里非常考验将来表达：be going to / would like to / want to + 动词原形。B1 学生要给出理由和具体计划，避免只说「I like English.」，应说「I like English because I want to study abroad in the future.」。\n\n**怎么答** Part 2 单图常是教室、图书馆或学生在学习的场景，要用 There is/are 和现在进行时描述谁在做什么、用了什么工具，并用 I think / probably 推测他们在学什么、感觉如何。",
       "templates": [
         {
@@ -37371,7 +37688,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 7,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-school-part2-1",
@@ -37506,6 +37823,64 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-school_p2_04.mp3"
+              }
+            },
+            {
+              "id": "pet-school-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "The girl has long dark hair and is wearing glasses and a green jumper.",
+              "zh": "那个女孩留着深色长发，戴着眼镜，穿着绿色毛衣。",
+              "words": [
+                "The",
+                "girl",
+                "has",
+                "long",
+                "dark",
+                "hair",
+                "and",
+                "is",
+                "wearing",
+                "glasses",
+                "and",
+                "a",
+                "green",
+                "jumper"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-school_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-school-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "There are big windows on one side, and the light from outside makes the room bright.",
+              "zh": "一侧有几扇大窗户，外面的光线让房间很明亮。",
+              "words": [
+                "There",
+                "are",
+                "big",
+                "windows",
+                "on",
+                "one",
+                "side",
+                "and",
+                "the",
+                "light",
+                "from",
+                "outside",
+                "makes",
+                "the",
+                "room",
+                "bright"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-school_p2_09.mp3"
               }
             },
             {
@@ -37861,13 +38236,13 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 口语 · 科技与社交 · Part 1 面试问答 + Part 2 对比两图长描述",
+      "description": "FCE 口语 · 科技与社交 · Part 1 面试问答 + Part 2 对比两图长描述 + Part 3 讨论",
       "learn": [
         "说优点",
         "转折说缺点",
         "推测加对比"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 科技是 FCE 高频话题。Part 1 考官会问你日常如何使用手机、社交媒体和网络,通常会自然用到现在时和现在完成时给出 2 句左右的回答,并补充理由或例子。\n\n**场景** Part 2 常给你两张人们使用科技的照片(如有人在打视频电话、有人独自刷手机),要求约一分钟对比异同并推测人们为什么这样使用。\n\n**提示** B2 学生要主动用对比衔接词 whereas、on the other hand,以及推测语气 might、could、probably,避免只罗列画面而不分析。多用搭配如 stay in touch、a huge impact、rely on technology 来提升档次。",
       "templates": [
         {
@@ -38827,13 +39202,13 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 口语 · 环境与可持续 · Part 1 面试问答 + Part 2 对比两图长描述",
+      "description": "FCE 口语 · 环境与可持续 · Part 1 面试问答 + Part 2 对比两图长描述 + Part 3 讨论",
       "learn": [
         "用条件句谈影响",
         "给出环保建议",
         "对比两图并评价"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 环保是 FCE 必备话题,常和日常习惯绑定。Part 1 会问你做了哪些环保的事、所在城市污染情况、个人能否带来改变,通常会自然用到现在完成时和情态动词谈责任(should、ought to)。\n\n**场景** Part 2 可能给两张图,比如人们骑车上班 vs 开车堵在路上,要你对比并推测原因和影响。\n\n**注意** B2 学生要会用条件句 If more people did this, ... 和因果衔接词 as a result、therefore,并准确使用搭配 cut down on、reduce waste、climate change。注意别只描述画面,要给出有理由支撑的观点收尾。",
       "templates": [
         {
@@ -39770,13 +40145,13 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 口语 · 工作与职业 · Part 1 面试问答 + Part 2 对比两图长描述",
+      "description": "FCE 口语 · 工作与职业 · Part 1 面试问答 + Part 2 对比两图长描述 + Part 3 讨论",
       "learn": [
         "说吸引你的点",
         "表达偏好并给理由",
         "由画面推测内在状态"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**要点** 工作话题在 FCE 中既考真实经历也考观点。\n\n**考法** Part 1 会问你理想的工作、未来计划、在家工作还是去办公室,通常会自然用到将来时(will、be going to)和现在完成时谈经历。Part 2 常给两张人们在不同环境工作的照片(如团队开会 vs 独自远程办公),要你对比并推测各自的优缺点。\n\n**掌握** B2 学生要会用关系从句 a job where you can...、比较结构 not as ... as,以及表达偏好的句型 I'd much rather。准确使用搭配 work under pressure、meet a deadline、career path,并以一句带理由的观点收尾。",
       "templates": [
         {
@@ -40727,13 +41102,13 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 口语 · 旅行与文化 · Part 1 面试问答 + Part 2 对比两图长描述",
+      "description": "FCE 口语 · 旅行与文化 · Part 1 面试问答 + Part 2 对比两图长描述 + Part 3 讨论",
       "learn": [
         "说旅行的好处",
         "由外表推测感受",
         "比较两种方式并给理由"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 旅行话题鼓励考生展示叙事和描述能力。Part 1 会问你去过哪里、喜欢什么样的假期、是否愿意一个人旅行,通常会自然用到过去时和现在完成时讲经历(I've been to..., Last summer I went...)。\n\n**怎么答** Part 2 常给两张不同度假方式的照片(如海滩放松 vs 城市观光),要你对比并推测人们为什么选择这样旅行。\n\n**掌握** B2 学生要会用比较级 more relaxing than、推测语气 must be、they look as if...,并使用搭配 get away from it all、broaden your horizons、a once-in-a-lifetime experience。结尾给出一句有理由的个人偏好。",
       "templates": [
         {
@@ -41650,13 +42025,13 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 口语 · 娱乐与媒体 · Part 1 面试问答 + Part 2 对比两图长描述",
+      "description": "FCE 口语 · 娱乐与媒体 · Part 1 面试问答 + Part 2 对比两图长描述 + Part 3 讨论",
       "learn": [
         "用强调句说喜欢的点",
         "对比两种喜好",
         "对比两图氛围"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 娱乐话题贴近考生生活,容易展开。Part 1 会问你喜欢看什么、听什么、更爱影院还是在家看流媒体,通常会自然用到频率副词和现在时谈习惯,并给出理由。\n\n**场景** Part 2 常给两张人们娱乐的照片(如去看现场演出 vs 在家看电影),要你对比氛围并推测人们的偏好原因。\n\n**注意** B2 学生要会用强调结构 What I really enjoy is...、对比语 by contrast,以及搭配 catch up on a series、a live performance、it's not really my thing。注意 B2 答案要避免只说 good/bad,改用 fascinating、overrated、hooked 等更精准的词,并以观点收尾。",
       "templates": [
         {
@@ -42586,13 +42961,13 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 口语 · 健康与生活 · Part 1 面试问答 + Part 2 对比两图长描述",
+      "description": "FCE 口语 · 健康与生活 · Part 1 面试问答 + Part 2 对比两图长描述 + Part 3 讨论",
       "learn": [
         "说为保持健康做的努力",
         "谈减压方法及效果",
         "对比两图人物状态"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 健康与生活方式话题考查考生谈论习惯和给建议的能力。Part 1 会问你如何保持健康、是否吃得均衡、压力大时怎么办,通常会自然用到频率副词、情态动词 should、以及现在完成时谈变化。Part 2 常给两张人们追求健康的照片(如户外运动 vs 在家做饭),要你对比并推测人们这样做的好处。\n**掌握** B2 学生要会用结果状语 so that、让步 even though,以及搭配 keep fit、a balanced diet、relieve stress、burn off energy。\n**注意** 注意避免只说 healthy/good,可用 energetic、refreshed、worn out 等更细腻的词,并以带理由的观点收尾。",
       "templates": [
         {
@@ -43509,14 +43884,14 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 高频话题:交友方式、维系友谊、什么算好朋友。Part 1 深答 + Part 2 两类友谊对比独白。",
+      "description": "FCE 高频话题:交友方式、维系友谊、什么算好朋友。Part 1 深答 + Part 2 两类友谊对比独白。 + Part 3 讨论",
       "learn": [
         "讲清交友倾向与理由",
         "谈友谊的维系与价值",
         "对比独处友谊 vs 群体社交",
         "用 Personally 表个人看法"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 人际关系是 FCE 高频话题。Part 1 考官会问你的交友方式、如何维系老友、什么样才算好朋友,回答给出 2 句左右并说明理由(常用现在时+现在完成时)。Part 2 常给「两人独处 vs 群体聚会」的对比图,用 whereas / on the other hand 对比,结尾用 Personally 表个人看法。",
       "templates": [
         {
@@ -44449,14 +44824,14 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 高频话题:学习方式、课堂 vs 自学、教育的意义。Part 1 深答 + Part 2 学习场景对比独白。",
+      "description": "FCE 高频话题:学习方式、课堂 vs 自学、教育的意义。Part 1 深答 + Part 2 学习场景对比独白。 + Part 3 讨论",
       "learn": [
         "谈学习方式与偏好",
         "评价考试与实践的价值",
         "对比传统课堂 vs 在线自学",
         "用 whereas 展开对比"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 教育是 FCE 常考话题。Part 1 考官会问你喜欢的学习方式、考试是否重要、学校教育的价值,回答要给理由和例子。Part 2 常给「课堂上课 vs 独自在线学习」的对比图,用 whereas / while 对比两种方式的利弊,结尾表明个人偏好。",
       "templates": [
         {
@@ -45391,14 +45766,14 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 高频话题:未来计划、梦想职业、成功的定义。Part 1 深答 + Part 2 追梦场景对比独白。",
+      "description": "FCE 高频话题:未来计划、梦想职业、成功的定义。Part 1 深答 + Part 2 追梦场景对比独白。 + Part 3 讨论",
       "learn": [
         "谈未来计划与理由",
         "定义成功与幸福",
         "对比稳定 vs 冒险的人生路",
         "用条件句谈设想"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 理想与未来是 FCE 常考话题。Part 1 考官会问你的未来计划、想从事的工作、如何定义成功,回答多用 would like to / hope to / be planning to,并给理由。Part 2 常给「稳定工作 vs 追逐梦想」的对比图,用条件句(If...)设想不同选择,结尾表明自己的价值取向。",
       "templates": [
         {
@@ -46344,14 +46719,14 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 高频话题:作息习惯、工作生活平衡、想改变的习惯。Part 1 深答 + Part 2 忙碌 vs 悠闲生活对比。",
+      "description": "FCE 高频话题:作息习惯、工作生活平衡、想改变的习惯。Part 1 深答 + Part 2 忙碌 vs 悠闲生活对比。 + Part 3 讨论",
       "learn": [
         "谈日常习惯与节奏",
         "评价工作生活平衡",
         "对比快节奏 vs 慢生活",
         "用条件句谈想改的习惯"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 生活方式是 FCE 常考话题。Part 1 考官会问你的日常作息、如何平衡工作与休息、有没有想改的习惯,回答多用一般现在时+频率副词,并给理由。Part 2 常给「忙碌都市 vs 悠闲慢生活」的对比图,用 whereas / by contrast 对比节奏,结尾表明自己更向往哪种。",
       "templates": [
         {
@@ -47276,14 +47651,14 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 高频话题:饮食习惯、在家做饭 vs 外食、健康饮食。Part 1 深答 + Part 2 家庭聚餐 vs 快餐对比。",
+      "description": "FCE 高频话题:饮食习惯、在家做饭 vs 外食、健康饮食。Part 1 深答 + Part 2 家庭聚餐 vs 快餐对比。 + Part 3 讨论",
       "learn": [
         "谈饮食偏好与习惯",
         "评价外食与自炊",
         "对比聚餐 vs 独食快餐",
         "用比较级谈变化"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 饮食是 FCE 常考话题。Part 1 考官会问你的饮食习惯、常做饭还是外食、是否注意健康,回答给出具体例子和理由。Part 2 常给「家庭围坐聚餐 vs 独自吃快餐」的对比图,用 whereas 对比,谈食物在社交与健康中的角色,结尾表个人偏好。",
       "templates": [
         {
@@ -48212,14 +48587,14 @@
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "FCE 高频话题:消费习惯、存钱、网购 vs 实体店。Part 1 深答 + Part 2 逛店 vs 网购对比。",
+      "description": "FCE 高频话题:消费习惯、存钱、网购 vs 实体店。Part 1 深答 + Part 2 逛店 vs 网购对比。 + Part 3 讨论",
       "learn": [
         "谈消费与储蓄习惯",
         "评价花钱的价值观",
         "对比实体购物 vs 网购",
         "用 rather than 表取舍"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 金钱消费是 FCE 常考话题。Part 1 考官会问你的花钱习惯、是否存钱、喜欢网购还是逛店,回答要有具体例子和价值判断。Part 2 常给「实体店逛街 vs 在家网购」的对比图,用 whereas 对比两种方式的利弊,谈便利与体验的取舍,结尾表个人偏好。",
       "templates": [
         {
@@ -49156,17 +49531,17 @@
       "subtitle": "Keeping fit and healthy",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 26,
+      "sentenceCount": 28,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊健康习惯 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊健康习惯 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "说自己的健康习惯",
         "说明喜欢某项运动的原因",
         "介绍日常饮食中的健康食物"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 在PET口语Part 1中，考官通常会问关于你保持健康的方式，比如你常做什么运动、饮食上有什么好习惯。你回答时需要用完整句，并给出理由或例子，自然而然会用到一般现在时（如I go running）、现在完成时（如I've started eating more vegetables）或比较级（如It's healthier than junk food）。\n\n**怎么答** Part 2中，你会看到一张彩色照片，要描述人们在运动或吃东西的场景。这时你通常会用到现在进行时来描述动作（如They are playing football），用maybe或probably推测心情（如They probably feel happy），以及用连接词because、so、but等使你的独白更连贯。\n\n**注意** 注意不要只蹦单词，而要试着把句子连起来说。",
       "templates": [
         {
@@ -49458,7 +49833,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 6,
+          "sentenceCount": 8,
           "sentences": [
             {
               "id": "pet-health-part2-1",
@@ -49579,6 +49954,62 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-health_p2_04.mp3"
+              }
+            },
+            {
+              "id": "pet-health-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "The girl is wearing a yellow top and white trainers, and her hair is tied back.",
+              "zh": "女孩穿着黄色上衣和白色运动鞋，头发扎在脑后。",
+              "words": [
+                "The",
+                "girl",
+                "is",
+                "wearing",
+                "a",
+                "yellow",
+                "top",
+                "and",
+                "white",
+                "trainers",
+                "and",
+                "her",
+                "hair",
+                "is",
+                "tied",
+                "back"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-health_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-health-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "Behind them, there is a playground with a slide and some swings.",
+              "zh": "他们身后有一个游乐场，有滑梯和几个秋千。",
+              "words": [
+                "Behind",
+                "them",
+                "there",
+                "is",
+                "a",
+                "playground",
+                "with",
+                "a",
+                "slide",
+                "and",
+                "some",
+                "swings"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-health_p2_08.mp3"
               }
             },
             {
@@ -49995,17 +50426,17 @@
       "subtitle": "Weather and seasons",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 25,
+      "sentenceCount": 28,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 聊聊季节与天气 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 聊聊季节与天气 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "描述特定天气下喜欢做的事",
         "表达天气偏好并给出理由",
         "描述家乡的典型气候"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**要点** 这个话题在PET口语Part 1中，考官常会提问个人偏好与经历，例如你喜欢哪个季节、不同天气通常做什么、你的家乡气候如何。回答时不能只说一个词，需用完整句给出理由或例子，比如用'because...'解释原因，或用'when it's... I usually...'描述习惯。\n**怎么答** 在Part 2，你会看到一张彩色照片，通常展示人们在某种天气或季节里的活动，你需要连续说大约1分钟。描述时要先整体说'In the picture...'，然后讲人物、地点、动作，用现在进行时，如'He is wearing...'。推测天气或心情时，自然会用到'It looks like...'、'probably'、'I think...'等表达。\n**注意** 要特别注意连接词如'so'、'and'、'but'、'also'，使描述更连贯。B1级别学生容易只说简单句，务必扩展句子，例如加上比较或个人感受。",
       "templates": [
         {
@@ -50254,7 +50685,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 7,
+          "sentenceCount": 10,
           "sentences": [
             {
               "id": "pet-weather-part2-1",
@@ -50380,6 +50811,91 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-weather_p2_04.mp3"
+              }
+            },
+            {
+              "id": "pet-weather-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "One of the children is holding a big yellow leaf in one hand.",
+              "zh": "其中一个孩子一只手里拿着一片大大的黄叶。",
+              "words": [
+                "One",
+                "of",
+                "the",
+                "children",
+                "is",
+                "holding",
+                "a",
+                "big",
+                "yellow",
+                "leaf",
+                "in",
+                "one",
+                "hand"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-weather_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-weather-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "There are some tall trees along the path, and most of them have lost their leaves.",
+              "zh": "小路两旁有几棵高大的树，大多数已经掉光了叶子。",
+              "words": [
+                "There",
+                "are",
+                "some",
+                "tall",
+                "trees",
+                "along",
+                "the",
+                "path",
+                "and",
+                "most",
+                "of",
+                "them",
+                "have",
+                "lost",
+                "their",
+                "leaves"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-weather_p2_09.mp3"
+              }
+            },
+            {
+              "id": "pet-weather-part2-10",
+              "legacyIds": [
+                "part2-10"
+              ],
+              "en": "In the distance, I can see a man walking a dog near the gate.",
+              "zh": "远处，我能看到一个男人在大门附近遛狗。",
+              "words": [
+                "In",
+                "the",
+                "distance",
+                "I",
+                "can",
+                "see",
+                "a",
+                "man",
+                "walking",
+                "a",
+                "dog",
+                "near",
+                "the",
+                "gate"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-weather_p2_10.mp3"
               }
             },
             {
@@ -50737,17 +51253,17 @@
       "subtitle": "My taste in movies and music",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 26,
+      "sentenceCount": 27,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 我的电影与音乐品味 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 我的电影与音乐品味 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "说喜欢的电影类型",
         "比较两种娱乐方式",
         "分享最喜欢的歌曲"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**要点** 在PET口语Part 1中，考官会就电影与音乐话题提问，例如你喜欢的电影类型、近期看过的电影、是否喜欢在影院看电影、喜欢的音乐类型、是否会演奏乐器等。通常需要用完整句回答，并给出理由或例子。\n**考法** Part 2中，可能会给出一张与娱乐活动相关的彩色照片，要求考生描述照片内容，通常会自然用到现在进行时、There be句型、推测性语言如maybe/probably等。\n**掌握** B1级别考生要注意运用连接词（because, so, but, also）使回答更连贯，尽量拓展1-2句话，避免只答yes/no。描述照片时要组织好逻辑，先说整体场景，再描述人物动作和可能的心情，最后可加入个人观点。",
       "templates": [
         {
@@ -51011,7 +51527,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 6,
+          "sentenceCount": 7,
           "sentences": [
             {
               "id": "pet-entertainment-part2-1",
@@ -51148,6 +51664,38 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-entertainment_p2_04.mp3"
+              }
+            },
+            {
+              "id": "pet-entertainment-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "On the small table in front of them, there are two glasses of juice and a remote control.",
+              "zh": "他们面前的小桌上放着两杯果汁和一个遥控器。",
+              "words": [
+                "On",
+                "the",
+                "small",
+                "table",
+                "in",
+                "front",
+                "of",
+                "them",
+                "there",
+                "are",
+                "two",
+                "glasses",
+                "of",
+                "juice",
+                "and",
+                "a",
+                "remote",
+                "control"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-entertainment_p2_07.mp3"
               }
             },
             {
@@ -51557,17 +52105,17 @@
       "subtitle": "Phones and the Internet",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 24,
+      "sentenceCount": 27,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 手机与生活 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 手机与生活 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "表达日常用手机做什么并说明原因",
         "介绍最常用的应用及其用途",
         "说明网络的一个好处"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**考法** 在PET口语Part 1中，考官通常会问及日常手机使用习惯、常用应用、上网的好处与问题等。考生需用完整句回答，并主动给出原因或例子，例如说明为何常用某个应用。\n**怎么答** Part 2的彩色照片常呈现人们在不同场景使用手机或上网，考生要按顺序清楚描述人物、地点、动作和可能的情绪，连接词如because, so, but, also会自然用到。\n**提示** B1级考生可以根据内容自然使用一般现在时谈习惯、现在进行时描述照片中的动作，也可以在谈经历时用一般过去时或现在完成时。重点不是硬套语法，而是把人物、地点、动作和原因说清楚。",
       "templates": [
         {
@@ -51842,7 +52390,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 6,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-technology-part2-1",
@@ -51951,6 +52499,97 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-technology_p2_04.mp3"
+              }
+            },
+            {
+              "id": "pet-technology-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "She is wearing a light blue jacket and has a school bag next to her on the bench.",
+              "zh": "她穿着浅蓝色外套，长椅上她旁边放着一个书包。",
+              "words": [
+                "She",
+                "is",
+                "wearing",
+                "a",
+                "light",
+                "blue",
+                "jacket",
+                "and",
+                "has",
+                "a",
+                "school",
+                "bag",
+                "next",
+                "to",
+                "her",
+                "on",
+                "the",
+                "bench"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-technology_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-technology-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "There is a path in front of her, and a few people are cycling past.",
+              "zh": "她前面有一条小路，有几个人正骑车经过。",
+              "words": [
+                "There",
+                "is",
+                "a",
+                "path",
+                "in",
+                "front",
+                "of",
+                "her",
+                "and",
+                "a",
+                "few",
+                "people",
+                "are",
+                "cycling",
+                "past"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-technology_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-technology-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "It looks like a sunny day, and there are a few white clouds in the sky.",
+              "zh": "看起来是个晴天，天上飘着几朵白云。",
+              "words": [
+                "It",
+                "looks",
+                "like",
+                "a",
+                "sunny",
+                "day",
+                "and",
+                "there",
+                "are",
+                "a",
+                "few",
+                "white",
+                "clouds",
+                "in",
+                "the",
+                "sky"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-technology_p2_09.mp3"
               }
             },
             {
@@ -52316,17 +52955,17 @@
       "subtitle": "My Future Career",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 24,
+      "sentenceCount": 27,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 未来工作畅想 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 未来工作畅想 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "表达理想职业及原因",
         "介绍做过的兼职",
         "说明做家务的感受"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**怎么答** 在 PET 口语 Part 1 中，考官通常会问及你的未来职业理想、原因，以及你做过的兼职或家务。你需要用完整句回答，并自然给出理由和例子，比如用 because 或 so 解释。\n\n**要点** Part 2 会给你一张彩色照片，上面可能有人在工作或做家务。你需要用约 1 分钟描述照片中的人物、地点、动作、物品和可能的心情。最后可以用一句简单的个人看法收尾，但重点仍然是照片本身。",
       "templates": [
         {
@@ -52589,7 +53228,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 6,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-work-part2-1",
@@ -52699,6 +53338,92 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-work_p2_04.mp3"
+              }
+            },
+            {
+              "id": "pet-work-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "The cake is white, and she is putting some strawberries on the top.",
+              "zh": "蛋糕是白色的，她正往蛋糕顶上放草莓。",
+              "words": [
+                "The",
+                "cake",
+                "is",
+                "white",
+                "and",
+                "she",
+                "is",
+                "putting",
+                "some",
+                "strawberries",
+                "on",
+                "the",
+                "top"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-work_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-work-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "She is wearing a tall white hat, and her hair is tied up under it.",
+              "zh": "她戴着一顶高高的白帽子，头发盘在帽子里。",
+              "words": [
+                "She",
+                "is",
+                "wearing",
+                "a",
+                "tall",
+                "white",
+                "hat",
+                "and",
+                "her",
+                "hair",
+                "is",
+                "tied",
+                "up",
+                "under",
+                "it"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-work_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-work-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "Behind her, there are some metal shelves with trays, and a big oven on the left.",
+              "zh": "她身后有几个放着托盘的金属架子，左边还有一个大烤箱。",
+              "words": [
+                "Behind",
+                "her",
+                "there",
+                "are",
+                "some",
+                "metal",
+                "shelves",
+                "with",
+                "trays",
+                "and",
+                "a",
+                "big",
+                "oven",
+                "on",
+                "the",
+                "left"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-work_p2_09.mp3"
               }
             },
             {
@@ -53068,17 +53793,17 @@
       "subtitle": "Family and friends",
       "level": "PET",
       "minutes": 4,
-      "sentenceCount": 24,
+      "sentenceCount": 27,
       "progress": 0,
       "isNew": true,
       "isFeatured": false,
-      "description": "PET 口语 · 温馨一家人 · Part 1 面试问答 + Part 2 看图描述长描述",
+      "description": "PET 口语 · 温馨一家人 · Part 1 面试问答 + Part 2 看图描述长描述 + Part 3 讨论",
       "learn": [
         "用来介绍家庭成员的数量和构成。",
         "说明和哪位家人最亲近并给出原因。",
         "描述周末全家常一起进行的活动。"
       ],
-      "examPart": "Part 1 + Part 2",
+      "examPart": "Part 1 + Part 2 + Part 3",
       "examTip": "**要点** 在PET口语考试中，家庭与朋友是高频话题。Part 1考官通常会问家里有谁、和谁最亲、周末和朋友做什么等，B1考生需用完整句回答并自然给出理由或例子，比如用because、so、also等连接词拓展。\n\n**场景** Part 2会给一张彩色照片，可能展示家庭聚餐或朋友游玩场景，考生需要描述照片里有谁、在哪、做什么、可能的心情，通常会自然用到现在进行时、There is/are、It looks like…等结构，并适当用maybe、probably、I think等词进行推测。\n\n**注意** 注意回答时避免只蹦单词，要连贯表达，多给细节，展现B1级别的沟通能力。",
       "templates": [
         {
@@ -53360,7 +54085,7 @@
         {
           "level": "part2",
           "label": "Part 2 独白",
-          "sentenceCount": 6,
+          "sentenceCount": 9,
           "sentences": [
             {
               "id": "pet-family-part2-1",
@@ -53469,6 +54194,93 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-family_p2_04.mp3"
+              }
+            },
+            {
+              "id": "pet-family-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "The blanket is red and white, and there are some plates and cups on it.",
+              "zh": "毯子是红白相间的，上面放着一些盘子和杯子。",
+              "words": [
+                "The",
+                "blanket",
+                "is",
+                "red",
+                "and",
+                "white",
+                "and",
+                "there",
+                "are",
+                "some",
+                "plates",
+                "and",
+                "cups",
+                "on",
+                "it"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-family_p2_07.mp3"
+              }
+            },
+            {
+              "id": "pet-family-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "The girl is wearing a pink dress, and the dog is small and brown.",
+              "zh": "小女孩穿着粉色连衣裙，那只狗小小的、棕色的。",
+              "words": [
+                "The",
+                "girl",
+                "is",
+                "wearing",
+                "a",
+                "pink",
+                "dress",
+                "and",
+                "the",
+                "dog",
+                "is",
+                "small",
+                "and",
+                "brown"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-family_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-family-part2-9",
+              "legacyIds": [
+                "part2-9"
+              ],
+              "en": "There are some big trees behind them, and I can see a lake in the distance.",
+              "zh": "他们身后有几棵大树，远处我能看到一个湖。",
+              "words": [
+                "There",
+                "are",
+                "some",
+                "big",
+                "trees",
+                "behind",
+                "them",
+                "and",
+                "I",
+                "can",
+                "see",
+                "a",
+                "lake",
+                "in",
+                "the",
+                "distance"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-family_p2_09.mp3"
               }
             },
             {

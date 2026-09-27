@@ -16,7 +16,7 @@ This file tells Claude Code how to continue work in `Speak-website/` safely.
 ## Current architecture
 
 - React 18 单页应用，所有组件和状态仍集中在 `index.html` 的内联 JSX 中；没有 `src/`。
-- `scenes.json` 是 Web 与 iOS 共用的内容源：75 个场景、240 个 tier、1986 条分档句子（2026-09-26 合入 B1/B2 后；其中 256 句音频待烧）。句子必须带不可变的显式 `id`；插入或排序时不得复用/改写既有 ID。
+- `scenes.json` 是 Web 与 iOS 共用的内容源：75 个场景、240 个 tier、2014 条分档句子（2026-09-26 合入 B1/B2、2026-09-27 PET Part 2 加长后；其中 284 句音频待烧）。句子必须带不可变的显式 `id`；插入或排序时不得复用/改写既有 ID。
 - 生产构建由 `scripts/build.mjs` 完成：esbuild 预编译 JSX，React / ReactDOM 自托管，应用文件名带内容哈希，`scenes.json` 请求带内容版本。部署时禁止直接上传源码 `index.html`。
 - 源码 HTTP 预览仍使用 CDN React/Babel，只用于开发；`dist/` 中不得出现 `unpkg.com`、`text/babel` 或开发版 React。
 - 进度和公开体验状态只保存在当前浏览器 localStorage；没有账号、短信验证码或后台身份。公开体验时长为 20 分钟，昵称可选。
