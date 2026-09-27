@@ -1,0 +1,13 @@
+{
+  "reviews": [
+    {
+      "tid": "fce-money",
+      "part": "part2",
+      "idx": 5,
+      "verdict": "fix",
+      "issue": "whereas 用法不当，不能作为插入语使用；应改为 however 或 on the other hand。",
+      "suggest": "The main appeal of shopping online, however, is convenience: you can compare prices instantly and avoid the crowds altogether."
+    }
+  ],
+  "overall": "整体表达非常地道、B2 水平且符合 FCE 口语考试风格；仅 fce-money Part2 第5句存在语法错误，其余均自然流畅。"
+}

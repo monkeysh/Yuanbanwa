@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ece6d9">
+  <title>隐私政策｜原版娃口语</title>
+  <meta name="description" content="原版娃口语当前公开体验版隐私政策">
+  <link rel="icon" href="./assets/app-icon-180.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #ece6d9;
+      --surface: #fcfaf4;
+      --ink: #1c2b33;
+      --soft: #58656b;
+      --muted: #827a6c;
+      --line: #ded5c5;
+      --accent: #9a5535;
+      --accent-soft: #f3e9e1;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(760px, 100%); margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 18px max(48px, env(safe-area-inset-bottom)); }
+    .back {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      color: var(--accent);
+      font-weight: 650;
+      text-decoration: none;
+    }
+    article { margin-top: 12px; padding: clamp(24px, 5vw, 46px); border: 1px solid var(--line); border-radius: 24px; background: var(--surface); box-shadow: 0 18px 45px -34px rgba(28, 43, 51, .45); }
+    .eyebrow { display: inline-block; padding: 5px 10px; border-radius: 999px; color: var(--accent); background: var(--accent-soft); font-size: 13px; font-weight: 700; }
+    h1 { margin: 14px 0 5px; font-family: Georgia, "Songti SC", serif; font-size: clamp(30px, 7vw, 42px); line-height: 1.2; }
+    .date { margin: 0 0 28px; color: var(--muted); font-size: 14px; }
+    .lead { margin: 0 0 28px; color: var(--soft); font-size: 16px; }
+    section { padding: 22px 0; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 8px; font-size: 18px; line-height: 1.45; }
+    h3 { margin: 16px 0 4px; font-size: 16px; }
+    p { margin: 8px 0 0; }
+    ul { margin: 10px 0 0; padding-left: 1.25em; }
+    li + li { margin-top: 6px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .summary { margin: 0 0 28px; padding: 15px 17px; border-radius: 14px; background: var(--accent-soft); color: var(--soft); }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .88em; }
+    footer { padding: 22px 4px 0; color: var(--muted); text-align: center; font-size: 13px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #15120c; --surface: #211c14; --ink: #f4eee2; --soft: #c3baaa; --muted: #9f9583; --line: #3c3326; --accent: #d99a72; --accent-soft: #38291e; }
+      article { box-shadow: none; }
+    }
+    @media (max-width: 480px) {
+      main { padding-left: 12px; padding-right: 12px; }
+      article { border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="./index.html" aria-label="返回原版娃口语">← 返回口语练习</a>
+    <article>
+      <span class="eyebrow">当前公开体验版 · 含 iOS App</span>
+      <h1>隐私政策</h1>
+      <p class="date">更新日期：2026 年 9 月 26 日</p>
+      <p class="lead">本政策说明“原版娃口语”网页版与 iOS App 如何处理信息。核心原则是：体验状态和学习进度留在你的设备本地，当前版本不提供正式账号注册或服务端同步；跟读打分时，录音会经我们的服务器交给腾讯云口语评测服务处理，服务器不保存录音。</p>
+
+      <p class="summary"><strong>简要说明：</strong>可选昵称、本地体验标记、主题偏好和练习进度存于本地（网页为 localStorage，App 为本机存储）；当前版本没有正式账号同步。跟读打分时，录音经本站服务器发送给腾讯云口语评测（SOE）打分；浏览器或系统的语音识别服务可能处理音频或转写；模拟考官时，你的回答文本经本站服务器发送给第三方 AI 服务。详见第三、六、七条。</p>
+
+      <section>
+        <h2>一、保存在当前设备的信息</h2>
+        <p>为了保持体验连续，页面会通过浏览器 localStorage 保存：</p>
+        <ul>
+          <li>主题偏好，例如浅色、深色或跟随系统；</li>
+          <li>本地体验状态，包括你自愿填写的可选昵称、进入时间和页面生成的体验标记；</li>
+          <li>学习进度，例如练习日期、完成句数、完成或常练场景、连续学习统计和复练队列。</li>
+        </ul>
+        <p>这些信息不会在当前版本中同步到正式用户账号，也不会跨浏览器或跨设备自动迁移。当前页面不会把语音原始录音或识别文本写入上述本地学习记录。</p>
+      </section>
+
+      <section>
+        <h2>二、体验身份与账号同步</h2>
+        <p>当前版本不要求注册正式账号或提交登录身份资料。你可以不填写昵称；若填写，昵称与体验标记只在当前浏览器中保存和读取，不会作为登录请求发送到业务服务端。</p>
+        <p>因此，当前体验入口不等同于正式账号认证，也不能用于跨设备同步或找回学习记录。</p>
+      </section>
+
+      <section>
+        <h2>三、麦克风与语音识别</h2>
+        <p>当你主动点击跟读并允许麦克风权限时，页面会调用浏览器的 Web Speech API 获取英文转写，用于本次页面内的词级匹配和练习反馈。</p>
+        <ul>
+          <li>麦克风权限由浏览器或操作系统管理，你可以在设备设置中随时撤回。</li>
+          <li>不同设备可能使用 Apple、Google 或其他由浏览器／系统指定的语音服务。音频、转写和相关技术信息可能被发送给该服务处理，具体以你的浏览器、操作系统和语音服务提供方规则为准。</li>
+          <li>当前网站不主动把原始录音保存为音频文件，也不将识别文本同步到正式账号。</li>
+        </ul>
+        <p>如你不希望第三方语音服务处理音频，请不要授予麦克风权限；你仍可浏览文字内容和播放示范音频。</p>
+      </section>
+
+      <section>
+        <h2>四、提供页面所需的网络连接</h2>
+        <h3>本站托管</h3>
+        <p>浏览器会请求页面、场景数据、图片和示范音频。与一般网站相同，托管服务器可能在访问日志中记录 IP 地址、访问时间、请求路径、浏览器或设备类型等基础技术信息，用于安全、故障排查和服务运行。</p>
+        <h3>生产静态资源</h3>
+        <p>正式上线页面所需的程序、图片、数据和示范音频由本站托管。当前版本未接入广告或行为画像功能。开发预览环境只用于本地测试，不构成线上产品的数据处理说明。</p>
+      </section>
+
+      <section>
+        <h2>五、保存期限与删除方式</h2>
+        <p>localStorage 中的数据会保留到你主动退出相应本地状态、清除本站数据，或浏览器／系统自行清理为止。你可以通过浏览器的“网站数据”“存储”或“隐私”设置删除本站本地数据；删除后当前版本无法恢复。</p>
+        <p>如果你希望咨询托管访问日志等非本地信息，请通过你获得本产品链接的原渠道，联系向你提供体验入口的老师或运营方。</p>
+      </section>
+
+      <section>
+        <h2>六、发音评测与模拟考官（网页版与 iOS App 通用）</h2>
+        <h3>发音评测（腾讯云 SOE）</h3>
+        <p>当你在跟读或对练中录完一句后，这段录音会以 16kHz 单声道 PCM 音频的形式，连同目标句文本，经由本站服务器（接口 <code>/api/soe</code>）转发给腾讯云智能口语评测（SOE）服务，用于生成发音准确度、流利度、完整度以及逐词、音素级得分。</p>
+        <ul>
+          <li>本站服务器只做转发：不把录音写入磁盘，不保存参考文本；访问日志仅保留请求时间、状态、来源 IP 等基础技术信息，用于限流、安全和排障。</li>
+          <li>腾讯云对音频的处理受其服务条款与隐私政策约束；我们不向其提供你的姓名、手机号或账号信息。</li>
+          <li>评分结果只用于当次反馈和你设备上的本地学习记录，不用于广告或用户画像。</li>
+          <li>评测服务不可用或被限流时，网页版会退回浏览器语音识别或显示“本句未评分”，App 会退回本机词匹配；不会生成假分数。</li>
+        </ul>
+        <h3>模拟考官（AI 对话）</h3>
+        <p>在剑桥模拟考官模式中，你的回答先由设备或浏览器的语音识别转成文字，随后这些文字连同本场对话历史经本站服务器（接口 <code>/api/soe/chat</code>）发送给第三方大语言模型服务（当前为 DeepSeek），用于生成考官的下一问和考后点评。此过程不发送录音。请不要在回答中说出与练习无关的个人敏感信息。</p>
+      </section>
+
+      <section>
+        <h2>七、iOS App 补充说明</h2>
+        <ul>
+          <li><strong>不需要账号。</strong>App 没有注册或登录功能，不收集手机号、邮箱等身份信息；首次启动会请你阅读并同意本政策与《用户协议》，同意前不申请任何权限。</li>
+          <li><strong>本机存储。</strong>练习进度、复练队列、外观与示范口音偏好保存在 App 的本机偏好设置中；每次练习的得分、薄弱词与音素统计保存在 App 沙盒内的 <code>practice_log.v1.json</code>。这些数据不会上传，卸载 App 即全部删除，当前版本无法从服务端恢复。</li>
+          <li><strong>麦克风与语音识别。</strong>只有你在练习中点击录音时，App 才会申请麦克风和语音识别权限。语音转文字使用 Apple 的 Speech 框架，根据设备与系统设置，音频可能由设备本地或 Apple 服务器处理，受 Apple 隐私政策约束。录音仅用于当次评测（评测时经本站服务器转发，见第六条），设备上的临时录音文件由系统自动清理。</li>
+          <li><strong>网络请求。</strong>App 只与本站服务器通信（发音评测与模拟考官两个接口），不接入广告、统计或第三方追踪 SDK。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>八、未成年人</h2>
+        <p>本产品可能由未成年人用于学习。监护人应协助未成年人理解本政策、决定是否使用语音识别，并管理麦克风及浏览器网站数据。请不要在页面中输入与学习无关的敏感个人信息。</p>
+      </section>
+
+      <section>
+        <h2>九、更新与联系</h2>
+        <p>如后续接入正式短信、服务端账号、云同步、付费服务或新的语音评测服务，我们会在启用前更新本政策，并说明新增的数据用途和控制方式。</p>
+        <p>如有问题、反馈或个人信息相关请求，请沿用你获取体验链接的原联系渠道；当前页面不编造未经确认的邮箱、电话或主体信息。</p>
+      </section>
+
+      <p>使用本产品也请阅读《<a href="./terms.html">用户协议</a>》。</p>
+    </article>
+    <footer>原版娃口语 · 尊重每一次开口，也尊重每一份数据</footer>
+  </main>
+</body>
+</html>

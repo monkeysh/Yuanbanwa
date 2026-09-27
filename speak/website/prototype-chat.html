@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8"/>
+<title>原版娃口语 · AI 情景任务陪练 demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="theme-color" content="#F7F2EA"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<style>
+  html, body { margin: 0; padding: 0; font-family: -apple-system, system-ui, "PingFang SC", sans-serif; }
+  body { background: #f0eee9; min-height: 100vh; }
+  body.theme-dusk { background: #14121a; }
+  * { box-sizing: border-box; }
+  button { font-family: inherit; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes ringpulse { 0% { transform: scale(0.92); opacity: 0.65; } 100% { transform: scale(1.5); opacity: 0; } }
+  @keyframes breathe { 0%,100% { transform: scale(1); opacity:0.5; } 50% { transform: scale(1.12); opacity:0.9; } }
+  @keyframes audiobar { from { transform: scaleY(0.35); } to { transform: scaleY(1.25); } }
+  @keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pop-in { 0% { opacity:0; transform: scale(0.6); } 70% { transform: scale(1.08); } 100% { opacity:1; transform: scale(1); } }
+  @keyframes confetti-in { from { opacity: 0; transform: translateY(12px) scale(0.6); } to { opacity: 0.8; transform: translateY(0) scale(1); } }
+  @keyframes slideup { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .screen-fade { animation: fadein 0.26s cubic-bezier(0.2,0.8,0.2,1); }
+  .fade-item { animation: fadein 0.32s ease both; }
+  .no-bar::-webkit-scrollbar { display: none; }
+  .no-bar { -ms-overflow-style: none; scrollbar-width: none; }
+  @media (prefers-reduced-motion: no-preference) { button { transition: transform 0.08s ease-out; } button:active { transform: scale(0.97); } }
+  .stage { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px 16px; }
+  @media (max-width: 480px) {
+    .stage { padding: 0; align-items: stretch; }
+    .device-shell { width: 100%; min-height: 100vh; }
+    .device-shell .ios-device { width: 100% !important; height: 100vh !important; border-radius: 0 !important; box-shadow: none !important; }
+    .device-shell .ios-device .dynamic-island, .device-shell .ios-device .home-indicator { display: none; }
+    .theme-switch-wrap { top: max(12px, env(safe-area-inset-top)) !important; right: 12px !important; }
+  }
+  .theme-switch-wrap { position: fixed; top: 20px; right: 20px; z-index: 500; }
+  .theme-switch { display: inline-flex; gap: 4px; padding: 4px; background: rgba(255,255,255,0.85); backdrop-filter: blur(14px); border-radius: 9999px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+  body.theme-dusk .theme-switch { background: rgba(38,35,45,0.85); }
+  .theme-switch button { appearance: none; border: 0; cursor: pointer; padding: 7px 14px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: transparent; color: #6E665A; }
+  body.theme-dusk .theme-switch button { color: #B4AB9D; }
+  .theme-switch button.on { background: #2B2722; color: #fff; }
+  body.theme-dusk .theme-switch button.on { background: #F3EDE0; color: #1C1A22; }
+  .proto-tag { position: fixed; bottom: 14px; left: 14px; z-index: 500; font-size: 11px; color: #A59C8E; background: rgba(255,255,255,0.7); padding: 5px 10px; border-radius: 9999px; backdrop-filter: blur(8px); }
+  body.theme-dusk .proto-tag { background: rgba(38,35,45,0.7); color: #7A7268; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script type="text/babel" data-presets="react">
+// ═══════════════════════════════════════════════════════════════
+// 原版娃口语 · AI 情景任务陪练 demo（核心形态展示）
+// 形态原型：场景任务 + 多轮对话 + 任务清单 + 卡壳支架 + 内联纠错 + 对话总结 + Rosie 头像状态动效
+// 语音/识别为模拟交互；对话脚本为预设（真机走 Qwen /api/speaking/chat 实时驱动）
+// ═══════════════════════════════════════════════════════════════
+
+const Tokens = {
+  palettes: {
+    cream: { bg:'#F7F2EA', surface:'#FFFBF5', surfaceAlt:'#F1EADD', ink:'#2B2722', inkSoft:'#6E665A', inkMuted:'#A59C8E',
+      line:'rgba(43,39,34,0.08)', accent:'#E8794B', accentSoft:'#FBE5D6', accentDeep:'#C55A30', sage:'#7A9A7E', sageSoft:'#DFEAD8',
+      sun:'#E8B84B', sunSoft:'#F7EBC7', danger:'#C96553' },
+    dusk: { bg:'#1C1A22', surface:'#26232D', surfaceAlt:'#332E3B', ink:'#F3EDE0', inkSoft:'#B4AB9D', inkMuted:'#7A7268',
+      line:'rgba(243,237,224,0.08)', accent:'#F08A5D', accentSoft:'rgba(240,138,93,0.15)', accentDeep:'#F4A180', sage:'#9BB39E', sageSoft:'rgba(155,179,158,0.15)',
+      sun:'#EAC27A', sunSoft:'rgba(234,194,122,0.15)', danger:'#E08070' },
+  },
+  font: { zh:'"PingFang SC","Hiragino Sans GB",system-ui,sans-serif', en:'"Instrument Serif",Georgia,serif', enSans:'-apple-system,"SF Pro","Helvetica Neue",sans-serif' },
+  shadow: { sm:'0 1px 2px rgba(43,39,34,0.04), 0 2px 6px rgba(43,39,34,0.04)', md:'0 2px 4px rgba(43,39,34,0.04), 0 8px 20px rgba(43,39,34,0.06)' },
+};
+function hexA(hex, a){ if(hex&&hex.startsWith('#')&&hex.length===7){const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return `rgba(${r},${g},${b},${a})`;} return hex; }
+
+const BANDS = [
+  { id:1, name:'初阶', cefr:'A1', color:'#4F93A8' },
+  { id:2, name:'基础', cefr:'A2', color:'#2E7D5B' },
+  { id:3, name:'进阶', cefr:'B1', color:'#3F7E9A' },
+  { id:4, name:'提高', cefr:'B2', color:'#B5562F' },
+  { id:5, name:'高阶', cefr:'C1', color:'#8A5A33' },
+];
+const bandById = (id)=> BANDS.find(b=>b.id===id) || BANDS[1];
+
+// ─── Icons ───
+const Icon = {
+  Back:(p={})=>(<svg width={p.size||20} height={p.size||20} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2} strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6"/></svg>),
+  Chevron:(p={})=>(<svg width={p.size||16} height={p.size||16} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2} strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6"/></svg>),
+  Mic:(p={})=>(<svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg>),
+  Check:(p={})=>(<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2.6} strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6"/></svg>),
+  Close:(p={})=>(<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2} strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>),
+  Bulb:(p={})=>(<svg width={p.size||16} height={p.size||16} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7V17h8v-2.3A7 7 0 0012 2z"/></svg>),
+  Volume:(p={})=>(<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 010 7"/></svg>),
+  Sparkle:(p={})=>(<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill={p.color||'currentColor'}><path d="M12 2l1.8 5.6L19 9.6l-5.2 2L12 17l-1.8-5.4L5 9.6l5.2-2z"/></svg>),
+  Trophy:(p={})=>(<svg width={p.size||20} height={p.size||20} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0z"/><path d="M5 5H3v2a3 3 0 003 3M19 5h2v2a3 3 0 01-3 3"/></svg>),
+};
+
+// ─── 基础 UI ───
+function IOSStatusBar({ dark }){ const c = dark?'#fff':'#000'; return (
+  <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'16px 28px 6px'}}>
+    <span style={{fontFamily:'-apple-system,"SF Pro"',fontWeight:590,fontSize:15,color:c,letterSpacing:-0.2}}>9:41</span>
+    <div style={{display:'flex',gap:6,alignItems:'center'}}>
+      <svg width="17" height="11" viewBox="0 0 19 12"><rect x="0" y="7.5" width="3.2" height="4.5" rx="0.7" fill={c}/><rect x="4.8" y="5" width="3.2" height="7" rx="0.7" fill={c}/><rect x="9.6" y="2.5" width="3.2" height="9.5" rx="0.7" fill={c}/><rect x="14.4" y="0" width="3.2" height="12" rx="0.7" fill={c}/></svg>
+      <svg width="24" height="11" viewBox="0 0 27 13"><rect x="0.5" y="0.5" width="23" height="12" rx="3.5" stroke={c} strokeOpacity="0.35" fill="none"/><rect x="2" y="2" width="20" height="9" rx="2" fill={c}/></svg>
+    </div>
+  </div>
+); }
+
+function IOSDevice({ children, dark }){ return (
+  <div className="ios-device" style={{width:390,height:844,borderRadius:48,overflow:'hidden',position:'relative',background:dark?'#000':'#F2F2F7',
+    boxShadow: dark?'0 40px 90px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06)':'0 40px 80px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.12)'}}>
+    <div className="dynamic-island" style={{position:'absolute',top:11,left:'50%',transform:'translateX(-50%)',width:126,height:37,borderRadius:24,background:'#000',zIndex:50}}/>
+    <div className="home-indicator" style={{position:'absolute',bottom:0,left:0,right:0,zIndex:60,height:34,display:'flex',justifyContent:'center',alignItems:'flex-end',paddingBottom:8,pointerEvents:'none'}}>
+      <div style={{width:139,height:5,borderRadius:100,background:dark?'rgba(255,255,255,0.55)':'rgba(0,0,0,0.25)'}}/>
+    </div>
+    {children}
+  </div>
+); }
+
+function PrimaryButton({ children, onClick, block, t, disabled, style }){ return (
+  <button onClick={onClick} disabled={disabled} style={{appearance:'none',border:0,cursor:disabled?'not-allowed':'pointer',width:block?'100%':'auto',
+    background:disabled?t.inkMuted:t.accent,color:'#fff',fontFamily:Tokens.font.zh,fontSize:16,fontWeight:600,padding:'15px 22px',borderRadius:9999,
+    boxShadow:disabled?'none':`0 8px 20px ${hexA(t.accent,0.25)}`,display:'inline-flex',alignItems:'center',justifyContent:'center',gap:8,...style}}>{children}</button>
+); }
+function GhostButton({ children, onClick, block, t, style }){ return (
+  <button onClick={onClick} style={{appearance:'none',border:`1px solid ${t.line}`,cursor:'pointer',width:block?'100%':'auto',background:'transparent',
+    color:t.ink,fontFamily:Tokens.font.zh,fontSize:14,fontWeight:500,padding:'12px 18px',borderRadius:9999,display:'inline-flex',alignItems:'center',justifyContent:'center',gap:6,...style}}>{children}</button>
+); }
+function Chip({ children, t, tone='neutral', style }){
+  const tones={neutral:{bg:t.surfaceAlt,fg:t.inkSoft},accent:{bg:t.accentSoft,fg:t.accentDeep},sage:{bg:t.sageSoft,fg:t===Tokens.palettes.dusk?t.sage:'#4E6A4A'},sun:{bg:t.sunSoft,fg:t===Tokens.palettes.dusk?t.sun:'#9C7A1F'}};
+  const c=tones[tone]||tones.neutral;
+  return (<span style={{display:'inline-flex',alignItems:'center',gap:4,padding:'4px 10px',borderRadius:9999,background:c.bg,color:c.fg,fontFamily:Tokens.font.zh,fontSize:11.5,fontWeight:500,...style}}>{children}</span>);
+}
+function BandBadge({ band, t }){ return (
+  <span style={{display:'inline-flex',alignItems:'center',gap:5,padding:'4px 10px',borderRadius:9999,background:hexA(band.color,t===Tokens.palettes.dusk?0.22:0.13),
+    color:t===Tokens.palettes.dusk?'#fff':band.color,fontFamily:Tokens.font.zh,fontSize:11.5,fontWeight:700}}>
+    <span style={{fontFamily:Tokens.font.enSans}}>{band.cefr}</span><span style={{opacity:0.5}}>·</span><span>{band.name}</span>
+  </span>
+); }
+
+// ─── Rosie 头像（状态动效：idle / speaking / listening）───
+function RosieAvatar({ size=44, state='idle', t }){
+  const ring = state==='speaking' ? t.accent : state==='listening' ? t.sage : null;
+  return (
+    <div style={{position:'relative',width:size,height:size,flexShrink:0}}>
+      {ring && <span style={{position:'absolute',inset:-3,borderRadius:9999,border:`2px solid ${ring}`,
+        animation: state==='speaking'?'ringpulse 1.3s ease-out infinite':'breathe 2.2s ease-in-out infinite'}}/>}
+      <img src="./assets/rosie-icon.png" alt="Rosie" style={{width:size,height:size,borderRadius:9999,objectFit:'cover',objectPosition:'top center',
+        border:`2px solid ${ring||'rgba(255,255,255,0.7)'}`, background:'#EAE3D6', display:'block'}}/>
+      {state==='speaking' && (
+        <div style={{position:'absolute',bottom:-2,right:-2,background:t.accent,borderRadius:9999,padding:'3px 4px',display:'flex',gap:1.5,alignItems:'center',height:12}}>
+          {[0,1,2].map(i=>(<span key={i} style={{width:2,height:'100%',background:'#fff',borderRadius:2,transformOrigin:'center',animation:`audiobar ${0.5+i*0.15}s ease-in-out ${i*0.1}s infinite alternate`}}/>))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 场景任务数据（A2 / B1 各 2 个）。脚本为预设，模拟 Qwen 实时驱动。
+// 每轮 turn:{ rosie, hintZh, sampleEn, scaffold{zh,pattern}, done(完成的任务索引数组), correction?, curveball?, last? }
+// ═══════════════════════════════════════════════════════════════
+const SCENARIOS = [
+  {
+    id:'coffee', bandId:2, emoji:'☕', title:'咖啡店点单', sub:'Ordering at a café',
+    setup:'我来当咖啡店店员，你来点一杯属于自己的咖啡。准备好就开口～',
+    goals:['开口点一杯咖啡','说出杯型','加一个要求','堂食还是带走','礼貌道谢'],
+    turns:[
+      { rosie:"Hi! Welcome to Bluebird Coffee. What can I get you?", hintZh:'点一杯咖啡（a latte / a coffee）', sampleEn:"Can I have a latte, please?", scaffold:{zh:'用「Can I have… please?」点单',pattern:"Can I have a ___, please?"}, done:[0] },
+      { rosie:"Sure! What size would you like — small, medium, or large?", hintZh:'说出杯型', sampleEn:"Medium, please.", scaffold:{zh:'直接说杯型即可',pattern:"Medium, please."}, done:[1] },
+      { rosie:"Got it. Anything else?", hintZh:'加个要求，比如换燕麦奶', sampleEn:"Can I get oat milk instead?", scaffold:{zh:'换某样东西用 instead',pattern:"Can I get ___ instead?"}, correction:{from:"I want oat milk",to:"Can I get oat milk instead?",note:"点单别用 I want，用 Can I get… 更自然礼貌"}, done:[2] },
+      { rosie:"Of course. For here, or to go?", hintZh:'堂食还是带走', sampleEn:"For here, please.", scaffold:{zh:'堂食 For here / 带走 To go',pattern:"For here, please."}, done:[3] },
+      { rosie:"Perfect — one medium oat latte, for here. That'll be $4.50.", hintZh:'礼貌道谢收尾', sampleEn:"Thank you so much!", scaffold:{zh:'一句道谢就好',pattern:"Thank you so much!"}, done:[4], last:true, closing:"Enjoy your coffee! ☕" },
+    ],
+  },
+  {
+    id:'directions', bandId:2, emoji:'🧭', title:'街头问路', sub:'Asking for directions',
+    setup:'我是路过的当地人，你迷路了，想去地铁站。来拦住我问问吧～',
+    goals:['礼貌叫住对方','说出你要去哪','问怎么走','确认远不远','道谢'],
+    turns:[
+      { rosie:"Oh— hi there, did you need something?", hintZh:'礼貌开口（Excuse me…）', sampleEn:"Excuse me, can you help me?", scaffold:{zh:'拦人先说 Excuse me',pattern:"Excuse me, can you help me?"}, done:[0] },
+      { rosie:"Sure, of course! Where are you trying to go?", hintZh:'说出你要去的地方（地铁站）', sampleEn:"I'm looking for the subway station.", scaffold:{zh:'找某地用 looking for',pattern:"I'm looking for the ___."}, done:[1] },
+      { rosie:"Ah, the subway— it's pretty close actually.", hintZh:'问怎么走', sampleEn:"How do I get there?", scaffold:{zh:'问路用 How do I get there',pattern:"How do I get there?"}, correction:{from:"How can I go there?",to:"How do I get there?",note:"问怎么去地道说法是 How do I get there?"}, done:[2] },
+      { rosie:"Go straight, then turn left at the bank. Two minutes on foot.", hintZh:'确认一下远不远 / 多久', sampleEn:"Is it far? About two minutes?", scaffold:{zh:'确认距离用 Is it far?',pattern:"Is it far?"}, done:[3] },
+      { rosie:"Not far at all — you'll see it right away!", hintZh:'道谢收尾', sampleEn:"Great, thank you for your help!", scaffold:{zh:'帮忙后道谢',pattern:"Thank you for your help!"}, done:[4], last:true, closing:"No problem, have a good one! 👋" },
+    ],
+  },
+  {
+    id:'restaurant', bandId:3, emoji:'🍽️', title:'餐厅上错菜', sub:'A mix-up at the restaurant',
+    setup:'我是服务员，刚给你端来一道你没点的菜。礼貌地指出问题、把它解决掉——注意，可能会有点小意外。',
+    goals:['礼貌引起注意','说明上错了','说出你点的','应对突发情况','确认并道谢'],
+    turns:[
+      { rosie:"Here you go — one grilled chicken. Enjoy your meal!", hintZh:'礼貌叫住她，说这不是你点的', sampleEn:"Excuse me, I think this isn't what I ordered.", scaffold:{zh:'委婉指出用 I think this isn\'t…',pattern:"Excuse me, I think this isn't what I ordered."}, done:[0,1] },
+      { rosie:"Oh no, I'm so sorry! Could you tell me what you ordered?", hintZh:'说出你点的（牛肉面）', sampleEn:"I ordered the beef noodles.", scaffold:{zh:'说你点了什么',pattern:"I ordered the ___."}, done:[2] },
+      { rosie:"Let me check… oh dear, I'm afraid the beef noodles are sold out tonight.", hintZh:'⚡意外：卖完了！应变——问问推荐', sampleEn:"Oh, then what would you recommend?", scaffold:{zh:'问推荐用 what would you recommend',pattern:"What would you recommend?"}, correction:{from:"What you recommend?",to:"What would you recommend?",note:"问建议要加 would：What would you recommend?"}, curveball:true, done:[3] },
+      { rosie:"The salmon is really popular tonight — light and fresh.", hintZh:'接受推荐', sampleEn:"Okay, I'll have the salmon then.", scaffold:{zh:'决定用 I\'ll have…',pattern:"I'll have the ___ then."}, done:[3] },
+      { rosie:"Great choice! I'll bring it right out. Sorry again for the mix-up.", hintZh:'大度回应 + 道谢', sampleEn:"No worries, thank you!", scaffold:{zh:'没关系用 No worries',pattern:"No worries, thank you!"}, done:[4], last:true, closing:"You're very kind — thanks for understanding! 🙏" },
+    ],
+  },
+  {
+    id:'interview', bandId:3, emoji:'💼', title:'英文面试开场', sub:'Job interview opener',
+    setup:'我是面试官 Rosie，这是一场简短的英文面试。放轻松，就当聊聊你自己——我可能会追问一两句。',
+    goals:['得体问候','一句话自我介绍','说一个优势','应对追问','礼貌收尾'],
+    turns:[
+      { rosie:"Good morning! Thanks for coming in. How are you today?", hintZh:'得体问候 + 回应', sampleEn:"Good morning! I'm great, thank you.", scaffold:{zh:'问候并回应',pattern:"Good morning! I'm great, thank you."}, done:[0] },
+      { rosie:"Wonderful. So, tell me a little about yourself.", hintZh:'一句话自我介绍', sampleEn:"Sure. I'm a product designer with three years of experience.", scaffold:{zh:'介绍身份+经验',pattern:"I'm a ___ with ___ years of experience."}, done:[1] },
+      { rosie:"Nice. And what would you say is your biggest strength?", hintZh:'说一个优势', sampleEn:"I'm good at solving problems calmly under pressure.", scaffold:{zh:'说优势用 I\'m good at…',pattern:"I'm good at ___."}, correction:{from:"My strength is solve problems",to:"I'm good at solving problems",note:"动词跟在 good at 后要用 -ing：good at solving"}, done:[2] },
+      { rosie:"Interesting — can you give me a quick example?", hintZh:'⚡追问：举个例子', sampleEn:"Once I fixed a launch issue the night before release.", scaffold:{zh:'举例用 Once I…',pattern:"Once I ___."}, curveball:true, done:[3] },
+      { rosie:"That's impressive. That's all from me for now — any questions?", hintZh:'礼貌收尾', sampleEn:"Thank you. I'm excited about this role!", scaffold:{zh:'表达期待收尾',pattern:"Thank you. I'm excited about this role!"}, done:[4], last:true, closing:"Great talking with you — we'll be in touch! 🌟" },
+    ],
+  },
+];
+
+// ═══════════════════════════════════════════════════════════════
+// 场景选择
+// ═══════════════════════════════════════════════════════════════
+function ScenarioPicker({ t, onPick }){
+  const [band, setBand] = React.useState(2);
+  const list = SCENARIOS.filter(s=>s.bandId===band);
+  return (
+    <div className="screen-fade" style={{minHeight:'100%',background:t.bg,paddingBottom:40}}>
+      {/* 头部 Rosie */}
+      <div style={{padding:'52px 22px 22px',textAlign:'center',position:'relative',overflow:'hidden',
+        background:`linear-gradient(180deg, ${t.accentSoft}, ${hexA(t.accentSoft,0)})`}}>
+        <div style={{display:'flex',justifyContent:'center',marginBottom:12}}><RosieAvatar size={88} state="idle" t={t}/></div>
+        <div style={{fontFamily:Tokens.font.zh,fontSize:21,fontWeight:700,color:t.ink}}>嗨，我是 Rosie 👋</div>
+        <div style={{fontFamily:Tokens.font.zh,fontSize:14,color:t.inkSoft,marginTop:4}}>今天想练哪个场景？我陪你开口。</div>
+      </div>
+      {/* band 切换 */}
+      <div style={{display:'flex',gap:8,padding:'16px 22px 10px',justifyContent:'center'}}>
+        {[2,3].map(b=>{ const bd=bandById(b); const on=band===b; return (
+          <button key={b} onClick={()=>setBand(b)} style={{appearance:'none',cursor:'pointer',borderRadius:14,padding:'9px 18px',
+            border:`1.5px solid ${on?bd.color:t.line}`,background:on?hexA(bd.color,t===Tokens.palettes.dusk?0.22:0.1):t.surface}}>
+            <span style={{fontFamily:Tokens.font.enSans,fontSize:14,fontWeight:800,color:on?bd.color:t.inkSoft}}>{bd.cefr}</span>
+            <span style={{fontFamily:Tokens.font.zh,fontSize:12,color:on?(t===Tokens.palettes.dusk?'#fff':bd.color):t.inkMuted,marginLeft:6}}>{bd.name}</span>
+          </button>
+        );})}
+      </div>
+      <div style={{textAlign:'center',fontFamily:Tokens.font.zh,fontSize:12,color:t.inkMuted,marginBottom:14}}>同一场景会按你的级别自动调难度</div>
+      {/* 场景卡 */}
+      <div style={{padding:'0 22px',display:'flex',flexDirection:'column',gap:12}}>
+        {list.map(s=>{ const bd=bandById(s.bandId); return (
+          <button key={s.id} onClick={()=>onPick(s)} style={{appearance:'none',cursor:'pointer',textAlign:'left',border:`1px solid ${t.line}`,
+            background:t.surface,borderRadius:20,padding:16,display:'flex',alignItems:'center',gap:14,boxShadow:Tokens.shadow.sm}}>
+            <div style={{width:52,height:52,borderRadius:15,background:hexA(bd.color,t===Tokens.palettes.dusk?0.2:0.12),display:'flex',alignItems:'center',justifyContent:'center',fontSize:26,flexShrink:0}}>{s.emoji}</div>
+            <div style={{flex:1,minWidth:0}}>
+              <div style={{fontFamily:Tokens.font.zh,fontSize:16,fontWeight:600,color:t.ink}}>{s.title}</div>
+              <div style={{fontFamily:Tokens.font.en,fontSize:13,color:t.inkMuted,fontStyle:'italic',marginBottom:6}}>{s.sub}</div>
+              <div style={{display:'flex',gap:6,alignItems:'center'}}><BandBadge band={bd} t={t}/><Chip t={t} tone="neutral">{s.goals.length} 个任务</Chip></div>
+            </div>
+            <Icon.Chevron size={16} color={t.inkMuted}/>
+          </button>
+        );})}
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 任务清单条
+// ═══════════════════════════════════════════════════════════════
+// ═══ 学一遍（预学：进对话前先学核心句，A1/A2 必经，B1+ 可跳）═══
+function LearnScreen({ t, scenario, onStart, onBack }){
+  const band = bandById(scenario.bandId);
+  const [learned, setLearned] = React.useState(new Set());
+  const cards = scenario.turns.map(tn=>({en:tn.sampleEn, zh:tn.hintZh}));
+  return (
+    <div className="screen-fade" style={{minHeight:'100%',background:t.bg,paddingBottom:30}}>
+      <div style={{padding:'48px 20px 16px',background:`linear-gradient(180deg, ${t.accentSoft}, ${hexA(t.accentSoft,0)})`}}>
+        <button onClick={onBack} style={{appearance:'none',border:0,background:t.surface,borderRadius:9999,width:34,height:34,display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',boxShadow:Tokens.shadow.sm,marginBottom:14}}><Icon.Back size={18} color={t.ink}/></button>
+        <div style={{display:'flex',alignItems:'center',gap:12}}>
+          <RosieAvatar size={54} state="speaking" t={t}/>
+          <div>
+            <div style={{fontFamily:Tokens.font.zh,fontSize:18,fontWeight:700,color:t.ink}}>先跟我学几句 📖</div>
+            <div style={{fontFamily:Tokens.font.zh,fontSize:13,color:t.inkSoft,marginTop:2}}>等下进真实对话就用得上，不慌</div>
+          </div>
+        </div>
+        <div style={{display:'flex',gap:6,marginTop:12}}><Chip t={t} tone="neutral">{scenario.emoji} {scenario.title}</Chip><BandBadge band={band} t={t}/></div>
+      </div>
+      <div style={{padding:'14px 18px 4px',fontFamily:Tokens.font.zh,fontSize:12,color:t.inkMuted}}>核心表达 · 点 🔊 听 Rosie 读，点 🎤 跟读一遍</div>
+      <div style={{padding:'8px 18px',display:'flex',flexDirection:'column',gap:10}}>
+        {cards.map((c,i)=>{ const ok=learned.has(i); return (
+          <div key={i} style={{background:t.surface,border:`1px solid ${ok?hexA(t.sage,0.5):t.line}`,borderRadius:16,padding:14}}>
+            <div style={{display:'flex',alignItems:'flex-start',gap:10}}>
+              <span style={{fontFamily:Tokens.font.enSans,fontSize:12,fontWeight:700,color:ok?t.sage:t.inkMuted,marginTop:4,minWidth:14}}>{i+1}</span>
+              <div style={{flex:1}}>
+                <div style={{fontFamily:Tokens.font.en,fontSize:19,color:t.ink,lineHeight:1.3}}>{c.en}</div>
+                <div style={{fontFamily:Tokens.font.zh,fontSize:12.5,color:t.inkSoft,marginTop:3}}>用来：{c.zh}</div>
+              </div>
+            </div>
+            <div style={{display:'flex',gap:8,marginTop:11}}>
+              <button onClick={()=>{}} style={{flex:1,appearance:'none',cursor:'pointer',border:`1px solid ${t.line}`,background:'transparent',borderRadius:10,padding:'8px 0',display:'flex',alignItems:'center',justifyContent:'center',gap:6,fontFamily:Tokens.font.zh,fontSize:12.5,color:t.ink}}><Icon.Volume size={14} color={t.accent}/> 听 Rosie</button>
+              <button onClick={()=>setLearned(p=>{const n=new Set(p);n.add(i);return n;})} style={{flex:1,appearance:'none',cursor:'pointer',border:`1px solid ${ok?t.sage:t.line}`,background:ok?t.sageSoft:'transparent',borderRadius:10,padding:'8px 0',display:'flex',alignItems:'center',justifyContent:'center',gap:6,fontFamily:Tokens.font.zh,fontSize:12.5,fontWeight:500,color:ok?(t===Tokens.palettes.dusk?t.sage:'#4E6A4A'):t.ink}}>{ok? <span style={{display:'inline-flex',alignItems:'center',gap:6}}><Icon.Check size={13} color={t.sage}/> 已跟读</span> : <span style={{display:'inline-flex',alignItems:'center',gap:6}}><Icon.Mic size={14} color={t.sage}/> 跟读</span>}</button>
+            </div>
+          </div>
+        );})}
+      </div>
+      <div style={{padding:'12px 18px 8px'}}>
+        <PrimaryButton t={t} block onClick={onStart}>学好了，开始真实对话 <Icon.Chevron size={14} color="#fff"/></PrimaryButton>
+        <div style={{textAlign:'center',fontFamily:Tokens.font.zh,fontSize:11.5,color:t.inkMuted,marginTop:9}}>已跟读 {learned.size}/{cards.length} 句 · 不跟读也能直接进</div>
+      </div>
+    </div>
+  );
+}
+
+function TaskBar({ t, goals, doneSet, open, setOpen }){
+  const done = goals.filter((_,i)=>doneSet.has(i)).length;
+  return (
+    <div style={{background:t.surface,borderBottom:`1px solid ${t.line}`}}>
+      <button onClick={()=>setOpen(!open)} style={{appearance:'none',border:0,background:'transparent',width:'100%',cursor:'pointer',
+        padding:'10px 18px',display:'flex',alignItems:'center',gap:10}}>
+        <span style={{fontSize:14}}>🎯</span>
+        <span style={{fontFamily:Tokens.font.zh,fontSize:13,fontWeight:600,color:t.ink}}>任务进度</span>
+        <span style={{fontFamily:Tokens.font.enSans,fontSize:13,fontWeight:700,color:t.accent}}>{done}/{goals.length}</span>
+        <div style={{flex:1,height:5,background:t.surfaceAlt,borderRadius:9999,overflow:'hidden',margin:'0 4px'}}>
+          <div style={{width:`${done/goals.length*100}%`,height:'100%',background:t.accent,borderRadius:9999,transition:'width 0.4s'}}/>
+        </div>
+        <span style={{transform:open?'rotate(90deg)':'none',transition:'transform 0.2s'}}><Icon.Chevron size={14} color={t.inkMuted}/></span>
+      </button>
+      {open && (
+        <div className="fade-item" style={{padding:'2px 18px 12px',display:'flex',flexDirection:'column',gap:7}}>
+          {goals.map((g,i)=>{ const ok=doneSet.has(i); return (
+            <div key={i} style={{display:'flex',alignItems:'center',gap:9}}>
+              <span style={{width:18,height:18,borderRadius:9999,flexShrink:0,display:'flex',alignItems:'center',justifyContent:'center',
+                background:ok?t.sage:'transparent',border:ok?'none':`1.5px solid ${t.inkMuted}`}}>{ok&&<Icon.Check size={11} color="#fff"/>}</span>
+              <span style={{fontFamily:Tokens.font.zh,fontSize:13,color:ok?t.inkMuted:t.ink,textDecoration:ok?'line-through':'none'}}>{g}</span>
+            </div>
+          );})}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 卡壳支架弹层（三级）
+// ═══════════════════════════════════════════════════════════════
+function ScaffoldSheet({ t, turn, onClose, onReadAloud }){
+  const [level, setLevel] = React.useState(1);
+  return (
+    <div style={{position:'absolute',inset:0,zIndex:200,display:'flex',alignItems:'flex-end'}}>
+      <div onClick={onClose} style={{position:'absolute',inset:0,background:'rgba(0,0,0,0.35)'}}/>
+      <div style={{position:'relative',width:'100%',background:t.surface,borderRadius:'24px 24px 0 0',padding:'18px 20px 30px',
+        animation:'slideup 0.28s cubic-bezier(0.2,0.8,0.2,1)',boxShadow:'0 -8px 30px rgba(0,0,0,0.15)'}}>
+        <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:14}}>
+          <Icon.Bulb size={18} color={t.accent}/><span style={{fontFamily:Tokens.font.zh,fontSize:15,fontWeight:600,color:t.ink}}>不会说？我扶你一把</span>
+          <button onClick={onClose} style={{marginLeft:'auto',appearance:'none',border:0,background:'transparent',cursor:'pointer'}}><Icon.Close size={18} color={t.inkSoft}/></button>
+        </div>
+        {/* 第1级：中文提示 */}
+        <div style={{background:t.surfaceAlt,borderRadius:14,padding:'12px 14px',marginBottom:10}}>
+          <div style={{fontFamily:Tokens.font.zh,fontSize:11,color:t.inkMuted,marginBottom:3}}>① 这一句想表达</div>
+          <div style={{fontFamily:Tokens.font.zh,fontSize:14,color:t.ink}}>{turn.hintZh}</div>
+        </div>
+        {/* 第2级：句型 */}
+        {level>=2 && (
+          <div className="fade-item" style={{background:t.surfaceAlt,borderRadius:14,padding:'12px 14px',marginBottom:10}}>
+            <div style={{fontFamily:Tokens.font.zh,fontSize:11,color:t.inkMuted,marginBottom:3}}>② 用这个句型</div>
+            <div style={{fontFamily:Tokens.font.enSans,fontSize:15,color:t.ink,fontWeight:500}}>{turn.scaffold.pattern}</div>
+          </div>
+        )}
+        {/* 第3级：带读 */}
+        {level>=3 && (
+          <div className="fade-item" style={{background:t.accentSoft,borderRadius:14,padding:'12px 14px',marginBottom:14}}>
+            <div style={{fontFamily:Tokens.font.zh,fontSize:11,color:t.accentDeep,marginBottom:3}}>③ 跟我读一遍（跟读在这里救场）</div>
+            <div style={{display:'flex',alignItems:'center',gap:10}}>
+              <div style={{flex:1,fontFamily:Tokens.font.en,fontSize:18,color:t.ink}}>{turn.sampleEn}</div>
+              <button onClick={onReadAloud} style={{appearance:'none',border:0,cursor:'pointer',background:t.accent,color:'#fff',borderRadius:9999,width:38,height:38,display:'flex',alignItems:'center',justifyContent:'center'}}><Icon.Volume size={18} color="#fff"/></button>
+            </div>
+          </div>
+        )}
+        {level<3
+          ? <PrimaryButton t={t} block onClick={()=>setLevel(level+1)}>{level===1?'还不够，给我句型 →':'还说不出，带我读一遍 →'}</PrimaryButton>
+          : <GhostButton t={t} block onClick={onClose}>好了，我来试试</GhostButton>}
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 陪练对话主屏
+// ═══════════════════════════════════════════════════════════════
+function ChatScreen({ t, scenario, onBack, onFinish }){
+  const band = bandById(scenario.bandId);
+  const [msgs, setMsgs] = React.useState([{from:'rosie',text:scenario.turns[0].rosie}]);
+  const [idx, setIdx] = React.useState(0); // 当前等待用户回应的 turn
+  const idxRef = React.useRef(0);      // 最新指针，避免闭包/后台节流导致的错乱
+  const busyRef = React.useRef(false); // 同步锁，防连点重复
+  const [phase, setPhase] = React.useState('idle'); // idle / recording / analyzing
+  const [doneSet, setDoneSet] = React.useState(new Set());
+  const [taskOpen, setTaskOpen] = React.useState(false);
+  const [scaffold, setScaffold] = React.useState(false);
+  const [ended, setEnded] = React.useState(false);
+  const scroller = React.useRef(null);
+
+  React.useEffect(()=>{ if(scroller.current) scroller.current.scrollTop = scroller.current.scrollHeight; }, [msgs, phase]);
+
+  const cur = scenario.turns[idx];
+
+  const speak = ()=>{
+    if(busyRef.current || ended) return;
+    busyRef.current = true;
+    const turn = scenario.turns[idxRef.current];
+    setPhase('recording');
+    setTimeout(()=>setPhase('analyzing'), 800);
+    setTimeout(()=>{
+      setMsgs(m=>[...m, {from:'user', text:turn.sampleEn, correction:turn.correction||null}]);
+      setDoneSet(prev=>{ const n=new Set(prev); (turn.done||[]).forEach(d=>n.add(d)); return n; });
+      setPhase('idle');
+      setTimeout(()=>{
+        if(turn.last){
+          setMsgs(m=>[...m, {from:'rosie', text:turn.closing}]);
+          setEnded(true);
+        } else {
+          const next = scenario.turns[idxRef.current+1];
+          setMsgs(m=>[...m, {from:'rosie', text:next.rosie, curveball:next.curveball}]);
+          idxRef.current = idxRef.current + 1;
+          setIdx(idxRef.current);
+        }
+        busyRef.current = false;
+      }, 650);
+    }, 1400);
+  };
+
+  return (
+    <div className="screen-fade" style={{height:844,display:'flex',flexDirection:'column',background:t.bg}}>
+      {/* 顶栏 */}
+      <div style={{paddingTop:46}}>
+        <div style={{display:'flex',alignItems:'center',gap:11,padding:'6px 16px 10px'}}>
+          <button onClick={onBack} style={{appearance:'none',border:0,background:'transparent',cursor:'pointer'}}><Icon.Back size={20} color={t.inkSoft}/></button>
+          <RosieAvatar size={38} state={phase==='analyzing'?'idle':(ended?'idle':(phase==='recording'?'listening':'speaking'))} t={t}/>
+          <div style={{flex:1,minWidth:0}}>
+            <div style={{fontFamily:Tokens.font.zh,fontSize:15,fontWeight:600,color:t.ink}}>Rosie</div>
+            <div style={{fontFamily:Tokens.font.zh,fontSize:11,color:t.inkMuted,whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>{scenario.emoji} {scenario.title}</div>
+          </div>
+          <BandBadge band={band} t={t}/>
+        </div>
+        <TaskBar t={t} goals={scenario.goals} doneSet={doneSet} open={taskOpen} setOpen={setTaskOpen}/>
+      </div>
+
+      {/* 消息流 */}
+      <div ref={scroller} className="no-bar" style={{flex:1,overflowY:'auto',padding:'16px 16px 8px',display:'flex',flexDirection:'column',gap:13}}>
+        {/* 情境设定卡 */}
+        <div style={{background:t.surfaceAlt,borderRadius:14,padding:'10px 13px',fontFamily:Tokens.font.zh,fontSize:12.5,color:t.inkSoft,lineHeight:1.6,textAlign:'center'}}>
+          🎬 {scenario.setup}
+        </div>
+        {msgs.map((m,i)=> m.from==='rosie' ? (
+          <div key={i} className="fade-item" style={{display:'flex',gap:9,alignItems:'flex-end',maxWidth:'86%'}}>
+            <RosieAvatar size={28} state="idle" t={t}/>
+            <div style={{background:t.surface,border:`1px solid ${t.line}`,borderRadius:'4px 16px 16px 16px',padding:'10px 13px',fontFamily:Tokens.font.enSans,fontSize:15,color:t.ink,lineHeight:1.5}}>
+              {m.curveball && <div style={{fontFamily:Tokens.font.zh,fontSize:11,color:t.accentDeep,fontWeight:600,marginBottom:3}}>⚡ 有点小意外</div>}
+              {m.text}
+            </div>
+          </div>
+        ) : (
+          <div key={i} className="fade-item" style={{alignSelf:'flex-end',maxWidth:'86%'}}>
+            <div style={{background:t.accent,color:'#fff',borderRadius:'16px 4px 16px 16px',padding:'10px 13px',fontFamily:Tokens.font.enSans,fontSize:15,lineHeight:1.5}}>{m.text}</div>
+            {m.correction && (
+              <div style={{marginTop:6,background:t.sunSoft,borderRadius:12,padding:'8px 11px',display:'flex',gap:7,alignItems:'flex-start'}}>
+                <Icon.Sparkle size={13} color={t===Tokens.palettes.dusk?t.sun:'#9C7A1F'}/>
+                <div style={{fontFamily:Tokens.font.zh,fontSize:12,color:t===Tokens.palettes.dusk?t.sun:'#9C7A1F',lineHeight:1.5}}>
+                  <span style={{textDecoration:'line-through',opacity:0.6}}>{m.correction.from}</span> → <span style={{fontWeight:600}}>{m.correction.to}</span><br/>{m.correction.note}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+        {phase==='analyzing' && (
+          <div style={{alignSelf:'flex-end',background:hexA(t.accent,0.5),borderRadius:'16px 4px 16px 16px',padding:'12px 16px',display:'flex',gap:3,height:20,alignItems:'center'}}>
+            {[0,1,2,3].map(i=>(<span key={i} style={{width:3,height:'100%',background:'#fff',borderRadius:2,transformOrigin:'center',animation:`audiobar ${0.5+i*0.12}s ease-in-out ${i*0.08}s infinite alternate`}}/>))}
+          </div>
+        )}
+      </div>
+
+      {/* 底部输入 */}
+      <div style={{borderTop:`1px solid ${t.line}`,background:t.bg,padding:'10px 18px 32px'}}>
+        {ended ? (
+          <PrimaryButton t={t} block onClick={()=>onFinish(doneSet)}>任务完成，看看成果 <Icon.Chevron size={14} color="#fff"/></PrimaryButton>
+        ) : (
+          <div style={{display:'flex',alignItems:'center',gap:12}}>
+            <button onClick={()=>setScaffold(true)} disabled={phase!=='idle'} style={{appearance:'none',cursor:phase==='idle'?'pointer':'default',border:`1px solid ${t.line}`,
+              background:t.surface,borderRadius:9999,padding:'10px 13px',display:'flex',alignItems:'center',gap:6,flexShrink:0,opacity:phase==='idle'?1:0.5}}>
+              <Icon.Bulb size={15} color={t.accent}/><span style={{fontFamily:Tokens.font.zh,fontSize:12.5,color:t.ink}}>不会说</span>
+            </button>
+            <button onClick={speak} style={{appearance:'none',border:0,cursor:'pointer',flex:1,height:52,borderRadius:9999,
+              background:phase==='recording'?t.danger:t.accent,color:'#fff',display:'flex',alignItems:'center',justifyContent:'center',gap:9,position:'relative',
+              boxShadow:`0 8px 20px ${hexA(phase==='recording'?t.danger:t.accent,0.32)}`}}>
+              {phase==='recording' && <span style={{position:'absolute',inset:0,borderRadius:9999,border:`3px solid ${t.danger}`,animation:'ringpulse 1.4s ease-out infinite'}}/>}
+              {phase==='analyzing'
+                ? <><span style={{width:18,height:18,border:'3px solid rgba(255,255,255,0.4)',borderTopColor:'#fff',borderRadius:9999,animation:'spin 0.8s linear infinite'}}/><span style={{fontFamily:Tokens.font.zh,fontSize:14}}>识别中…</span></>
+                : phase==='recording'
+                  ? <><span style={{width:16,height:16,borderRadius:4,background:'#fff'}}/><span style={{fontFamily:Tokens.font.zh,fontSize:14,fontWeight:600}}>说完，点一下结束</span></>
+                  : <><Icon.Mic size={22} color="#fff" sw={2}/><span style={{fontFamily:Tokens.font.zh,fontSize:15,fontWeight:600}}>按住说（点击模拟）</span></>}
+            </button>
+          </div>
+        )}
+        {!ended && phase==='idle' && cur && (
+          <div style={{display:'flex',alignItems:'center',gap:5,marginTop:8,justifyContent:'center'}}>
+            <Icon.Bulb size={12} color={t.inkMuted}/><span style={{fontFamily:Tokens.font.zh,fontSize:11.5,color:t.inkMuted}}>提示：{cur.hintZh}</span>
+          </div>
+        )}
+      </div>
+
+      {scaffold && cur && <ScaffoldSheet t={t} turn={cur} onClose={()=>setScaffold(false)} onReadAloud={()=>{}}/>}
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 对话总结
+// ═══════════════════════════════════════════════════════════════
+function SummaryScreen({ t, scenario, doneSet, onAgain, onPickOther }){
+  const total = scenario.goals.length, done = doneSet.size;
+  const allDone = done>=total;
+  return (
+    <div className="screen-fade" style={{minHeight:'100%',background:t.bg,padding:'70px 24px 40px',textAlign:'center',position:'relative',overflow:'hidden'}}>
+      {allDone && [...Array(8)].map((_,i)=>(<div key={i} style={{position:'absolute',top:`${8+(i%4)*7}%`,left:`${8+i*11}%`,width:8,height:8,borderRadius:i%2?9999:2,background:[t.accent,t.sage,t.sun][i%3],animation:`confetti-in 0.6s ease ${i*0.08}s both`}}/>))}
+      <div style={{position:'relative'}}>
+        <div style={{display:'flex',justifyContent:'center',marginBottom:14}}>
+          <div style={{position:'relative'}}>
+            <RosieAvatar size={96} state="idle" t={t}/>
+            <div style={{position:'absolute',bottom:-4,right:-4,width:36,height:36,borderRadius:9999,background:t.sun,display:'flex',alignItems:'center',justifyContent:'center',animation:'pop-in 0.5s ease both',boxShadow:Tokens.shadow.md}}><Icon.Trophy size={20} color="#fff"/></div>
+          </div>
+        </div>
+        <div style={{fontFamily:Tokens.font.zh,fontSize:23,fontWeight:700,color:t.ink,marginBottom:6}}>{allDone?'任务达成！开口很棒 🎉':'这次也开口了，很棒'}</div>
+        <div style={{fontFamily:Tokens.font.zh,fontSize:14,color:t.inkSoft,marginBottom:22}}>「{scenario.title}」· 完成 {done}/{total} 个任务要点</div>
+
+        {/* 任务达成 */}
+        <div style={{background:t.surface,borderRadius:18,padding:16,border:`1px solid ${t.line}`,marginBottom:14,textAlign:'left'}}>
+          {scenario.goals.map((g,i)=>{ const ok=doneSet.has(i); return (
+            <div key={i} style={{display:'flex',alignItems:'center',gap:9,padding:'4px 0'}}>
+              <span style={{width:18,height:18,borderRadius:9999,flexShrink:0,display:'flex',alignItems:'center',justifyContent:'center',background:ok?t.sage:t.surfaceAlt}}>{ok&&<Icon.Check size={11} color="#fff"/>}</span>
+              <span style={{fontFamily:Tokens.font.zh,fontSize:13.5,color:t.ink}}>{g}</span>
+            </div>
+          );})}
+        </div>
+
+        {/* Rosie 点评卡 */}
+        <div style={{background:t.surface,borderRadius:18,padding:16,border:`1px solid ${t.line}`,marginBottom:14,textAlign:'left'}}>
+          <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:10}}><RosieAvatar size={26} state="idle" t={t}/><span style={{fontFamily:Tokens.font.zh,fontSize:13,fontWeight:600,color:t.ink}}>Rosie 的话</span></div>
+          <div style={{display:'flex',gap:8,marginBottom:8}}><span>👍</span><div style={{fontFamily:Tokens.font.zh,fontSize:13,color:t.inkSoft,lineHeight:1.6}}>你全程都敢开口，节奏很稳，遇到意外也接住了。</div></div>
+          <div style={{display:'flex',gap:8}}><span>🌱</span><div style={{fontFamily:Tokens.font.zh,fontSize:13,color:t.inkSoft,lineHeight:1.6}}>下次注意：问建议用 <b style={{color:t.ink}}>What would you recommend?</b>（别漏掉 would）。</div></div>
+        </div>
+
+        {/* 学到的表达 */}
+        <div style={{background:t.accentSoft,borderRadius:18,padding:16,marginBottom:24,textAlign:'left'}}>
+          <div style={{fontFamily:Tokens.font.zh,fontSize:12,fontWeight:600,color:t.accentDeep,marginBottom:8}}>✦ 这次学到的表达</div>
+          {scenario.turns.slice(0,3).map((tn,i)=>(<div key={i} style={{fontFamily:Tokens.font.en,fontSize:14.5,color:t.ink,padding:'3px 0'}}>· {tn.sampleEn}</div>))}
+        </div>
+
+        <PrimaryButton t={t} block onClick={onAgain} style={{marginBottom:10}}>再练一次这个场景</PrimaryButton>
+        <GhostButton t={t} block onClick={onPickOther}>换个场景</GhostButton>
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// App
+// ═══════════════════════════════════════════════════════════════
+function App(){
+  const [palette, setPalette] = React.useState('cream');
+  const t = Tokens.palettes[palette];
+  const dark = palette==='dusk';
+  const [screen, setScreen] = React.useState('picker'); // picker / chat / summary
+  const [scenario, setScenario] = React.useState(null);
+  const [result, setResult] = React.useState(null);
+  React.useEffect(()=>{ document.body.className = dark?'theme-dusk':''; }, [dark]);
+
+  let view;
+  if(screen==='picker') view = <ScenarioPicker t={t} onPick={(s)=>{ setScenario(s); setScreen('learn'); }}/>;
+  else if(screen==='learn') view = <LearnScreen t={t} scenario={scenario} onBack={()=>setScreen('picker')} onStart={()=>setScreen('chat')}/>;
+  else if(screen==='chat') view = <ChatScreen key={scenario.id} t={t} scenario={scenario} onBack={()=>setScreen('learn')} onFinish={(done)=>{ setResult(done); setScreen('summary'); }}/>;
+  else view = <SummaryScreen t={t} scenario={scenario} doneSet={result||new Set()} onAgain={()=>setScreen('chat')} onPickOther={()=>setScreen('picker')}/>;
+
+  return (
+    <div className="stage">
+      <div className="theme-switch-wrap"><div className="theme-switch">
+        <button className={palette==='cream'?'on':''} onClick={()=>setPalette('cream')}>☀ 白天</button>
+        <button className={palette==='dusk'?'on':''} onClick={()=>setPalette('dusk')}>☾ 夜晚</button>
+      </div></div>
+      <div className="proto-tag">AI 情景任务陪练 demo · 语音为模拟</div>
+      <div className="device-shell">
+        <IOSDevice dark={dark}>
+          <div style={{position:'absolute',inset:0,background:t.bg,overflow:'hidden'}}>
+            <div style={{position:'absolute',top:0,left:0,right:0,zIndex:5,pointerEvents:'none'}}><IOSStatusBar dark={dark}/></div>
+            <div className="no-bar" style={{position:'absolute',inset:0,overflowY:'auto'}}>{view}</div>
+          </div>
+        </IOSDevice>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

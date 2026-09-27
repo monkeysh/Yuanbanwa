@@ -1,0 +1,17 @@
+{
+  "_note": "FCE Part2 独白的官方风格题干(Codex体检建议·2026-08-02)。App暂不渲染任务说明,留待UI支持题干显示+搭档30秒回应增强时使用。",
+  "tasks": {
+    "fce-technology": "Why might the people be using technology in these situations?",
+    "fce-environment": "Why might the people have chosen these ways of travelling?",
+    "fce-work": "What might be good about working in these ways?",
+    "fce-travel": "Why might people choose these kinds of holiday?",
+    "fce-entertainment": "What might the people enjoy about these forms of entertainment?",
+    "fce-health": "How might these activities help people stay healthy?",
+    "fce-relationships": "What might people value about spending time together in these situations?",
+    "fce-education": "What might be good about learning in these ways?",
+    "fce-ambitions": "What might appeal to people about these different lifestyles?",
+    "fce-lifestyle": "Why might people prefer these different lifestyles?",
+    "fce-food": "Why might the people be eating in these situations?",
+    "fce-money": "What might people enjoy about shopping in these ways?"
+  }
+}

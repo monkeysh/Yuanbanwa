@@ -1,0 +1,181 @@
+{
+  "reviews": [
+    {
+      "level": "entry",
+      "idx": 1,
+      "en": "Nice to meet you.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "entry",
+      "idx": 2,
+      "en": "Thank you for your time.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "entry",
+      "idx": 3,
+      "en": "I'm excited about this role.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "entry",
+      "idx": 4,
+      "en": "I look forward to hearing from you.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "beginner",
+      "idx": 1,
+      "en": "Thank you for having me today.",
+      "verdict": "fix",
+      "issue": "表达略显中式，面试中更常用“meeting with me”或“seeing me”。",
+      "suggest": "Thank you for meeting with me today."
+    },
+    {
+      "level": "beginner",
+      "idx": 2,
+      "en": "I have three years of experience in marketing.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "beginner",
+      "idx": 3,
+      "en": "I'm a quick learner and a team player.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "beginner",
+      "idx": 4,
+      "en": "I applied because I really want to grow here.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "beginner",
+      "idx": 5,
+      "en": "My biggest strength is my attention to detail.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "beginner",
+      "idx": 6,
+      "en": "When can I expect to hear back?",
+      "verdict": "fix",
+      "issue": "缺少宾语，完整说法应是“hear back from you”或“hear from you”。",
+      "suggest": "When can I expect to hear back from you?"
+    },
+    {
+      "level": "intermediate",
+      "idx": 1,
+      "en": "Thanks for taking the time to meet with me today.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "intermediate",
+      "idx": 2,
+      "en": "In my current role, I manage a team of five.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "intermediate",
+      "idx": 3,
+      "en": "I'd say my strongest skill is problem-solving.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "intermediate",
+      "idx": 4,
+      "en": "I'm really drawn to your company's focus on innovation.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "intermediate",
+      "idx": 5,
+      "en": "Could you tell me more about the team I'd be working with?",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "intermediate",
+      "idx": 6,
+      "en": "What does success look like in this position?",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "advanced",
+      "idx": 1,
+      "en": "I appreciate you walking me through the role in such detail.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "advanced",
+      "idx": 2,
+      "en": "I left my last position because I was looking for a bigger challenge.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "advanced",
+      "idx": 3,
+      "en": "If I had to name a weakness, I'd say I can be a bit of a perfectionist.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "advanced",
+      "idx": 4,
+      "en": "I'm confident I could add value from day one.",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "advanced",
+      "idx": 5,
+      "en": "How would you describe the company culture here?",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    },
+    {
+      "level": "advanced",
+      "idx": 6,
+      "en": "Is there anything about my background you'd like me to expand on?",
+      "verdict": "ok",
+      "issue": "",
+      "suggest": ""
+    }
+  ],
+  "overall": "大部分句子地道且符合难度档位，仅初中级两个句子有轻微中式或语法问题，已修正为更自然的面试用语。"
+}

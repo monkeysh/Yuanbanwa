@@ -1,0 +1,35 @@
+{
+  "_note": "自我介绍深挖:现有偏商务社交(工作足),补齐 学习/家庭/爱好 三维度并深挖工作。往现有 4 档 append(不新建档)。单人自我介绍,女声 Rosie。难度对齐现有档。",
+  "self-intro": {
+    "entry": [
+      { "en": "I'm a student.", "zh": "我是学生。" },
+      { "en": "I love music.", "zh": "我喜欢音乐。" },
+      { "en": "I have a big family.", "zh": "我家人很多。" },
+      { "en": "I like drawing.", "zh": "我喜欢画画。" }
+    ],
+    "beginner": [
+      { "en": "I'm studying at university.", "zh": "我在上大学。" },
+      { "en": "My major is computer science.", "zh": "我的专业是计算机。" },
+      { "en": "I live with my family.", "zh": "我和家人住在一起。" },
+      { "en": "I have a younger brother.", "zh": "我有一个弟弟。" },
+      { "en": "In my free time, I like hiking.", "zh": "空闲时我喜欢徒步。" },
+      { "en": "I'm learning to play the piano.", "zh": "我在学钢琴。" }
+    ],
+    "intermediate": [
+      { "en": "Outside of work, I'm really into photography.", "zh": "工作之外，我很喜欢摄影。" },
+      { "en": "I'm the eldest of three kids.", "zh": "我是三个孩子里的老大。" },
+      { "en": "I'm doing a part-time master's in design.", "zh": "我在读设计的在职硕士。" },
+      { "en": "My work is mostly about solving problems for users.", "zh": "我的工作主要是为用户解决问题。" },
+      { "en": "My parents live nearby, so we have dinner together often.", "zh": "父母住得近，我们常一起吃饭。" },
+      { "en": "On weekends, I usually go rock climbing.", "zh": "周末我通常去攀岩。" }
+    ],
+    "advanced": [
+      { "en": "I've recently gotten into long-distance running — it's become a bit of an obsession.", "zh": "最近我迷上了长跑，有点上瘾了。" },
+      { "en": "I'm juggling a full-time role with an evening MBA.", "zh": "我一边做全职工作，一边读晚间 MBA。" },
+      { "en": "I come from a family of teachers, so education runs deep for me.", "zh": "我出身教师家庭，所以对教育有很深的情结。" },
+      { "en": "My work has shifted more toward mentoring junior designers lately.", "zh": "最近我的工作更多转向带初级设计师。" },
+      { "en": "When I'm not working, you'll usually find me experimenting in the kitchen.", "zh": "不工作的时候，我多半在厨房捣鼓吃的。" },
+      { "en": "My partner and I just moved into a place closer to my parents.", "zh": "我和伴侣刚搬到离我父母更近的地方。" }
+    ]
+  }
+}

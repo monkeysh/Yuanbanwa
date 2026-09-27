@@ -1,0 +1,105 @@
+{
+  "_note": "FCE 新话题第二批(3个),补齐 FCE 到 12。结构同批一:Part1对话8(♀问/♂答B2深度) + Part2独白7(♀图片对比) + 三件套。lifestyle聚焦作息习惯/生活节奏(与health健康区分)。待 v4pro 双卡审后 splice。",
+  "fce-lifestyle": {
+    "meta": {
+      "title": "生活方式与节奏",
+      "subtitle": "Lifestyle and Daily Habits",
+      "description": "FCE 高频话题:作息习惯、工作生活平衡、想改变的习惯。Part 1 深答 + Part 2 忙碌 vs 悠闲生活对比。",
+      "learn": ["谈日常习惯与节奏", "评价工作生活平衡", "对比快节奏 vs 慢生活", "用条件句谈想改的习惯"],
+      "examTip": "**考法** 生活方式是 FCE 常考话题。Part 1 考官会问你的日常作息、如何平衡工作与休息、有没有想改的习惯,回答多用一般现在时+频率副词,并给理由。Part 2 常给「忙碌都市 vs 悠闲慢生活」的对比图,用 whereas / by contrast 对比节奏,结尾表明自己更向往哪种。",
+      "templates": [
+        { "en": "I tend to ___ most days, although ___.", "zh": "谈日常倾向" },
+        { "en": "I try to strike a balance between ___ and ___.", "zh": "谈平衡" },
+        { "en": "One habit I'd love to change is ___.", "zh": "谈想改的习惯" },
+        { "en": "Given the choice, I'd rather ___ than ___.", "zh": "表偏好" }
+      ]
+    },
+    "part1": [
+      { "en": "Are you more of an early riser or a night owl?", "zh": "你更像早起的人还是夜猫子?", "voice": "rosie" },
+      { "en": "Definitely a night owl, I'm afraid. I do my best thinking late at night, though I know it isn't the healthiest routine.", "zh": "恐怕绝对是夜猫子。我在深夜思路最清晰,尽管我知道这不是最健康的作息。", "voice": "chris" },
+      { "en": "How do you usually balance work or study with relaxing?", "zh": "你通常怎么平衡工作学习和放松?", "voice": "rosie" },
+      { "en": "I try to strike a balance by setting clear cut-off times. Once I finish for the day, I make a point of switching off completely.", "zh": "我靠设定明确的收工时间来平衡。一旦当天结束,我会刻意让自己彻底放松下来。", "voice": "chris" },
+      { "en": "Is there a habit you'd like to change?", "zh": "有没有你想改掉的习惯?", "voice": "rosie" },
+      { "en": "One habit I'd love to change is checking my phone first thing in the morning. It makes me feel distracted for the rest of the day.", "zh": "我很想改掉的一个习惯是一早醒来就看手机。它给一整天定下了焦躁的基调。", "voice": "chris" },
+      { "en": "Do you think people's lifestyles are healthier than they used to be?", "zh": "你觉得现在人们的生活方式比过去更健康吗?", "voice": "rosie" },
+      { "en": "In some ways, yes, since people are far more aware of diet and exercise. That said, we also sit in front of screens far more than before.", "zh": "某些方面是的,因为人们对饮食和运动的意识强多了。不过话说回来,我们盯着屏幕的时间也远比从前多。", "voice": "chris" }
+    ],
+    "part2": [
+      { "en": "Both pictures capture very different lifestyles, one fast-paced and the other far more laid-back.", "zh": "两张照片捕捉了截然不同的生活方式,一种快节奏,另一种则悠闲得多。" },
+      { "en": "In the first image, a woman is rushing through a busy city street, coffee in hand, clearly in a hurry to get somewhere.", "zh": "第一张里,一位女士手拿咖啡快步穿过繁忙的城市街道,显然在赶着去某个地方。" },
+      { "en": "The second picture, by contrast, shows a man relaxing in a hammock by the sea, with nothing pressing to do.", "zh": "相比之下,第二张展示一个男人惬意地躺在海边吊床上,没有任何紧要的事要做。" },
+      { "en": "The woman in the city might enjoy that energy and the feeling of always being busy.", "zh": "城市里那位女士也许正是靠这种活力和时刻有目标的感觉而充满干劲。" },
+      { "en": "On the other hand, the man by the sea seems to have made a conscious choice to slow down and appreciate the moment.", "zh": "另一方面,海边那个男人似乎是有意选择放慢脚步、享受当下。" },
+      { "en": "I suspect most of us swing between the two, chasing deadlines during the week and craving peace at the weekend.", "zh": "我猜我们大多数人都在两者之间摆荡,平日追着截止日期跑,周末又渴望宁静。" },
+      { "en": "Personally, I'd lean towards the slower pace, since I believe we do our best work when we're rested rather than run down.", "zh": "就我个人而言,我更倾向慢节奏,因为我相信人在休息充分而非精疲力竭时才能做出最好的成果。" }
+    ]
+  },
+  "fce-food": {
+    "meta": {
+      "title": "饮食与美食",
+      "subtitle": "Food and Eating Habits",
+      "description": "FCE 高频话题:饮食习惯、在家做饭 vs 外食、健康饮食。Part 1 深答 + Part 2 家庭聚餐 vs 快餐对比。",
+      "learn": ["谈饮食偏好与习惯", "评价外食与自炊", "对比聚餐 vs 独食快餐", "用比较级谈变化"],
+      "examTip": "**考法** 饮食是 FCE 常考话题。Part 1 考官会问你的饮食习惯、常做饭还是外食、是否注意健康,回答给出具体例子和理由。Part 2 常给「家庭围坐聚餐 vs 独自吃快餐」的对比图,用 whereas 对比,谈食物在社交与健康中的角色,结尾表个人偏好。",
+      "templates": [
+        { "en": "I'm quite fond of ___, especially when ___.", "zh": "谈喜好" },
+        { "en": "I'd rather cook at home because ___.", "zh": "说理由" },
+        { "en": "There's something special about ___.", "zh": "强调价值" },
+        { "en": "On the whole, I try to ___.", "zh": "总体倾向" }
+      ]
+    },
+    "part1": [
+      { "en": "Do you enjoy cooking, or do you prefer eating out?", "zh": "你喜欢做饭,还是更喜欢在外面吃?", "voice": "rosie" },
+      { "en": "I genuinely enjoy cooking when I have the time. There's something satisfying about making a meal from scratch and sharing it with others.", "zh": "有时间的时候我是真心享受做饭。从头做一顿饭再和别人分享,有种特别的满足感。", "voice": "chris" },
+      { "en": "Has your diet changed much over the years?", "zh": "这些年你的饮食变化大吗?", "voice": "rosie" },
+      { "en": "Quite a bit, actually. I've cut down on processed food and started eating far more vegetables than I did as a teenager.", "zh": "其实变化不小。我减少了加工食品,蔬菜也比青少年时期吃得多多了。", "voice": "chris" },
+      { "en": "Is there a dish from your country you'd recommend to a visitor?", "zh": "有没有你家乡的一道菜想推荐给游客?", "voice": "rosie" },
+      { "en": "I'd definitely recommend our dumplings. They're the kind of dish families make together, so they represent family traditions as well as having great flavour.", "zh": "我一定会推荐我们的饺子。那是一家人一起包的菜,所以除了味道,还承载着很多意义。", "voice": "chris" },
+      { "en": "Do you think people pay enough attention to healthy eating?", "zh": "你觉得人们对健康饮食的关注够吗?", "voice": "rosie" },
+      { "en": "It varies a lot. Some people are very careful, but for many others, busy lifestyles make it far too easy to reach for convenience food.", "zh": "差别很大。有些人很讲究,但对很多其他人来说,忙碌的生活让人太容易随手就吃方便食品了。", "voice": "chris" }
+    ],
+    "part2": [
+      { "en": "Both photographs show people eating, but the atmosphere around each meal could hardly be more different.", "zh": "两张照片都展示人们在吃饭,但两顿饭的氛围简直天差地别。" },
+      { "en": "In the first picture, a whole family is gathered around a table, sharing dishes and chatting happily over dinner.", "zh": "第一张里,一家人围坐在餐桌旁,一边分享菜肴,一边愉快地聊着晚餐。" },
+      { "en": "The second image shows a young man eating a burger alone at his desk, apparently grabbing a quick bite between tasks.", "zh": "第二张展示一个年轻男子独自在办公桌前吃汉堡,显然是在工作间隙匆匆填个肚子。" },
+      { "en": "The family meal is about far more than food; it's a chance to reconnect at the end of a busy day.", "zh": "家庭聚餐远不只是吃饭,更是在忙碌一天后重新联络感情的机会。" },
+      { "en": "Whereas the man eating alone is probably prioritising convenience, he has to fit food around a packed schedule rather than the other way round.", "zh": "而独自吃饭的男子多半是把便利放在首位,让吃饭迁就满满的日程,而非反过来。" },
+      { "en": "I imagine both scenes are increasingly common, as modern life pulls us between the meals we'd like and the meals we have time for.", "zh": "我想这两种场景都越来越常见,因为现代生活让我们在想吃的饭和有时间吃的饭之间挣扎。" },
+      { "en": "Personally, I find the shared family meal far more appealing, since eating together strengthens our relationships as well as keeping us healthy.", "zh": "就我个人而言,我觉得一起吃的家庭饭更有吸引力,因为共餐滋养的不只是身体,还有我们的关系。" }
+    ]
+  },
+  "fce-money": {
+    "meta": {
+      "title": "金钱与消费",
+      "subtitle": "Money and Spending",
+      "description": "FCE 高频话题:消费习惯、存钱、网购 vs 实体店。Part 1 深答 + Part 2 逛店 vs 网购对比。",
+      "learn": ["谈消费与储蓄习惯", "评价花钱的价值观", "对比实体购物 vs 网购", "用 rather than 表取舍"],
+      "examTip": "**考法** 金钱消费是 FCE 常考话题。Part 1 考官会问你的花钱习惯、是否存钱、喜欢网购还是逛店,回答要有具体例子和价值判断。Part 2 常给「实体店逛街 vs 在家网购」的对比图,用 whereas 对比两种方式的利弊,谈便利与体验的取舍,结尾表个人偏好。",
+      "templates": [
+        { "en": "I'd describe myself as a fairly ___ spender.", "zh": "描述消费风格" },
+        { "en": "I'd rather spend money on ___ than on ___.", "zh": "谈花钱取舍" },
+        { "en": "The main appeal of ___ is that ___.", "zh": "说吸引力" },
+        { "en": "That said, nothing quite beats ___.", "zh": "转折强调" }
+      ]
+    },
+    "part1": [
+      { "en": "Would you describe yourself as a spender or a saver?", "zh": "你会说自己是爱花钱的人还是爱存钱的人?", "voice": "rosie" },
+      { "en": "Honestly, a bit of both. I'm careful with everyday expenses, but I don't mind splashing out on things that genuinely last.", "zh": "老实说,两者都有点。日常开销我很谨慎,但对真正耐用的东西,我不介意大方一点。", "voice": "chris" },
+      { "en": "Do you prefer shopping online or in actual stores?", "zh": "你更喜欢网购还是逛实体店?", "voice": "rosie" },
+      { "en": "It depends on what I'm buying. For everyday items I shop online for convenience, but for clothes I'd rather try things on in person.", "zh": "看买什么。日常用品我图方便就网购,但买衣服我还是宁愿到店里试穿。", "voice": "chris" },
+      { "en": "What's the best thing you've ever spent money on?", "zh": "你花过最值的一笔钱是什么?", "voice": "rosie" },
+      { "en": "Without a doubt, travelling. I'd rather spend money on experiences than on possessions, because the memories stay with you for life.", "zh": "毫无疑问是旅行。比起买东西,我更愿意把钱花在经历上,因为那些回忆会伴随你一生。", "voice": "chris" },
+      { "en": "Do you think young people today are good at managing money?", "zh": "你觉得现在的年轻人擅长理财吗?", "voice": "rosie" },
+      { "en": "It's a mixed picture. Many are surprisingly good at saving and managing money, yet easy online shopping can lead others into debt.", "zh": "情况参差不齐。很多人在存钱和投资上出人意料地精明,但网上消费的便利也可能诱使另一些人陷入负债。", "voice": "chris" }
+    ],
+    "part2": [
+      { "en": "Both pictures show people shopping, but they've chosen two quite different ways of going about it.", "zh": "两张照片都展示人们在购物,但他们选择了两种颇为不同的方式。" },
+      { "en": "In the first image, a couple is browsing through a busy shopping centre, carrying bags and clearly enjoying the outing.", "zh": "第一张里,一对情侣在热闹的购物中心里逛着,提着购物袋,显然很享受这次出行。" },
+      { "en": "The second picture, by contrast, shows a woman shopping from her sofa, comparing products on a tablet at home.", "zh": "相比之下,第二张展示一位女士窝在沙发上购物,在家用平板比较各种商品。" },
+      { "en": "The couple at the shopping centre are treating it as a social occasion, something to do together rather than just a transaction.", "zh": "购物中心里那对情侣把它当成一种社交活动,是可以一起做的事,而不只是一笔交易。" },
+      { "en": "The main appeal of shopping online, however, is convenience: you can compare prices instantly and avoid the crowds altogether.", "zh": "而网购的主要吸引力在于便利:你能即时比价,还完全避开了人群。" },
+      { "en": "I'd say each suits a different mood, since sometimes we want the lively atmosphere of shops and streets and other times we just want it done quickly.", "zh": "我会说两者适合不同的心情,有时我们想要商业街的热闹,有时只想赶快搞定。" },
+      { "en": "Personally, I lean towards online shopping for convenience, but nothing quite beats wandering round the shops on a lazy afternoon.", "zh": "就我个人而言,图方便我更偏向网购,但没什么比得上在慵懒的午后随意逛逛店铺。" }
+    ]
+  }
+}

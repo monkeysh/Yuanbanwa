@@ -1,0 +1,723 @@
+{
+  "_note": "PET Part3 协作讨论(12话题×10句)。官方2020 revision Part3:任务卡情境+选项,两考生提议/回应/比较/给理由,向结论推进但不强制一致、不过早决定(评参与充分度非任务完成度)。本批:8组自然一致+4组保留分歧;12组开场各不同;B1语言。♀rosie ♂chris交替。",
+  "pet-daily": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:同学 Tom 觉得晚上的时间总是不够用。讨论卡片上的建议(早点睡觉、做点运动、读读书、提前收拾书包、少玩手机),说说哪个对他最有帮助 —— 充分讨论每个想法,不用急着下结论。",
+    "part3": [
+      {
+        "en": "So, Tom says he never has enough time in the evenings. Let's look at these ideas.",
+        "zh": "Tom 说他晚上的时间总是不够用。我们来看看这些建议吧。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Sure. Going to bed earlier could help, because he always looks tired at school.",
+        "zh": "好啊。早点睡觉可能有用，因为他在学校总是一脸疲惫。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's true, but sleeping more doesn't really give him extra free time.",
+        "zh": "确实，不过多睡觉并不能真的给他多出空闲时间。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Good point. What about doing some sport? It gives you more energy for everything else.",
+        "zh": "有道理。那做点运动呢？运动能让人做其他事情更有精力。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like that idea, though he might say he's too busy for sport already.",
+        "zh": "我喜欢这个主意，不过他可能会说自己已经忙得没时间运动了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then packing his school bag the night before could save him time in the morning.",
+        "zh": "那前一晚收拾好书包，早上就能省不少时间。",
+        "voice": "chris"
+      },
+      {
+        "en": "Yes, that's a small change, but I don't think it solves the real problem.",
+        "zh": "嗯，这是个小改变，但我觉得解决不了根本问题。",
+        "voice": "rosie"
+      },
+      {
+        "en": "What about reading a book in the evening? It's relaxing and good for him.",
+        "zh": "那晚上读读书呢？既放松，对他也有好处。",
+        "voice": "chris"
+      },
+      {
+        "en": "It is, but Tom says reading makes him sleepy after a long day.",
+        "zh": "是的，但 Tom 说忙了一天后，一看书就犯困。",
+        "voice": "rosie"
+      },
+      {
+        "en": "You're right. Honestly, he spends hours on his phone every evening.",
+        "zh": "你说得对。说实话，他每天晚上都要在手机上花好几个小时。",
+        "voice": "chris"
+      },
+      {
+        "en": "Exactly, so using his phone less would probably make the biggest difference.",
+        "zh": "没错，所以少玩手机可能才是改变最大的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I agree. Let's say that's the most helpful idea for Tom.",
+        "zh": "我同意。那我们就说这是对 Tom 最有帮助的建议吧。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-hobbies": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:学校打算新开一个社团。讨论卡片上的选择(摄影社、棋类社、音乐社、远足社、烹饪社),说说哪个最有意思 —— 充分比较、回应对方后,保留各自的偏好也没关系。",
+    "part3": [
+      {
+        "en": "Our school wants to start a new club, and there are five ideas here.",
+        "zh": "我们学校想新开一个社团，这里有五个备选。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Let's see. A photography club sounds fun because everyone has a camera on their phone.",
+        "zh": "我看看。摄影社听起来很有意思，毕竟每个人手机上都有相机。",
+        "voice": "chris"
+      },
+      {
+        "en": "True, and you could learn to take much better pictures.",
+        "zh": "是啊，还能学会把照片拍得更好。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A chess club would be quieter. It makes you think, but maybe it isn't for everyone.",
+        "zh": "棋类社会安静一些。很锻炼思维，但可能不是人人都合适。",
+        "voice": "chris"
+      },
+      {
+        "en": "I'm not sure about chess. How about a music club instead? People love playing together.",
+        "zh": "棋类我不太确定。那音乐社呢？大家都喜欢一起演奏。",
+        "voice": "rosie"
+      },
+      {
+        "en": "It could get noisy, though! A hiking club would take us outside at weekends.",
+        "zh": "不过那可能会很吵！远足社周末能带我们走出校园。",
+        "voice": "chris"
+      },
+      {
+        "en": "That sounds healthy, but it depends on the weather a lot.",
+        "zh": "听起来很健康，但太看天气了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "And a cooking club means we get to eat what we make, which is a big plus.",
+        "zh": "烹饪社的话，做完还能吃掉，这可是个大优点。",
+        "voice": "chris"
+      },
+      {
+        "en": "They're all quite good, but for me photography is still the most interesting.",
+        "zh": "这些都挺好的，但对我来说摄影还是最有意思的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I see why, though I'd still choose hiking. It's fine that we like different ones!",
+        "zh": "我懂你，不过我还是会选远足。我们喜欢的不一样也没关系嘛！",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-travel": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:一家人只能选一个地方过周六。讨论卡片上的去处(海滩、博物馆、主题公园、爬山、老城区),说说哪个最合适 —— 记得比较不同选择,别急着决定。",
+    "part3": [
+      {
+        "en": "The family can only choose one place for Saturday. Where should they go?",
+        "zh": "这家人周六只能去一个地方。他们该去哪儿呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Well, the beach is always popular, especially if the weather is warm.",
+        "zh": "嗯，海滩总是很受欢迎，尤其是天气暖和的时候。",
+        "voice": "chris"
+      },
+      {
+        "en": "Yes, but they went to the beach last month, so maybe something different?",
+        "zh": "是啊，不过他们上个月刚去过海滩，也许换个不一样的？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Fair enough. The museum could be interesting, and it's fine even if it rains.",
+        "zh": "有道理。博物馆可能挺有意思，而且下雨也不怕。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's a safe choice, though the children might find it a bit boring.",
+        "zh": "这是个稳妥的选择，不过孩子们可能会觉得有点无聊。",
+        "voice": "rosie"
+      },
+      {
+        "en": "What about climbing the mountain? The views from the top are amazing.",
+        "zh": "那去爬山怎么样？山顶的风景特别棒。",
+        "voice": "chris"
+      },
+      {
+        "en": "It might be too hard for the grandparents, to be fair.",
+        "zh": "说句公道话，对爷爷奶奶来说可能太吃力了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "How about the old town? The streets are pretty and there are little shops everywhere.",
+        "zh": "那老城区怎么样？街道很漂亮，到处都是小店。",
+        "voice": "chris"
+      },
+      {
+        "en": "Pretty, yes, but the children would get bored walking around for hours.",
+        "zh": "漂亮是漂亮，但逛上几个小时孩子们会觉得无聊的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then the theme park could work. There are rides for children and shows for adults.",
+        "zh": "那主题公园应该行。有孩子玩的项目，也有大人看的演出。",
+        "voice": "chris"
+      },
+      {
+        "en": "You know, that really does have something for everyone in the family.",
+        "zh": "你还别说，那里真是全家老小都能玩得开心。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Agreed. Let's say the theme park would be the best choice for them.",
+        "zh": "同意。那我们就定主题公园是最合适的选择。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-shopping": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:朋友 Anna 下周过生日。讨论卡片上的礼物(一本书、运动鞋、桌游、背包、演唱会门票),说说送哪个最好 —— 结合她的喜好给出理由。",
+    "part3": [
+      {
+        "en": "It's Anna's birthday next week. What do you think we should get her?",
+        "zh": "Anna 下周过生日。你觉得我们该送她什么？",
+        "voice": "rosie"
+      },
+      {
+        "en": "A book is a classic present, and she does enjoy reading at the weekend.",
+        "zh": "书是很经典的礼物，而且她周末确实喜欢看书。",
+        "voice": "chris"
+      },
+      {
+        "en": "She does, but I never know which books she has already read.",
+        "zh": "确实，但我总猜不到哪些书她已经看过了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "True. Trainers could be useful because she just joined the running team.",
+        "zh": "有道理。运动鞋可能很实用，她刚加入跑步队。",
+        "voice": "chris"
+      },
+      {
+        "en": "The problem is we don't know her size, and shoes are hard to choose.",
+        "zh": "问题是我们不知道她的尺码，鞋子太难挑了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "How about concert tickets then? She listens to music all the time.",
+        "zh": "那演唱会门票呢？她一天到晚都在听音乐。",
+        "voice": "chris"
+      },
+      {
+        "en": "They're quite expensive, though, and the good seats sell out fast.",
+        "zh": "不过票挺贵的，好座位又卖得特别快。",
+        "voice": "rosie"
+      },
+      {
+        "en": "We could get her a new backpack. Her old one looks quite worn.",
+        "zh": "我们可以送她一个新背包。她的旧包看起来挺旧的了。",
+        "voice": "chris"
+      },
+      {
+        "en": "Hmm, a backpack feels a bit ordinary for a birthday present, doesn't it?",
+        "zh": "嗯，背包当生日礼物是不是有点普通了？",
+        "voice": "rosie"
+      },
+      {
+        "en": "OK, what about a board game? We could all play it together at her party.",
+        "zh": "好吧，那桌游呢？生日聚会上我们还能一起玩。",
+        "voice": "chris"
+      },
+      {
+        "en": "Oh, I love that! It's fun, not too expensive, and it would be a birthday present she'd remember.",
+        "zh": "哎，这个我喜欢！有意思，不算贵，还会是一份让她难忘的生日礼物。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Perfect, so a board game it is. She'll definitely enjoy that.",
+        "zh": "太好了，那就定桌游。她肯定会喜欢的。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-food": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:班级期末聚餐要选一种形式。讨论卡片上的选择(披萨店、中餐馆、公园野餐、自助餐、烧烤),说说哪个最好 —— 把每个选择都比较一下、回应对方的想法,再给出各自的结论 —— 不必强行一致。",
+    "part3": [
+      {
+        "en": "We need to decide something for the class dinner. Shall we go through the choices?",
+        "zh": "我们得为班级聚餐拿个主意。要不要把选项过一遍？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes. Pizza is easy because almost everyone likes it, and it's not expensive.",
+        "zh": "好。披萨最省事，几乎人人都爱吃，还不贵。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's true, although we had pizza at the last two class parties.",
+        "zh": "没错，不过前两次班级聚会我们都吃的披萨。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Did we? Then we could go to a Chinese restaurant and order lots of dishes to share.",
+        "zh": "是吗？那我们可以去中餐馆，点很多菜大家一起分。",
+        "voice": "chris"
+      },
+      {
+        "en": "Sharing sounds nice, but booking a table for thirty people is difficult.",
+        "zh": "分享听着不错，但三十个人订位子可不容易。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Good point. A barbecue would be fun, though someone has to do all the cooking.",
+        "zh": "有道理。烧烤会很好玩，不过得有人一直烤东西。",
+        "voice": "chris"
+      },
+      {
+        "en": "There's also the buffet — everyone can pick exactly what they want.",
+        "zh": "还有自助餐——每个人都能挑自己想吃的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's true, but buffets are usually more expensive than the other choices.",
+        "zh": "确实，不过自助餐通常比其他选择都贵。",
+        "voice": "chris"
+      },
+      {
+        "en": "Exactly. I'd rather have a picnic in the park. Everyone brings one dish, so it's easy.",
+        "zh": "是啊。我更想去公园野餐。每人带一道菜，特别省事。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Hmm, a picnic depends on the weather. I still think pizza is the safest choice.",
+        "zh": "嗯，野餐得看天气。我还是觉得披萨最稳妥。",
+        "voice": "chris"
+      },
+      {
+        "en": "I see your point, but I'd choose the picnic for a change.",
+        "zh": "我明白你的意思，但我想换换花样，还是选野餐。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then let's give both ideas to the class and have a quick vote.",
+        "zh": "那我们把这两个方案都交给全班，快速投个票吧。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-school": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:下周就要考试了。讨论卡片上的复习方式(小组学习、去图书馆自习、在家复习、请教老师、做往年试题),说说哪种最有效 —— 每种都聊一聊再给结论。",
+    "part3": [
+      {
+        "en": "The exams start on Monday, so which way of revising works best?",
+        "zh": "周一就开始考试了，哪种复习方式最有效呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Studying at home is comfortable, but I always end up watching videos instead.",
+        "zh": "在家复习很舒服，但我最后总是变成刷视频。",
+        "voice": "chris"
+      },
+      {
+        "en": "Same here! The library is better because it's quiet and everyone else is working.",
+        "zh": "我也是！图书馆就好多了，又安静，周围的人都在学习。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That helps, though you can't discuss questions when you get stuck.",
+        "zh": "那确实有用，不过卡住的时候没法和人讨论。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about asking the teacher? She explains things really clearly.",
+        "zh": "那请教老师呢？她讲题特别清楚。",
+        "voice": "rosie"
+      },
+      {
+        "en": "She does, but she's only free after class for a short time.",
+        "zh": "确实，但她只有课后一小段时间有空。",
+        "voice": "chris"
+      },
+      {
+        "en": "Doing past papers shows you what the questions look like, which is useful.",
+        "zh": "做往年试题能让你知道题目长什么样，挺有用的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Very useful. But my favourite is still studying in a group — we can test each other.",
+        "zh": "非常有用。但我最喜欢的还是小组学习——我们可以互相提问。",
+        "voice": "chris"
+      },
+      {
+        "en": "And explaining answers to someone else really makes you understand them better.",
+        "zh": "而且给别人讲题，自己反而理解得更透。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Exactly. So let's say group study works best, with some past papers too.",
+        "zh": "没错。那就定小组学习最有效，再配合做点往年试题。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-health": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:朋友 Jack 想变得更健康,但不知道从哪种运动开始。讨论卡片上的运动(跑步、游泳、骑自行车、打篮球、健身操),说说哪种最适合他起步。",
+    "part3": [
+      {
+        "en": "Jack wants to get fitter, but he doesn't know which sport to start.",
+        "zh": "Jack 想变得更健康，但不知道从哪种运动开始。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Running is the simplest one. You just need a pair of good shoes.",
+        "zh": "跑步最简单了。只需要一双好鞋就行。",
+        "voice": "chris"
+      },
+      {
+        "en": "True, but he told me running hurts his knees a little.",
+        "zh": "是的，不过他跟我说过跑步膝盖会有点疼。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Oh, then cycling might be better. It's easier on the knees.",
+        "zh": "哦，那骑自行车可能更好。对膝盖的压力小一些。",
+        "voice": "chris"
+      },
+      {
+        "en": "Cycling is nice, though the roads near his home are quite busy.",
+        "zh": "骑车挺好的，但他家附近的路车太多了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Basketball is fun because you play with friends, so you don't give up easily.",
+        "zh": "打篮球很有意思，和朋友一起玩就不容易放弃。",
+        "voice": "chris"
+      },
+      {
+        "en": "He'd need a team for that, and he's a bit shy about joining one.",
+        "zh": "那得加入一个队，他还有点不好意思。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A fitness class could suit him — the teacher shows you exactly what to do.",
+        "zh": "健身操课可能适合他——老师会手把手教你怎么做。",
+        "voice": "chris"
+      },
+      {
+        "en": "Classes are at fixed times, though, and he's often busy after school.",
+        "zh": "不过上课时间是固定的，他放学后经常没空。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then what about swimming? It exercises the whole body and it's gentle.",
+        "zh": "那游泳呢？全身都能锻炼到，而且很温和。",
+        "voice": "chris"
+      },
+      {
+        "en": "And the pool is just ten minutes from his house, so it's easy to go often.",
+        "zh": "而且游泳馆离他家才十分钟，常去也方便。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Great, so swimming seems the best way for Jack to start.",
+        "zh": "太好了，那游泳应该是 Jack 起步的最佳选择。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-weather": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:天气预报说周末一直下雨。讨论卡片上的居家活动(看电影、玩桌游、烘焙、读书、画画),说说做什么最好 —— 喜好不同没关系,也可以两样都做。",
+    "part3": [
+      {
+        "en": "The weather forecast says it will rain all weekend. What could we do at home?",
+        "zh": "天气预报说周末会一直下雨。我们在家能做点什么呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Watching films is the classic rainy-day plan. We could make it a movie marathon.",
+        "zh": "看电影是雨天的经典安排。我们可以来一场电影马拉松。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's relaxing, but sitting all day makes me feel a bit lazy.",
+        "zh": "那很放松，但坐一整天会让我觉得有点颓。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then board games are more active. We can invite the neighbours to play too.",
+        "zh": "那桌游就更有参与感。还可以叫上邻居一起玩。",
+        "voice": "chris"
+      },
+      {
+        "en": "Fun idea! Reading is another option, though it's something we do alone.",
+        "zh": "好主意！读书也是个选项，不过那是一个人做的事。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Right, and the same is true for painting, I suppose.",
+        "zh": "对，我想画画也是一样（比较个人）。",
+        "voice": "chris"
+      },
+      {
+        "en": "Actually, I'd love to try baking. Warm cookies on a rainy day sound perfect.",
+        "zh": "其实我特别想试试烘焙。雨天配热乎乎的曲奇太完美了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Mmm, that smells good already! But a whole afternoon of films is hard to beat.",
+        "zh": "嗯，光是想想就香了！但看一下午电影也很难拒绝啊。",
+        "voice": "chris"
+      },
+      {
+        "en": "Tell you what — we could bake in the morning and watch films after lunch.",
+        "zh": "这样吧——我们上午烘焙，午饭后再看电影。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Now that's the best plan: fresh cookies during the movie marathon!",
+        "zh": "这才是最棒的安排：看电影马拉松，配新鲜出炉的曲奇！",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-entertainment": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:班级周五晚上可以组织一场活动。讨论卡片上的点子(电影夜、才艺表演、游戏比赛、卡拉OK、披萨派对),说说组织哪个最好。",
+    "part3": [
+      {
+        "en": "For Friday night, the class can organise one activity. Let's talk about the ideas.",
+        "zh": "周五晚上班里可以组织一场活动。我们来聊聊这些点子吧。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A film night is easy to organise. We just need a projector and some snacks.",
+        "zh": "电影夜最容易组织。只需要一台投影仪和一些零食。",
+        "voice": "chris"
+      },
+      {
+        "en": "Easy, yes, but people just sit quietly and don't really talk to each other.",
+        "zh": "容易是容易，但大家就是安静地坐着，互相都不怎么交流。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's a fair point. At least karaoke gets everyone singing and laughing.",
+        "zh": "有道理。至少卡拉OK能让所有人又唱又笑。",
+        "voice": "chris"
+      },
+      {
+        "en": "Some classmates are too shy to sing in front of everyone, though.",
+        "zh": "不过有些同学太害羞，不敢在大家面前唱歌。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Or we could just have a pizza party. Everyone loves pizza.",
+        "zh": "或者干脆办个披萨派对。人人都爱吃披萨。",
+        "voice": "chris"
+      },
+      {
+        "en": "They do, but eating pizza isn't really an activity by itself, is it?",
+        "zh": "是啊，但光吃披萨本身算不上一项活动，对吧？",
+        "voice": "rosie"
+      },
+      {
+        "en": "True. A games competition could work — teams, small prizes, that kind of thing.",
+        "zh": "确实。游戏比赛应该可行——分队、设点小奖品之类的。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like team games. But have you thought about a talent show?",
+        "zh": "我喜欢团队游戏。不过你想过办才艺表演吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "A talent show? Tell me more.",
+        "zh": "才艺表演？细说说。",
+        "voice": "chris"
+      },
+      {
+        "en": "Everyone can join in their own way — singing, magic, dancing, even telling jokes.",
+        "zh": "每个人都能用自己的方式参与——唱歌、魔术、跳舞，甚至讲笑话。",
+        "voice": "rosie"
+      },
+      {
+        "en": "You've convinced me. A talent show gives everybody a chance, so let's suggest that.",
+        "zh": "你说服我了。才艺表演让每个人都有机会，我们就提议这个吧。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-technology": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:想送爷爷一件现代的科技礼物。讨论卡片上的选择(智能手机、平板电脑、智能音箱、电子相框、智能手表),说说哪个最适合他。",
+    "part3": [
+      {
+        "en": "Grandpa's birthday is coming, and we want to give him something modern.",
+        "zh": "爷爷的生日快到了，我们想送他一件现代一点的礼物。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A new smartphone is the obvious choice. He could video-call us every day.",
+        "zh": "新智能手机是最直接的选择。他可以每天和我们视频通话。",
+        "voice": "chris"
+      },
+      {
+        "en": "He already has one, but he says the screen is too small for his eyes.",
+        "zh": "他已经有一部了，但他说屏幕太小，眼睛看着累。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Then a tablet solves that problem — bigger screen, same apps.",
+        "zh": "那平板就能解决这个问题——屏幕更大，应用一样。",
+        "voice": "chris"
+      },
+      {
+        "en": "Maybe, though he finds learning to use new apps quite confusing.",
+        "zh": "也许吧，不过他觉得学用新应用挺让人犯晕的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A smart speaker is simpler. He can just ask it to play his favourite radio station.",
+        "zh": "智能音箱就简单多了。他直接开口让它放喜欢的电台就行。",
+        "voice": "chris"
+      },
+      {
+        "en": "He would like the radio part. And what about a smart watch for his health?",
+        "zh": "电台这点他会喜欢的。那智能手表呢？还能关注他的健康。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Useful, but all those buttons and menus might annoy him.",
+        "zh": "有用是有用，但那些按键和菜单可能会把他弄烦。",
+        "voice": "chris"
+      },
+      {
+        "en": "You know what he'd truly love? A digital photo frame full of family pictures.",
+        "zh": "你知道他真正会喜欢什么吗？一个装满全家照片的电子相框。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's it — he wouldn't need to learn how to use it, and he'd see all of us every day.",
+        "zh": "就是它了——他不用学怎么用，还能每天看到我们所有人。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-work": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:暑假想找一件有意义的事做。讨论卡片上的选择(图书馆志愿者、帮人遛狗、教小朋友游泳、摆摊卖柠檬水、帮邻居打理花园),说说哪个最好 —— 充分比较协商后,保留不同选择也没关系。",
+    "part3": [
+      {
+        "en": "There are five ideas for the summer holidays. Which one sounds good to you?",
+        "zh": "暑假有五个备选的事情。你觉得哪个不错？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Walking dogs sounds fun, and you get some exercise at the same time.",
+        "zh": "帮人遛狗听起来很有意思，同时还能锻炼身体。",
+        "voice": "chris"
+      },
+      {
+        "en": "It does, although getting up early every morning isn't easy in the holidays.",
+        "zh": "确实，不过假期里每天早起可不容易。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Ha, true! Selling lemonade could teach us about money and business.",
+        "zh": "哈，没错！摆摊卖柠檬水能让我们学到钱和生意的事。",
+        "voice": "chris"
+      },
+      {
+        "en": "It only works on hot days, though, and we'd need a good place for the stand.",
+        "zh": "但那只有大热天才行，还得找个好位置摆摊。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Helping a neighbour with the garden is kind, and you learn about plants.",
+        "zh": "帮邻居打理花园很暖心，还能学到植物知识。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's true. For me, volunteering at the library sounds really nice and calm.",
+        "zh": "是的。对我来说，去图书馆做志愿者听起来又好又安静。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Calm, yes — but I'd choose teaching little kids to swim. I'm good at swimming.",
+        "zh": "安静是安静——但我会选教小朋友游泳。我游泳很拿手。",
+        "voice": "chris"
+      },
+      {
+        "en": "You'd be great at that! I still prefer the library, with all those books around.",
+        "zh": "你肯定教得特别好！我还是更喜欢图书馆，周围全是书。",
+        "voice": "rosie"
+      },
+      {
+        "en": "OK, so we agree they're both useful — you'd be happier with books, and I'd be happier at the pool.",
+        "zh": "好，那我们有个共识：两个都很有意义——你和书在一起更开心，我在泳池更开心。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "pet-family": {
+    "task": "**Part 3** 你和另一位考生看一张任务卡:妈妈的生日就在周日。讨论卡片上的庆祝方式(做早餐、全家出游、亲手做礼物、餐厅晚餐、制作照片相册),说说怎么庆祝最好。",
+    "part3": [
+      {
+        "en": "Mum's birthday is on Sunday. How should we celebrate it?",
+        "zh": "妈妈的生日就在周日。我们该怎么给她庆祝呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "We could cook her a special breakfast and bring it to her in bed.",
+        "zh": "我们可以给她做一顿特别的早餐，端到床边给她。",
+        "voice": "chris"
+      },
+      {
+        "en": "She'd love that, though our cooking might be a little dangerous!",
+        "zh": "她肯定喜欢，不过我们的厨艺可能有点危险！",
+        "voice": "rosie"
+      },
+      {
+        "en": "Ha! Then dinner at a restaurant is safer — no cooking and no washing-up.",
+        "zh": "哈！那去餐厅吃晚餐就保险多了——不用做饭也不用洗碗。",
+        "voice": "chris"
+      },
+      {
+        "en": "Nice, but restaurants are crowded at the weekend, and she doesn't like noise.",
+        "zh": "不错，但周末餐厅人挤人，她又不喜欢吵。",
+        "voice": "rosie"
+      },
+      {
+        "en": "A family day out could be lovely if the weather stays fine.",
+        "zh": "如果天气好的话，全家出游也会很温馨。",
+        "voice": "chris"
+      },
+      {
+        "en": "It could. What about making her a present ourselves? Something personal.",
+        "zh": "是啊。那我们亲手给她做份礼物呢？更有心意。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Like what? I'm terrible at making things with my hands.",
+        "zh": "比如做什么？我动手能力可差了。",
+        "voice": "chris"
+      },
+      {
+        "en": "A photo album! We choose the best family pictures and write little notes inside.",
+        "zh": "照片相册呀！我们挑出最好的家庭照片，再在里面写上小纸条。",
+        "voice": "rosie"
+      },
+      {
+        "en": "She'll probably cry with happiness. The album is the perfect idea — let's do it.",
+        "zh": "她大概会开心得哭出来。相册就是最完美的主意——就这么办。",
+        "voice": "chris"
+      }
+    ]
+  }
+}

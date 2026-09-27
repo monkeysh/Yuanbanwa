@@ -1,0 +1,333 @@
+{
+  "_note": "KET Part2 第三批(最后6话题,补完18/18)。官方A2 Key Part2:5图各自谈喜好+原因、回应对方、不求一致。功能型场景转对应领域:personal→认识新朋友的场合/travel→城里的地方/daily→一天中的活动/home→家里的房间/friends→和朋友做的活动/transport→交通方式。⚠️吸取GPT通病:6组开头刻意各不相同(不用'Do you like these X? I really like Y'套路);骨架Me too/Me neither/I agree/Really?交替;结尾不都用'X is my favourite. What about you?';5图自然覆盖不漏。♀rosie ♂chris。",
+  "ket-personal": {
+    "task": "**Part 2** 你和另一位考生看五幅认识新朋友的场合图(在学校、在俱乐部、一起运动、邻居、网上)。说说你们喜欢或不喜欢在哪些场合交朋友、为什么,并回应对方 —— **不需要选同一种**。",
+    "part2": [
+      {
+        "en": "There are lots of ways to make new friends. I usually meet people at school.",
+        "zh": "交新朋友有很多方式。我一般在学校认识人。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Same for me. My classmates are all really friendly.",
+        "zh": "我也一样。我同学都很友好。",
+        "voice": "chris"
+      },
+      {
+        "en": "Joining a club is difficult for me because I'm a bit shy.",
+        "zh": "参加俱乐部对我来说有点难，因为我有点害羞。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I love clubs. I made two new friends at the chess club.",
+        "zh": "真的吗？我喜欢俱乐部。我在象棋社交了两个新朋友。",
+        "voice": "chris"
+      },
+      {
+        "en": "I think playing sports is a good way too.",
+        "zh": "我觉得一起运动也是个好办法。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I agree. You talk to lots of people when you're in a team.",
+        "zh": "同意。在一个队里会和很多人说话。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you ever make friends with your neighbours?",
+        "zh": "你会和邻居交朋友吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, the girl next door is my friend. We grew up together.",
+        "zh": "会啊，隔壁的女孩就是我朋友。我们一起长大的。",
+        "voice": "chris"
+      },
+      {
+        "en": "I don't really like making friends online. You can't see them.",
+        "zh": "我不太喜欢在网上交朋友。看不到真人。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's true, but I've met some nice people through online games.",
+        "zh": "确实，但我通过网络游戏认识了一些不错的人。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-travel": {
+    "task": "**Part 2** 你和另一位考生看五幅城里地方的图(公园、图书馆、商店、博物馆、体育馆)。说说你们喜欢或不喜欢去哪些地方、为什么,并回应对方 —— **不需要选同一个**。",
+    "part2": [
+      {
+        "en": "There are some nice places in our town. I love going to the park.",
+        "zh": "我们镇上有些不错的地方。我很喜欢去公园。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. It's great for playing football with friends.",
+        "zh": "我也是。很适合和朋友踢球。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about the library? I go there to read every week.",
+        "zh": "图书馆呢？我每周都去那儿看书。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I think libraries are a bit boring.",
+        "zh": "真的吗？我觉得图书馆有点无聊。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like the shops in the town centre. They're always busy.",
+        "zh": "我喜欢市中心的商店。总是很热闹。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I agree, but they can be too crowded at the weekend.",
+        "zh": "同意，不过周末可能太挤了。",
+        "voice": "chris"
+      },
+      {
+        "en": "Have you ever been to the museum?",
+        "zh": "你去过博物馆吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, once. It was interesting but a little quiet for me.",
+        "zh": "去过一次。挺有意思，但对我来说有点太安静。",
+        "voice": "chris"
+      },
+      {
+        "en": "The sports centre is great. I go swimming there.",
+        "zh": "体育馆很棒。我去那儿游泳。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That sounds fun. I should try it sometime.",
+        "zh": "听起来很好玩。我改天该试试。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-daily": {
+    "task": "**Part 2** 你和另一位考生看五幅一天中的活动图(早起、吃早餐、做作业、晚上休息、睡觉)。说说你们喜欢或不喜欢一天中的哪些时候、为什么,并回应对方 —— **不需要一样**。",
+    "part2": [
+      {
+        "en": "I don't really like getting up early for school.",
+        "zh": "我不太喜欢为了上学早起。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me neither! Mornings are so hard for me.",
+        "zh": "我也不喜欢！早上对我来说太难熬了。",
+        "voice": "chris"
+      },
+      {
+        "en": "But I love breakfast. My mum makes great pancakes.",
+        "zh": "不过我喜欢早餐。我妈妈做的煎饼很棒。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Lucky you! I only have time for some milk.",
+        "zh": "你真幸运！我只来得及喝点牛奶。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about homework? I find it boring.",
+        "zh": "作业呢？我觉得很无聊。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I don't mind it. I like finishing my maths homework.",
+        "zh": "真的吗？我不介意。我喜欢把数学作业做完。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like evenings because I can finally relax.",
+        "zh": "我喜欢晚上，因为终于能放松了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I agree. I watch TV or play games after dinner.",
+        "zh": "同意。我晚饭后看电视或玩游戏。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you go to bed late?",
+        "zh": "你睡得晚吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Not really. I'm always tired, so I sleep early.",
+        "zh": "不算晚。我总是很累，所以睡得早。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-home": {
+    "task": "**Part 2** 你和另一位考生看五幅家里房间的图(卧室、厨房、客厅、花园、书房)。说说你们喜欢或不喜欢哪个房间、为什么,并回应对方 —— **不需要选同一个**。",
+    "part2": [
+      {
+        "en": "I love my bedroom. It's small but it's all mine.",
+        "zh": "我喜欢我的卧室。虽然小，但完全属于我。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. My bedroom has lots of posters on the wall.",
+        "zh": "我也是。我卧室墙上贴了很多海报。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about the kitchen? I don't spend much time there.",
+        "zh": "厨房呢？我不怎么待在那儿。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I love the kitchen. I help my dad cook.",
+        "zh": "真的吗？我喜欢厨房。我帮我爸做饭。",
+        "voice": "chris"
+      },
+      {
+        "en": "The living room is nice for watching films together.",
+        "zh": "客厅很适合一起看电影。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I agree. My family watches TV there every evening.",
+        "zh": "同意。我们家每晚都在那儿看电视。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you have a garden?",
+        "zh": "你家有花园吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, a small one. I like reading outside when it's sunny.",
+        "zh": "有，一个小花园。天晴时我喜欢在外面看书。",
+        "voice": "chris"
+      },
+      {
+        "en": "I don't have a study, so I do my homework on my bed!",
+        "zh": "我没有书房，所以只能在床上写作业！",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's funny! A study would be quiet for homework.",
+        "zh": "太好笑了！书房写作业会很安静。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-friends": {
+    "task": "**Part 2** 你和另一位考生看五幅和朋友一起做的活动图(玩游戏、聊天、运动、看电影、一起学习)。说说你们喜欢或不喜欢和朋友做哪些、为什么,并回应对方 —— **不需要一样**。",
+    "part2": [
+      {
+        "en": "My friends and I love playing games together.",
+        "zh": "我和朋友都很喜欢一起玩游戏。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. We play football after school every day.",
+        "zh": "我也是。我们每天放学后踢球。",
+        "voice": "chris"
+      },
+      {
+        "en": "I also like just chatting. We talk about everything.",
+        "zh": "我也喜欢单纯聊天。我们什么都聊。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I get bored of talking. I prefer doing something.",
+        "zh": "真的吗？我聊天会腻。我更喜欢做点什么。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about watching films? That's fun at the weekend.",
+        "zh": "看电影呢？周末看很有意思。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I agree. We watch a film at my house sometimes.",
+        "zh": "同意。我们有时在我家看电影。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you ever study together?",
+        "zh": "你们会一起学习吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, we help each other with homework. It's easier.",
+        "zh": "会，我们互相帮忙写作业。这样更轻松。",
+        "voice": "chris"
+      },
+      {
+        "en": "I don't like studying with friends. We just play instead!",
+        "zh": "我不喜欢和朋友一起学习。我们最后只会玩！",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's true, it can be hard to study.",
+        "zh": "确实，很难学得进去。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-transport": {
+    "task": "**Part 2** 你和另一位考生看五幅交通方式图(公交、自行车、地铁、走路、坐车)。说说你们喜欢或不喜欢哪种方式、为什么,并回应对方 —— **不需要选同一种**。",
+    "part2": [
+      {
+        "en": "I usually go to school by bus. What about you?",
+        "zh": "我一般坐公交上学。你呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I ride my bike. It's faster and it's good exercise.",
+        "zh": "我骑自行车。更快，还能锻炼。",
+        "voice": "chris"
+      },
+      {
+        "en": "Really? I don't like cycling when it rains.",
+        "zh": "真的吗？下雨天我不喜欢骑车。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's true. Buses are better in bad weather.",
+        "zh": "确实。天气不好时公交更好。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you ever take the underground?",
+        "zh": "你坐过地铁吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Sometimes I take it when I go to the city centre. It's very quick.",
+        "zh": "有时候去市中心时我会坐。很快。",
+        "voice": "chris"
+      },
+      {
+        "en": "I like walking when the weather is nice.",
+        "zh": "天气好的时候我喜欢走路。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too, but my school is too far to walk.",
+        "zh": "我也是，但我学校太远，走不到。",
+        "voice": "chris"
+      },
+      {
+        "en": "My mum sometimes drives me by car.",
+        "zh": "我妈妈有时开车送我。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's comfortable, but there's a lot of traffic.",
+        "zh": "那很舒服，不过路上很堵。",
+        "voice": "chris"
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ece6d9">
+  <title>帮助与支持｜原版娃口语</title>
+  <meta name="description" content="原版娃口语网页版与 iOS App 的常见问题与联系方式">
+  <link rel="icon" href="./assets/app-icon-180.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #ece6d9;
+      --surface: #fcfaf4;
+      --ink: #1c2b33;
+      --soft: #58656b;
+      --muted: #827a6c;
+      --line: #ded5c5;
+      --accent: #9a5535;
+      --accent-soft: #f3e9e1;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(760px, 100%); margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 18px max(48px, env(safe-area-inset-bottom)); }
+    .back {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      color: var(--accent);
+      font-weight: 650;
+      text-decoration: none;
+    }
+    article { margin-top: 12px; padding: clamp(24px, 5vw, 46px); border: 1px solid var(--line); border-radius: 24px; background: var(--surface); box-shadow: 0 18px 45px -34px rgba(28, 43, 51, .45); }
+    .eyebrow { display: inline-block; padding: 5px 10px; border-radius: 999px; color: var(--accent); background: var(--accent-soft); font-size: 13px; font-weight: 700; }
+    h1 { margin: 14px 0 5px; font-family: Georgia, "Songti SC", serif; font-size: clamp(30px, 7vw, 42px); line-height: 1.2; }
+    .date { margin: 0 0 28px; color: var(--muted); font-size: 14px; }
+    .lead { margin: 0 0 28px; color: var(--soft); font-size: 16px; }
+    section { padding: 22px 0; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 8px; font-size: 18px; line-height: 1.45; }
+    p { margin: 8px 0 0; }
+    ul { margin: 10px 0 0; padding-left: 1.25em; }
+    li + li { margin-top: 6px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .note { padding: 14px 16px; border-radius: 14px; background: var(--accent-soft); color: var(--soft); }
+    footer { padding: 22px 4px 0; color: var(--muted); text-align: center; font-size: 13px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #15120c; --surface: #211c14; --ink: #f4eee2; --soft: #c3baaa; --muted: #9f9583; --line: #3c3326; --accent: #d99a72; --accent-soft: #38291e; }
+      article { box-shadow: none; }
+    }
+    @media (max-width: 480px) {
+      main { padding-left: 12px; padding-right: 12px; }
+      article { border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="./index.html" aria-label="返回原版娃口语">← 返回口语练习</a>
+    <article>
+      <span class="eyebrow">网页版 · iOS App</span>
+      <h1>帮助与支持</h1>
+      <p class="date">更新日期：2026 年 9 月 26 日</p>
+      <p class="lead">这里汇总了“原版娃口语”最常被问到的问题。找不到答案时，请按页面底部的方式联系我们。</p>
+
+      <section>
+        <h2>一、需要注册账号吗？</h2>
+        <p>不需要。网页版提供 20 分钟的公开体验，iOS App 首次启动只需阅读并同意隐私政策即可使用。当前版本没有账号、会员或跨设备同步。</p>
+      </section>
+
+      <section>
+        <h2>二、我的学习记录保存在哪里？</h2>
+        <p>只保存在你自己的设备上：网页版存在浏览器的本地存储中，iOS App 存在 App 的本机存储中。清除浏览器数据、更换设备或卸载 App 都会清空记录，当前版本无法从服务端恢复，请知悉。</p>
+      </section>
+
+      <section>
+        <h2>三、为什么有时显示“本句未评分”？</h2>
+        <p>发音评分需要网络，由我们的服务器转发到腾讯云口语评测服务。网络不佳、服务暂时不可用或被限流时，网页版会退回浏览器语音识别或显示“本句未评分”，App 会退回本机词匹配。我们不会在评测失败时编造分数，稍后再试即可。</p>
+        <p>常见原因：录音太短（不到半秒）、声音太轻、周围噪声大、麦克风权限被关闭。请在安静环境下按住或点击话筒，完整读完一句再结束。</p>
+      </section>
+
+      <section>
+        <h2>四、麦克风和语音识别权限怎么处理？</h2>
+        <p>只有你主动开始跟读时才会申请权限。拒绝后仍可浏览内容和播放示范音频，但无法评分。重新开启：iOS 在“设置 → 隐私与安全性 → 麦克风 / 语音识别”里打开“原版娃口语”；网页版在浏览器的网站设置里允许麦克风。</p>
+      </section>
+
+      <section>
+        <h2>五、模拟考官是真人吗？</h2>
+        <p>不是。模拟考官由 AI 扮演剑桥口语考官，围绕考试话题自由问答，考后给出中文点评。它用于练习，不是官方测评，分数和点评仅供参考。</p>
+      </section>
+
+      <section>
+        <h2>六、如何删除我的数据？</h2>
+        <p>iOS App：卸载 App 即删除全部本机数据。网页版：在浏览器的“网站数据”或“隐私”设置中清除本站数据。我们的服务器不保存你的录音或学习记录，因此没有需要另行删除的服务端数据；有关访问日志的说明见《<a href="./privacy.html">隐私政策</a>》。</p>
+      </section>
+
+      <section>
+        <h2>七、联系我们</h2>
+        <p>使用问题、内容纠错、隐私相关请求，请通过 App Store 页面上的“App 支持”联系方式，或你获取本产品的老师、运营方与我们联系。我们会尽快回复。</p>
+      </section>
+
+      <p class="note">使用本产品也请阅读《<a href="./terms.html">用户协议</a>》与《<a href="./privacy.html">隐私政策</a>》。</p>
+    </article>
+    <footer>原版娃口语 · 让每一次开口都有回应</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "_note": "新增 daily 场景「求职面试」,4档覆盖面试全流程。单人跟读(求职者视角),女声 Rosie。待 deepseek v4pro 双卡审(地道性+难度/专业性)后 splice。",
+  "scene": {
+    "id": "job-interview",
+    "kind": "social",
+    "category": "social",
+    "title": "求职面试",
+    "subtitle": "A job interview",
+    "description": "从开场到反问,一整套面试英语:介绍背景、讲优势、答动机、应对缺点/离职、反问面试官。",
+    "learn": ["得体开场与结尾", "讲清经验与优势", "回答难题(缺点/离职原因)", "向面试官反问"]
+  },
+  "tiers": {
+    "entry": [
+      { "en": "Nice to meet you.", "zh": "很高兴见到您。" },
+      { "en": "Thank you for your time.", "zh": "谢谢您抽出时间。" },
+      { "en": "I'm excited about this role.", "zh": "我对这个职位很感兴趣。" },
+      { "en": "I look forward to hearing from you.", "zh": "期待您的回复。" }
+    ],
+    "beginner": [
+      { "en": "Thank you for meeting with me today.", "zh": "谢谢您今天抽时间见我。" },
+      { "en": "I have three years of experience in marketing.", "zh": "我有三年市场营销的经验。" },
+      { "en": "I'm a quick learner and a team player.", "zh": "我学得快，也善于团队合作。" },
+      { "en": "I applied because I really want to grow here.", "zh": "我来应聘是因为很想在这里成长。" },
+      { "en": "My biggest strength is my attention to detail.", "zh": "我最大的优势是注重细节。" },
+      { "en": "When can I expect to hear back from you?", "zh": "我大概什么时候能收到您的回复？" }
+    ],
+    "intermediate": [
+      { "en": "Thanks for taking the time to meet with me today.", "zh": "谢谢您今天抽时间见我。" },
+      { "en": "In my current role, I manage a team of five.", "zh": "在目前的岗位上，我带一个五人的团队。" },
+      { "en": "I'd say my strongest skill is problem-solving.", "zh": "我认为我最强的技能是解决问题。" },
+      { "en": "I'm really drawn to your company's focus on innovation.", "zh": "我很欣赏贵公司对创新的重视。" },
+      { "en": "Could you tell me more about the team I'd be working with?", "zh": "能多讲讲我将合作的团队吗？" },
+      { "en": "What does success look like in this position?", "zh": "在这个岗位上，怎样算做得出色？" }
+    ],
+    "advanced": [
+      { "en": "I appreciate you walking me through the role in such detail.", "zh": "谢谢您这么详细地介绍这个岗位。" },
+      { "en": "I left my last position because I was looking for a bigger challenge.", "zh": "我离开上一份工作，是想寻求更大的挑战。" },
+      { "en": "If I had to name a weakness, I'd say I can be a bit of a perfectionist.", "zh": "要说缺点的话，我有点完美主义。" },
+      { "en": "I'm confident I could add value from day one.", "zh": "我有信心从第一天起就能创造价值。" },
+      { "en": "How would you describe the company culture here?", "zh": "您会怎么形容这里的公司文化？" },
+      { "en": "Is there anything about my background you'd like me to expand on?", "zh": "关于我的背景，有什么需要我进一步说明的吗？" }
+    ]
+  }
+}

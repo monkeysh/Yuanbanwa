@@ -1,0 +1,1026 @@
+[
+  {
+    "base": "emergency-call_entry_01",
+    "text": "I need the police."
+  },
+  {
+    "base": "emergency-call_entry_02",
+    "text": "I'm at Third and Vermont in Los Angeles."
+  },
+  {
+    "base": "emergency-call_entry_03",
+    "text": "Someone is breaking into a car."
+  },
+  {
+    "base": "emergency-call_entry_04",
+    "text": "I need a Mandarin interpreter, please."
+  },
+  {
+    "base": "emergency-call_intermediate_01",
+    "text": "I need the police — it just happened and the guy may still be around."
+  },
+  {
+    "base": "emergency-call_intermediate_02",
+    "text": "I'm in the parking lot at Third and Vermont in Los Angeles."
+  },
+  {
+    "base": "emergency-call_intermediate_03",
+    "text": "My callback number is 213-555-0142."
+  },
+  {
+    "base": "emergency-call_intermediate_04",
+    "text": "Someone smashed my car window and took my backpack."
+  },
+  {
+    "base": "emergency-call_intermediate_05",
+    "text": "No one is hurt."
+  },
+  {
+    "base": "emergency-call_intermediate_06",
+    "text": "I saw someone running toward Vermont about two minutes ago."
+  },
+  {
+    "base": "emergency-call_intermediate_07",
+    "text": "He was wearing a red jacket and carrying a dark backpack."
+  },
+  {
+    "base": "emergency-call_intermediate_08",
+    "text": "I've moved inside the store — I'm not going back out there."
+  },
+  {
+    "base": "emergency-call_intermediate_09",
+    "text": "I'll stay here until an officer arrives."
+  },
+  {
+    "base": "emergency-call_advanced_01",
+    "text": "I need the police right now — someone is breaking into a car in this parking lot."
+  },
+  {
+    "base": "emergency-call_advanced_02",
+    "text": "I'm at the supermarket on Third and Vermont in Los Angeles — the lot on the side of the building."
+  },
+  {
+    "base": "emergency-call_advanced_03",
+    "text": "You can call me back at 213-555-0142 if we get cut off."
+  },
+  {
+    "base": "emergency-call_advanced_04",
+    "text": "He's still there, next to a silver sedan a few rows in."
+  },
+  {
+    "base": "emergency-call_advanced_05",
+    "text": "I'm inside the store — I haven't gone out there."
+  },
+  {
+    "base": "emergency-call_advanced_06",
+    "text": "He's wearing a black hoodie — maybe thirty years old."
+  },
+  {
+    "base": "emergency-call_advanced_07",
+    "text": "I can't tell if he has a weapon, and I'm not going any closer."
+  },
+  {
+    "base": "emergency-call_advanced_08",
+    "text": "There's a white van backed in next to him with someone sitting inside."
+  },
+  {
+    "base": "emergency-call_advanced_09",
+    "text": "He just got into the white van, and they're pulling out toward Vermont."
+  },
+  {
+    "base": "emergency-call_advanced_10",
+    "text": "Yes, I can stay on the line until the officers get here."
+  },
+  {
+    "base": "emergency-call_advanced_11",
+    "text": "I'm staying inside by the front counter — I'm in a blue jacket, and they can come find me."
+  },
+  {
+    "base": "car-breakin_entry_01",
+    "text": "My car window is broken."
+  },
+  {
+    "base": "car-breakin_entry_02",
+    "text": "Someone took my bag."
+  },
+  {
+    "base": "car-breakin_entry_03",
+    "text": "What should I do now?"
+  },
+  {
+    "base": "car-breakin_entry_04",
+    "text": "I need to call the police."
+  },
+  {
+    "base": "car-breakin_beginner_01",
+    "text": "I've already called the police to report it."
+  },
+  {
+    "base": "car-breakin_beginner_02",
+    "text": "Someone smashed my passenger window."
+  },
+  {
+    "base": "car-breakin_beginner_03",
+    "text": "My backpack was on the seat, and now it's gone."
+  },
+  {
+    "base": "car-breakin_beginner_04",
+    "text": "I parked here last night, and I just came back this morning."
+  },
+  {
+    "base": "car-breakin_beginner_05",
+    "text": "There's glass everywhere — I haven't touched anything."
+  },
+  {
+    "base": "car-breakin_beginner_06",
+    "text": "I'm taking photos of everything, and I'll let the glass shop clean up the glass."
+  },
+  {
+    "base": "car-breakin_beginner_07",
+    "text": "Excuse me, do you know if this lot has security cameras?"
+  },
+  {
+    "base": "car-breakin_beginner_08",
+    "text": "Who should I ask about the camera footage?"
+  },
+  {
+    "base": "car-breakin_intermediate_01",
+    "text": "Hi, is this the right number for a non-emergency report?"
+  },
+  {
+    "base": "car-breakin_intermediate_02",
+    "text": "Someone broke into my car — it happened overnight."
+  },
+  {
+    "base": "car-breakin_intermediate_03",
+    "text": "They smashed my window and took my backpack."
+  },
+  {
+    "base": "car-breakin_intermediate_04",
+    "text": "It's at a public parking lot at Third and Main, in Los Angeles."
+  },
+  {
+    "base": "car-breakin_intermediate_05",
+    "text": "No one was hurt, and I didn't see who did it."
+  },
+  {
+    "base": "car-breakin_intermediate_06",
+    "text": "Can I file this online, or does an officer need to come out?"
+  },
+  {
+    "base": "car-breakin_intermediate_07",
+    "text": "There was a laptop in that backpack, and I have the serial number written down."
+  },
+  {
+    "base": "car-breakin_intermediate_08",
+    "text": "If I file it online, how long before I get the report number for my insurance?"
+  },
+  {
+    "base": "car-breakin_intermediate_09",
+    "text": "My house keys and my registration were in that bag — I'm changing the locks today."
+  },
+  {
+    "base": "car-breakin_advanced_01",
+    "text": "Hi, my car window was smashed last night — do you do mobile window replacement?"
+  },
+  {
+    "base": "car-breakin_advanced_02",
+    "text": "It's the front passenger window on a 2019 Honda CR-V."
+  },
+  {
+    "base": "car-breakin_advanced_03",
+    "text": "It's drivable, but I've only taped plastic over the window — there's still glass down in the door and all over the seats."
+  },
+  {
+    "base": "car-breakin_advanced_04",
+    "text": "Does the price include vacuuming the glass out?"
+  },
+  {
+    "base": "car-breakin_advanced_05",
+    "text": "Can you also check the door lock and the window regulator while you're there?"
+  },
+  {
+    "base": "car-breakin_advanced_06",
+    "text": "I think I have glass coverage — do I need to open a claim first, or can you bill my insurance directly?"
+  },
+  {
+    "base": "car-breakin_advanced_07",
+    "text": "If I pay out of pocket instead, what's the total with tax?"
+  },
+  {
+    "base": "car-breakin_advanced_08",
+    "text": "How soon could you get someone out to me?"
+  },
+  {
+    "base": "car-breakin_advanced_09",
+    "text": "Do I need to be there the whole time, or just long enough to hand over the keys?"
+  },
+  {
+    "base": "car-breakin_advanced_10",
+    "text": "Is there a warranty on the glass and the installation?"
+  },
+  {
+    "base": "car-breakin_advanced_11",
+    "text": "Great — let's book it for tomorrow morning."
+  },
+  {
+    "base": "insurance-claim_entry_01",
+    "text": "I want to report a claim."
+  },
+  {
+    "base": "insurance-claim_entry_02",
+    "text": "My car was broken into."
+  },
+  {
+    "base": "insurance-claim_entry_03",
+    "text": "It happened last night."
+  },
+  {
+    "base": "insurance-claim_entry_04",
+    "text": "What do I do next?"
+  },
+  {
+    "base": "insurance-claim_beginner_01",
+    "text": "Hi, I'd like to file a claim on my auto policy."
+  },
+  {
+    "base": "insurance-claim_beginner_02",
+    "text": "My policy number is on my card — let me read it to you."
+  },
+  {
+    "base": "insurance-claim_beginner_03",
+    "text": "Someone smashed my car window and took my backpack."
+  },
+  {
+    "base": "insurance-claim_beginner_04",
+    "text": "It happened overnight in a parking lot."
+  },
+  {
+    "base": "insurance-claim_beginner_05",
+    "text": "I already filed a police report."
+  },
+  {
+    "base": "insurance-claim_beginner_06",
+    "text": "I filed it online, so right now I only have the temporary number."
+  },
+  {
+    "base": "insurance-claim_beginner_07",
+    "text": "I also took photos of the damage."
+  },
+  {
+    "base": "insurance-claim_beginner_08",
+    "text": "What happens next?"
+  },
+  {
+    "base": "insurance-claim_intermediate_01",
+    "text": "Hi, I'm calling to follow up on a claim I filed yesterday."
+  },
+  {
+    "base": "insurance-claim_intermediate_02",
+    "text": "The claim number is 0-4-8-2-6-1-9-3-3-7."
+  },
+  {
+    "base": "insurance-claim_intermediate_03",
+    "text": "Is the window covered under comprehensive?"
+  },
+  {
+    "base": "insurance-claim_intermediate_04",
+    "text": "What's my deductible on this one?"
+  },
+  {
+    "base": "insurance-claim_intermediate_05",
+    "text": "The repair quote is under my deductible — should I just drop the claim?"
+  },
+  {
+    "base": "insurance-claim_intermediate_06",
+    "text": "The backpack and laptop were inside — I think that's my renter's policy, not this one, right?"
+  },
+  {
+    "base": "insurance-claim_intermediate_07",
+    "text": "When will the adjuster contact me?"
+  },
+  {
+    "base": "insurance-claim_intermediate_08",
+    "text": "Can I use my own repair shop, or does it have to be one of yours?"
+  },
+  {
+    "base": "insurance-claim_intermediate_09",
+    "text": "Could you email me a summary of everything we just went over?"
+  },
+  {
+    "base": "insurance-claim_advanced_01",
+    "text": "Hi, I'd like to go over the estimate the adjuster sent me."
+  },
+  {
+    "base": "insurance-claim_advanced_02",
+    "text": "The shop quoted me four hundred more than what's on your estimate."
+  },
+  {
+    "base": "insurance-claim_advanced_03",
+    "text": "They said they found damage to the window regulator that wasn't on your estimate, so they're writing a supplement."
+  },
+  {
+    "base": "insurance-claim_advanced_04",
+    "text": "Could you have the adjuster call the shop directly to work that out?"
+  },
+  {
+    "base": "insurance-claim_advanced_05",
+    "text": "The shop says it'll be in for two days — do I have rental reimbursement on this policy?"
+  },
+  {
+    "base": "insurance-claim_advanced_06",
+    "text": "What's the daily limit, and how many days does it cover?"
+  },
+  {
+    "base": "insurance-claim_advanced_07",
+    "text": "I'm putting the stolen laptop through my renter's policy, so let's keep this claim to the vehicle damage."
+  },
+  {
+    "base": "insurance-claim_advanced_08",
+    "text": "Is a comprehensive theft claim treated as not-at-fault in California?"
+  },
+  {
+    "base": "insurance-claim_advanced_09",
+    "text": "If I close this out with no payment, does it still show up on my claims history?"
+  },
+  {
+    "base": "insurance-claim_advanced_10",
+    "text": "Please put a note on the file that I'd like a phone call when there's a decision, not just an email."
+  },
+  {
+    "base": "insurance-claim_advanced_11",
+    "text": "And then follow up with the same thing in writing, so I have a record."
+  },
+  {
+    "base": "starbucks_entry_01",
+    "text": "A latte, please."
+  },
+  {
+    "base": "starbucks_entry_02",
+    "text": "Grande, please."
+  },
+  {
+    "base": "starbucks_entry_03",
+    "text": "For here."
+  },
+  {
+    "base": "starbucks_entry_04",
+    "text": "Can I get oat milk?"
+  },
+  {
+    "base": "starbucks_intermediate_01",
+    "text": "Do you still have the pumpkin spice latte?"
+  },
+  {
+    "base": "starbucks_intermediate_02",
+    "text": "Can I get a grande oat milk latte?"
+  },
+  {
+    "base": "starbucks_intermediate_03",
+    "text": "Extra hot, please."
+  },
+  {
+    "base": "starbucks_intermediate_04",
+    "text": "Could you make that half-caff?"
+  },
+  {
+    "base": "starbucks_intermediate_05",
+    "text": "No syrup, please."
+  },
+  {
+    "base": "starbucks_intermediate_06",
+    "text": "Can I add an extra shot?"
+  },
+  {
+    "base": "starbucks_intermediate_07",
+    "text": "It's for here — could I get it in a mug?"
+  },
+  {
+    "base": "starbucks_intermediate_08",
+    "text": "It's Wei — W as in Walter, E, I."
+  },
+  {
+    "base": "starbucks_intermediate_09",
+    "text": "Is it coming out at the other end?"
+  },
+  {
+    "base": "starbucks_advanced_01",
+    "text": "Hi, I placed a mobile order about ten minutes ago under Wei."
+  },
+  {
+    "base": "starbucks_advanced_02",
+    "text": "I don't see it on the counter — could you check if it went through?"
+  },
+  {
+    "base": "starbucks_advanced_03",
+    "text": "It should be a grande cold brew with oat milk and no sweetener."
+  },
+  {
+    "base": "starbucks_advanced_04",
+    "text": "Actually, this one has whole milk — I asked for oat."
+  },
+  {
+    "base": "starbucks_advanced_05",
+    "text": "I have a dairy allergy, so I can't drink this one."
+  },
+  {
+    "base": "starbucks_advanced_06",
+    "text": "Would you mind remaking it?"
+  },
+  {
+    "base": "starbucks_advanced_07",
+    "text": "No rush — I can see how busy you are."
+  },
+  {
+    "base": "starbucks_advanced_08",
+    "text": "Could you add a shot to the new one? I'm happy to pay for it."
+  },
+  {
+    "base": "starbucks_advanced_09",
+    "text": "Should I hand this one back, or just leave it here?"
+  },
+  {
+    "base": "starbucks_advanced_10",
+    "text": "Will I still get the stars for this one?"
+  },
+  {
+    "base": "starbucks_advanced_11",
+    "text": "Thanks for taking care of that."
+  },
+  {
+    "base": "hotel-checkout_entry_01",
+    "text": "I'd like to check out."
+  },
+  {
+    "base": "hotel-checkout_entry_02",
+    "text": "Room 412."
+  },
+  {
+    "base": "hotel-checkout_entry_03",
+    "text": "Here's my key."
+  },
+  {
+    "base": "hotel-checkout_entry_04",
+    "text": "Can I get a receipt?"
+  },
+  {
+    "base": "hotel-checkout_intermediate_01",
+    "text": "Checking out of room 412."
+  },
+  {
+    "base": "hotel-checkout_intermediate_02",
+    "text": "Could you email me the receipt instead of printing it?"
+  },
+  {
+    "base": "hotel-checkout_intermediate_03",
+    "text": "Could you go over the charges with me?"
+  },
+  {
+    "base": "hotel-checkout_intermediate_04",
+    "text": "What's this fifty-dollar charge here?"
+  },
+  {
+    "base": "hotel-checkout_intermediate_05",
+    "text": "I never used the minibar."
+  },
+  {
+    "base": "hotel-checkout_intermediate_06",
+    "text": "I was told that fee would be waived."
+  },
+  {
+    "base": "hotel-checkout_intermediate_07",
+    "text": "Could you hold my bags until five?"
+  },
+  {
+    "base": "hotel-checkout_intermediate_08",
+    "text": "Is there a charge for that?"
+  },
+  {
+    "base": "hotel-checkout_intermediate_09",
+    "text": "Do you have a shuttle to the airport, or should I get a car?"
+  },
+  {
+    "base": "hotel-checkout_advanced_01",
+    "text": "Hi, I'm checking out of 412, but I'd like to go over a few charges first."
+  },
+  {
+    "base": "hotel-checkout_advanced_02",
+    "text": "I was quoted one-eighty a night, and this shows two-ten."
+  },
+  {
+    "base": "hotel-checkout_advanced_03",
+    "text": "I booked through the app — I still have the confirmation email."
+  },
+  {
+    "base": "hotel-checkout_advanced_04",
+    "text": "Would you mind pulling up the original reservation?"
+  },
+  {
+    "base": "hotel-checkout_advanced_05",
+    "text": "There's also a resort fee that wasn't disclosed when I booked."
+  },
+  {
+    "base": "hotel-checkout_advanced_06",
+    "text": "In California, that fee is supposed to be included in the price up front."
+  },
+  {
+    "base": "hotel-checkout_advanced_07",
+    "text": "Could you check with a manager on that one?"
+  },
+  {
+    "base": "hotel-checkout_advanced_08",
+    "text": "Could you also make sure my rewards number is on the bill?"
+  },
+  {
+    "base": "hotel-checkout_advanced_09",
+    "text": "I know the points post later — I just want to make sure this stay gets credited."
+  },
+  {
+    "base": "hotel-checkout_advanced_10",
+    "text": "If it's easier, could you email me the final bill once it's adjusted?"
+  },
+  {
+    "base": "hotel-checkout_advanced_11",
+    "text": "Thanks for taking the time to sort that out."
+  },
+  {
+    "base": "baggage_entry_01",
+    "text": "Two bags to check."
+  },
+  {
+    "base": "baggage_entry_02",
+    "text": "Is this too heavy?"
+  },
+  {
+    "base": "baggage_entry_03",
+    "text": "How much for the second bag?"
+  },
+  {
+    "base": "baggage_entry_04",
+    "text": "All the way to Shanghai?"
+  },
+  {
+    "base": "baggage_intermediate_01",
+    "text": "I'm checking two bags to Shanghai."
+  },
+  {
+    "base": "baggage_intermediate_02",
+    "text": "Is the second bag included, or is there a fee?"
+  },
+  {
+    "base": "baggage_intermediate_03",
+    "text": "What's the weight limit for each one?"
+  },
+  {
+    "base": "baggage_intermediate_04",
+    "text": "This one's a few pounds over — can I move something to my carry-on?"
+  },
+  {
+    "base": "baggage_intermediate_05",
+    "text": "I have a laptop and some medication in my carry-on."
+  },
+  {
+    "base": "baggage_intermediate_06",
+    "text": "Could you tag this one as fragile?"
+  },
+  {
+    "base": "baggage_intermediate_07",
+    "text": "Are they checked all the way through, or do I claim them in Tokyo?"
+  },
+  {
+    "base": "baggage_intermediate_08",
+    "text": "Is there anything I should take out before you check it?"
+  },
+  {
+    "base": "baggage_intermediate_09",
+    "text": "Thanks — where's security from here?"
+  },
+  {
+    "base": "baggage_advanced_01",
+    "text": "Hi, my bag didn't come out on the carousel."
+  },
+  {
+    "base": "baggage_advanced_02",
+    "text": "It was checked in Los Angeles on flight 288."
+  },
+  {
+    "base": "baggage_advanced_03",
+    "text": "Here's my claim tag and my boarding pass."
+  },
+  {
+    "base": "baggage_advanced_04",
+    "text": "It's a large black hardshell with a red ribbon on the handle."
+  },
+  {
+    "base": "baggage_advanced_05",
+    "text": "There's medication inside that I need tonight."
+  },
+  {
+    "base": "baggage_advanced_06",
+    "text": "Could you check whether it's still in LA or already on the way?"
+  },
+  {
+    "base": "baggage_advanced_07",
+    "text": "If it comes in tomorrow, can you deliver it to my hotel?"
+  },
+  {
+    "base": "baggage_advanced_08",
+    "text": "What can I be reimbursed for if I have to buy things tonight?"
+  },
+  {
+    "base": "baggage_advanced_09",
+    "text": "Do I need to keep all the receipts?"
+  },
+  {
+    "base": "baggage_advanced_10",
+    "text": "Could I get a reference number for this report?"
+  },
+  {
+    "base": "baggage_advanced_11",
+    "text": "What's the best number to call if I don't hear from you?"
+  },
+  {
+    "base": "gate_entry_01",
+    "text": "Where's gate B12?"
+  },
+  {
+    "base": "gate_entry_02",
+    "text": "Is this the right gate?"
+  },
+  {
+    "base": "gate_entry_03",
+    "text": "Is it on time?"
+  },
+  {
+    "base": "gate_entry_04",
+    "text": "Has boarding started?"
+  },
+  {
+    "base": "gate_intermediate_01",
+    "text": "Excuse me, has the gate for flight 288 changed?"
+  },
+  {
+    "base": "gate_intermediate_02",
+    "text": "The board says B12, but the screen here shows B20."
+  },
+  {
+    "base": "gate_intermediate_03",
+    "text": "How long does it take to get to the B gates from here?"
+  },
+  {
+    "base": "gate_intermediate_04",
+    "text": "Do I need to take the shuttle, or can I walk?"
+  },
+  {
+    "base": "gate_intermediate_05",
+    "text": "Is boarding still on time?"
+  },
+  {
+    "base": "gate_intermediate_06",
+    "text": "I'm in group four — should I line up now?"
+  },
+  {
+    "base": "gate_intermediate_07",
+    "text": "Is there somewhere to fill my water bottle nearby?"
+  },
+  {
+    "base": "gate_intermediate_08",
+    "text": "Do I have time to grab a coffee?"
+  },
+  {
+    "base": "gate_intermediate_09",
+    "text": "Thanks — I'll head over now."
+  },
+  {
+    "base": "gate_advanced_01",
+    "text": "Hi, my connecting flight was delayed and I just missed this one."
+  },
+  {
+    "base": "gate_advanced_02",
+    "text": "I landed at the C gates about ten minutes after boarding closed."
+  },
+  {
+    "base": "gate_advanced_03",
+    "text": "Since the delay was on your end, could you rebook me?"
+  },
+  {
+    "base": "gate_advanced_04",
+    "text": "Is there anything else going to Shanghai tonight?"
+  },
+  {
+    "base": "gate_advanced_05",
+    "text": "Could you confirm me on that one?"
+  },
+  {
+    "base": "gate_advanced_06",
+    "text": "If tonight's flight is full, what's the earliest one tomorrow?"
+  },
+  {
+    "base": "gate_advanced_07",
+    "text": "My checked bag was on the original flight — where will it end up?"
+  },
+  {
+    "base": "gate_advanced_08",
+    "text": "If I have to stay overnight, does the airline cover a hotel?"
+  },
+  {
+    "base": "gate_advanced_09",
+    "text": "Could I get a meal voucher while I wait?"
+  },
+  {
+    "base": "gate_advanced_10",
+    "text": "Could you write down the new confirmation number for me?"
+  },
+  {
+    "base": "gate_advanced_11",
+    "text": "Thanks for working through all that with me."
+  },
+  {
+    "base": "customs_entry_01",
+    "text": "I'm visiting family."
+  },
+  {
+    "base": "customs_entry_02",
+    "text": "Three weeks."
+  },
+  {
+    "base": "customs_entry_03",
+    "text": "I have some food in my bag."
+  },
+  {
+    "base": "customs_entry_04",
+    "text": "Could I have a Mandarin interpreter?"
+  },
+  {
+    "base": "customs_intermediate_01",
+    "text": "I'm here to visit my daughter."
+  },
+  {
+    "base": "customs_intermediate_02",
+    "text": "She's a student at UCLA."
+  },
+  {
+    "base": "customs_intermediate_03",
+    "text": "I'll be staying about three weeks."
+  },
+  {
+    "base": "customs_intermediate_04",
+    "text": "I'm staying at her apartment in Westwood."
+  },
+  {
+    "base": "customs_intermediate_05",
+    "text": "Here's the address."
+  },
+  {
+    "base": "customs_intermediate_06",
+    "text": "This is my second time in the U.S."
+  },
+  {
+    "base": "customs_intermediate_07",
+    "text": "I have some tea and dried mushrooms in my checked bag."
+  },
+  {
+    "base": "customs_intermediate_08",
+    "text": "No meat or fruit — just the tea and mushrooms."
+  },
+  {
+    "base": "customs_intermediate_09",
+    "text": "Thank you, officer."
+  },
+  {
+    "base": "customs_advanced_01",
+    "text": "Of course, officer."
+  },
+  {
+    "base": "customs_advanced_02",
+    "text": "I'm here for my daughter's graduation, and then we'll travel for a week."
+  },
+  {
+    "base": "customs_advanced_03",
+    "text": "My return flight is on the twenty-eighth."
+  },
+  {
+    "base": "customs_advanced_04",
+    "text": "She's covering my stay, and I have my own funds as well."
+  },
+  {
+    "base": "customs_advanced_05",
+    "text": "I'm retired."
+  },
+  {
+    "base": "customs_advanced_06",
+    "text": "I do have dried mushrooms and some tea in my checked bag."
+  },
+  {
+    "base": "customs_advanced_07",
+    "text": "I'd rather declare it just to be safe."
+  },
+  {
+    "base": "customs_advanced_08",
+    "text": "These are prescription medications, and I have my doctor's letter."
+  },
+  {
+    "base": "customs_advanced_09",
+    "text": "My husband and I are traveling together, and between us we're carrying about twelve thousand dollars in cash."
+  },
+  {
+    "base": "customs_advanced_10",
+    "text": "I understand — I'll fill out the form."
+  },
+  {
+    "base": "customs_advanced_11",
+    "text": "Thank you for explaining that."
+  },
+  {
+    "base": "parent-meeting_entry_01",
+    "text": "I'm Nova's mom."
+  },
+  {
+    "base": "parent-meeting_entry_02",
+    "text": "How is she doing?"
+  },
+  {
+    "base": "parent-meeting_entry_03",
+    "text": "Could you say that again?"
+  },
+  {
+    "base": "parent-meeting_entry_04",
+    "text": "Is there a Mandarin interpreter available?"
+  },
+  {
+    "base": "parent-meeting_intermediate_01",
+    "text": "Hi, I'm Nova's mother — thanks for meeting with us."
+  },
+  {
+    "base": "parent-meeting_intermediate_02",
+    "text": "How is she doing in class overall?"
+  },
+  {
+    "base": "parent-meeting_intermediate_03",
+    "text": "Is she keeping up with the reading?"
+  },
+  {
+    "base": "parent-meeting_intermediate_04",
+    "text": "Does she participate, or is she pretty quiet?"
+  },
+  {
+    "base": "parent-meeting_intermediate_05",
+    "text": "English is her second language, so I want to make sure she's not falling behind."
+  },
+  {
+    "base": "parent-meeting_intermediate_06",
+    "text": "What can we do at home to support her?"
+  },
+  {
+    "base": "parent-meeting_intermediate_07",
+    "text": "Is there anything she's struggling with that we should know about?"
+  },
+  {
+    "base": "parent-meeting_intermediate_08",
+    "text": "How does she get along with the other kids?"
+  },
+  {
+    "base": "parent-meeting_intermediate_09",
+    "text": "Thank you — this was really helpful."
+  },
+  {
+    "base": "parent-meeting_advanced_01",
+    "text": "Thanks for making time — I have a few things I'd like to go over."
+  },
+  {
+    "base": "parent-meeting_advanced_02",
+    "text": "Her last report card showed a drop in math, and I'd like to understand why."
+  },
+  {
+    "base": "parent-meeting_advanced_03",
+    "text": "Is that a comprehension issue, or is she just not finishing the work?"
+  },
+  {
+    "base": "parent-meeting_advanced_04",
+    "text": "She's still in the ELL program — how is she progressing toward reclassification?"
+  },
+  {
+    "base": "parent-meeting_advanced_05",
+    "text": "Does the language support pull her out of any core instruction?"
+  },
+  {
+    "base": "parent-meeting_advanced_06",
+    "text": "If she needs extra help, what's available at the school?"
+  },
+  {
+    "base": "parent-meeting_advanced_07",
+    "text": "Is there a tutoring program, or would we arrange that ourselves?"
+  },
+  {
+    "base": "parent-meeting_advanced_08",
+    "text": "Who should I contact if I want to follow up during the semester?"
+  },
+  {
+    "base": "parent-meeting_advanced_09",
+    "text": "What's the best way to reach you — email or the parent portal?"
+  },
+  {
+    "base": "parent-meeting_advanced_10",
+    "text": "Could you send me a summary of what we discussed?"
+  },
+  {
+    "base": "parent-meeting_advanced_11",
+    "text": "Thank you — I really appreciate your time."
+  },
+  {
+    "base": "sick-leave_entry_01",
+    "text": "My daughter is sick today."
+  },
+  {
+    "base": "sick-leave_entry_02",
+    "text": "Her name is Nova Chen."
+  },
+  {
+    "base": "sick-leave_entry_03",
+    "text": "She's in Ms. Lee's class."
+  },
+  {
+    "base": "sick-leave_entry_04",
+    "text": "She won't be at school."
+  },
+  {
+    "base": "sick-leave_intermediate_01",
+    "text": "Hi, I'm calling to report an absence for Nova Chen in Ms. Lee's class."
+  },
+  {
+    "base": "sick-leave_intermediate_02",
+    "text": "She has a fever and a bad cough."
+  },
+  {
+    "base": "sick-leave_intermediate_03",
+    "text": "She won't be in today or tomorrow."
+  },
+  {
+    "base": "sick-leave_intermediate_04",
+    "text": "I'll bring a doctor's note when she comes back."
+  },
+  {
+    "base": "sick-leave_intermediate_05",
+    "text": "Do I need to send an email too, or is this call enough?"
+  },
+  {
+    "base": "sick-leave_intermediate_06",
+    "text": "Is there a way to get her homework while she's out?"
+  },
+  {
+    "base": "sick-leave_intermediate_07",
+    "text": "Does she need to be fever-free before she comes back?"
+  },
+  {
+    "base": "sick-leave_intermediate_08",
+    "text": "Should I call again tomorrow, or does this cover both days?"
+  },
+  {
+    "base": "sick-leave_intermediate_09",
+    "text": "Thanks — I'll call again if anything changes."
+  },
+  {
+    "base": "sick-leave_advanced_01",
+    "text": "Hi, I'd like to go over Nova's absences this month."
+  },
+  {
+    "base": "sick-leave_advanced_02",
+    "text": "She's missed four days with the flu, and I want to make sure they're excused."
+  },
+  {
+    "base": "sick-leave_advanced_03",
+    "text": "I sent the doctor's notes through the parent portal — did those come through?"
+  },
+  {
+    "base": "sick-leave_advanced_04",
+    "text": "I got an automated attendance letter, and I'd like to clear that up."
+  },
+  {
+    "base": "sick-leave_advanced_05",
+    "text": "Is there a point where absences start affecting her record?"
+  },
+  {
+    "base": "sick-leave_advanced_06",
+    "text": "She has make-up work from two classes — who coordinates that?"
+  },
+  {
+    "base": "sick-leave_advanced_07",
+    "text": "Her teacher mentioned an independent study contract — how does that work?"
+  },
+  {
+    "base": "sick-leave_advanced_08",
+    "text": "If she's out more than five days, does anything change?"
+  },
+  {
+    "base": "sick-leave_advanced_09",
+    "text": "She has a doctor's appointment Friday morning, so she'll be in after lunch."
+  },
+  {
+    "base": "sick-leave_advanced_10",
+    "text": "Should I sign her in at the front office when she gets here?"
+  },
+  {
+    "base": "sick-leave_advanced_11",
+    "text": "Thanks for helping me figure all this out."
+  }
+]

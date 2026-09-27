@@ -1,0 +1,152 @@
+{
+  "_note": "批次B1(用户在洛杉矶实地反馈:砸车盗窃高频,要 911 报警 + 保险理赔)。①emergency-call 补 entry/intermediate/advanced 三档,现有 beginner(车祸叫救护车)不动;②新场景 car-breakin「车被砸·车内失窃」4档;③新场景 insurance-claim「保险理赔」4档。遵循 docs/日常场景内容生产检查清单:一档=一条连贯叙事线;entry 是最简活命句(可与 beginner 核心动作重合,但更短);台词表形态只写学员自己的话;美式英语+洛杉矶真实流程(LAPD theft-from-vehicle 可网上报案且需 DR number、comprehensive 才赔车窗、deductible 常高于损失、glass coverage 可能零免赔、车内私人物品多由 renter's/homeowner's 保险管、报案影响保费)。安全优先:正在发生的犯罪不靠近不对峙、留在安全处、地址先说。",
+  "emergency-call": {
+    "_mode": "补档",
+    "entry": [
+      { "en": "I need the police.", "zh": "我需要警察。" },
+      { "en": "Someone broke into my car.", "zh": "有人撬了我的车。" },
+      { "en": "I'm at Third and Main.", "zh": "我在第三街和主街路口。" },
+      { "en": "Please send someone.", "zh": "请派人过来。" }
+    ],
+    "intermediate": [
+      { "en": "I'd like to report a car break-in.", "zh": "我要报案，我的车被撬了。" },
+      { "en": "I'm in the parking lot at Third and Main.", "zh": "我在第三街和主街的停车场。" },
+      { "en": "It just happened — maybe ten minutes ago.", "zh": "刚刚发生的——大概十分钟前。" },
+      { "en": "My window is smashed and my backpack is gone.", "zh": "我的车窗被砸了，背包不见了。" },
+      { "en": "No one is hurt.", "zh": "没有人受伤。" },
+      { "en": "I didn't see who did it.", "zh": "我没看到是谁干的。" },
+      { "en": "There's broken glass all over the ground.", "zh": "地上到处都是碎玻璃。" },
+      { "en": "Should I wait here for an officer?", "zh": "我需要在这儿等警察吗？" },
+      { "en": "My number is 213-555-0142.", "zh": "我的电话是 213-555-0142。" }
+    ],
+    "advanced": [
+      { "en": "I need police right now — someone is breaking into a car in this lot.", "zh": "我现在需要警察——有人正在这个停车场撬车。" },
+      { "en": "I'm at the market on Third and Vermont, and it's happening right now.", "zh": "我在第三街和佛蒙特街的超市，正在发生。" },
+      { "en": "He's still there, next to a silver sedan near the back.", "zh": "他还在，就在后面一辆银色轿车旁边。" },
+      { "en": "I'm inside the store — I haven't gone out there.", "zh": "我在店里——我没有出去。" },
+      { "en": "He's a man in a black hoodie, maybe thirty years old.", "zh": "是个穿黑色连帽衫的男的，大概三十岁。" },
+      { "en": "I can't tell if he has a weapon, and I'm not going any closer.", "zh": "我看不出他有没有武器，我也不会再靠近。" },
+      { "en": "Other people are walking by, but no one has gone near him.", "zh": "有人路过，但没人靠近他。" },
+      { "en": "I'll keep watching from the window and tell you if he leaves.", "zh": "我会从窗户继续看着，他要是走了我告诉你。" },
+      { "en": "He's just moved toward the back of the lot on foot.", "zh": "他刚往停车场后面走过去了，是步行。" },
+      { "en": "Yes, I can stay on the line until the officers get here.", "zh": "可以，我会一直不挂，直到警察到。" },
+      { "en": "I'll wave to them from the front door so they can find me.", "zh": "我会在前门朝他们招手，好让他们找到我。" }
+    ]
+  },
+  "car-breakin": {
+    "_mode": "新场景",
+    "meta": {
+      "kind": "urgent",
+      "category": "urgent",
+      "title": "车被砸·车内失窃",
+      "subtitle": "Car break-in",
+      "level": "中级",
+      "minutes": 4,
+      "description": "洛杉矶最高频的一种案子：回到车前发现车窗被砸、包被拿走。报警、拿 DR 编号、叫玻璃上门修。",
+      "learn": [
+        "现场怎么说（不碰玻璃、先拍照）",
+        "车内失窃可以网上报案，也能让警察来",
+        "问 DR 编号给保险公司",
+        "叫上门修玻璃、问工期与价格"
+      ]
+    },
+    "entry": [
+      { "en": "My car window is broken.", "zh": "我的车窗被砸了。" },
+      { "en": "Someone took my bag.", "zh": "有人拿走了我的包。" },
+      { "en": "I need to call the police.", "zh": "我需要报警。" },
+      { "en": "What should I do now?", "zh": "我现在该怎么办？" }
+    ],
+    "beginner": [
+      { "en": "Excuse me, did you see what happened to my car?", "zh": "打扰一下，你看到我的车怎么了吗？" },
+      { "en": "The passenger window is smashed.", "zh": "副驾驶那侧的车窗被砸碎了。" },
+      { "en": "My backpack was on the seat, and now it's gone.", "zh": "我的背包本来在座位上，现在不见了。" },
+      { "en": "I parked here about two hours ago.", "zh": "我大概两小时前停在这儿的。" },
+      { "en": "There's glass everywhere — I haven't touched anything.", "zh": "到处都是玻璃——我什么都没碰。" },
+      { "en": "I'm taking photos before I clean it up.", "zh": "我先拍照，然后再清理。" },
+      { "en": "Are there security cameras in this lot?", "zh": "这个停车场有监控摄像头吗？" },
+      { "en": "Thanks — I'm going to call the police now.", "zh": "谢谢——我现在去报警。" }
+    ],
+    "intermediate": [
+      { "en": "Hi, I need to report a theft from my vehicle.", "zh": "你好，我要报案，我的车里东西被偷了。" },
+      { "en": "It's at the public lot on Third and Main, in Los Angeles.", "zh": "在洛杉矶第三街和主街的公共停车场。" },
+      { "en": "The window was smashed and a backpack was taken.", "zh": "车窗被砸，一个背包被拿走了。" },
+      { "en": "No one was in the car, and nobody was hurt.", "zh": "车里没有人，也没有人受伤。" },
+      { "en": "I don't know who did it, and I didn't see anyone.", "zh": "我不知道是谁干的，也没看到任何人。" },
+      { "en": "Can I file this online, or does an officer need to come out?", "zh": "这个能网上报案吗，还是需要警察出警？" },
+      { "en": "The laptop inside has a serial number — I have it written down.", "zh": "里面的笔记本电脑有序列号——我记下来了。" },
+      { "en": "Could you give me the DR number for the report?", "zh": "能给我这次报案的 DR 编号吗？" },
+      { "en": "My insurance company will ask for that, right?", "zh": "我的保险公司会要这个编号，对吗？" }
+    ],
+    "advanced": [
+      { "en": "Hi, my car window was smashed last night — do you do mobile glass repair?", "zh": "你好，我的车窗昨晚被砸了——你们上门修玻璃吗？" },
+      { "en": "It's the front passenger window on a 2019 Honda CR-V.", "zh": "是一辆 2019 款本田 CR-V 的前排副驾驶车窗。" },
+      { "en": "The car is drivable, but there's still glass in the door and the seats.", "zh": "车还能开，但门里和座椅上还有玻璃碴。" },
+      { "en": "Does the price include vacuuming the glass out?", "zh": "报价包含把玻璃碴吸干净吗？" },
+      { "en": "Is that quote for OEM glass or aftermarket?", "zh": "这个报价是原厂玻璃还是副厂的？" },
+      { "en": "My policy may have glass coverage — could you bill the insurance directly?", "zh": "我的保单可能含玻璃险——你们能直接跟保险公司结算吗？" },
+      { "en": "If I pay out of pocket instead, what's the total with tax?", "zh": "如果我自己付，含税总共多少钱？" },
+      { "en": "How soon could someone come out to my address?", "zh": "最快什么时候能派人到我这儿？" },
+      { "en": "Do I need to be there the whole time, or just to hand over the keys?", "zh": "我需要全程在场吗，还是把钥匙交给你们就行？" },
+      { "en": "Is there a warranty on the glass and the installation?", "zh": "玻璃和安装有保修吗？" },
+      { "en": "Great — let's book it for tomorrow morning.", "zh": "好的——就约明天上午吧。" }
+    ]
+  },
+  "insurance-claim": {
+    "_mode": "新场景",
+    "meta": {
+      "kind": "life",
+      "category": "life",
+      "title": "保险理赔",
+      "subtitle": "Filing an insurance claim",
+      "level": "高级",
+      "minutes": 5,
+      "description": "车被砸、东西被偷、出了事故之后打给保险公司：报案拿 claim 号、问免赔额、约定损、租车、修理厂。",
+      "learn": [
+        "报案说清时间地点与损失",
+        "问免赔额值不值得报",
+        "约定损员、选修理厂",
+        "租车怎么算、理赔会不会涨保费"
+      ]
+    },
+    "entry": [
+      { "en": "I want to report a claim.", "zh": "我要报一个理赔。" },
+      { "en": "My car was broken into.", "zh": "我的车被撬了。" },
+      { "en": "It happened last night.", "zh": "是昨晚发生的。" },
+      { "en": "What do I do next?", "zh": "接下来我该做什么？" }
+    ],
+    "beginner": [
+      { "en": "Hi, I'd like to file a claim on my auto policy.", "zh": "你好，我想用我的车险报一个理赔。" },
+      { "en": "My policy number is on my card — let me read it to you.", "zh": "保单号在我的卡上——我念给你听。" },
+      { "en": "Someone broke my car window and took a backpack.", "zh": "有人砸了我的车窗，拿走了一个背包。" },
+      { "en": "It happened last night in a parking lot.", "zh": "是昨晚在一个停车场发生的。" },
+      { "en": "I already filed a police report.", "zh": "我已经报过警了。" },
+      { "en": "I have the report number right here.", "zh": "报案编号就在我这儿。" },
+      { "en": "I also took photos of the damage.", "zh": "我还拍了损坏的照片。" },
+      { "en": "What happens next?", "zh": "接下来会怎么处理？" }
+    ],
+    "intermediate": [
+      { "en": "Hi, I'm calling to follow up on a claim I opened yesterday.", "zh": "你好，我想跟进一下我昨天报的理赔。" },
+      { "en": "The claim number is 4-8-2-6-1.", "zh": "理赔编号是 4-8-2-6-1。" },
+      { "en": "Is this covered under comprehensive, or do I need something else?", "zh": "这个走综合险能赔吗，还是需要别的险种？" },
+      { "en": "What's my deductible on this one?", "zh": "这一项我的免赔额是多少？" },
+      { "en": "If the repair costs less than that, is it still worth filing?", "zh": "如果修车费比免赔额还低，还值得走理赔吗？" },
+      { "en": "The backpack and laptop were inside the car — are those covered too?", "zh": "背包和笔记本电脑在车里——这些也赔吗？" },
+      { "en": "When will the adjuster contact me?", "zh": "定损员什么时候联系我？" },
+      { "en": "Can I use my own repair shop, or does it have to be one of yours?", "zh": "我能用自己找的修理厂吗，还是必须用你们指定的？" },
+      { "en": "Could you email me a summary of everything we just went over?", "zh": "能把我们刚才谈的内容整理成邮件发我吗？" }
+    ],
+    "advanced": [
+      { "en": "Hi, I'd like to go over the estimate the adjuster sent me.", "zh": "你好，我想跟你核对一下定损员发给我的估价单。" },
+      { "en": "The shop quoted me four hundred more than what's on your estimate.", "zh": "修理厂给我的报价比你们的估价单高出四百美元。" },
+      { "en": "They said the difference is because your estimate used aftermarket glass.", "zh": "他们说差价是因为你们的估价用的是副厂玻璃。" },
+      { "en": "Could you have the adjuster call the shop directly to work that out?", "zh": "能让定损员直接跟修理厂沟通解决吗？" },
+      { "en": "While it's in the shop, does my policy cover a rental car?", "zh": "车在修理厂期间，我的保单包含租车吗？" },
+      { "en": "What's the daily limit, and how many days does it cover?", "zh": "每天的限额是多少？总共能覆盖几天？" },
+      { "en": "I'd rather not file for the stolen items if it's going to raise my premium.", "zh": "如果会让我的保费上涨，被偷的物品那部分我宁可不报。" },
+      { "en": "Could you tell me how this claim will affect my rate at renewal?", "zh": "能告诉我这次理赔会怎么影响我续保时的费率吗？" },
+      { "en": "If I decide to withdraw part of the claim, is that possible?", "zh": "如果我决定撤回理赔中的一部分，可以吗？" },
+      { "en": "Please make a note that I want to be called, not emailed, about next steps.", "zh": "请备注一下，后续进展我希望电话通知，不要邮件。" },
+      { "en": "Thanks — could you send me that in writing today?", "zh": "谢谢——今天能把这些用书面形式发给我吗？" }
+    ]
+  }
+}

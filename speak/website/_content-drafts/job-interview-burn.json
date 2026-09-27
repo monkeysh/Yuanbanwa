@@ -1,0 +1,90 @@
+[
+  {
+    "base": "job-interview_entry_1",
+    "text": "Nice to meet you."
+  },
+  {
+    "base": "job-interview_entry_2",
+    "text": "Thank you for your time."
+  },
+  {
+    "base": "job-interview_entry_3",
+    "text": "I'm excited about this role."
+  },
+  {
+    "base": "job-interview_entry_4",
+    "text": "I look forward to hearing from you."
+  },
+  {
+    "base": "job-interview_beginner_1",
+    "text": "Thank you for meeting with me today."
+  },
+  {
+    "base": "job-interview_beginner_2",
+    "text": "I have three years of experience in marketing."
+  },
+  {
+    "base": "job-interview_beginner_3",
+    "text": "I'm a quick learner and a team player."
+  },
+  {
+    "base": "job-interview_beginner_4",
+    "text": "I applied because I really want to grow here."
+  },
+  {
+    "base": "job-interview_beginner_5",
+    "text": "My biggest strength is my attention to detail."
+  },
+  {
+    "base": "job-interview_beginner_6",
+    "text": "When can I expect to hear back from you?"
+  },
+  {
+    "base": "job-interview_intermediate_1",
+    "text": "Thanks for taking the time to meet with me today."
+  },
+  {
+    "base": "job-interview_intermediate_2",
+    "text": "In my current role, I manage a team of five."
+  },
+  {
+    "base": "job-interview_intermediate_3",
+    "text": "I'd say my strongest skill is problem-solving."
+  },
+  {
+    "base": "job-interview_intermediate_4",
+    "text": "I'm really drawn to your company's focus on innovation."
+  },
+  {
+    "base": "job-interview_intermediate_5",
+    "text": "Could you tell me more about the team I'd be working with?"
+  },
+  {
+    "base": "job-interview_intermediate_6",
+    "text": "What does success look like in this position?"
+  },
+  {
+    "base": "job-interview_advanced_1",
+    "text": "I appreciate you walking me through the role in such detail."
+  },
+  {
+    "base": "job-interview_advanced_2",
+    "text": "I left my last position because I was looking for a bigger challenge."
+  },
+  {
+    "base": "job-interview_advanced_3",
+    "text": "If I had to name a weakness, I'd say I can be a bit of a perfectionist."
+  },
+  {
+    "base": "job-interview_advanced_4",
+    "text": "I'm confident I could add value from day one."
+  },
+  {
+    "base": "job-interview_advanced_5",
+    "text": "How would you describe the company culture here?"
+  },
+  {
+    "base": "job-interview_advanced_6",
+    "text": "Is there anything about my background you'd like me to expand on?"
+  }
+]

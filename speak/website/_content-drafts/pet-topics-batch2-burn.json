@@ -1,0 +1,1304 @@
+[
+  {
+    "base": "pet-personal_p1_01",
+    "text": "Where do you live?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p1_02",
+    "text": "I live in Hangzhou, in the east of China. It's a big city, but my flat is near a quiet lake.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p1_03",
+    "text": "Do you work or are you a student?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p1_04",
+    "text": "I'm a student. I'm in my second year at secondary school, and my favourite subject is science.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p1_05",
+    "text": "Do you enjoy studying English?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p1_06",
+    "text": "Yes, I do, because I like watching films in English, and I can understand more of them now.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p1_07",
+    "text": "What did you do last weekend?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p1_08",
+    "text": "On Saturday I went cycling with my cousin, and on Sunday I stayed at home and helped my mum cook.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_01",
+    "text": "In the picture, I can see a teenage boy sitting at a desk in his bedroom.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_02",
+    "text": "He is writing something in a notebook, and there is an open laptop next to him.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_03",
+    "text": "He is wearing a green hoodie, and he has headphones around his neck.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_04",
+    "text": "On the wall behind him, there are some posters of football players.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_05",
+    "text": "There is a bookshelf on the left with lots of books and a few small trophies.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_06",
+    "text": "A guitar is standing in the corner next to the window, and the curtains are open.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_07",
+    "text": "It looks like the afternoon, because the sun is shining into the room.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_08",
+    "text": "The room is a bit untidy, with some clothes on the bed.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p2_09",
+    "text": "I think he is doing his homework, and he seems quite relaxed.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_01",
+    "text": "A new girl called Mia has just joined our class. How could we help her feel welcome?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_02",
+    "text": "Well, we could invite her to have lunch with us. That's an easy way to start talking.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_03",
+    "text": "Yes, that's simple and friendly. We could also show her around the school on her first day.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_04",
+    "text": "Good idea, because she probably doesn't know where the library or the sports hall is.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_05",
+    "text": "What about organising something at the weekend, like a trip to the cinema?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_06",
+    "text": "That might be too soon. She may feel shy going out with people she has just met.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_07",
+    "text": "Fair enough. Then we could tell her about the school clubs, so she meets people with the same interests.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_08",
+    "text": "I like that. And if she has missed some lessons, we could help her with the work.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_09",
+    "text": "True, but let's not do everything at once. Lunch and the tour are the most important on day one.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_10",
+    "text": "I agree, and then we can mention the clubs and the weekend later, when she feels more comfortable.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_11",
+    "text": "So we both think inviting her to lunch and showing her around are the best ways to start.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-personal_p3_12",
+    "text": "Exactly. Let's talk to her tomorrow morning before the first lesson.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_01",
+    "text": "Tell us about the place where you live.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_02",
+    "text": "I live in a flat on the tenth floor. It has three bedrooms, and my room looks out over the river.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_03",
+    "text": "Which is your favourite room at home, and why?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_04",
+    "text": "The kitchen, because that's where we spend most of our time together as a family, especially at dinner.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_05",
+    "text": "Is there anything you don't like about your home?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_06",
+    "text": "The lift is often broken, so sometimes I have to walk up ten floors, which is really tiring.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_07",
+    "text": "Would you prefer to live in a house or a flat in the future?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p1_08",
+    "text": "I'd prefer a house with a garden, because I'd love to have a dog and grow some vegetables.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p2_01",
+    "text": "In this picture, I can see three people in a living room at home.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_02",
+    "text": "A man is sitting on a grey sofa reading a newspaper, and he looks very comfortable.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_03",
+    "text": "On the carpet, a little girl is playing with a black cat and a piece of string.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_04",
+    "text": "Near the window, a woman is watering some plants.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_05",
+    "text": "There is a big bookshelf full of books, and a lamp next to the sofa.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_06",
+    "text": "There are some family photos on the wall, and the TV in the corner is switched off.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_07",
+    "text": "The girl is wearing pyjamas, so it is probably the morning or the evening.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_08",
+    "text": "Everything looks clean and tidy, and the colours in the room are warm.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p2_09",
+    "text": "I think it is a quiet moment at home, and everyone seems relaxed.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p3_01",
+    "text": "This family wants to use their empty room, and these are the ideas. What do you think they should do?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p3_02",
+    "text": "Well, a study would be really useful. The children would have a quiet place to do their homework.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p3_03",
+    "text": "That's true, but they probably do their homework at the kitchen table already, and that works fine.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p3_04",
+    "text": "OK. Then what about a guest room? The grandparents could stay when they visit.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p3_05",
+    "text": "Grandparents usually only visit a few times a year, though, so the room would be empty most of the time.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p3_06",
+    "text": "Good point. A small gym could be nice, with a bike and some weights.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p3_07",
+    "text": "It's hard to say if they would use it. Not every family likes exercise!",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p3_08",
+    "text": "Ha! Then a games room might be more popular, with a big screen and some comfortable chairs.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p3_09",
+    "text": "The children would love that, but the parents will probably say it's a waste of space.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p3_10",
+    "text": "Maybe, but the last option, using it just for storage, sounds a bit boring.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-home_p3_11",
+    "text": "I agree. Honestly, I still think the games room would make everyone happiest.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-home_p3_12",
+    "text": "And I'd still choose the study. Let's suggest both ideas and let the family decide.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_01",
+    "text": "Do you do any sport?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_02",
+    "text": "Yes, I play badminton twice a week at a sports centre near my school, and I sometimes go running in the park.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_03",
+    "text": "Do you prefer playing sport or watching it?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_04",
+    "text": "Playing, definitely, because when I watch a match on TV I just want to get up and move.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_05",
+    "text": "Is there a sport you would like to try in the future?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_06",
+    "text": "I'd like to try climbing, because a new climbing centre has opened in my town and my friends say it's exciting.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_07",
+    "text": "Do you think you'll do more sport in the future?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p1_08",
+    "text": "I hope so. I've got a lot of exams this year, so I don't have much time, but next summer I want to start swimming again.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_01",
+    "text": "In this picture, there are some teenagers playing basketball on an outdoor court.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_02",
+    "text": "A girl in a red shirt is jumping up and throwing the ball towards the basket.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_03",
+    "text": "Two players in blue are trying to stop her.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_04",
+    "text": "It looks like a warm day, because everyone is wearing shorts and T-shirts.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_05",
+    "text": "Behind the court, there is a tall fence and a row of trees.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_06",
+    "text": "Some students are sitting on a bench at the side, watching the game and holding water bottles.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_07",
+    "text": "On the ground, I can see a few bags and a jacket that someone has taken off.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_08",
+    "text": "The court is dark green with white lines, and the basket is on a metal pole.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p2_09",
+    "text": "Everyone looks very focused, so I think it's an important game for them.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_01",
+    "text": "The school wants students to do more exercise, and these are the ideas. Which one do you think would work best?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_02",
+    "text": "A running club before school sounds healthy, but I'm not sure many people would get up early for it.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_03",
+    "text": "I agree. Most of us are already tired in the morning. Dance or yoga classes after school might be more popular.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_04",
+    "text": "That's a nice idea, especially for people who don't like team sports.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_05",
+    "text": "What about a sports competition between classes every month? Do you think people would join in?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_06",
+    "text": "That could be fun, but only the good players would take part, and the others would just watch.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_07",
+    "text": "True. Weekend hikes would get everyone walking, and you don't need to be good at anything.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_08",
+    "text": "I like hiking, though not everyone can come at the weekend because of family plans.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_09",
+    "text": "The last idea is opening the sports hall at lunchtime, so people can play whenever they want.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_10",
+    "text": "That's the simplest one, and it doesn't cost the school anything.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_11",
+    "text": "So maybe the best plan is opening the hall at lunchtime, plus a dance or yoga class after school.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-sports_p3_12",
+    "text": "Yes, I think those two together would get the most students moving.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_01",
+    "text": "How do you usually travel to school?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_02",
+    "text": "I take the underground, and then I walk for about ten minutes. It's crowded, but it's much faster than the bus.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_03",
+    "text": "Which do you prefer, travelling by train or by car?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_04",
+    "text": "I prefer the train, because I can read or sleep, and I don't have to worry about traffic.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_05",
+    "text": "Is it easy to get around your town?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_06",
+    "text": "Yes, mostly. There are lots of buses and shared bikes, but the traffic is terrible in the evening.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_07",
+    "text": "Have you ever been on a long journey?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p1_08",
+    "text": "Yes, last summer I took a high-speed train to Beijing with my family, and I loved having time to read and chat on the way.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_01",
+    "text": "In the picture, I can see a bus stop on a busy street in a city.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_02",
+    "text": "Four or five people are waiting under a small shelter, and a red bus is just arriving.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_03",
+    "text": "It is raining, so most of them are holding umbrellas or wearing raincoats.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_04",
+    "text": "A young man at the front is looking at his phone.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_05",
+    "text": "Next to him, an older woman is carrying two shopping bags and a black umbrella.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_06",
+    "text": "Behind the shelter, there are some tall buildings and a shop with bright lights.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_07",
+    "text": "The road is wet, and I can see the lights of some cars in the distance.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_08",
+    "text": "There is a rubbish bin and a timetable on a pole next to the shelter.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p2_09",
+    "text": "I think it is the evening after work, and everyone wants to get home quickly.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_01",
+    "text": "Six friends are going to Suzhou for the day on Saturday. How should they travel there?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_02",
+    "text": "The train is the obvious choice. It only takes about an hour, and it's never late.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_03",
+    "text": "It's quite expensive for six people, though. The coach is much cheaper.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_04",
+    "text": "That's true, but the coach can get stuck in traffic, and someone always feels sick on it.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_05",
+    "text": "What if one of their parents drives them? Then they could stop wherever they want. What do you think?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_06",
+    "text": "Six people won't fit in one car, and a parent probably doesn't want to spend a whole Saturday driving.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_07",
+    "text": "Fair point. Cycling would be an adventure, but it's about eighty kilometres.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_08",
+    "text": "Eighty kilometres! They'd arrive too tired to do anything.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_09",
+    "text": "OK, so it's really between the train and the coach.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_10",
+    "text": "If they book early, the train tickets will be cheaper, and they'll have more time in the city.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_11",
+    "text": "That's a good point. More time there matters more than saving a little money.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-transport_p3_12",
+    "text": "So we both think the train is the best choice for them.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_01",
+    "text": "Which festival do you enjoy most, and why?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_02",
+    "text": "Spring Festival, definitely. My relatives all come to my grandma's house, and we cook and eat together for days.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_03",
+    "text": "How do you usually celebrate your birthday?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_04",
+    "text": "I usually invite a few close friends round, and we order pizza and watch a film together.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_05",
+    "text": "Did you do anything special last Spring Festival?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_06",
+    "text": "Yes, we visited my aunt in the countryside, and we set off fireworks by the river, which was amazing.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_07",
+    "text": "Do you think festivals are important for families?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p1_08",
+    "text": "Yes, I think so, because everyone is so busy during the year, and festivals give us time to relax and talk.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_01",
+    "text": "In the picture, I can see a birthday party in a garden on a sunny day.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_02",
+    "text": "A girl of about ten is blowing out the candles on a big chocolate cake.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_03",
+    "text": "The girl is wearing a yellow dress, and she looks very excited.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_04",
+    "text": "Around her, there are six or seven children wearing party hats, and they are all clapping.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_05",
+    "text": "On the table, there are some cups, crisps and sandwiches.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_06",
+    "text": "There are colourful balloons tied to the chairs, and a banner that says Happy Birthday.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_07",
+    "text": "A woman on the left is taking a photo with her phone, and she is smiling.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_08",
+    "text": "In the background, there is a wooden fence and a tree with a swing.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p2_09",
+    "text": "I think it is a lovely afternoon, and everyone is having a great time.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_01",
+    "text": "The school is planning a Mid-Autumn Festival evening for the exchange students. Which activities should we include?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_02",
+    "text": "Making mooncakes together would be great. Everyone loves food, and it's easy to join in.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_03",
+    "text": "True, but the kitchen is small, and thirty people can't cook at the same time.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_04",
+    "text": "OK, then what about a lantern workshop? People could make their own and carry them outside later.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_05",
+    "text": "I like that. It's creative, and the lanterns would look beautiful in the dark.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_06",
+    "text": "We could also ask the music club to play some traditional songs.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_07",
+    "text": "That sounds nice, though a whole concert might be a bit long for people who don't know the music.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_08",
+    "text": "Maybe just two or three songs, then. And someone could tell the story behind the festival.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_09",
+    "text": "Yes, a short story would help the exchange students understand why we celebrate it.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_10",
+    "text": "The last idea is a picnic outside to look at the moon. That's what the festival is really about.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_11",
+    "text": "I'd put the picnic first, because it's the most relaxed way for everyone to talk.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-festivals_p3_12",
+    "text": "I'd choose the lanterns, because people can take something home. But if most people prefer the picnic, that's fine too.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_01",
+    "text": "Tell us about a good friend of yours.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_02",
+    "text": "My best friend is Kevin. We met in primary school, and we've been friends for nearly eight years.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_03",
+    "text": "What do you usually do together?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_04",
+    "text": "We play basketball after school, and at the weekend we often go to the cinema or just chat at his place.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_05",
+    "text": "Do you find it easy to make new friends?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_06",
+    "text": "Not really, because I'm quite quiet when I meet new people, but once I know someone I talk a lot.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_07",
+    "text": "Do you think it's important to have a lot of friends?",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p1_08",
+    "text": "No, I don't think so. Two or three close friends you can trust are better than a hundred people you hardly know.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_01",
+    "text": "In this picture, two girls are sitting at a small table in a café.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_02",
+    "text": "One girl is showing the other something on her phone, and her friend is laughing.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_03",
+    "text": "They both have a coffee, and there is a piece of cake in the middle of the table.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_04",
+    "text": "The girl on the right has curly hair and is wearing a white jumper.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_05",
+    "text": "Behind them, there is a big window, and I can see people walking past in the street.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_06",
+    "text": "The café looks small and cosy, with wooden tables and some plants on the shelves.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_07",
+    "text": "On the wall, there is a blackboard with the menu written on it.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_08",
+    "text": "It looks like a cloudy afternoon, because the light outside is quite soft.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p2_09",
+    "text": "I think they are close friends, and they are enjoying their time together.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_01",
+    "text": "Lucy is moving to Shanghai next month. How can we make sure we stay in touch with her?",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_02",
+    "text": "A video call every week would be a good place to start. You can see her face and really talk.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_03",
+    "text": "I agree, though we'd have to find a time that works for everyone, because she'll be busy at her new school.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_04",
+    "text": "That's true. A group chat is easier, because people can send messages whenever they're free.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_05",
+    "text": "Yes, but group chats go quiet after a few weeks. Everyone just sends stickers.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_06",
+    "text": "Ha, that's exactly what happens! Visiting her in the holidays would be more special.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_07",
+    "text": "Definitely, and Shanghai is only an hour away by train, so it's not difficult.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_08",
+    "text": "What about writing letters or sending postcards? It's old-fashioned, but it's fun to get real post.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_09",
+    "text": "I like that, but honestly I'd forget to write after the first one.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_10",
+    "text": "Fair enough. Watching a film online together at the same time could be fun too.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_11",
+    "text": "That could work too, if everyone is free at the same time. So a weekly video call plus holiday visits seems best.",
+    "voices": [
+      "rosie"
+    ]
+  },
+  {
+    "base": "pet-friends_p3_12",
+    "text": "I agree, and we can keep the group chat for everyday things in between.",
+    "voices": [
+      "rosie",
+      "chris"
+    ]
+  }
+]

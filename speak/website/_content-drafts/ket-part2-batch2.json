@@ -1,0 +1,333 @@
+{
+  "_note": "KET Part2 第二批(6话题)。严格按官方 A2 Key Part2:两名考生看5幅图,各自谈喜欢/不喜欢+原因,互相回应,**不求一致**;不是共同决定/角色扮演。功能型场景(买T恤)转成对应话题领域(衣服)。10句/话题,结尾各说最爱但不用'For me X is the best'套路。♀rosie ♂chris。",
+  "ket-shopping": {
+    "task": "**Part 2** 你和另一位考生看五幅衣服图(T恤、连衣裙、牛仔裤、外套、运动鞋)。说说你们喜欢或不喜欢穿哪些、为什么,并回应对方 —— **不需要一起买同一件**。",
+    "part2": [
+      {
+        "en": "I really like the T-shirts. What do you think?",
+        "zh": "我很喜欢这些T恤。你觉得呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. They're comfortable and easy to wear.",
+        "zh": "我也是。穿着舒服又方便。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about jeans? I wear them every day.",
+        "zh": "牛仔裤呢？我每天都穿。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I don't like jeans much. They're too hot in summer.",
+        "zh": "真的吗？我不太喜欢牛仔裤。夏天太热了。",
+        "voice": "chris"
+      },
+      {
+        "en": "I love this dress. It's great for parties.",
+        "zh": "我喜欢这条连衣裙。参加聚会很好看。",
+        "voice": "rosie"
+      },
+      {
+        "en": "It's nice, but I don't often wear dresses. I like the coat because it's warm.",
+        "zh": "挺好看，但我不常穿裙子。我喜欢那件外套，因为很暖和。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like these trainers?",
+        "zh": "你喜欢这双运动鞋吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes! I wear trainers for sport and for school.",
+        "zh": "喜欢！我运动和上学都穿运动鞋。",
+        "voice": "chris"
+      },
+      {
+        "en": "T-shirts are my favourite because they're cheap.",
+        "zh": "T恤是我的最爱，因为便宜。",
+        "voice": "rosie"
+      },
+      {
+        "en": "The trainers are my favourite because I wear them a lot.",
+        "zh": "运动鞋是我的最爱，因为我经常穿。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-school": {
+    "task": "**Part 2** 你和另一位考生看五幅学校科目图(数学、英语、科学、美术、体育)。说说你们喜欢或不喜欢哪些课、为什么,并回应对方 —— **不需要选同一门**。",
+    "part2": [
+      {
+        "en": "I really like English. Do you like it?",
+        "zh": "我很喜欢英语。你喜欢吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. I love reading stories in English.",
+        "zh": "我也是。我喜欢读英语故事。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about maths? I think it's difficult.",
+        "zh": "数学呢？我觉得挺难的。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I like maths because I'm good with numbers.",
+        "zh": "真的吗？我喜欢数学，因为我数字很在行。",
+        "voice": "chris"
+      },
+      {
+        "en": "I don't like science much. There are too many new words.",
+        "zh": "我不太喜欢科学。生词太多了。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Science is OK, but art is more fun for me.",
+        "zh": "科学还行，但对我来说美术更有意思。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like PE?",
+        "zh": "你喜欢体育吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, I love PE because we play outside.",
+        "zh": "喜欢，我很喜欢体育，因为能在外面玩。",
+        "voice": "chris"
+      },
+      {
+        "en": "English is my favourite. It's useful and fun.",
+        "zh": "英语是我的最爱。有用又有趣。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I like art best. I can draw anything I want.",
+        "zh": "我最喜欢美术。想画什么就画什么。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-weather": {
+    "task": "**Part 2** 你和另一位考生看五幅天气图(晴天、雨天、雪天、刮风、多云)。说说你们喜欢或不喜欢哪种天气、为什么,并回应对方 —— **不需要选同一种**。",
+    "part2": [
+      {
+        "en": "I really like sunny days. What about you?",
+        "zh": "我很喜欢晴天。你呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. We can play outside when it's sunny.",
+        "zh": "我也是。晴天可以在外面玩。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about rain? I don't like it very much.",
+        "zh": "下雨呢？我不太喜欢。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I like rainy days. I can read at home.",
+        "zh": "真的吗？我喜欢雨天。可以在家看书。",
+        "voice": "chris"
+      },
+      {
+        "en": "I love snow! We can make a snowman.",
+        "zh": "我喜欢雪！可以堆雪人。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Snow is fun, but it's very cold.",
+        "zh": "雪很好玩，但太冷了。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like windy days?",
+        "zh": "你喜欢刮风的日子吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Not really. The wind is too strong sometimes. What about cloudy days?",
+        "zh": "不太喜欢。风有时候太大了。多云天呢？",
+        "voice": "chris"
+      },
+      {
+        "en": "Cloudy days are OK, but sunny days are my favourite. What about you?",
+        "zh": "多云天还行，但晴天是我的最爱。你呢？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I like snow best because winter is my favourite season.",
+        "zh": "我最喜欢雪，因为冬天是我最爱的季节。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-health": {
+    "task": "**Part 2** 你和另一位考生看五幅保持健康的方式图(运动、健康饮食、早睡、喝水、散步)。说说你们喜欢或不喜欢哪些、为什么,并回应对方 —— **不需要选同一种**。",
+    "part2": [
+      {
+        "en": "I really like doing sport to stay healthy.",
+        "zh": "我很喜欢用运动来保持健康。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. I play football twice a week.",
+        "zh": "我也是。我一周踢两次足球。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about eating vegetables? I don't like them much.",
+        "zh": "吃蔬菜呢？我不太喜欢。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I eat them every day. They're good for you.",
+        "zh": "真的吗？我每天都吃。对身体好。",
+        "voice": "chris"
+      },
+      {
+        "en": "I try to go to bed early, but it's difficult.",
+        "zh": "我尽量早点睡，但很难做到。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Same here! I often go to bed late because I watch TV.",
+        "zh": "我也是！我常常因为看电视睡得晚。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you drink a lot of water?",
+        "zh": "你喝很多水吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Yes, I drink a lot of water every day. It's good for me.",
+        "zh": "喝，我每天都喝很多水。对我很好。",
+        "voice": "chris"
+      },
+      {
+        "en": "What do you think about going for a walk?",
+        "zh": "你觉得散步怎么样？",
+        "voice": "rosie"
+      },
+      {
+        "en": "I like it because it's easy and relaxing.",
+        "zh": "我喜欢，因为简单又放松。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-animals": {
+    "task": "**Part 2** 你和另一位考生看五幅动物图(狗、猫、兔子、鱼、小鸟)。说说你们喜欢或不喜欢养哪种当宠物、为什么,并回应对方 —— **不需要选同一种**。",
+    "part2": [
+      {
+        "en": "I really want a dog. It would be a great pet.",
+        "zh": "我很想养狗。它会是很棒的宠物。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Me too. Dogs are friendly and we can play together.",
+        "zh": "我也是。狗很友好，能一起玩。",
+        "voice": "chris"
+      },
+      {
+        "en": "What about cats? I don't like them much.",
+        "zh": "猫呢？我不太喜欢。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I love cats. They're quiet and easy to keep.",
+        "zh": "真的吗？我喜欢猫。安静又好养。",
+        "voice": "chris"
+      },
+      {
+        "en": "A rabbit is cute, but it needs a lot of care.",
+        "zh": "兔子很可爱，但需要很多照顾。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's true. Fish can be easier to look after because they don't need walks.",
+        "zh": "确实。鱼可能更好照顾，因为不用遛。",
+        "voice": "chris"
+      },
+      {
+        "en": "Do you like birds?",
+        "zh": "你喜欢小鸟吗？",
+        "voice": "rosie"
+      },
+      {
+        "en": "Not really. They're noisy in the morning.",
+        "zh": "不太喜欢。它们早上很吵。",
+        "voice": "chris"
+      },
+      {
+        "en": "Dogs are friendly, but they need lots of exercise.",
+        "zh": "狗很友好，但需要很多运动。",
+        "voice": "rosie"
+      },
+      {
+        "en": "That's true. Cats are better for me because my flat is small.",
+        "zh": "确实。猫更适合我，因为我家小。",
+        "voice": "chris"
+      }
+    ]
+  },
+  "ket-jobs": {
+    "task": "**Part 2** 你和另一位考生看五幅职业图(老师、医生、厨师、工程师、艺术家)。说说你们长大想不想做这些、为什么,并回应对方 —— **不需要选同一个**。",
+    "part2": [
+      {
+        "en": "I want to be a teacher one day.",
+        "zh": "我以后想当老师。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Really? I think teaching is hard work.",
+        "zh": "真的吗？我觉得教书很辛苦。",
+        "voice": "chris"
+      },
+      {
+        "en": "It is, but I love helping children learn.",
+        "zh": "是辛苦，但我喜欢帮孩子学习。",
+        "voice": "rosie"
+      },
+      {
+        "en": "I want to be a doctor because I want to help sick people.",
+        "zh": "我想当医生，因为我想帮生病的人。",
+        "voice": "chris"
+      },
+      {
+        "en": "That's a great job, but you have to study for many years.",
+        "zh": "那是个好工作，但要学很多年。",
+        "voice": "rosie"
+      },
+      {
+        "en": "What about a chef? I love cooking.",
+        "zh": "厨师呢？我喜欢做饭。",
+        "voice": "chris"
+      },
+      {
+        "en": "I'm not good at cooking, so I don't want to be a chef.",
+        "zh": "我做饭不行，所以不想当厨师。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Would you like to be an engineer?",
+        "zh": "你想当工程师吗？",
+        "voice": "chris"
+      },
+      {
+        "en": "Maybe. It sounds interesting. I'd also like to be an artist because I love drawing.",
+        "zh": "也许吧。听起来有意思。我也想当艺术家，因为我喜欢画画。",
+        "voice": "rosie"
+      },
+      {
+        "en": "Being an artist sounds fun, but I'd still like to be a doctor.",
+        "zh": "当艺术家听起来很有趣，但我还是想当医生。",
+        "voice": "chris"
+      }
+    ]
+  }
+}

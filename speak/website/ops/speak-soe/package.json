@@ -1,0 +1,20 @@
+{
+  "name": "speak-soe-hardened",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Hardened Tencent SOE proxy for speak.yuanbanwa.top",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "check": "node --check server.js && node --check signature.cjs && node --check ecosystem.config.cjs",
+    "config-check": "node server.js --check-config",
+    "start": "node server.js",
+    "test": "node --test test/*.test.cjs"
+  },
+  "dependencies": {
+    "ws": "8.21.0"
+  },
+  "license": "UNLICENSED"
+}

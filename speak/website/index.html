@@ -1,0 +1,3121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8"/>
+<title>原版娃口语</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"/>
+<meta name="theme-color" content="#ece6d9"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="原版娃口语"/>
+<meta name="description" content="原版娃口语 · 跟着原声每天练会高频场景英语，开口不再难。"/>
+<meta property="og:title" content="原版娃口语"/>
+<meta property="og:description" content="跟读练口语 · 日常对话 + 剑桥 KET/PET/FCE，每天 5 分钟开口。"/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="./assets/app-icon-180.png?v=experience-v2"/>
+<link rel="apple-touch-icon" href="./assets/app-icon-180.png?v=rosie"/>
+<!-- 首帧前解析主题（跟随系统 / 手动覆盖），避免深色模式白屏闪烁。完整逻辑见 React 主题工具。必须是普通 script（Babel 未加载时也要执行）。 -->
+<script>
+  (function () {
+    try {
+      var pref = localStorage.getItem('ybw.speak.theme') || 'system';
+      var dark = pref === 'dark' || (pref === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', dark ? '#15120c' : '#ece6d9');
+    } catch (e) {}
+  })();
+</script>
+<style>
+  /* ---------- reset ---------- */
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  /* 移动端触摸体验:禁文本选中手柄 + iOS 长按放大镜/callout(练习 App 不需选中,长按麦克风录音时尤其干扰);输入框例外 */
+  html, body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  input, textarea { -webkit-user-select: text; user-select: text; }
+  button { -webkit-touch-callout: none; touch-action: manipulation; }
+  html, body, #root { height: 100%; height: 100dvh; width: 100%; }
+  /* iOS 橡皮筋回弹露出的是 html 背景 —— 跟纸色一致,下拉不再出现"空白一块" */
+  html { background: var(--paper); overscroll-behavior: none; }
+  body {
+    font-family: -apple-system, "PingFang SC", "SF Pro Text", system-ui, sans-serif;
+    background: var(--paper-2); color: var(--ink);
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; overscroll-behavior: none;
+  }
+  button { font: inherit; color: inherit; cursor: pointer; background: none; border: none; }
+  input { font: inherit; }
+
+  /* ---------- design tokens：单一 CSS 源（浅色 :root + data-theme=dark 覆盖），对齐外刊「每日外刊精读」 ----------
+     口语专属强调色 = 温暖橙（--primary，替代外刊墨蓝，作 Speak 识别色）；其余纸张/金/文字/质感统一外刊。 */
+  :root {
+    color-scheme: light;
+    --paper:#ece6d9; --paper-2:#dad2c2; --surface:#fcfaf4; --surface-soft:#f2ede2;
+    --primary:#b06440; --primary-2:#8c4c2c; --primary-soft:#f3e9e1;
+    --gold:#c8a24a; --gold-soft:#f1e7c9; --gold-grad-from:#fdf8ec;
+    --ink:#1c2b33; --ink-soft:#45555e; --muted:#8a8273; --hairline:#e5ddce;
+    --good:#2e7d5b; --good-soft:#dfe9e1; --bad:#b5562f;
+    /* 分区品牌色：日常=陶土橙(=primary) / 剑桥=墨蓝。首页双色块用显式 --terra/--cam；
+       进区后 [data-zone="cambridge"] 把 --primary 接管成墨蓝，所有现有组件零改自动重着色。 */
+    --terra:#b06440; --terra-2:#8c4c2c; --terra-soft:#f3e9e1;
+    --cam:#2f5a78; --cam-2:#1e3d54; --cam-soft:#e5edf3;
+    --tabbar-bg:rgba(252,250,244,.92); --hl-ink:#1c2b33;
+    --serif:Georgia,"Times New Roman","Songti SC",serif;
+    --radius:20px; --radius-sm:13px; --radius-lg:28px;
+    --shadow-card:0 2px 12px -8px rgba(28,43,51,.2);
+    --shadow-feature:0 12px 34px -18px rgba(28,43,51,.4);
+    --fs:16px; --lh:1.7;
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:#15120c; --paper-2:#221d15; --surface:#211c14; --surface-soft:#2a2418;
+    --primary:#d99a72; --primary-2:#8c4c2c; --primary-soft:#38291e;
+    --gold:#d4b264; --gold-soft:#38301c; --gold-grad-from:#2c2517;
+    --ink:#ece5d6; --ink-soft:#b4ac9c; --muted:#8f8674; --hairline:#332c20;
+    --good:#57b389; --good-soft:#1f3329; --bad:#df8059;
+    --terra:#d99a72; --terra-2:#8c4c2c; --terra-soft:#38291e;
+    --cam:#7fb0d0; --cam-2:#284a61; --cam-soft:#1b2c3a;
+    --tabbar-bg:rgba(28,24,16,.92);
+    --shadow-card:0 2px 12px -8px rgba(0,0,0,.6);
+    --shadow-feature:0 14px 36px -18px rgba(0,0,0,.7);
+  }
+  /* 剑桥分区：墨蓝接管强调色。挂在 Phone 内容容器上，分区内组件（含底栏）零改自动重着色。 */
+  [data-zone="cambridge"] {
+    --primary:var(--cam); --primary-2:var(--cam-2); --primary-soft:var(--cam-soft);
+  }
+  [data-zone="cambridge"] .btn-primary { box-shadow: 0 8px 20px -12px rgba(31,61,84,.5); }
+
+  /* ---------- 首页双色块（方案 B·画刊）：分层渐变 + 顶部内高光 + 大字形 + 进入药丸 ---------- */
+  .zb { position:relative; overflow:hidden; appearance:none; -webkit-appearance:none; border:none; width:100%;
+        border-radius:26px; padding:21px 20px 18px; color:#fff; text-align:left; cursor:pointer; }
+  .zb-terra { background:
+    radial-gradient(130% 90% at 12% -5%, rgba(255,255,255,.22), transparent 55%),
+    linear-gradient(135deg,#c2724a 0%,#9a5230 58%,#80421f 100%);
+    box-shadow:0 20px 42px -22px rgba(140,76,44,.7), inset 0 1px 0 rgba(255,255,255,.22); }
+  .zb-cam { background:
+    radial-gradient(130% 90% at 12% -5%, rgba(255,255,255,.18), transparent 55%),
+    linear-gradient(135deg,#34678a 0%,#244c66 58%,#173241 100%);
+    box-shadow:0 20px 42px -22px rgba(31,61,84,.75), inset 0 1px 0 rgba(255,255,255,.18); }
+  .zb-glyph { position:absolute; right:-22px; bottom:-30px; opacity:.13; line-height:0; transform:rotate(-6deg); }
+  .zb-eyebrow { font-size:10.5px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.72); }
+  .zb-title { font-size:26px; font-weight:700; margin-top:8px; line-height:1.1; }
+  .zb-desc { font-size:13px; color:rgba(255,255,255,.86); margin-top:7px; line-height:1.5; max-width:82%; }
+  .zb-foot { display:flex; align-items:center; justify-content:space-between; margin-top:18px; }
+  .zb-stat { font-size:11.5px; font-weight:600; color:rgba(255,255,255,.8); }
+  .zb-go { display:inline-flex; align-items:center; gap:6px; font-size:12.5px; font-weight:700; color:#fff;
+    background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:7px 14px;
+    -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); }
+
+  /* ---------- 原语（外刊组件语言，组件可直接挂 className） ---------- */
+  .serif { font-family: var(--serif); }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  /* 报刊金色眉标（区块栏目头专用，与灰 .eyebrow 区分主次；一屏限 1~2 个避免泛滥） */
+  .eyebrow-gold { font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+  /* serif 斜体导语（仅英文 subtitle/导读用） */
+  .lede { font-family: var(--serif); font-style: italic; color: var(--ink-soft); line-height: 1.45; }
+  /* 桌面 hover 浮起（不污染触屏） */
+  @media (hover:hover) {
+    .dk-card { transition: transform .18s ease, box-shadow .18s ease; }
+    .dk-card:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -22px rgba(28,43,51,.35); }
+  }
+  .card { background: var(--surface); border-radius: var(--radius); }
+  .pill { display: inline-flex; align-items: center; border-radius: 999px; }
+  .tap { cursor: pointer; user-select: none; -webkit-user-select: none; transition: transform .12s ease, opacity .12s ease; }
+  .tap:active { transform: scale(.985); opacity: .85; }
+  .icon-btn { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; }
+  .btn-primary, .btn-gold { border: none; border-radius: 14px; font-weight: 700; cursor: pointer; }
+  .btn-primary { background: linear-gradient(135deg, var(--primary), var(--primary-2)); color: #fff; box-shadow: 0 8px 20px -12px rgba(140,76,44,.45); }
+  .btn-gold { background: linear-gradient(135deg, #ecd9a3, var(--gold)); color: #5c4716; font-weight: 800; box-shadow: 0 10px 24px -10px rgba(200,162,74,.55); }
+  .btn-primary.is-off, .btn-gold.is-off { background: var(--paper-2); color: var(--muted); box-shadow: none; cursor: default; }
+  .seg { display: flex; background: var(--surface-soft); border-radius: 999px; padding: 3px; gap: 2px; }
+  .seg button { flex: 1; border: none; background: none; padding: 9px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--muted); transition: all .2s; white-space: nowrap; }
+  .seg button.on { background: var(--surface); color: var(--primary); font-weight: 700; box-shadow: 0 1px 4px rgba(28,43,51,.12); }
+
+  /* ---------- bottom tab bar（玻璃态贴底全宽） ---------- */
+  .tabbar {
+    position: absolute; bottom: 0; left: 0; right: 0; z-index: 40;
+    display: flex; align-items: center;
+    background: var(--tabbar-bg);
+    backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-top: 1px solid var(--hairline);
+    padding: 8px 0 calc(8px + env(safe-area-inset-bottom, 0px));
+  }
+  .tabbar button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; color: var(--muted); padding: 4px 0; transition: color .2s; }
+  .tabbar button.on { color: var(--primary); }
+
+  /* ---------- 荧光笔逐词高亮（跟读核心，对齐外刊 .w） ---------- */
+  .w { transition: background .25s ease, color .25s ease; border-radius: 4px; padding: 0 1px; }
+  .w.unread { color: var(--muted); opacity: .5; }
+  .w.read { color: var(--ink); opacity: 1; }
+  .w.trail { color: var(--hl-ink); background: rgba(200,162,74,.22); }
+  .w.now { color: var(--hl-ink); background: rgba(200,162,74,.5); }
+  :root[data-theme="dark"] .w.trail { background: rgba(212,178,100,.16); }
+  :root[data-theme="dark"] .w.now { color: #1c2b33; background: rgba(216,182,105,.88); }
+  .plain-read .w.unread { color: var(--ink); opacity: 1; }
+
+  /* ---------- 动效 ---------- */
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes ringpulse { 0% { transform: scale(0.95); opacity: 0.7; } 100% { transform: scale(1.35); opacity: 0; } }
+  @keyframes audiobar { from { transform: scaleY(0.4); } to { transform: scaleY(1.2); } }
+  @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes confetti-in { from { opacity: 0; transform: translateY(12px) scale(0.6); } to { opacity: 0.7; transform: translateY(0) scale(1); } }
+  @keyframes screen-fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes sheetUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  @keyframes popIn { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: scale(1); } }
+  @keyframes stampDown { 0% { opacity: 0; transform: scale(1.7) rotate(-11deg); } 55% { opacity: 1; transform: scale(.9) rotate(-11deg); } 100% { transform: scale(1) rotate(-11deg); } }
+  .screen-fade { animation: screen-fade-in 0.24s cubic-bezier(0.2, 0.8, 0.2, 1); height: 100%; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001s !important; transition-duration: .001s !important; } }
+
+  /* ---------- layout：本阶段保留 iPhone 画框（去画框为后续步骤）；桌面衬底用 --paper-2 ---------- */
+  .stage { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 32px 16px; }
+  .device-shell { position: relative; }
+  @media (max-width: 480px) {
+    .stage { padding: 0; align-items: stretch; }
+    .device-shell { width: 100%; min-height: 100dvh; }
+    .device-shell .ios-device { width: 100% !important; height: 100dvh !important; border-radius: 0 !important; box-shadow: none !important; background: var(--paper) !important; }
+    .device-shell .ios-device .dynamic-island { display: none; }
+    .device-shell .ios-device .home-indicator { display: none; }
+    /* 真手机有自己的状态栏,隐藏演示用的假 9:41(桌面画框专用) */
+    .device-shell .ios-device .fake-statusbar { display: none; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- 仅供源码零配置预览；npm run build 会替换为 dist/ 中自托管、预编译的 production 运行时。 -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+<script type="text/babel" data-presets="react">
+// ─────────────────────────────────────────────────────────────
+// 口语练习 APP — 场景跟读 MVP
+// 两套主题：奶油（白天） / 暮色（夜晚）
+// ─────────────────────────────────────────────────────────────
+
+const Tokens = {
+  // 单一调色板：颜色全部走 CSS 变量，深浅由 <html data-theme> 在 CSS 层自动切换。
+  // 组件里 t.accent / t.bg 等保持不变（值已是 var(--xxx) 字符串）。
+  t: {
+    bg: 'var(--paper)', surface: 'var(--surface)', surfaceAlt: 'var(--surface-soft)',
+    ink: 'var(--ink)', inkSoft: 'var(--ink-soft)', inkMuted: 'var(--muted)',
+    line: 'var(--hairline)',
+    accent: 'var(--primary)', accentSoft: 'var(--primary-soft)', accentDeep: 'var(--primary-2)',
+    sage: 'var(--good)', sageSoft: 'var(--good-soft)',
+    sun: 'var(--gold)', sunSoft: 'var(--gold-soft)',
+    danger: 'var(--bad)',
+    potFill: 'var(--surface-soft)',
+  },
+  font: {
+    zh: '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif',
+    en: 'Georgia, "Times New Roman", "Songti SC", serif',
+    enSans: '-apple-system, "SF Pro", "Helvetica Neue", sans-serif',
+    mono: 'ui-monospace, "SF Mono", monospace',
+  },
+  radius: { sm: 13, md: 20, lg: 28, xl: 28, pill: 9999 },
+  shadow: {
+    sm: 'var(--shadow-card)',
+    md: 'var(--shadow-feature)',
+    lg: 'var(--shadow-feature)',
+  },
+};
+
+// 单一调色板（颜色=CSS变量字符串）；组件统一用这一份 t。
+const T = Tokens.t;
+
+// 运行时判断当前是否深色（替代旧的 DARK()）。
+const DARK = () => { try { return document.documentElement.getAttribute('data-theme') === 'dark'; } catch (e) { return false; } };
+
+// —— 主题工具：system / light / dark 三态，对齐外刊「每日外刊精读」的 ra_theme 机制 ——
+const THEME_KEY = 'ybw.speak.theme';
+const THEME_LABEL = { system: '跟随系统', light: '浅色', dark: '深色' };
+const _mql = () => { try { return window.matchMedia('(prefers-color-scheme: dark)'); } catch (e) { return null; } };
+const getThemePref = () => {
+  const v = localStorage.getItem(THEME_KEY);
+  return (v === 'dark' || v === 'light' || v === 'system') ? v : 'system';
+};
+const resolveTheme = (pref) => pref === 'system' ? ((_mql() && _mql().matches) ? 'dark' : 'light') : pref;
+const applyTheme = (pref) => {
+  const dark = resolveTheme(pref) === 'dark';
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  const m = document.querySelector('meta[name="theme-color"]');
+  if (m) m.setAttribute('content', dark ? '#15120c' : '#ece6d9');
+};
+const setThemePref = (pref) => { localStorage.setItem(THEME_KEY, pref); applyTheme(pref); window.dispatchEvent(new CustomEvent('ybw-theme-change')); };
+const cycleThemePref = () => {
+  const order = ['system', 'light', 'dark'];
+  const next = order[(order.indexOf(getThemePref()) + 1) % order.length];
+  setThemePref(next); return next;
+};
+(function initTheme() {
+  applyTheme(getThemePref());
+  const m = _mql(); if (!m) return;
+  const onChange = () => { if (getThemePref() === 'system') applyTheme('system'); };
+  m.addEventListener ? m.addEventListener('change', onChange) : m.addListener(onChange);
+})();
+
+function hexA(hex, a) {
+  if (hex && hex.startsWith('#') && hex.length === 7) {
+    const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+    return `rgba(${r},${g},${b},${a})`;
+  }
+  // CSS 变量 var(--x)：用 color-mix 注入透明度（迁移到 CSS 变量后，光晕/柔色靠这条恢复半透明）
+  if (typeof hex === 'string' && hex.indexOf('var(') === 0) {
+    return `color-mix(in srgb, ${hex} ${Math.round(a * 100)}%, transparent)`;
+  }
+  return hex;
+}
+
+// ─── Icons ───────────────────────────────────────────────────
+const Icon = {
+  Home: (p={}) => (<svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><path d="M3 11l9-7 9 7v9a2 2 0 01-2 2h-4v-6h-6v6H5a2 2 0 01-2-2z"/></svg>),
+  Grid: (p={}) => (<svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>),
+  Refresh: (p={}) => (<svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 4v5h-5"/></svg>),
+  User: (p={}) => (<svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>),
+  Play: (p={}) => (<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill={p.color||'currentColor'}><path d="M7 4.5v15a1 1 0 001.5.87l13-7.5a1 1 0 000-1.73l-13-7.5A1 1 0 007 4.5z"/></svg>),
+  Pause: (p={}) => (<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill={p.color||'currentColor'}><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>),
+  Mic: (p={}) => (<svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg>),
+  Chevron: (p={}) => (<svg width={p.size||16} height={p.size||16} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2} strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6"/></svg>),
+  Back: (p={}) => (<svg width={p.size||20} height={p.size||20} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2} strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6"/></svg>),
+  Search: (p={}) => (<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2} strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>),
+  Sparkle: (p={}) => (<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill={p.color||'currentColor'}><path d="M12 2l1.8 5.6L19 9.6l-5.2 2L12 17l-1.8-5.4L5 9.6l5.2-2z"/></svg>),
+  Check: (p={}) => (<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2.4} strokeLinecap="round" strokeLinejoin="round"><path d="M4 12l5 5L20 6"/></svg>),
+  Close: (p={}) => (<svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||2} strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>),
+  Settings: (p={}) => (<svg width={p.size||20} height={p.size||20} viewBox="0 0 24 24" fill="none" stroke={p.color||'currentColor'} strokeWidth={p.sw||1.8} strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 01-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 010-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3h.1a1.7 1.7 0 001-1.5V3a2 2 0 014 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8v.1a1.7 1.7 0 001.5 1H21a2 2 0 010 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg>),
+};
+
+// ─── Status bar ──────────────────────────────────────────────
+function IOSStatusBar({ dark = false, time = '9:41' }) {
+  const c = dark ? '#fff' : '#000';
+  return (
+    <div style={{
+      display:'flex', alignItems:'center', justifyContent:'space-between',
+      padding:'16px 28px 6px', position:'relative', zIndex:20,
+    }}>
+      <span style={{fontFamily:'-apple-system,"SF Pro",system-ui', fontWeight:590, fontSize:15, color:c, letterSpacing:-0.2}}>{time}</span>
+      <div style={{display:'flex', gap:6, alignItems:'center'}}>
+        <svg width="17" height="11" viewBox="0 0 19 12"><rect x="0" y="7.5" width="3.2" height="4.5" rx="0.7" fill={c}/><rect x="4.8" y="5" width="3.2" height="7" rx="0.7" fill={c}/><rect x="9.6" y="2.5" width="3.2" height="9.5" rx="0.7" fill={c}/><rect x="14.4" y="0" width="3.2" height="12" rx="0.7" fill={c}/></svg>
+        <svg width="15" height="11" viewBox="0 0 17 12"><path d="M8.5 3.2C10.8 3.2 12.9 4.1 14.4 5.6L15.5 4.5C13.7 2.7 11.2 1.5 8.5 1.5C5.8 1.5 3.3 2.7 1.5 4.5L2.6 5.6C4.1 4.1 6.2 3.2 8.5 3.2Z" fill={c}/><path d="M8.5 6.8C9.9 6.8 11.1 7.3 12 8.2L13.1 7.1C11.8 5.9 10.2 5.1 8.5 5.1C6.8 5.1 5.2 5.9 3.9 7.1L5 8.2C5.9 7.3 7.1 6.8 8.5 6.8Z" fill={c}/><circle cx="8.5" cy="10.5" r="1.5" fill={c}/></svg>
+        <svg width="24" height="11" viewBox="0 0 27 13"><rect x="0.5" y="0.5" width="23" height="12" rx="3.5" stroke={c} strokeOpacity="0.35" fill="none"/><rect x="2" y="2" width="20" height="9" rx="2" fill={c}/><path d="M25 4.5V8.5C25.8 8.2 26.5 7.2 26.5 6.5C26.5 5.8 25.8 4.8 25 4.5Z" fill={c} fillOpacity="0.4"/></svg>
+      </div>
+    </div>
+  );
+}
+
+// ─── iOS device frame ────────────────────────────────────────
+function IOSDevice({ children, width = 390, height = 844, dark = false }) {
+  return (
+    <div className="ios-device" style={{
+      width, height, borderRadius: 48, overflow: 'hidden',
+      position: 'relative', background: dark ? '#000' : '#F2F2F7',
+      boxShadow: dark
+        ? '0 40px 90px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06)'
+        : '0 40px 80px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.12)',
+      WebkitFontSmoothing: 'antialiased',
+    }}>
+      {/* Dynamic island */}
+      <div className="dynamic-island" style={{
+        position:'absolute', top: 11, left:'50%', transform:'translateX(-50%)',
+        width: 126, height: 37, borderRadius: 24, background:'#000', zIndex: 50,
+      }}/>
+      {/* Home indicator */}
+      <div className="home-indicator" style={{
+        position:'absolute', bottom: 0, left: 0, right: 0, zIndex: 60,
+        height: 34, display:'flex', justifyContent:'center', alignItems:'flex-end',
+        paddingBottom: 8, pointerEvents:'none',
+      }}>
+        <div style={{width:139, height:5, borderRadius:100,
+          background: dark ? 'rgba(255,255,255,0.55)' : 'rgba(0,0,0,0.25)'}}/>
+      </div>
+      {children}
+    </div>
+  );
+}
+
+// ─── Primary / Ghost buttons ─────────────────────────────────
+function PrimaryButton({ children, onClick, block, small, t, disabled, style }) {
+  return (
+    <button className="tap" onClick={onClick} disabled={disabled} style={{
+      appearance:'none', border:0, cursor: disabled ? 'not-allowed' : 'pointer',
+      width: block ? '100%' : 'auto',
+      background: disabled ? t.surfaceAlt : `linear-gradient(135deg, ${t.accent}, ${t.accentDeep})`,
+      color: disabled ? t.inkMuted : '#fff',
+      fontFamily: Tokens.font.zh, fontSize: small ? 15 : 16, fontWeight: 700, letterSpacing: 0.3,
+      padding: small ? '11px 18px' : '15px 22px',
+      borderRadius: 14,
+      boxShadow: disabled ? 'none' : `0 8px 20px -12px ${hexA(t.accentDeep, 0.5)}`,
+      display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8,
+      ...style,
+    }}>{children}</button>
+  );
+}
+
+function GhostButton({ children, onClick, block, t, style }) {
+  return (
+    <button className="tap" onClick={onClick} style={{
+      appearance:'none', border:`1px solid ${t.line}`, cursor:'pointer',
+      width: block ? '100%' : 'auto',
+      background:'transparent', color: t.ink,
+      fontFamily: Tokens.font.zh, fontSize: 15, fontWeight: 600,
+      padding:'13px 18px', borderRadius: 14,
+      display:'inline-flex', alignItems:'center', justifyContent:'center', gap: 6,
+      ...style,
+    }}>{children}</button>
+  );
+}
+
+// ─── Tab bar ─────────────────────────────────────────────────
+function TabBar({ active, onChange, t }) {
+  const tabs = [
+    {k:'home', label:'首页', icon: Icon.Home},
+    {k:'scenes', label:'场景馆', icon: Icon.Grid},
+    {k:'review', label:'复练', icon: Icon.Refresh},
+    {k:'me', label:'我的', icon: Icon.User},
+  ];
+  return (
+    <div className="tabbar">
+      {tabs.map(tab => {
+        const on = active === tab.k;
+        const IconC = tab.icon;
+        return (
+          <button key={tab.k} onClick={()=>onChange(tab.k)} style={{
+            flex: 1, display:'flex', flexDirection:'column', alignItems:'center', gap: 3,
+            color: on ? t.accent : t.inkMuted, padding:'4px 0',
+            fontFamily: Tokens.font.zh, cursor:'pointer', transition:'color 0.2s',
+          }}>
+            <IconC color={on ? t.accent : t.inkMuted} size={22} sw={on ? 2.1 : 1.7}/>
+            <span style={{fontSize:10.5, fontWeight: on ? 700 : 500, letterSpacing: 0.2}}>{tab.label}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── Chip ────────────────────────────────────────────────────
+function Chip({ children, t, tone='neutral', style }) {
+  const tones = {
+    neutral: {bg: t.surfaceAlt, fg: t.inkSoft},
+    accent:  {bg: t.accentSoft, fg: t.accentDeep},
+    sage:    {bg: t.sageSoft, fg: t.sage},
+    sun:     {bg: t.sunSoft, fg: t.sun},
+  };
+  const c = tones[tone] || tones.neutral;
+  return (
+    <span style={{
+      display:'inline-flex', alignItems:'center', gap: 4,
+      padding:'4px 10px', borderRadius: 9999,
+      background: c.bg, color: c.fg,
+      fontFamily: Tokens.font.zh, fontSize: 11.5, fontWeight: 600, letterSpacing: 0.3,
+      ...style,
+    }}>{children}</span>
+  );
+}
+
+// ─── Scene abstract glyph ────────────────────────────────────
+function SceneGlyph({ kind, t, size = 56 }) {
+  const palette = {
+    travel: {bg: t.accentSoft, fg: t.accent},
+    life:   {bg: t.sageSoft,   fg: t.sage},
+    school: {bg: t.sunSoft,    fg: DARK() ? t.sun : '#C29234'},
+    social: {bg: DARK() ? 'rgba(160,120,220,0.18)' : '#E8DEF6', fg: DARK() ? '#B59AE6' : '#7D5AB5'},
+    urgent: {bg: DARK() ? 'rgba(224,128,112,0.18)' : '#F7DCD4', fg: t.danger},
+  };
+  const c = palette[kind] || palette.travel;
+  const shapes = {
+    travel: <g><circle cx="20" cy="28" r="10" fill={c.fg}/><rect x="30" y="20" width="16" height="16" rx="4" fill={c.fg} opacity="0.5"/></g>,
+    life:   <g><rect x="12" y="14" width="32" height="28" rx="6" fill={c.fg} opacity="0.4"/><circle cx="28" cy="28" r="7" fill={c.fg}/></g>,
+    school: <g><path d="M10 22 L28 12 L46 22 L28 32 Z" fill={c.fg}/><path d="M18 28 L18 38 Q28 44 38 38 L38 28" stroke={c.fg} strokeWidth="2.5" fill="none"/></g>,
+    social: <g><circle cx="22" cy="24" r="9" fill={c.fg}/><circle cx="36" cy="32" r="7" fill={c.fg} opacity="0.5"/></g>,
+    urgent: <g><path d="M28 10 L44 40 L12 40 Z" fill={c.fg}/><rect x="26" y="20" width="4" height="10" rx="2" fill={c.bg}/><circle cx="28" cy="34" r="2" fill={c.bg}/></g>,
+  };
+  return (
+    <div style={{
+      width: size, height: size, borderRadius: 16,
+      background: c.bg, display:'flex', alignItems:'center', justifyContent:'center',
+      flexShrink: 0,
+    }}>
+      <svg width={size} height={size} viewBox="0 0 56 56">{shapes[kind]}</svg>
+    </div>
+  );
+}
+
+// ─── Plant (growth with streak) ──────────────────────────────
+function PlantIcon({ size = 24, t, day = 0 }) {
+  const lvl = day < 3 ? 0 : day < 7 ? 1 : day < 14 ? 2 : 3;
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24">
+      <path d="M6 17 L18 17 L17 22 L7 22 Z" fill={t.potFill} stroke={t.accentDeep} strokeWidth="1"/>
+      <rect x="6" y="16" width="12" height="2" fill={t.accentDeep} opacity="0.5"/>
+      {lvl >= 0 && <path d={`M12 16 L12 ${16 - (lvl+1)*2.5}`} stroke={t.sage} strokeWidth="1.5" strokeLinecap="round"/>}
+      {lvl >= 1 && <ellipse cx="9.5" cy="13" rx="2" ry="1.2" fill={t.sage} transform="rotate(-30 9.5 13)"/>}
+      {lvl >= 1 && <ellipse cx="14.5" cy="11" rx="2" ry="1.2" fill={t.sage} transform="rotate(30 14.5 11)"/>}
+      {lvl >= 2 && <ellipse cx="9" cy="9" rx="2.3" ry="1.3" fill={t.sage} transform="rotate(-30 9 9)"/>}
+      {lvl >= 2 && <ellipse cx="15" cy="7" rx="2.3" ry="1.3" fill={t.sage} transform="rotate(30 15 7)"/>}
+      {lvl >= 3 && <circle cx="12" cy="5" r="2" fill={t.accent}/>}
+      {lvl >= 3 && <circle cx="12" cy="5" r="0.8" fill={t.sun}/>}
+    </svg>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Screen 1 — 首页
+// ═══════════════════════════════════════════════════════════════
+// 首页双色块入口：日常=陶土橙 / 剑桥=墨蓝。每块用显式品牌渐变，点击进入各自独立分区。
+// 方案 B「画刊」：满色块做高级 —— 分层渐变（径向高光 + 三段线性）+ 顶部内高光 + 大字形（角落低透明）
+// + 单个「进入 →」磨砂药丸。渐变为饱和前景色，深浅模式都立得住。
+function ZoneBlock({ tone, eyebrow, title, sub, meta, glyph, onClick }) {
+  const cam = tone === 'cam';
+  return (
+    <button onClick={onClick} className={`tap dk-card zb ${cam ? 'zb-cam' : 'zb-terra'}`}>
+      <div aria-hidden className="zb-glyph">{glyph}</div>
+      <div style={{position:'relative'}}>
+        <div className="zb-eyebrow" style={{fontFamily: Tokens.font.enSans}}>{eyebrow}</div>
+        <div className="zb-title serif">{title}</div>
+        <div className="zb-desc" style={{fontFamily: Tokens.font.zh}}>{sub}</div>
+        <div className="zb-foot">
+          <div className="zb-stat" style={{fontFamily: Tokens.font.zh}}>{meta}</div>
+          <div className="zb-go" style={{fontFamily: Tokens.font.zh}}>进入 <span style={{fontSize:14}}>→</span></div>
+        </div>
+      </div>
+    </button>
+  );
+}
+
+function HomeScreen({ t, onOpenScene, onEnterZone, streak = 0, lastSceneId = null, nickname = '体验学员' }) {
+  const continueScene = SCENES.find(s => s.id === lastSceneId)
+    || SCENES.find(s => s.id === 'restaurant') || SCENES[1];
+  const streakHint = streak === 0 ? '今天开口，种下第一天 🌱'
+    : streak < 14 ? `再坚持 ${14 - streak} 天就满两周`
+    : '已连续两周以上，继续保持 🌿';
+  const dailyCount = SCENES.filter(s => (s.track || 'daily') === 'daily').length;
+  const camCount   = SCENES.filter(s => s.track === 'cambridge').length;
+  const speechGlyph = <svg width="150" height="150" viewBox="0 0 24 24" fill="#fff"><path d="M4 4h16a2 2 0 012 2v9a2 2 0 01-2 2H9l-5 4v-4H4a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>;
+  const capGlyph    = <svg width="150" height="150" viewBox="0 0 24 24" fill="#fff"><path d="M12 3 1 8l11 5 9-4.1V15h2V8L12 3zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.2-7-3.2z"/></svg>;
+  return (
+    <div style={{padding:'70px 20px 120px', background: t.bg, minHeight:'100%'}}>
+      <div style={{marginBottom: 16}}>
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkSoft, letterSpacing: 0.5, marginBottom: 6}}>
+          {new Date().toLocaleDateString('zh-CN', {month:'long', day:'numeric', weekday:'long'})}
+        </div>
+        <div className="serif" style={{fontSize: 28, fontWeight: 700, color: t.ink, lineHeight: 1.2}}>
+          早上好，{nickname}
+        </div>
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 15, color: t.inkSoft, marginTop: 4}}>
+          今天也开口 <span style={{color: t.ink, fontWeight: 600}}>5 分钟</span>，挑一个分区练起来
+        </div>
+      </div>
+
+      <div style={{
+        display:'flex', alignItems:'center', gap: 10,
+        padding:'10px 14px', background: t.surface, borderRadius: 9999,
+        border:`1px solid ${t.line}`, marginBottom: 20, width:'fit-content',
+      }}>
+        <PlantIcon size={24} t={t} day={streak}/>
+        <span style={{fontFamily: Tokens.font.zh, fontSize: 13.5, color: t.ink, fontWeight: 600}}>连续 {streak} 天</span>
+        <span style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkMuted}}>· {streakHint}</span>
+      </div>
+
+      <div style={{display:'flex', flexDirection:'column', gap: 13, marginBottom: 22}}>
+        <ZoneBlock tone="terra" eyebrow="Everyday English" title="日常对话跟读"
+          sub="生活 · 出行 · 社交 · 学校 · 紧急，跟着原声开口"
+          meta={`${dailyCount} 个场景 · 零基础友好`} glyph={speechGlyph}
+          onClick={() => onEnterZone && onEnterZone('daily')}/>
+        <ZoneBlock tone="cam" eyebrow="Cambridge Speaking" title="剑桥考试对话"
+          sub="KET · PET · FCE 口语，考点跟读、备考冲刺"
+          meta={`KET · PET · FCE 三级 · ${camCount} 话题`} glyph={capGlyph}
+          onClick={() => onEnterZone && onEnterZone('cambridge')}/>
+      </div>
+
+      <button onClick={() => onOpenScene && onOpenScene(continueScene)} style={{
+        appearance:'none', border:`1px solid ${t.line}`, background: t.surface,
+        borderRadius: 20, padding: 16, display:'flex', alignItems:'center', gap: 14,
+        width:'100%', cursor:'pointer', textAlign:'left',
+      }}>
+        <div style={{
+          width: 44, height: 44, borderRadius: 14, background: t.sageSoft,
+          display:'flex', alignItems:'center', justifyContent:'center',
+        }}><Icon.Play size={16} color={t.sage}/></div>
+        <div style={{flex: 1}}>
+          <div style={{fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 600, color: t.ink}}>{lastSceneId ? '继续上次' : '推荐场景'} · {continueScene.title}</div>
+          <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft, marginTop: 2}}>{lastSceneId ? '接着上次的场景再练一遍' : '先从这个场景开口试试'}</div>
+        </div>
+        <Icon.Chevron size={14} color={t.inkMuted}/>
+      </button>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Screen 2 — 场景馆
+// ═══════════════════════════════════════════════════════════════
+// SCENE_CATS and SCENES are populated by the loader at the bottom of the
+// script — they fetch scenes.json (the same file shipped inside the iOS
+// app, so web and iOS stay in lockstep) and transform the iOS schema
+// (kind/subtitle/minutes/sentenceCount) into the short-name shape
+// (k/sub/mins/sents) that the rest of this file uses.
+let SCENE_CATS = [];
+
+// Each sentence: {en, zh, words, weak, audio:{bella,alice,chris,george}}
+// - words: tokenized English (split on whitespace, trailing ? . , stripped; contractions kept)
+// - weak: indices of commonly-mispronounced words (renders wavy underline on feedback)
+// - audio: per-voice relative MP3 paths, e.g. "bella/self-intro_01.mp3"
+let SCENES = [];
+
+// Cambridge-exam topic chips (KET/PET/FCE 板块). Filled from
+// scenes.json `examTopics`; keyed the same as a scene's `category`.
+let EXAM_TOPICS = [];
+// The three Cambridge exams the 剑桥考试 board surfaces, in order.
+const EXAMS = ['KET', 'PET', 'FCE'];
+
+// board / onBoard 由 App 提升管理（首页双色块进区时即决定分区，并驱动墨蓝重着色）。
+function ScenesScreen({ t, onOpenScene, board, onBoard }) {
+  const setBoard = onBoard;
+  const [cat, setCat] = React.useState('all');    // 日常话题
+  const [exam, setExam] = React.useState('KET');  // 剑桥级别
+  const [topic, setTopic] = React.useState('all');// 剑桥话题
+  const [q, setQ] = React.useState('');
+
+  const dusk = DARK();
+  const dailyScenes = SCENES.filter(s => s.track === 'daily');
+  const examScenes  = SCENES.filter(s => s.track === 'cambridge');
+  const matchQ = s => !q || s.title.includes(q) || (s.sub || '').toLowerCase().includes(q.toLowerCase());
+
+  const list = board === 'daily'
+    ? dailyScenes.filter(s => (cat === 'all' || s.cat === cat) && matchQ(s))
+    : examScenes.filter(s => s.exam === exam && (topic === 'all' || s.cat === topic) && matchQ(s));
+
+  // 剑桥话题 chips：只显示当前级别下真实存在的话题，按 EXAM_TOPICS 顺序
+  const examTopicKeys = new Set(examScenes.filter(s => s.exam === exam).map(s => s.cat));
+  const examChips = [{ k: 'all', label: '全部' }, ...EXAM_TOPICS.filter(c => examTopicKeys.has(c.k))];
+
+  // 分段控件按钮（外刊 .seg 风格，容器用 className="seg"）
+  const Seg = ({ on, onClick, children }) => (
+    <button className={on ? 'on' : ''} onClick={onClick}>{children}</button>
+  );
+  // 话题 chips（中性药丸，选中墨底）
+  const Chips = ({ items, active, onPick }) => (
+    <div style={{padding:'12px 20px 18px', display:'flex', gap: 8, overflowX:'auto'}}>
+      {items.map(c => (
+        <button key={c.k} className="tap" onClick={() => onPick(c.k)} style={{
+          appearance:'none', cursor:'pointer', whiteSpace:'nowrap', borderRadius: 9999, border:'none',
+          background: active === c.k ? t.ink : t.surfaceAlt,
+          color: active === c.k ? (dusk ? t.bg : '#fff') : t.inkSoft,
+          fontFamily: Tokens.font.zh, fontSize: 13, fontWeight: active === c.k ? 700 : 500,
+          padding:'8px 14px',
+        }}>{c.label}</button>
+      ))}
+    </div>
+  );
+  const renderCard = (s, i) => {
+    const sceneProgress = Progress.sceneProgress(s);
+    return (
+    <button key={s.id || i} className="tap dk-card" onClick={() => onOpenScene(s)} style={{
+      appearance:'none', border:`1px solid ${t.line}`, background: t.surface,
+      borderRadius: 20, padding: '15px 16px', textAlign:'left', cursor:'pointer',
+      display:'flex', alignItems:'center', gap: 14, position:'relative',
+    }}>
+      <SceneGlyph kind={s.k} t={t} size={52}/>
+      <div style={{flex: 1, minWidth: 0}}>
+        <div style={{display:'flex', alignItems:'center', gap: 6, marginBottom: 3}}>
+          <span style={{fontFamily: Tokens.font.zh, fontSize: 15, fontWeight: 600, color: t.ink}}>{s.title}</span>
+          {s.track === 'cambridge' && <Chip t={t} tone="sage" style={{padding:'2px 6px', fontSize: 10}}>{s.exam}</Chip>}
+          {s.isNew && <Chip t={t} tone="sun" style={{padding:'2px 6px', fontSize: 10}}>新</Chip>}
+        </div>
+        <div className="lede" style={{fontSize: 13, color: t.inkMuted, marginBottom: 8}}>{s.sub}</div>
+        <div style={{display:'flex', alignItems:'center', gap: 10, fontFamily: Tokens.font.zh, fontSize: 11, color: t.inkSoft}}>
+          <span>{s.level}</span>
+          <span style={{opacity:0.3}}>·</span>
+          <span>⏱ {s.mins} 分钟</span>
+          <span style={{opacity:0.3}}>·</span>
+          <span>{s.sents} 句</span>
+        </div>
+      </div>
+      {sceneProgress > 0 && (
+        <div style={{position:'relative', width: 36, height: 36, flexShrink: 0}}>
+          <svg width="36" height="36" viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="15" fill="none" stroke={t.surfaceAlt} strokeWidth="3"/>
+            <circle cx="18" cy="18" r="15" fill="none"
+              stroke={sceneProgress === 100 ? t.sage : t.sun} strokeWidth="3" strokeLinecap="round"
+              strokeDasharray={`${2*Math.PI*15*sceneProgress/100} ${2*Math.PI*15}`}
+              transform="rotate(-90 18 18)"/>
+          </svg>
+          <div style={{position:'absolute', inset: 0, display:'flex', alignItems:'center', justifyContent:'center',
+            fontFamily: Tokens.font.zh, fontSize: 10, fontWeight: 600,
+            color: sceneProgress === 100 ? t.sage : t.sun}}>
+            {sceneProgress === 100 ? '✓' : `${sceneProgress}%`}
+          </div>
+        </div>
+      )}
+    </button>
+    );
+  };
+
+  return (
+    <div style={{background: t.bg, minHeight:'100%', paddingBottom: 120}}>
+      <div style={{padding:'calc(env(safe-area-inset-top,0px) + 52px) 20px 14px'}}>
+        <div className="eyebrow-gold">{board === 'daily' ? 'EVERYDAY ENGLISH' : 'CAMBRIDGE SPEAKING'}</div>
+        <div className="serif" style={{fontSize: 30, fontWeight: 700, color: t.ink, marginTop: 6}}>场景馆</div>
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkSoft, marginTop: 4}}>
+          {board === 'daily' ? '日常对话，跟着原声练，张口就来' : '剑桥口语话题，分级跟读，稳过考试'}
+        </div>
+      </div>
+
+      {/* 板块切换 */}
+      <div style={{padding:'4px 20px 0'}}>
+        <div className="seg">
+          <Seg on={board === 'daily'} onClick={() => setBoard('daily')}>日常对话</Seg>
+          <Seg on={board === 'cambridge'} onClick={() => setBoard('cambridge')}>剑桥考试</Seg>
+        </div>
+      </div>
+
+      <div style={{padding:'12px 20px 0'}}>
+        <div style={{
+          background: t.surfaceAlt, borderRadius: 13, padding:'11px 14px',
+          display:'flex', alignItems:'center', gap: 10,
+        }}>
+          <Icon.Search size={16} color={t.inkMuted}/>
+          <input value={q} onChange={e => setQ(e.target.value)}
+            placeholder={board === 'daily' ? '搜索场景，如：值机、点餐' : '搜索话题，如：购物、旅行'}
+            style={{flex: 1, border: 0, outline:'none', background:'transparent',
+              fontFamily: Tokens.font.zh, fontSize: 14, color: t.ink}}/>
+        </div>
+      </div>
+
+      {board === 'cambridge' && (
+        <div style={{padding:'12px 20px 0'}}>
+          <div className="seg">
+            {EXAMS.map(e => (
+              <Seg key={e} on={exam === e} onClick={() => { setExam(e); setTopic('all'); }}>{e}</Seg>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {board === 'cambridge' && (() => {
+        // 备考完成度：当前级别下练满（progress=100）的话题数 / 总话题数。随真实进度增长。
+        const examList = examScenes.filter(s => s.exam === exam);
+        const total = examList.length;
+        const done = examList.filter(s => Progress.sceneProgress(s) === 100).length;
+        const pct = total ? Math.round(done / total * 100) : 0;
+        return (
+          <div style={{padding:'14px 20px 0'}}>
+            <div style={{background: t.surface, border:`1px solid ${t.line}`, borderRadius: 16, padding:'13px 16px'}}>
+              <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom: 9}}>
+                <span style={{fontFamily: Tokens.font.zh, fontSize: 13, fontWeight: 700, color: t.ink}}>{exam} 备考完成度</span>
+                <span style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft}}>{done}/{total} 话题已完成</span>
+              </div>
+              <div style={{height: 6, background: t.surfaceAlt, borderRadius: 999, overflow:'hidden'}}>
+                <div style={{width: `${pct}%`, height:'100%', background: t.accent, borderRadius: 999, transition:'width .3s'}}/>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+
+      {board === 'daily'
+        ? <Chips items={SCENE_CATS} active={cat} onPick={setCat}/>
+        : <Chips items={examChips} active={topic} onPick={setTopic}/>}
+
+      <div style={{padding:'0 20px', display:'flex', flexDirection:'column', gap: 10}}>
+        {list.length > 0
+          ? list.map(renderCard)
+          : (
+            <div style={{padding:'40px 12px', textAlign:'center', fontFamily: Tokens.font.zh,
+              fontSize: 13, color: t.inkSoft, lineHeight: 1.7}}>
+              {board === 'cambridge'
+                ? <>{exam} 话题对话正在陆续上线<br/>敬请期待 ✨</>
+                : '没有找到匹配的场景'}
+            </div>
+          )}
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Screen 3 — 场景详情
+// ═══════════════════════════════════════════════════════════════
+// ─── 剑桥长说(Part 2)范文框架 · 备考教学层 ─────────────────────
+// part2 独白本就是范文;这里把"描图/对比图"的通用答题框架 + 高分表达显性化,
+// 让学生学会套路(不只逐句跟读)。框架按 exam 选,内容通用(不依赖具体话题)。
+const PET_PICTURE_FRAME = {
+  title: '描图万能 4 步',
+  steps: [
+    { n: '1', step: '总览', hint: '先说整体:有谁、在哪里', starter: 'In the picture, I can see…' },
+    { n: '2', step: '细节', hint: '用现在进行时说动作、物品', starter: 'She is …ing / There is / are…' },
+    { n: '3', step: '推测', hint: '推测时间、心情或原因', starter: 'It looks like… / maybe / probably…' },
+    { n: '4', step: '收尾', hint: '一句个人感受收尾', starter: "I think it's…" },
+  ],
+  phrases: [
+    { label: '开头', ws: 'In the picture · I can see · There is/are' },
+    { label: '动作', ws: 'She/He is …ing · They are …ing' },
+    { label: '推测', ws: 'It looks like · maybe · probably · I think' },
+    { label: '连接', ws: 'because · so · and · but' },
+  ],
+  draft: [
+    { en: 'In the picture, I can see ___.', zh: '照片里有谁 / 什么' },
+    { en: 'It looks like ___, because ___.', zh: '推测时间或地点 + 原因' },
+    { en: '___ is ___ing.', zh: '谁在做什么（现在进行时）' },
+    { en: 'He / She looks ___.', zh: '心情或样子' },
+    { en: 'I think ___.', zh: '你的个人感受' },
+  ],
+};
+const FCE_COMPARE_FRAME = {
+  title: '对比两图 4 步',
+  steps: [
+    { n: '1', step: '总览', hint: '一句点出两图共同主题', starter: 'Both pictures show…' },
+    { n: '2', step: '对比', hint: '比较两张图的不同', starter: 'In the first…, while in the second…' },
+    { n: '3', step: '推测', hint: '推测人物感受/原因', starter: 'The people might feel… because…' },
+    { n: '4', step: '回应', hint: '回答考官对你的追问', starter: 'I would prefer… because…' },
+  ],
+  phrases: [
+    { label: '对比', ws: 'while · whereas · on the other hand' },
+    { label: '推测', ws: 'might/could be · perhaps · seem to' },
+    { label: '观点', ws: 'I would prefer · In my opinion · personally' },
+    { label: '连接', ws: 'because · although · however' },
+  ],
+  draft: [
+    { en: 'Both pictures show ___.', zh: '两张图的共同主题' },
+    { en: 'In the first picture ___, while in the second ___.', zh: '对比两图的不同' },
+    { en: 'The people might feel ___, because ___.', zh: '推测感受 + 原因' },
+    { en: 'Personally, I would prefer ___, because ___.', zh: '你的选择 + 理由' },
+  ],
+};
+
+// 开口支架:范文(照着背)→ 起头(给开头,你续)→ 草稿(带空,你填),三档强度递减,
+// 对应"扶着走→半扶→放手"。范文用现有 part2,起头用框架 starter,草稿用通用 draft 骨架。
+function ModelFrameCard({ t, exam, essay }) {
+  const f = exam === 'FCE' ? FCE_COMPARE_FRAME : PET_PICTURE_FRAME;
+  const [mode, setMode] = React.useState('essay');
+  const modes = [
+    { k: 'essay',   label: '📖 范文', desc: '照着说,先建立语感' },
+    { k: 'starter', label: '✏️ 起头', desc: '我给开头,你接着往下说' },
+    { k: 'draft',   label: '📝 草稿', desc: '把空填上,就是你自己的一段' },
+  ];
+  const cur = modes.find(m => m.k === mode) || modes[0];
+  const blank = (key) => (
+    <span key={key} style={{display:'inline-block', minWidth: 40, borderBottom:`2px solid ${t.accent}`, margin:'0 3px', verticalAlign:'middle'}}/>
+  );
+  return (
+    <div style={{padding:'20px 20px 0'}}>
+      <div className="eyebrow-gold" style={{marginBottom: 10, display:'flex', alignItems:'center', gap: 7}}>
+        <Icon.Sparkle size={12} color={t.sun}/> 开口支架 · {f.title}
+      </div>
+      <div style={{background: t.surface, borderRadius: 20, padding: 16, border:`1px solid ${t.line}`}}>
+        <div style={{display:'flex', background: t.surfaceAlt, borderRadius: 12, padding: 3, gap: 2, marginBottom: 10}}>
+          {modes.map(m => (
+            <button key={m.k} onClick={() => setMode(m.k)} style={{
+              flex: 1, appearance:'none', border: 0, cursor:'pointer', padding:'8px 4px', borderRadius: 10,
+              background: mode === m.k ? t.surface : 'transparent',
+              color: mode === m.k ? t.accent : t.inkSoft,
+              fontFamily: Tokens.font.zh, fontSize: 13, fontWeight: mode === m.k ? 700 : 500,
+              boxShadow: mode === m.k ? '0 1px 4px rgba(28,43,51,.12)' : 'none',
+            }}>{m.label}</button>
+          ))}
+        </div>
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkMuted, marginBottom: 14}}>{cur.desc}</div>
+
+        {mode === 'essay' && (
+          <div style={{display:'flex', flexDirection:'column', gap: 11}}>
+            {(essay || []).map((sen, i) => (
+              <div key={i}>
+                <div className="serif" style={{fontSize: 15.5, color: t.ink, lineHeight: 1.4}}>{sen.en}</div>
+                <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft, marginTop: 2}}>{sen.zh}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {mode === 'starter' && (
+          <div style={{display:'flex', flexDirection:'column', gap: 12}}>
+            {f.steps.map((st, i) => (
+              <div key={i} style={{display:'flex', gap: 12}}>
+                <div style={{
+                  width: 24, height: 24, borderRadius: 9999, background: t.accentSoft, color: t.accent,
+                  display:'flex', alignItems:'center', justifyContent:'center', flexShrink: 0,
+                  fontFamily: Tokens.font.enSans, fontSize: 12, fontWeight: 700, marginTop: 1,
+                }}>{st.n}</div>
+                <div style={{flex: 1, minWidth: 0}}>
+                  <div className="serif" style={{fontSize: 15, color: t.accentDeep}}>{st.starter}</div>
+                  <div style={{fontFamily: Tokens.font.zh, fontSize: 11.5, color: t.inkMuted, marginTop: 2}}>↳ 轮到你:{st.hint}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {mode === 'draft' && (
+          <div style={{display:'flex', flexDirection:'column', gap: 12}}>
+            {(f.draft || []).map((d, i) => (
+              <div key={i}>
+                <div className="serif" style={{fontSize: 15.5, color: t.ink, lineHeight: 1.7}}>
+                  {d.en.split('___').map((seg, j, arr) => (
+                    <React.Fragment key={j}>{seg}{j < arr.length - 1 && blank(j)}</React.Fragment>
+                  ))}
+                </div>
+                <div style={{fontFamily: Tokens.font.zh, fontSize: 11.5, color: t.inkMuted, marginTop: 2}}>{d.zh}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div style={{borderTop:`1px solid ${t.line}`, marginTop: 14, paddingTop: 12}}>
+          <div className="eyebrow" style={{marginBottom: 8, fontSize: 10}}>高分表达 · 万能零件</div>
+          {f.phrases.map((p, i) => (
+            <div key={i} style={{display:'flex', gap: 10, marginBottom: 5, alignItems:'baseline'}}>
+              <span style={{fontFamily: Tokens.font.zh, fontSize: 11, color: t.inkMuted, width: 28, flexShrink: 0}}>{p.label}</span>
+              <span className="serif" style={{fontSize: 13.5, color: t.ink}}>{p.ws}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SceneDetailScreen({ t, scene, onBack, onStart }) {
+  // 详情页预览音频不能带进练习页或下一个场景。
+  React.useEffect(() => () => stopSentenceAudio(), [scene?.id]);
+  const s = scene || SCENES[0];
+  const previewLimit = 5;
+  const tiers = (s.tiers && s.tiers.length > 0) ? s.tiers : [{
+    level: 'beginner', label: '初级', sents: (s.sentences || []).length, sentences: s.sentences || [],
+  }];
+  const [tierLevel, setTierLevel] = React.useState(
+    tiers.find(x => x.level === 'beginner')?.level || tiers[0].level
+  );
+  const tier = tiers.find(x => x.level === tierLevel) || tiers[0];
+  const preview = (tier.sentences || []).slice(0, previewLimit);
+  const learn = s.learn || [];
+  const description = s.description || '';
+  return (
+    <div style={{background: t.bg, minHeight:'100%', paddingBottom: 40}}>
+      <div style={{
+        padding:'calc(env(safe-area-inset-top,0px) + 48px) 20px 30px', position:'relative', overflow:'hidden',
+        background: `linear-gradient(180deg, ${hexA(t.accentSoft, 0.6)}, ${hexA(t.accentSoft, 0)})`,
+      }}>
+        <button className="tap" onClick={onBack} style={{
+          appearance:'none', background: t.surface, cursor:'pointer',
+          width: 38, height: 38, borderRadius: 9999, border:`1px solid ${t.line}`,
+          display:'flex', alignItems:'center', justifyContent:'center', marginBottom: 20,
+        }}><Icon.Back size={18} color={t.ink}/></button>
+        <div style={{display:'flex', alignItems:'flex-end', gap: 14, marginBottom: 16}}>
+          <SceneGlyph kind={s.k} t={t} size={72}/>
+          <div>
+            {s.id === 'starbucks' && <Chip t={t} tone="sun" style={{marginBottom: 8}}>今日推荐</Chip>}
+            {s.track === 'cambridge' && s.examPart && <Chip t={t} tone="accent" style={{marginBottom: 8}}>{s.exam} · {s.examPart}</Chip>}
+            {s.isNew && <Chip t={t} tone="sun" style={{marginBottom: 8}}>新</Chip>}
+            <div className="serif" style={{fontSize: 26, fontWeight: 700, color: t.ink, lineHeight: 1.15}}>{s.title}</div>
+          </div>
+        </div>
+        <div className="lede" style={{fontSize: 16, color: t.inkSoft}}>{s.sub}</div>
+      </div>
+
+      {tiers.length > 1 && (
+        <div style={{padding:'0 20px 12px'}}>
+          <div className="eyebrow" style={{marginBottom: 10}}>{s.track === 'cambridge' ? '练习部分' : '难度档位'}</div>
+          <div style={{display:'flex', gap: 8, overflowX:'auto'}}>
+            {tiers.map(x => {
+              const on = x.level === tierLevel;
+              return (
+                <button key={x.level} className="tap" onClick={() => setTierLevel(x.level)} style={{
+                  appearance:'none', border: on ? 'none' : `1px solid ${t.line}`,
+                  background: on ? t.surface : 'transparent',
+                  boxShadow: on ? '0 1px 4px rgba(28,43,51,.12)' : 'none',
+                  padding:'8px 16px', borderRadius: 13, cursor:'pointer',
+                  whiteSpace:'nowrap', flexShrink: 0, textAlign:'center',
+                }}>
+                  <div className="serif" style={{fontSize: 14, fontWeight: 700, color: on ? t.accent : t.inkSoft}}>
+                    {x.label}
+                  </div>
+                  <div style={{fontFamily: Tokens.font.zh, fontSize: 10, color: t.inkMuted}}>
+                    {x.sents} 句
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      <div style={{margin:'0 20px', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap: 12}}>
+        {[
+          {l:'时长', v:`${s.mins} 分钟`},
+          {l:'句子', v:`${tier.sents} 句`},
+          {l:'难度', v: tier.label},
+        ].map(m => (
+          <div key={m.l} style={{
+            background: t.surface, borderRadius: 13, padding:'16px 12px',
+            border:`1px solid ${t.line}`, textAlign:'center',
+          }}>
+            <div className="eyebrow" style={{marginBottom: 6, fontSize: 10}}>{m.l}</div>
+            <div className="serif" style={{fontSize: 17, fontWeight: 700, color: t.ink}}>{m.v}</div>
+          </div>
+        ))}
+      </div>
+
+      {s.track === 'cambridge' ? (
+        <>
+          {s.examTip && (
+            <div style={{padding:'20px 20px 0'}}>
+              <div className="eyebrow-gold" style={{marginBottom: 10, display:'flex', alignItems:'center', gap: 7}}>
+                <Icon.Sparkle size={12} color={t.sun}/> 考点提示
+              </div>
+              <div style={{background: t.surface, borderRadius: 20, padding: 16, border:`1px solid ${t.line}`}}>
+                <span style={{display:'inline-flex', alignItems:'center', gap: 5,
+                  background: t.accentSoft, color: t.accent, fontFamily: Tokens.font.zh,
+                  fontSize: 12, fontWeight: 700, borderRadius: 999, padding:'4px 12px', marginBottom: 12}}>
+                  🎯 {s.examPart || '口语'}
+                </span>
+                <div style={{fontFamily: Tokens.font.zh, fontSize: 14, color: t.ink, lineHeight: 1.7}}>
+                  {s.examTip.split('\n').map((line, i) => (
+                    <div key={i} style={{marginBottom: 5}}>
+                      {line.split(/(\*\*[^*]+\*\*)/g).map((seg, j) =>
+                        /^\*\*[^*]+\*\*$/.test(seg)
+                          ? <strong key={j} style={{color: t.accentDeep, fontWeight: 700}}>{seg.slice(2, -2)}</strong>
+                          : seg
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+          {s.templates && s.templates.length > 0 && (
+            <div style={{padding:'20px 20px 0'}}>
+              <div className="eyebrow" style={{marginBottom: 10}}>答题锦囊 · 万能句型</div>
+              <div style={{background: t.surface, borderRadius: 20, border:`1px solid ${t.line}`, overflow:'hidden'}}>
+                {s.templates.map((tpl, i, arr) => (
+                  <div key={i} style={{padding:'13px 16px', display:'flex', alignItems:'center', gap: 12,
+                    borderBottom: i < arr.length-1 ? `1px solid ${t.line}` : 'none'}}>
+                    <div className="serif" style={{flex: 1, minWidth: 0, fontSize: 16, color: t.ink, lineHeight: 1.4}}>{tpl.en}</div>
+                    <span style={{fontFamily: Tokens.font.zh, fontSize: 11, color: t.inkMuted, flexShrink: 0,
+                      background: t.surfaceAlt, borderRadius: 999, padding:'3px 9px'}}>{tpl.zh}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {tier.level === 'part2' && <ModelFrameCard t={t} exam={s.exam} essay={tier.sentences}/>}
+        </>
+      ) : (
+        <div style={{padding:'20px 20px 0'}}>
+          <div className="eyebrow" style={{marginBottom: 10}}>使用场景</div>
+          <div style={{
+            background: t.surface, borderRadius: 20, padding: 16,
+            border:`1px solid ${t.line}`,
+            fontFamily: Tokens.font.zh, fontSize: 14, color: t.ink, lineHeight: 1.6,
+          }}>
+            {description}
+          </div>
+        </div>
+      )}
+
+      <div style={{padding:'20px 20px 0'}}>
+        <div className="eyebrow" style={{marginBottom: 10}}>本课将学会</div>
+        <div style={{background: t.surface, borderRadius: 20, border:`1px solid ${t.line}`, overflow:'hidden'}}>
+          {learn.map((x, i, arr) => (
+            <div key={i} style={{
+              padding:'13px 16px', display:'flex', alignItems:'center', gap: 10,
+              borderBottom: i < arr.length-1 ? `1px solid ${t.line}` : 'none',
+            }}>
+              <div style={{
+                width: 20, height: 20, borderRadius: 9999, background: t.sageSoft,
+                display:'flex', alignItems:'center', justifyContent:'center',
+              }}><Icon.Check size={12} color={t.sage}/></div>
+              <span style={{fontFamily: Tokens.font.zh, fontSize: 14, color: t.ink}}>{x}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {!(s.track === 'cambridge' && tier.level === 'part2') && (
+      <div style={{padding:'20px 20px 0'}}>
+        <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom: 10}}>
+          <div className="eyebrow">核心句子 · 预览 {preview.length} 句</div>
+          <span style={{fontFamily: Tokens.font.zh, fontSize: 11, color: t.inkMuted}}>共 {tier.sents} 句</span>
+        </div>
+        <div style={{background: t.surface, borderRadius: 20, border:`1px solid ${t.line}`, padding:'6px 0'}}>
+          {preview.map((p, i) => (
+            <div key={i} style={{padding:'12px 16px', borderBottom: i < preview.length-1 ? `1px solid ${t.line}` : 'none'}}>
+              <div style={{display:'flex', alignItems:'flex-start', gap: 10}}>
+                <div style={{
+                  width: 22, height: 22, borderRadius: 9999, background: t.surfaceAlt,
+                  display:'flex', alignItems:'center', justifyContent:'center', flexShrink: 0, marginTop: 2,
+                  fontFamily: Tokens.font.enSans, fontSize: 11, color: t.inkSoft, fontWeight: 600,
+                }}>{i+1}</div>
+                <div style={{flex: 1}}>
+                  <div className="serif" style={{fontSize: 17, color: t.ink, lineHeight: 1.4}}>{p.en}</div>
+                  <div style={{fontFamily: Tokens.font.zh, fontSize: 12.5, color: t.inkSoft, marginTop: 3}}>{p.zh}</div>
+                </div>
+                <button className="tap" onClick={() => playSentenceAudio(p, { voice: p.voice || 'rosie' })}
+                  aria-label={`播放句子：${p.en}`} style={{
+                  appearance:'none', border: 0, background: t.surfaceAlt, cursor:'pointer',
+                  width: 28, height: 28, borderRadius: 9999,
+                  display:'flex', alignItems:'center', justifyContent:'center', flexShrink: 0, marginTop: 2,
+                }}><Icon.Play size={11} color={t.ink}/></button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      )}
+
+      <div style={{
+        position:'sticky', bottom: 0, marginTop: 20,
+        background: 'var(--tabbar-bg)',
+        backdropFilter:'saturate(180%) blur(14px)', WebkitBackdropFilter:'saturate(180%) blur(14px)',
+        borderTop:`1px solid ${t.line}`,
+        padding:'14px 20px calc(16px + env(safe-area-inset-bottom, 0px))',
+      }}>
+        <PrimaryButton t={t} block onClick={() => onStart(tier)}>
+          <Icon.Mic size={18} color="#fff"/>{s.track === 'cambridge' && tier.level === 'part2' ? '跟读范文' : '开始跟读'} · {tier.label}
+        </PrimaryButton>
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Screen 4 — 跟读练习（核心）
+// ═══════════════════════════════════════════════════════════════
+
+function WaveformMic({ t, phase, onClick }) {
+  const recording = phase === 'recording';
+  const analyzing = phase === 'analyzing';
+  const bars = 32;
+  const [, tick] = React.useState(0);
+  React.useEffect(() => {
+    if (!recording) return;
+    const id = setInterval(() => tick(n => n + 1), 80);
+    return () => clearInterval(id);
+  }, [recording]);
+  return (
+    <button onClick={onClick} style={{
+      appearance:'none', border: 0, background:'transparent', cursor:'pointer', padding: 0,
+      position:'relative', width: 132, height: 132,
+    }}>
+      {recording && (
+        <div style={{
+          position:'absolute', inset:-8, borderRadius: 9999,
+          background: hexA(t.accent, 0.12),
+          animation:'ringpulse 1.4s ease-out infinite',
+        }}/>
+      )}
+      <svg width="132" height="132" viewBox="0 0 132 132" style={{position:'absolute', inset: 0}}>
+        {Array.from({length: bars}).map((_, i) => {
+          const angle = (i / bars) * 2 * Math.PI - Math.PI / 2;
+          const len = recording
+            ? 8 + Math.sin(i * 0.7 + Date.now() / 200) * 6 + Math.random() * 4
+            : 3;
+          const r1 = 55, r2 = 55 + len;
+          const x1 = 66 + Math.cos(angle) * r1, y1 = 66 + Math.sin(angle) * r1;
+          const x2 = 66 + Math.cos(angle) * r2, y2 = 66 + Math.sin(angle) * r2;
+          return (<line key={i} x1={x1} y1={y1} x2={x2} y2={y2}
+            stroke={recording ? t.accent : t.accentDeep} strokeWidth="2" strokeLinecap="round"
+            opacity={recording ? 0.7 + Math.random() * 0.3 : 0.5}/>);
+        })}
+      </svg>
+      <div style={{
+        position:'absolute', inset: 22, borderRadius: 9999,
+        background: recording
+          ? `radial-gradient(circle at 30% 30%, ${t.accentDeep}, ${t.accent})`
+          : `radial-gradient(circle at 30% 30%, ${t.accent}, ${t.accentDeep})`,
+        boxShadow: `0 10px 28px -14px rgba(28,43,51,0.45)`,
+        display:'flex', alignItems:'center', justifyContent:'center',
+        transform: recording ? 'scale(0.94)' : 'scale(1)',
+        transition:'transform 0.2s',
+      }}>
+        {analyzing
+          ? <div style={{
+              width: 24, height: 24, border:'3px solid rgba(255,255,255,0.3)',
+              borderTopColor:'#fff', borderRadius: 9999, animation:'spin 0.8s linear infinite',
+            }}/>
+          : <Icon.Mic size={40} color="#fff" sw={2}/>
+        }
+      </div>
+    </button>
+  );
+}
+
+function AudioBars({ t }) {
+  return (
+    <div style={{display:'flex', alignItems:'center', gap: 2, height: 12}}>
+      {[0.6, 1, 0.7, 1.2, 0.5].map((h, i) => (
+        <div key={i} style={{
+          width: 2, background: t.accent, borderRadius: 2,
+          height: `${h * 10}px`,
+          animation:`audiobar 0.9s ease-in-out ${i * 0.1}s infinite alternate`,
+        }}/>
+      ))}
+    </div>
+  );
+}
+
+function WaveformRow({ label, bars, t, color }) {
+  return (
+    <div style={{display:'flex', alignItems:'center', gap: 10}}>
+      <span style={{fontFamily: Tokens.font.zh, fontSize: 10, color: t.inkMuted, width: 24, flexShrink: 0}}>{label}</span>
+      <div style={{display:'flex', alignItems:'center', gap: 2, height: 20, flex: 1}}>
+        {bars.map((h, i) => (
+          <div key={i} style={{
+            flex: 1, height: `${h * 1.2}px`, background: color,
+            borderRadius: 2, opacity: 0.85,
+          }}/>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// 把预分词 words 对齐回原句 en：给每个词带上它在原文里的前导/尾随标点
+// （逗号、句号、问号、引号等）。words 分词时剥掉了标点，直接 join 空格会
+// 让 "There are four. I live..." 这类多分句糊成一团 —— 渲染必须走这里。
+function tokensWithPunct(en, words) {
+  const out = [];
+  let pos = 0;
+  (words || []).forEach(w => {
+    const i = (en || '').indexOf(w, pos);
+    if (i === -1) { out.push({ lead: '', word: w, trail: '' }); return; }
+    const lead = en.slice(pos, i).trim(); // 词前符号（前导引号等；空格丢弃）
+    let j = i + w.length, trail = '';
+    while (j < en.length && !/\s/.test(en[j])) { trail += en[j]; j++; }
+    out.push({ lead, word: w, trail });
+    pos = j;
+  });
+  return out;
+}
+
+function FeedbackCard({ t, sentence, result }) {
+  // 只有 graded=true 才展示识别分数和发音结论；降级时明确标记未评分。
+  // kind='pron' = SOE 真发音评测（音素级）；kind='speech' = Web Speech 词句完整度。
+  const graded = !!result && result.graded === true;
+  const isPron = graded && result.kind === 'pron';
+  const score = graded ? result.score : null;
+  const ok = graded ? score >= 60 : true;
+  const title = !graded ? '已完成跟读'
+    : isPron
+      ? (score >= 85 ? '发音很棒！' : score >= 60 ? '不错，个别词再抠一抠' : '再来一遍会更好')
+      : (score >= 90 ? '漂亮，几乎全对！' : score >= 60 ? '很接近了' : '再来一遍会更好');
+  const tone = ok ? t.sage : t.sun;
+  const toneSoft = ok ? t.sageSoft : t.sunSoft;
+  const missedWords = graded && !isPron ? result.missed.map(i => sentence.words[i]).filter(Boolean) : [];
+  const pronWeak = isPron
+    ? (result.wordScores || []).filter(w => w.accuracy != null && w.accuracy < 85)
+        .sort((a, b) => a.accuracy - b.accuracy).slice(0, 3)
+    : [];
+  return (
+    <div style={{
+      background: t.surface, borderRadius: 20, padding: 16,
+      border:`1px solid ${t.line}`, boxShadow: Tokens.shadow.sm,
+      animation:'fadein 0.35s ease-out',
+    }}>
+      <div style={{display:'flex', alignItems:'center', gap: 8, marginBottom: 12}}>
+        <div style={{
+          width: 22, height: 22, borderRadius: 9999, background: toneSoft,
+          display:'flex', alignItems:'center', justifyContent:'center',
+        }}><Icon.Check size={12} color={tone}/></div>
+        <span style={{fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 600, color: tone}}>{title}</span>
+        <span style={{marginLeft:'auto', fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft}}>
+          {graded ? (isPron ? `发音 ${score} 分` : `词句完整度 ${score}%`) : '本句未评分'}
+        </span>
+      </div>
+      {isPron && (
+        <div style={{display:'flex', gap: 8, marginBottom: 10}}>
+          {[
+            {n: result.pron.accuracy, l:'准确度'},
+            {n: result.pron.fluency, l:'流利度'},
+            {n: result.pron.completion, l:'完整度'},
+          ].map(d => (
+            <div key={d.l} style={{flex: 1, background: t.surfaceAlt, borderRadius: 12, padding:'8px 6px', textAlign:'center'}}>
+              <div className="serif" style={{fontSize: 18, fontWeight: 700, color: t.ink, fontVariantNumeric:'tabular-nums'}}>{d.n}</div>
+              <div style={{fontFamily: Tokens.font.zh, fontSize: 10, color: t.inkMuted, marginTop: 2}}>{d.l}</div>
+            </div>
+          ))}
+        </div>
+      )}
+      {isPron && pronWeak.length > 0 && (
+        <div style={{
+          background: t.sunSoft, borderRadius: 12, padding:'10px 12px',
+          fontFamily: Tokens.font.zh, fontSize: 12.5, color: t.inkSoft, lineHeight: 1.6,
+        }}>
+          这几个词的发音再练练：
+          {pronWeak.map(w => {
+            const badPhones = (w.phones || []).filter(p => typeof p.accuracy === 'number' && p.accuracy < 70)
+              .map(p => p.phone).filter(Boolean).slice(0, 3);
+            return (
+              <div key={w.i} style={{marginTop: 4}}>
+                <b className="serif" style={{fontWeight: 700, fontSize: 14, color: t.ink}}>{w.word}</b>
+                <span style={{marginLeft: 6, color: t.inkMuted}}>{w.accuracy} 分</span>
+                {badPhones.length > 0 && <span style={{marginLeft: 8, color: t.inkMuted, fontSize: 11.5}}>薄弱音素 {badPhones.join(' · ')}</span>}
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {isPron && pronWeak.length === 0 && (
+        <div style={{
+          background: t.sageSoft, borderRadius: 12, padding:'10px 12px',
+          fontFamily: Tokens.font.zh, fontSize: 12.5, color: t.inkSoft, lineHeight: 1.5,
+        }}>
+          每个词的发音都到位，非常棒 👏
+        </div>
+      )}
+      {!graded && (
+        <div style={{
+          background: t.surfaceAlt, borderRadius: 12, padding:'10px 12px',
+          fontFamily: Tokens.font.zh, fontSize: 12.5, color: t.inkSoft, lineHeight: 1.55,
+        }}>
+          当前设备未完成语音识别。本句只记录“已跟读”，不生成分数或发音结论。
+        </div>
+      )}
+      {graded && result.heard && (
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 12.5, color: t.inkSoft, lineHeight: 1.6, marginBottom: 8}}>
+          听到你说：<span className="serif" style={{color: t.ink, fontSize: 14}}>“{result.heard}”</span>
+        </div>
+      )}
+      {graded && !isPron && missedWords.length > 0 && (
+        <div style={{
+          background: t.sunSoft, borderRadius: 12, padding:'10px 12px',
+          fontFamily: Tokens.font.zh, fontSize: 12.5, color: t.inkSoft, lineHeight: 1.5,
+        }}>
+          这几个词没有识别到，再读一遍试试：<b style={{fontWeight: 600}}>{missedWords.join('、')}</b>
+        </div>
+      )}
+      {graded && !isPron && missedWords.length === 0 && (
+        <div style={{
+          background: t.sageSoft, borderRadius: 12, padding:'10px 12px',
+          fontFamily: Tokens.font.zh, fontSize: 12.5, color: t.inkSoft, lineHeight: 1.5,
+        }}>
+          每个目标词都识别到了，非常棒 👏
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── 发音评测引擎（腾讯云 SOE · 同域 /api/soe）────────────────────
+// 第一优先级评测：真实音素级发音打分（准确度/流利度/完整度 + 逐词 + 音素）。
+// 前端自录 16k PCM（iOS Safari + 微信 web-view 已真机验证）→ POST /api/soe →
+// ECS 代理经 WebSocket 调腾讯云新版 SOE。失败（网络/服务器）时本会话降级到
+// Web Speech；429 限流只提示稍后重试，不降级。麦克风被拒 → 直接走未评分。
+const Pron = {
+  degraded: false, // 本会话内评测服务不可用（网络/5xx 后不再反复尝试）
+  endpoint: '/api/soe',
+  available() {
+    if (this.degraded) return false;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    return !!(AC && navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+  },
+  // 开始录音；返回句柄 { stop(): Promise<{voiceB64,seconds,rms}>, abort() }。
+  async record() {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true },
+    });
+    const AC = window.AudioContext || window.webkitAudioContext;
+    const ctx = new AC();
+    if (ctx.state === 'suspended') { try { await ctx.resume(); } catch (err) {} }
+    const sampleRate = ctx.sampleRate;
+    const src = ctx.createMediaStreamSource(stream);
+    const proc = ctx.createScriptProcessor(4096, 1, 1);
+    const chunks = [];
+    proc.onaudioprocess = e => chunks.push(new Float32Array(e.inputBuffer.getChannelData(0)));
+    src.connect(proc); proc.connect(ctx.destination);
+    let closed = false;
+    const cleanup = () => {
+      if (closed) return; closed = true;
+      try { proc.disconnect(); src.disconnect(); } catch (err) {}
+      try { stream.getTracks().forEach(tr => tr.stop()); } catch (err) {}
+      try { ctx.close(); } catch (err) {}
+    };
+    return {
+      stop() {
+        cleanup();
+        let total = 0; chunks.forEach(c => { total += c.length; });
+        const pcm = new Float32Array(total);
+        let o = 0; chunks.forEach(c => { pcm.set(c, o); o += c.length; });
+        // 重采样到 16k（多数 iOS 设备 AudioContext 直出 16000，零损耗直通）
+        let out = pcm;
+        if (sampleRate !== 16000) {
+          const ratio = sampleRate / 16000, len = Math.floor(pcm.length / ratio);
+          out = new Float32Array(len);
+          for (let i = 0; i < len; i++) out[i] = pcm[Math.floor(i * ratio)];
+        }
+        let sum = 0; for (let i = 0; i < pcm.length; i++) sum += pcm[i] * pcm[i];
+        const rms = total ? Math.sqrt(sum / total) : 0;
+        // Float32 → 16bit PCM → base64
+        const buf = new ArrayBuffer(out.length * 2), view = new DataView(buf);
+        for (let i = 0; i < out.length; i++) {
+          const v = Math.max(-1, Math.min(1, out[i]));
+          view.setInt16(i * 2, v < 0 ? v * 0x8000 : v * 0x7FFF, true);
+        }
+        let bin = ''; const bytes = new Uint8Array(buf);
+        const STEP = 0x8000;
+        for (let i = 0; i < bytes.length; i += STEP) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + STEP));
+        return { voiceB64: btoa(bin), seconds: total / sampleRate, rms };
+      },
+      abort: cleanup,
+    };
+  },
+  // 上传评测；失败 throw {status}。20s 超时。
+  async assess(refText, voiceB64) {
+    const ctrl = new AbortController();
+    const to = setTimeout(() => ctrl.abort(), 20000);
+    try {
+      const res = await fetch(this.endpoint, {
+        method: 'POST', signal: ctrl.signal,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ refText, voiceData: voiceB64 }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || data.error) { const e = new Error(data.error || ('HTTP ' + res.status)); e.status = res.status; throw e; }
+      return data; // {suggestedScore, pronAccuracy, pronFluency, pronCompletion, words:[{word,accuracy,phones}]}
+    } finally { clearTimeout(to); }
+  },
+  // SOE 词序结果对齐到本句 words 索引（顺序配对 + 归一化词形校验 + 前瞻重同步）。
+  align(targetWords, soeWords) {
+    const clean = w => (w || '').toLowerCase().replace(/[^a-z0-9']/g, '');
+    const out = targetWords.map((w, i) => ({ i, word: w, accuracy: null, phones: [] }));
+    let si = 0;
+    for (let ti = 0; ti < targetWords.length; ti++) {
+      const tgt = clean(targetWords[ti]);
+      if (!tgt) continue;
+      if (si >= (soeWords || []).length) break;
+      let pick = -1;
+      for (let k = si; k < Math.min(si + 3, soeWords.length); k++) {
+        if (clean(soeWords[k].word) === tgt) { pick = k; break; }
+      }
+      if (pick === -1) pick = si; // 词形对不上时按顺序兜底（SOE Words 与参考文本同序）
+      const sw = soeWords[pick];
+      out[ti].accuracy = (typeof sw.accuracy === 'number' && sw.accuracy >= 0) ? Math.round(sw.accuracy) : null;
+      out[ti].phones = Array.isArray(sw.phones) ? sw.phones : [];
+      si = pick + 1;
+    }
+    return out;
+  },
+};
+
+// ─── 语音识别引擎（Web Speech API）───────────────────────────────
+// 二级回落：浏览器原生 SpeechRecognition（只判词句完整度，不评发音质量）。
+// Safari/iOS 走 Apple 识别服务（国内可用）；Chrome 走 Google 服务（国内不通），
+// 首次 network/权限错误后本次会话自动降级 —— PracticeScreen 无缝回落原
+// setTimeout 模拟流程，UI 完全不变。需要 HTTPS/localhost（生产站满足）。
+const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+const Speech = {
+  degraded: false, // 本次会话内永久降级（网络/权限失败后不再反复尝试卡录音）
+  available() { return !!SpeechRec && !this.degraded; },
+  // 一次性听写，结果/错误经回调返回；句柄可 stop（提前结束取已有结果）/abort（丢弃）。
+  listen({ onResult, onError }) {
+    const rec = new SpeechRec();
+    rec.lang = 'en-US';
+    rec.continuous = false;
+    rec.interimResults = true;
+    rec.maxAlternatives = 1;
+    let finalText = '', interim = '', settled = false;
+    rec.onresult = (e) => {
+      interim = '';
+      for (let i = 0; i < e.results.length; i++) {
+        const r = e.results[i];
+        if (r.isFinal) finalText += r[0].transcript + ' ';
+        else interim += r[0].transcript + ' ';
+      }
+    };
+    rec.onerror = (e) => {
+      if (settled) return; settled = true;
+      const kind = e.error || 'unknown';
+      if (kind === 'network' || kind === 'not-allowed' || kind === 'service-not-allowed') Speech.degraded = true;
+      onError(kind);
+    };
+    rec.onend = () => {
+      if (settled) return; settled = true;
+      onResult((finalText || interim).trim());
+    };
+    try { rec.start(); } catch (err) {
+      Speech.degraded = true;
+      if (!settled) { settled = true; onError('start-failed'); }
+    }
+    return {
+      stop:  () => { try { rec.stop(); } catch (err) {} },
+      abort: () => { settled = true; try { rec.abort(); } catch (err) {} },
+    };
+  },
+};
+
+// 词级比对：目标句 words vs 识别文本。顺序贪心匹配（含乱序兜底，宽容为先——
+// 面向开口焦虑用户，宁可少扣不多扣）。返回 {missed 漏词索引, heard, score}。
+// 缩写等价表：识别引擎常把 "I'm" 转写成 "I am"，不补齐会高频误伤口语内容。
+const CONTRACTIONS = {
+  "i'm":'i am', "it's":'it is', "that's":'that is', "what's":'what is', "there's":'there is',
+  "he's":'he is', "she's":'she is', "let's":'let us', "who's":'who is', "how's":'how is',
+  "don't":'do not', "doesn't":'does not', "didn't":'did not', "can't":'can not', "won't":'will not',
+  "isn't":'is not', "aren't":'are not', "wasn't":'was not', "weren't":'were not',
+  "wouldn't":'would not', "couldn't":'could not', "shouldn't":'should not',
+  "haven't":'have not', "hasn't":'has not', "hadn't":'had not',
+  "i'll":'i will', "you'll":'you will', "we'll":'we will', "he'll":'he will', "she'll":'she will',
+  "i've":'i have', "you've":'you have', "we've":'we have', "they've":'they have',
+  "i'd":'i would', "you'd":'you would', "we'd":'we would',
+  "you're":'you are', "we're":'we are', "they're":'they are',
+};
+const normWord = (w) => (w || '').toLowerCase().replace(/[^a-z0-9']/g, '');
+function matchWords(targetWords, transcript) {
+  const heardRaw = (transcript || '').split(/\s+/).filter(Boolean);
+  const heard = heardRaw.map(normWord);
+  const missed = [];
+  const used = new Set();
+  let hi = 0, matched = 0;
+  // 在 heard 里找尚未消耗的单词（先顺序、再乱序兜底）。
+  const findWord = (tgt) => {
+    for (let j = hi; j < heard.length; j++) if (!used.has(j) && heard[j] === tgt) return [j];
+    for (let j = 0; j < hi; j++) if (!used.has(j) && heard[j] === tgt) return [j];
+    return -1;
+  };
+  // 找连续且均未消耗的词组（缩写展开形式，如 ['i','am']）。
+  const findSeq = (seq) => {
+    const starts = [
+      ...Array.from({length: Math.max(0, heard.length - hi)}, (_, i) => hi + i),
+      ...Array.from({length: Math.min(hi, heard.length)}, (_, i) => i),
+    ];
+    for (const j of starts) {
+      if (j + seq.length > heard.length) continue;
+      const indexes = seq.map((_, k) => j + k);
+      if (indexes.every((pos, k) => !used.has(pos) && heard[pos] === seq[k])) return indexes;
+    }
+    return -1;
+  };
+  targetWords.forEach((tw, i) => {
+    const tgt = normWord(tw);
+    if (!tgt) { matched++; return; } // 纯标点 token 视为命中
+    let found = findWord(tgt);
+    if (found === -1 && CONTRACTIONS[tgt]) {
+      const seq = CONTRACTIONS[tgt].split(' ');
+      found = findSeq(seq);                                  // "i'm" ≈ "i am"
+      if (found === -1) found = findWord(seq.join(''));      // "can't" ≈ "cannot"
+    }
+    if (found !== -1) {
+      found.forEach(pos => used.add(pos));
+      matched++;
+      hi = Math.max(hi, found[found.length - 1] + 1);
+    }
+    else missed.push(i);
+  });
+  const score = targetWords.length ? Math.round((matched / targetWords.length) * 100) : 0;
+  return { missed, heard: heardRaw.join(' '), score };
+}
+
+function PracticeScreen({ t, scene, sentences, onBack, onComplete, chipLabel, context }) {
+  const sents = sentences || (scene && scene.sentences) || [];
+  const [idx, setIdx] = React.useState(0);
+  // phase 只表示用户尝试状态；示范播放使用独立 playback，不再破坏 feedback。
+  const [phase, setPhase] = React.useState('idle');
+  const [playback, setPlayback] = React.useState('idle');
+  const [speed, setSpeed] = React.useState('normal');
+  // 本句结果：graded=true 才是真实识别；graded=false 只记录完成跟读。
+  const [result, setResult] = React.useState(null);
+  const [hint, setHint] = React.useState(null); // 无声等软提示
+  const recRef = React.useRef(null);      // 进行中的识别句柄
+  const timersRef = React.useRef([]);     // 降级流程/守护 timeout（切句、卸载时清理）
+  const playbackTimerRef = React.useRef(null);
+  const attemptResults = React.useRef({}); // idx -> 真实评分或未评分记录
+  const sessionStartedAt = React.useRef(Date.now());
+  const total = sents.length;
+  const s = sents[idx];
+  const progress = total > 0 ? ((idx + 1) / total) * 100 : 0;
+  const attemptLocked = phase === 'recording' || phase === 'analyzing';
+
+  const clearTimers = () => { timersRef.current.forEach(clearTimeout); timersRef.current = []; };
+  const stopPlayback = (updateState = true) => {
+    if (playbackTimerRef.current) { clearTimeout(playbackTimerRef.current); playbackTimerRef.current = null; }
+    stopSentenceAudio();
+    if (updateState) setPlayback('idle');
+  };
+  React.useEffect(() => () => { // 卸载：终止识别、示范音频和全部定时器
+    if (recRef.current) recRef.current.abort();
+    clearTimers();
+    stopPlayback(false);
+  }, []);
+
+  // 识别不可用/出错时，允许跟读但不生成任何分数或错句结论。
+  const unscoredFeedback = (fromError, reason = 'speech-unavailable') => {
+    clearTimers();
+    setResult(null);
+    const unscored = { graded:false, reason, missed:[], heard:'', score:null };
+    attemptResults.current[idx] = unscored;
+    const reveal = () => { setResult(unscored); setPhase('feedback'); };
+    if (fromError) { // 已在录音中途失败，直接进识别中→反馈
+      setPhase('analyzing');
+      timersRef.current.push(setTimeout(reveal, 600));
+    } else {
+      setPhase('recording');
+      timersRef.current.push(setTimeout(() => setPhase('analyzing'), 2400));
+      timersRef.current.push(setTimeout(reveal, 3000));
+    }
+  };
+
+  // ── 一级评测：SOE 真发音打分（录音 → 停止 → 上传 /api/soe → 逐词/音素反馈）。
+  // 失败降级顺序：429 仅提示重试；网络/服务器错 → 本会话回落 Web Speech；
+  // 麦克风被拒 → 未评分。全程不伪造分数。
+  const startPronAttempt = () => {
+    setPhase('recording');
+    const target = s;
+    const attemptIdx = idx;
+    let handle = null, finished = false, stopQueued = false, aborted = false;
+    const finalize = async () => {
+      if (finished || !handle) return;
+      finished = true;
+      recRef.current = null;
+      clearTimers();
+      let rec = null;
+      try { rec = handle.stop(); } catch (err) { rec = null; }
+      if (aborted) return;
+      if (!rec || rec.seconds < 0.4 || rec.rms < 0.004) {
+        setPhase('idle'); setHint('没听到声音 — 离麦克风近一点，再试一次'); return;
+      }
+      if (rec.seconds > 30) { setPhase('idle'); setHint('这句录得有点长 — 只读目标句，再试一次'); return; }
+      setPhase('analyzing');
+      try {
+        const a = await Pron.assess(target.en, rec.voiceB64);
+        if (aborted) return;
+        if (!a.words || !a.words.length) { setPhase('idle'); setHint('没听清 — 再读一次试试'); return; }
+        const wordScores = Pron.align(target.words, a.words);
+        const weakIdxs = wordScores.filter(w => w.accuracy != null && w.accuracy < 60).map(w => w.i);
+        const r = {
+          graded: true, kind: 'pron', reason: null,
+          score: Math.round(a.suggestedScore || 0),
+          pron: {
+            accuracy: Math.round(a.pronAccuracy || 0),
+            fluency: Math.round((a.pronFluency || 0) * 100),
+            completion: Math.round((a.pronCompletion || 0) * 100),
+          },
+          wordScores,
+          missed: weakIdxs, // 发音 <60 的词进复练，与词句完整度的 missed 语义对齐
+          heard: '',
+        };
+        attemptResults.current[attemptIdx] = r;
+        setResult(r); setPhase('feedback');
+      } catch (err) {
+        if (aborted) return;
+        if (err && err.status === 429) { setPhase('idle'); setHint('评测请求有点多 — 歇几秒再试'); return; }
+        Pron.degraded = true; // 本会话回落 Web Speech / 未评分
+        unscoredFeedback(true, 'pron-failed');
+      }
+    };
+    recRef.current = {
+      kind: 'pron',
+      stop: () => { stopQueued = true; if (handle) finalize(); },
+      abort: () => {
+        aborted = true; stopQueued = true;
+        if (handle) { try { handle.abort(); } catch (err) {} }
+        recRef.current = null;
+      },
+    };
+    Pron.record().then(h => {
+      handle = h;
+      if (aborted) { try { h.abort(); } catch (err) {} return; }
+      if (stopQueued) finalize();
+    }).catch(() => {
+      if (aborted) return;
+      recRef.current = null;
+      unscoredFeedback(true, 'mic-denied'); // 麦克风被拒/初始化失败：诚实未评分
+    });
+    // 守护：25s 自动收尾，防止一直录着
+    timersRef.current.push(setTimeout(() => {
+      if (recRef.current && recRef.current.kind === 'pron' && handle && !finished) finalize();
+    }, 25000));
+  };
+
+  const handleMic = () => {
+    setHint(null);
+    if (phase === 'recording') { // 再点一下 = 提前结束录音，取已识别文本
+      if (recRef.current) recRef.current.stop();
+      else {
+        const pending = attemptResults.current[idx] || { graded:false, reason:'speech-unavailable', missed:[], heard:'', score:null };
+        clearTimers();
+        setPhase('analyzing');
+        timersRef.current.push(setTimeout(() => { setResult(pending); setPhase('feedback'); }, 350));
+      }
+      return;
+    }
+    if (phase !== 'idle' && phase !== 'feedback') return;
+    stopPlayback();
+    setResult(null);
+    delete attemptResults.current[idx];
+    if (Pron.available()) { startPronAttempt(); return; } // 一级：真发音评测
+    if (!Speech.available()) { unscoredFeedback(false); return; }
+    setPhase('recording');
+    const target = s; // 闭包锁定本句，防止回调时序问题
+    const finish = (transcript) => {
+      recRef.current = null;
+      clearTimers();
+      if (!transcript) { // 没听到：回 idle 软提示，不算一次尝试
+        setPhase('idle');
+        setHint('没听到声音 — 离麦克风近一点，再试一次');
+        return;
+      }
+      setPhase('analyzing');
+      const r = { ...matchWords(target.words, transcript), graded:true, reason:null };
+      attemptResults.current[idx] = r;
+      timersRef.current.push(setTimeout(() => { setResult(r); setPhase('feedback'); }, 500));
+    };
+    recRef.current = Speech.listen({
+      onResult: finish,
+      onError: (kind) => {
+        recRef.current = null;
+        clearTimers();
+        if (kind === 'no-speech') { setPhase('idle'); setHint('没听到声音 — 再试一次'); return; }
+        unscoredFeedback(true, kind); // 网络/权限失败：明确记为未评分
+      },
+    });
+    // 守护：12s 无结果强制收尾（stop 会触发 onend → finish）
+    timersRef.current.push(setTimeout(() => { if (recRef.current) recRef.current.stop(); }, 12000));
+  };
+
+  const handlePlayback = () => {
+    if (attemptLocked) return;
+    if (playback === 'playing') { stopPlayback(); return; }
+    stopPlayback();
+    const audio = playSentenceAudio(s, { voice: s.voice || 'rosie', slow: speed === 'slow' });
+    setPlayback('playing');
+    if (audio) {
+      const done = () => { if (_currentAudio === audio) _currentAudio = null; setPlayback('idle'); };
+      audio.onended = done;
+      audio.onerror = done;
+    } else {
+      playbackTimerRef.current = setTimeout(() => { playbackTimerRef.current = null; setPlayback('idle'); }, 1800);
+    }
+  };
+
+  const next = () => {
+    if (recRef.current) { recRef.current.abort(); recRef.current = null; }
+    clearTimers();
+    stopPlayback();
+    if (idx < total - 1) { setIdx(idx + 1); setPhase('idle'); setResult(null); setHint(null); }
+    else {
+      const completedAt = Date.now();
+      const attempts = sents.map((sentence, i) => {
+        const assessment = attemptResults.current[i] || { graded:false, reason:'not-scored', missed:[], heard:'', score:null };
+        return {
+          ...makeSentenceRef(scene, sentence),
+          sentenceIndex: i,
+          en: sentence.en,
+          zh: sentence.zh,
+          words: sentence.words || [],
+          graded: assessment.graded === true,
+          kind: assessment.graded === true ? (assessment.kind || 'speech') : null,
+          pron: assessment.graded === true && assessment.pron ? assessment.pron : null,
+          reason: assessment.reason || null,
+          heard: assessment.heard || '',
+          score: assessment.graded === true ? assessment.score : null,
+          missed: assessment.graded === true ? [...assessment.missed] : [],
+          missedWords: assessment.graded === true
+            ? assessment.missed.map(wi => sentence.words[wi]).filter(Boolean)
+            : [],
+        };
+      });
+      const scored = attempts.filter(a => a.graded);
+      const averageScore = scored.length
+        ? Math.round(scored.reduce((sum, a) => sum + a.score, 0) / scored.length)
+        : null;
+      const bestAttempt = scored.length
+        ? scored.reduce((best, a) => !best || a.score > best.score ? a : best, null)
+        : null;
+      const missedRefs = attempts
+        .filter(a => a.graded && a.missed.length > 0)
+        .map(a => ({
+          sceneId:a.sceneId, tierLevel:a.tierLevel, sentenceId:a.sentenceId,
+          missed:[...a.missed], missedWords:[...a.missedWords],
+        }));
+      onComplete({
+        scene,
+        sessionResult: {
+          sceneId: scene ? scene.id : null,
+          sceneTitle: scene ? scene.title : '',
+          contextKind: context?.kind || 'default',
+          tierLevel: context?.tierLevel || (sents[0] && sents[0].tierLevel) || 'beginner',
+          startedAt: sessionStartedAt.current,
+          completedAt,
+          durationMs: Math.max(0, completedAt - sessionStartedAt.current),
+          sentenceCount: attempts.length,
+          attempts,
+          scoredCount: scored.length,
+          unscoredCount: attempts.length - scored.length,
+          averageScore,
+          bestAttempt,
+          missedRefs,
+        },
+      });
+    }
+  };
+
+  const leavePractice = () => {
+    if (recRef.current) { recRef.current.abort(); recRef.current = null; }
+    clearTimers();
+    stopPlayback();
+    onBack();
+  };
+
+  if (!s) return null;
+  const chip = chipLabel || `${scene ? scene.title + ' · ' : ''}第 ${idx+1} 句`;
+
+  return (
+    <div style={{background: t.bg, minHeight:'100%', display:'flex', flexDirection:'column', position:'relative'}}>
+      <div style={{padding:'58px 20px 16px', display:'flex', alignItems:'center', gap: 14}}>
+        <button onClick={leavePractice} style={{
+          appearance:'none', border: 0, background:'transparent', cursor:'pointer',
+          width: 32, height: 32, display:'flex', alignItems:'center', justifyContent:'center',
+        }}><Icon.Close size={20} color={t.inkSoft}/></button>
+        <div style={{flex: 1, height: 6, background: t.surfaceAlt, borderRadius: 9999, overflow:'hidden'}}>
+          <div style={{width: `${progress}%`, height:'100%', background: t.sun, borderRadius: 9999, transition:'width 0.4s'}}/>
+        </div>
+        <div style={{fontFamily: Tokens.font.enSans, fontSize: 13, color: t.inkSoft, fontWeight: 600}}>{idx+1}/{total}</div>
+      </div>
+
+      <div style={{padding:'0 20px', marginBottom: 24}}>
+        <Chip t={t} tone="neutral">{chip}</Chip>
+      </div>
+
+      <div style={{padding:'0 20px', flex: 1, display:'flex', flexDirection:'column'}}>
+        <div className="eyebrow" style={{marginBottom: 10}}>中文提示</div>
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 18, color: t.ink, fontWeight: 500, marginBottom: 28, lineHeight: 1.4}}>{s.zh}</div>
+
+        <div className="serif" style={{
+          fontSize: 34, color: t.ink, lineHeight: 1.35,
+          marginBottom: 20, fontWeight: 400,
+        }}>
+          {tokensWithPunct(s.en, s.words).map((tk, i, arr) => {
+            // 反馈期着色：SOE 按逐词发音分（<60 红标/60-84 淡标/≥85 不标）；
+            // 词句完整度只高亮真实漏词；未评分时不伪造任何标注。
+            // 标点来自原句（tokensWithPunct 对齐），淡色显示、不参与着色。
+            let cls = '';
+            if (phase === 'feedback' && result && result.graded) {
+              if (result.kind === 'pron') {
+                const ws = result.wordScores && result.wordScores[i];
+                const acc = ws ? ws.accuracy : null;
+                if (acc != null) cls = acc < 60 ? 'w now' : (acc < 85 ? 'w trail' : '');
+              } else if (result.missed.includes(i)) {
+                cls = 'w now';
+              }
+            }
+            return (
+              <React.Fragment key={i}>
+                {tk.lead && <span style={{color: t.inkMuted}}>{tk.lead}</span>}
+                <span className={cls}>{tk.word}</span>
+                {tk.trail && <span style={{color: t.inkMuted}}>{tk.trail}</span>}
+                {i < arr.length - 1 ? ' ' : ''}
+              </React.Fragment>
+            );
+          })}
+        </div>
+
+        <div style={{display:'flex', alignItems:'center', gap: 10, marginBottom: 28}}>
+          <button onClick={handlePlayback} disabled={attemptLocked} style={{
+            appearance:'none', border:`1px solid ${t.line}`, background: t.surface,
+            cursor: attemptLocked ? 'not-allowed' : 'pointer', opacity: attemptLocked ? 0.45 : 1,
+            padding:'11px 16px', borderRadius: 9999,
+            display:'inline-flex', alignItems:'center', gap: 8,
+            fontFamily: Tokens.font.zh, fontSize: 13, color: t.ink, fontWeight: 500,
+          }}>
+            {playback === 'playing'
+              ? <><AudioBars t={t}/><span>播放中</span></>
+              : <><Icon.Play size={12} color={t.ink}/><span>听示范</span></>}
+          </button>
+          <div style={{display:'flex', background: t.surfaceAlt, borderRadius: 9999, padding: 3, gap: 2}}>
+            {[{k:'slow', l:'慢'}, {k:'normal', l:'正常'}].map(sp => (
+              <button key={sp.k} onClick={() => setSpeed(sp.k)} disabled={attemptLocked} style={{
+                appearance:'none', border: 0, cursor: attemptLocked ? 'not-allowed' : 'pointer',
+                padding:'6px 14px', borderRadius: 9999,
+                background: speed === sp.k ? t.surface : 'transparent',
+                color: speed === sp.k ? t.accent : t.inkSoft,
+                fontFamily: Tokens.font.zh, fontSize: 12, fontWeight: speed === sp.k ? 700 : 500,
+                boxShadow: speed === sp.k ? '0 1px 4px rgba(28,43,51,.12)' : 'none',
+              }}>{sp.l}</button>
+            ))}
+          </div>
+        </div>
+
+        {phase === 'feedback' && <FeedbackCard t={t} sentence={s} result={result}/>}
+      </div>
+
+      <div style={{padding:'16px 20px 40px', display:'flex', flexDirection:'column', alignItems:'center', gap: 14}}>
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkSoft, minHeight: 18, textAlign:'center'}}>
+          {phase === 'idle'      && (hint || '按住或点击开始跟读')}
+          {phase === 'recording' && <span style={{color: t.accent, fontWeight: 600}}>{
+            recRef.current
+              ? (recRef.current.kind === 'pron' ? '● 正在录音 · 读完点一下评发音' : '● 正在听你读 · 读完再点一下')
+              : '● 请跟读 · 当前设备不评分'
+          }</span>}
+          {phase === 'analyzing' && '评测中…'}
+          {phase === 'feedback' && playback !== 'playing' && (
+            <span style={{color: t.sage, fontWeight: 600}}>{
+              result?.graded ? (result.kind === 'pron' ? '发音已评，继续' : '已完成识别，继续') : '已完成跟读 · 本句未评分'
+            }</span>
+          )}
+          {playback === 'playing' && '正在播放示范'}
+        </div>
+        <WaveformMic t={t} phase={phase} onClick={handleMic}/>
+        <div style={{display:'flex', gap: 12, marginTop: 4}}>
+          <button disabled={phase !== 'feedback'} onClick={handleMic} style={{
+            appearance:'none', border: 0, background:'transparent',
+            cursor: phase === 'feedback' ? 'pointer' : 'not-allowed',
+            color: phase === 'feedback' ? t.inkSoft : t.inkMuted,
+            fontFamily: Tokens.font.zh, fontSize: 13, padding:'8px 14px',
+            opacity: phase === 'feedback' ? 1 : 0.5,
+          }}>重录</button>
+          <button className="tap" disabled={phase !== 'feedback'} onClick={next} style={{
+            appearance:'none', border: 0,
+            cursor: phase === 'feedback' ? 'pointer' : 'not-allowed',
+            background: phase === 'feedback' ? `linear-gradient(135deg, ${t.accent}, ${t.accentDeep})` : t.surfaceAlt,
+            color: phase === 'feedback' ? '#fff' : t.inkMuted,
+            fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 700, padding:'11px 22px', borderRadius: 14,
+            display:'inline-flex', alignItems:'center', gap: 6,
+          }}>下一句 <Icon.Chevron size={12} color={phase === 'feedback' ? '#fff' : t.inkMuted}/></button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Screen 5 — 结果
+// ═══════════════════════════════════════════════════════════════
+function formatSessionDuration(durationMs) {
+  const seconds = Math.max(0, Math.round((durationMs || 0) / 1000));
+  const minutes = Math.floor(seconds / 60);
+  return `${minutes}:${String(seconds % 60).padStart(2, '0')}`;
+}
+
+function ResultScreen({ t, scene, sessionResult, onContinue, onHome, onReview }) {
+  const s = scene || SCENES[0];
+  const r = sessionResult || {
+    sentenceCount: 0, durationMs: 0, scoredCount: 0, unscoredCount: 0,
+    averageScore: null, bestAttempt: null, attempts: [], missedRefs: [], streak: 0,
+  };
+  const best = r.bestAttempt;
+  const missedAttempts = (r.attempts || []).filter(a => a.graded && a.missed.length > 0);
+  const missedWords = missedAttempts.flatMap(a => a.missedWords || []).slice(0, 3);
+  const streak = Number.isFinite(r.streak) ? r.streak : Progress.stats().streak;
+  const allUnscored = r.scoredCount === 0;
+  const hasPron = (r.attempts || []).some(a => a.kind === 'pron'); // 本次含 SOE 真发音评测
+  const [mounted, setMounted] = React.useState(false);
+  React.useEffect(() => {
+    const id = setTimeout(() => setMounted(true), 80);
+    return () => clearTimeout(id);
+  }, []);
+
+  return (
+    <div style={{background: t.bg, minHeight:'100%', paddingBottom: 40}}>
+      <div style={{
+        padding:'80px 24px 30px', position:'relative', overflow:'hidden',
+        background: `linear-gradient(180deg, ${t.sageSoft}, ${hexA(t.sageSoft, 0)})`,
+        textAlign:'center',
+      }}>
+        <div style={{position:'absolute', inset: 0, overflow:'hidden', pointerEvents:'none'}}>
+          {[
+            {x:20,y:30,c:t.accent,s:8},{x:85,y:20,c:t.sun,s:6},{x:15,y:80,c:t.sage,s:10},
+            {x:88,y:70,c:t.accent,s:5},{x:50,y:15,c:t.sage,s:7},{x:30,y:100,c:t.sun,s:6},
+            {x:72,y:100,c:t.accent,s:8},
+          ].map((d, i) => (
+            <div key={i} style={{
+              position:'absolute', left: `${d.x}%`, top: `${d.y}%`,
+              width: d.s, height: d.s, borderRadius: 9999, background: d.c, opacity: 0.7,
+              transform: mounted ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0)',
+              transition: `all 0.8s cubic-bezier(0.34,1.56,0.64,1) ${i * 0.08}s`,
+            }}/>
+          ))}
+        </div>
+        <div style={{position:'relative'}}>
+          <div style={{
+            width: 104, height: 104, margin:'0 auto 16px', borderRadius: 9999,
+            background: `radial-gradient(circle at 30% 30%, ${t.sage}, #5F7E60)`,
+            display:'flex', alignItems:'center', justifyContent:'center',
+            boxShadow: `0 12px 30px -14px rgba(28,43,51,0.45)`,
+            transform: mounted ? 'scale(1) rotate(0deg)' : 'scale(0) rotate(-20deg)',
+            transition:'transform 0.6s cubic-bezier(0.34,1.56,0.64,1)',
+          }}>
+            <Icon.Check size={52} color="#fff" sw={3}/>
+          </div>
+          <div className="serif" style={{fontSize: 25, fontWeight: 700, color: t.ink, marginBottom: 6}}>
+            今天已经开口了
+          </div>
+          <div style={{fontFamily: Tokens.font.zh, fontSize: 14, color: t.inkSoft, lineHeight: 1.5}}>
+            你完成了本次场景跟读 · {s.title}
+          </div>
+        </div>
+      </div>
+
+      <div style={{padding:'0 20px', marginTop: -6}}>
+        <div style={{
+          background: t.surface, borderRadius: 20, padding: 18,
+          border:`1px solid ${t.line}`, boxShadow: Tokens.shadow.sm,
+          display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap: 2,
+        }}>
+          {[
+            {v: String(r.sentenceCount || 0), l:'跟完句数', c: t.ink},
+            {v: r.averageScore === null ? '—' : String(r.averageScore), l: hasPron ? '平均发音分' : '词句完整度', c: t.ink, suf: r.averageScore === null ? null : (hasPron ? '分' : '%')},
+            {v: formatSessionDuration(r.durationMs), l:'练习时长', c: t.ink},
+          ].map((m, i) => (
+            <div key={i} style={{textAlign:'center', padding:'8px 4px', borderRight: i < 2 ? `1px solid ${t.line}` : 'none'}}>
+              <div className="serif" style={{fontSize: 30, fontWeight: 700, color: m.c, lineHeight: 1, fontVariantNumeric:'tabular-nums'}}>
+                {m.v}{m.suf && <span style={{fontSize: 16, marginLeft: 2}}>{m.suf}</span>}
+              </div>
+              <div className="eyebrow" style={{marginTop: 6, fontSize: 10}}>{m.l}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {r.unscoredCount > 0 && (
+        <div style={{padding:'14px 20px 0'}}>
+          <div style={{
+            background: t.surfaceAlt, borderRadius: 16, padding:'12px 14px',
+            border:`1px solid ${t.line}`, fontFamily: Tokens.font.zh,
+            fontSize: 12.5, color: t.inkSoft, lineHeight: 1.6,
+          }}>
+            {allUnscored
+              ? '当前设备未完成语音识别，本次只记录跟读完成，不展示分数或发音结论。'
+              : `本次 ${r.scoredCount}/${r.sentenceCount} 句完成${hasPron ? '发音评测' : '识别'}；平均分只基于已评句子。`}
+          </div>
+        </div>
+      )}
+
+      <div style={{padding:'16px 20px 0'}}>
+        <div style={{background: t.sunSoft, borderRadius: 20, padding: 16,
+          display:'flex', alignItems:'center', gap: 14}}>
+          <PlantIcon size={44} t={t} day={streak}/>
+          <div style={{flex: 1}}>
+            <div style={{fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 700, color: t.ink}}>
+              {streak > 0 ? `已连续 ${streak} 天` : '今天已完成跟读'}
+            </div>
+            <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft, marginTop: 2}}>明天继续，开口会越来越自然</div>
+          </div>
+        </div>
+      </div>
+
+      {best && (
+        <div style={{padding:'16px 20px 0'}}>
+          <div className="eyebrow" style={{marginBottom: 10}}>
+            {hasPron ? '本次发音最好的一句' : '本次词句最完整的一句'}
+          </div>
+          <div style={{background: t.surface, borderRadius: 20, padding: 16, border:`1px solid ${t.line}`}}>
+            <div style={{display:'flex', alignItems:'center', gap: 8, marginBottom: 10}}>
+              <Chip t={t} tone="sage">✓ {best.kind === 'pron' ? `发音 ${best.score} 分` : `${best.score}% 完整度`}</Chip>
+            </div>
+            <div className="serif" style={{fontSize: 20, color: t.ink, lineHeight: 1.4}}>
+              "{best.en}"
+            </div>
+            <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft, marginTop: 4}}>{best.zh}</div>
+          </div>
+        </div>
+      )}
+
+      {missedAttempts.length > 0 && (
+        <div style={{padding:'14px 20px 0'}}>
+          <button onClick={onReview} style={{
+            appearance:'none', background: t.surface, border:`1px dashed ${t.line}`,
+            borderRadius: 20, padding: 14, width:'100%',
+            display:'flex', alignItems:'center', gap: 12, textAlign:'left', cursor:'pointer',
+          }}>
+            <div style={{
+              width: 40, height: 40, borderRadius: 11, background: t.sunSoft,
+              display:'flex', alignItems:'center', justifyContent:'center',
+            }}><Icon.Refresh size={18} color={t.sun}/></div>
+            <div style={{flex: 1}}>
+              <div style={{fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 600, color: t.ink}}>{missedAttempts.length} 句建议再复练</div>
+              <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft, marginTop: 2}}>
+                {missedWords.length > 0 ? `${missedWords.map(w => `"${w}"`).join('、')} 可以再来一次` : '这几句可以再来一次'}
+              </div>
+            </div>
+            <Icon.Chevron size={14} color={t.inkMuted}/>
+          </button>
+        </div>
+      )}
+
+      <div style={{padding:'24px 20px 10px', display:'flex', flexDirection:'column', gap: 10}}>
+        <PrimaryButton t={t} block onClick={onContinue}>
+          继续下一个场景 <Icon.Chevron size={14} color="#fff"/>
+        </PrimaryButton>
+        <GhostButton t={t} block onClick={onHome}>回到首页</GhostButton>
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Screen 6 — 我的 / 打卡
+// ═══════════════════════════════════════════════════════════════
+function MeScreen({ t, account, onSignOut }) {
+  const s = Progress.stats();
+  const nickname = account?.nickname || '体验学员';
+  const heatmap = s.heatmap;
+  const meStreakHint = s.streak === 0 ? '今天开口，种下第一天 🌱'
+    : s.streak < 14 ? `再 ${14 - s.streak} 天即满两周 🌿`
+    : '已连续两周以上，很稳 🌿';
+  const heatColor = (v) => {
+    if (v === null) return 'transparent'; // 本周未来日占位
+    if (v === 0) return t.surfaceAlt;
+    if (v === 1) return hexA(t.sage, 0.35);
+    if (v === 2) return hexA(t.sage, 0.65);
+    return t.sage;
+  };
+  // 今天 = 最后一个非 null 格（周对齐后不再固定在末位）
+  const todayIdx = heatmap.reduce((acc, v, i) => (v === null ? acc : i), 0);
+
+  return (
+    <div style={{background: t.bg, minHeight:'100%', paddingBottom: 120}}>
+      <div style={{padding:'calc(env(safe-area-inset-top,0px) + 48px) 20px 22px', display:'flex', alignItems:'center', gap: 14}}>
+        <img src="./assets/app-icon-180.png" alt="" style={{
+          width: 60, height: 60, borderRadius: 16, flexShrink: 0,
+          boxShadow:'0 6px 16px -8px rgba(28,43,51,.4)',
+        }}/>
+        <div style={{flex: 1}}>
+          <div className="serif" style={{fontSize: 22, fontWeight: 700, color: t.ink}}>{nickname}</div>
+          <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkMuted, marginTop: 2}}>{s.joinedDays > 0 ? `加入 ${s.joinedDays} 天` : '新加入'} · 初级学习者</div>
+        </div>
+        <button onClick={onSignOut} style={{
+          appearance:'none', border:`1px solid ${t.line}`, background: t.surface,
+          minHeight: 38, padding:'0 12px', borderRadius: 9999, cursor:'pointer',
+          display:'flex', alignItems:'center', justifyContent:'center',
+          fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft,
+        }}>退出体验</button>
+      </div>
+
+      <div style={{padding:'0 20px 12px'}}>
+        <div style={{
+          background: `linear-gradient(135deg, ${t.sunSoft}, ${hexA(t.sun, 0.12)})`,
+          borderRadius: 24, padding: 20, border:`1px solid ${t.line}`,
+          display:'flex', alignItems:'center', gap: 16,
+        }}>
+          <PlantIcon size={72} t={t} day={s.streak}/>
+          <div style={{flex: 1}}>
+            <div className="eyebrow">连续打卡</div>
+            <div className="serif" style={{fontSize: 44, color: t.ink, fontWeight: 700, lineHeight: 1.05, marginTop: 4, fontVariantNumeric:'tabular-nums'}}>
+              {s.streak}<span style={{fontSize: 18, color: t.inkSoft, marginLeft: 4, fontFamily: Tokens.font.zh, fontWeight: 500}}>天</span>
+            </div>
+            <div style={{fontFamily: Tokens.font.zh, fontSize: 11, color: t.sage, marginTop: 4, fontWeight: 600}}>{meStreakHint}</div>
+          </div>
+        </div>
+      </div>
+
+      <div style={{padding:'0 20px 12px', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap: 12}}>
+        {[{v: s.totalDays, l:'总天数'}, {v: s.totalSents, l:'已练句'}, {v: s.scenesDone, l:'完成场景'}].map(card => (
+          <div key={card.l} style={{
+            background: t.surface, borderRadius: 13, padding:'16px 12px',
+            border:`1px solid ${t.line}`, textAlign:'center',
+          }}>
+            <div className="serif" style={{fontSize: 23, fontWeight: 700, color: t.ink, fontVariantNumeric:'tabular-nums'}}>{card.v}</div>
+            <div className="eyebrow" style={{marginTop: 5, fontSize: 10}}>{card.l}</div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{padding:'6px 20px 14px'}}>
+        <div style={{background: t.surface, borderRadius: 20, padding: 16, border:`1px solid ${t.line}`}}>
+          <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom: 12}}>
+            <div style={{fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 600, color: t.ink}}>近 4 周</div>
+            <div style={{display:'flex', alignItems:'center', gap: 4, fontFamily: Tokens.font.zh, fontSize: 10, color: t.inkMuted}}>
+              少
+              {[0,1,2,3].map(v => <div key={v} style={{width: 10, height: 10, borderRadius: 3, background: heatColor(v), marginLeft: 3}}/>)}
+              多
+            </div>
+          </div>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(7, 1fr)', gap: 6}}>
+            {['一','二','三','四','五','六','日'].map(d => (
+              <div key={d} style={{fontFamily: Tokens.font.zh, fontSize: 10, color: t.inkMuted, textAlign:'center', marginBottom: 2}}>{d}</div>
+            ))}
+            {heatmap.map((v, i) => (
+              <div key={i} style={{aspectRatio:'1', borderRadius: 6, background: heatColor(v), position:'relative'}}>
+                {i === todayIdx && <div style={{position:'absolute', inset: 0, borderRadius: 6, border:`1.5px solid ${t.sun}`}}/>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div style={{padding:'6px 20px 14px'}}>
+        <button className="tap" onClick={() => cycleThemePref()} style={{
+          width:'100%', appearance:'none', textAlign:'left',
+          background: t.surface, borderRadius: 18, padding:'14px 16px',
+          border:`1px solid ${t.line}`,
+          display:'flex', alignItems:'center', justifyContent:'space-between',
+        }}>
+          <span style={{display:'flex', alignItems:'center', gap: 10}}>
+            <span style={{fontSize: 18}}>🌗</span>
+            <span style={{fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 600, color: t.ink}}>外观</span>
+          </span>
+          <span style={{display:'flex', alignItems:'center', gap: 6, fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkSoft}}>
+            {THEME_LABEL[getThemePref()]}
+            <Icon.Chevron size={14} color={t.inkMuted}/>
+          </span>
+        </button>
+      </div>
+
+      <div style={{padding:'6px 20px 14px'}}>
+        <div className="eyebrow" style={{marginBottom: 10}}>常练场景</div>
+        <div style={{background: t.surface, borderRadius: 20, border:`1px solid ${t.line}`, overflow:'hidden'}}>
+          {s.topScenes.length === 0 && (
+            <div style={{padding:'18px 14px', fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkMuted, textAlign:'center'}}>
+              练过的场景会出现在这里
+            </div>
+          )}
+          {s.topScenes.map((item, i, arr) => {
+            const sc = SCENES.find(x => x.id === item.id);
+            if (!sc) return null;
+            return (
+              <div key={item.id} style={{
+                padding:'12px 14px', display:'flex', alignItems:'center', gap: 12,
+                borderBottom: i < arr.length-1 ? `1px solid ${t.line}` : 'none',
+              }}>
+                <SceneGlyph kind={sc.k} t={t} size={36}/>
+                <div style={{flex: 1, fontFamily: Tokens.font.zh, fontSize: 14, color: t.ink}}>{sc.title}</div>
+                <span style={{fontFamily: Tokens.font.zh, fontSize: 11, color: t.inkMuted}}>×{item.times}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div style={{padding:'6px 20px 14px'}}>
+        <div className="eyebrow" style={{marginBottom: 10}}>体验说明</div>
+        <div style={{background: t.surface, borderRadius: 20, border:`1px solid ${t.line}`, overflow:'hidden'}}>
+          {[
+            {l:'建议目标', v:'每天 5 分钟'},
+            {l:'练习速度', v:'跟读时可选'},
+            {l:'学习提醒', v:'公开体验暂未提供'},
+          ].map((it, i, arr) => (
+            <div key={i} style={{
+              padding:'13px 16px', display:'flex', alignItems:'center',
+              borderBottom: i < arr.length-1 ? `1px solid ${t.line}` : 'none',
+            }}>
+              <span style={{flex: 1, fontFamily: Tokens.font.zh, fontSize: 14, color: t.ink}}>{it.l}</span>
+              <span style={{fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkSoft}}>{it.v}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Screen 7 — 复练 tab
+// ═══════════════════════════════════════════════════════════════
+function ReviewScreen({ t, queue, onPractice, onOpenScene }) {
+  const hasQueue = queue.length > 0;
+  const grouped = React.useMemo(() => {
+    const map = new Map();
+    queue.forEach(item => {
+      if (!map.has(item.sceneId)) map.set(item.sceneId, []);
+      map.get(item.sceneId).push(item);
+    });
+    return Array.from(map.entries()).map(([sceneId, items]) => ({
+      scene: SCENES.find(s => s.id === sceneId),
+      items,
+    })).filter(g => g.scene);
+  }, [queue]);
+
+  return (
+    <div style={{background: t.bg, minHeight:'100%', paddingBottom: 120}}>
+      <div style={{padding:'calc(env(safe-area-inset-top,0px) + 52px) 20px 14px'}}>
+        <div className="eyebrow-gold">REVIEW</div>
+        <div className="serif" style={{fontSize: 30, fontWeight: 700, color: t.ink, marginTop: 6}}>复练</div>
+        <div style={{fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkSoft, marginTop: 4}}>把卡住的几句再来一遍，比新学十句都划算</div>
+      </div>
+
+      <div style={{padding:'4px 20px 0'}}>
+        <div style={{
+          background: `linear-gradient(135deg, ${t.surfaceAlt}, ${hexA(t.sun, 0.1)})`,
+          borderRadius: 24, padding: 18, border:`1px solid ${t.line}`,
+        }}>
+          <div className="eyebrow">待复练</div>
+          <div className="serif" style={{fontSize: 38, color: t.ink, fontWeight: 700, lineHeight: 1.05, marginTop: 4, fontVariantNumeric:'tabular-nums'}}>
+            {queue.length}<span style={{fontSize: 15, color: t.inkSoft, marginLeft: 4, fontFamily: Tokens.font.zh, fontWeight:500}}>句</span>
+          </div>
+          <div style={{fontFamily: Tokens.font.zh, fontSize: 12, color: t.inkSoft, marginTop: 4}}>
+            {hasQueue ? `来自 ${grouped.length} 个场景 · 约 ${Math.max(2, queue.length)} 分钟` : '今天暂无错句 — 继续练新场景吧'}
+          </div>
+        </div>
+      </div>
+
+      {!hasQueue && (
+        <div style={{padding:'40px 32px', textAlign:'center'}}>
+          <div style={{
+            width: 72, height: 72, margin:'0 auto 16px', borderRadius: 9999,
+            background: t.sageSoft,
+            display:'flex', alignItems:'center', justifyContent:'center',
+          }}><Icon.Check size={32} color={t.sage} sw={2.4}/></div>
+          <div style={{fontFamily: Tokens.font.zh, fontSize: 15, color: t.ink, fontWeight: 600, marginBottom: 6}}>
+            清空了！
+          </div>
+          <div style={{fontFamily: Tokens.font.zh, fontSize: 13, color: t.inkSoft, lineHeight: 1.5, marginBottom: 20}}>
+            错句会在练习后自动进来 — 去练一个新场景，今天继续开口。
+          </div>
+          <button onClick={onOpenScene} style={{
+            appearance:'none', border:0, background: t.ink, cursor:'pointer',
+            color: DARK() ? t.bg : '#fff',
+            fontFamily: Tokens.font.zh, fontSize: 13, fontWeight: 600,
+            padding:'10px 20px', borderRadius: 9999,
+          }}>去场景馆</button>
+        </div>
+      )}
+
+      {hasQueue && grouped.map((g, gi) => (
+        <div key={g.scene.id} style={{padding:'0 20px', marginBottom: 14}}>
+          <div style={{display:'flex', alignItems:'center', gap: 10, marginBottom: 10, marginTop: gi === 0 ? 6 : 0}}>
+            <SceneGlyph kind={g.scene.k} t={t} size={32}/>
+            <div style={{flex: 1, minWidth: 0}}>
+              <div style={{fontFamily: Tokens.font.zh, fontSize: 14, fontWeight: 600, color: t.ink}}>{g.scene.title}</div>
+              <div style={{fontFamily: Tokens.font.zh, fontSize: 11, color: t.inkMuted}}>{g.items.length} 句待复练</div>
+            </div>
+            <button className="tap" onClick={() => onPractice(g.scene, g.items)} style={{
+              appearance:'none', border:0, background: `linear-gradient(135deg, ${t.accent}, ${t.accentDeep})`, cursor:'pointer',
+              color:'#fff', fontFamily: Tokens.font.zh, fontSize: 12, fontWeight: 700,
+              padding:'7px 14px', borderRadius: 9999,
+              display:'inline-flex', alignItems:'center', gap: 4,
+            }}>一起练 <Icon.Chevron size={11} color="#fff"/></button>
+          </div>
+          <div style={{display:'flex', flexDirection:'column', gap: 8}}>
+            {g.items.map((item, i) => {
+              const sent = resolveReviewSentence(g.scene, item);
+              if (!sent) return null;
+              const missedSet = new Set(Array.isArray(item.missed) ? item.missed : []);
+              return (
+                <button key={reviewRefKey(item) || i} className="tap" onClick={() => onPractice(g.scene, [item])} style={{
+                  appearance:'none', border:`1px solid ${t.line}`, background: t.surface,
+                  borderRadius: 13, padding:'12px 14px', textAlign:'left', cursor:'pointer',
+                  display:'flex', alignItems:'center', gap: 12,
+                }}>
+                  <div style={{flex: 1, minWidth: 0}}>
+                    <div className="serif" style={{
+                      fontSize: 15, color: t.ink, lineHeight: 1.3,
+                      marginBottom: 3, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis',
+                    }}>
+                      {tokensWithPunct(sent.en, sent.words).map((tk, wi, arr) => (
+                        <React.Fragment key={wi}>
+                          {tk.lead && <span style={{color: t.inkMuted}}>{tk.lead}</span>}
+                          <span style={{
+                            color: missedSet.has(wi) ? t.sun : t.ink,
+                            fontWeight: missedSet.has(wi) ? 700 : 400,
+                          }}>{tk.word}</span>
+                          {tk.trail && <span style={{color: t.inkMuted}}>{tk.trail}</span>}
+                          {wi < arr.length - 1 ? ' ' : ''}
+                        </React.Fragment>
+                      ))}
+                    </div>
+                    <div style={{fontFamily: Tokens.font.zh, fontSize: 11.5, color: t.inkSoft}}>{sent.zh}</div>
+                  </div>
+                  <div style={{
+                    width: 32, height: 32, borderRadius: 11, background: t.surfaceAlt,
+                    display:'flex', alignItems:'center', justifyContent:'center', flexShrink: 0,
+                  }}><Icon.Refresh size={14} color={t.inkMuted}/></div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ─── Phone wrapper + main prototype ──────────────────────────
+function Phone({ t, tab, setTab, children, noChrome, dark, zoneAttr }) {
+  return (
+    <IOSDevice width={390} height={844} dark={dark}>
+      <div data-zone={zoneAttr} style={{
+        position:'absolute', inset: 0, background: t.bg,
+        display:'flex', flexDirection:'column', overflow:'hidden',
+      }}>
+        <div className="fake-statusbar" style={{position:'absolute', top: 0, left: 0, right: 0, zIndex: 30}}>
+          <IOSStatusBar dark={dark}/>
+        </div>
+        <div style={{flex: 1, overflow:'auto', position:'relative'}}>{children}</div>
+        {!noChrome && <TabBar active={tab} onChange={setTab} t={t}/>}
+      </div>
+    </IOSDevice>
+  );
+}
+
+// ─── 学习进度持久化（streak / 热力图 / 统计 / 复练队列）───────────
+// 纯 localStorage，无后端；首次使用为空队列，不再注入演示错句。
+// localStorage key 保持不变以便读取早期版本；对象内 schemaVersion 负责后续迁移。
+const PROGRESS_KEY = 'ybw.speak.progress.v1';
+const PROGRESS_SCHEMA_VERSION = 2;
+const ymd = (d) => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+
+function sceneTier(scene, tierLevel) {
+  const tiers = (scene && Array.isArray(scene.tiers) && scene.tiers.length)
+    ? scene.tiers
+    : [{level:'beginner', sentences:(scene && scene.sentences) || []}];
+  return tiers.find(t => t.level === tierLevel)
+    || tiers.find(t => t.level === 'beginner')
+    || tiers[0];
+}
+
+function makeSentenceRef(scene, sentence) {
+  let tierLevel = sentence?.tierLevel || null;
+  if (!tierLevel && scene && Array.isArray(scene.tiers)) {
+    const owner = scene.tiers.find(t => (t.sentences || []).includes(sentence));
+    tierLevel = owner?.level || null;
+  }
+  tierLevel = tierLevel || 'beginner';
+  return {
+    sceneId: scene?.id || '',
+    tierLevel,
+    sentenceId: sentence?.id || '',
+  };
+}
+
+function reviewRefKey(ref) {
+  if (!ref || !ref.sceneId || !ref.sentenceId) return '';
+  return `${ref.sceneId}::${ref.tierLevel || 'beginner'}::${ref.sentenceId}`;
+}
+
+function resolveReviewSentence(scene, item) {
+  if (!scene || !item) return null;
+  const tier = sceneTier(scene, item.tierLevel || 'beginner');
+  const sentences = (tier && tier.sentences) || [];
+  if (item.sentenceId) {
+    const exact = sentences.find(s => s.id === item.sentenceId);
+    if (exact) return exact;
+    const legacy = sentences.find(s => Array.isArray(s.legacyIds) && s.legacyIds.includes(item.sentenceId));
+    if (legacy) return legacy;
+  }
+  // 兼容 v1 旧队列 {sceneId, sentIdx}：只做一次读取迁移。
+  if (Number.isInteger(item.sentIdx)) return sentences[item.sentIdx] || null;
+  return null;
+}
+
+function canonicalCompletedSentenceKeys(scene, keys) {
+  const canonical = new Set();
+  (Array.isArray(keys) ? keys : []).forEach(key => {
+    const parts = String(key).split('::');
+    if (parts.length < 2) return;
+    const tierLevel = parts.shift();
+    const sentenceId = parts.join('::');
+    const tier = sceneTier(scene, tierLevel);
+    const sentence = (tier?.sentences || []).find(s =>
+      s.id === sentenceId || (Array.isArray(s.legacyIds) && s.legacyIds.includes(sentenceId))
+    );
+    if (!sentence) return;
+    const ref = makeSentenceRef(scene, sentence);
+    canonical.add(`${ref.tierLevel}::${ref.sentenceId}`);
+  });
+  return Array.from(canonical);
+}
+
+function normalizeReviewQueue(queue) {
+  const deduped = new Map();
+  (Array.isArray(queue) ? queue : []).forEach(item => {
+    const scene = SCENES.find(s => s.id === item?.sceneId);
+    const sentence = resolveReviewSentence(scene, item);
+    if (!scene || !sentence) return;
+    const ref = makeSentenceRef(scene, sentence);
+    const normalized = {
+      ...ref,
+      missed: Array.isArray(item.missed) ? item.missed.filter(Number.isInteger) : [],
+      missedWords: Array.isArray(item.missedWords) ? item.missedWords.filter(Boolean) : [],
+    };
+    deduped.set(reviewRefKey(normalized), normalized);
+  });
+  return Array.from(deduped.values());
+}
+
+function allSceneSentenceKeys(scene) {
+  if (!scene) return [];
+  const tiers = Array.isArray(scene.tiers) && scene.tiers.length
+    ? scene.tiers
+    : [{level:'beginner', sentences:scene.sentences || []}];
+  return tiers.flatMap(t => (t.sentences || []).map(sentence => {
+    const ref = makeSentenceRef(scene, sentence);
+    return `${ref.tierLevel}::${ref.sentenceId}`;
+  }));
+}
+
+const Progress = {
+  read() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(PROGRESS_KEY));
+      if (!raw || typeof raw !== 'object') return null;
+      const normalized = {
+        ...this._blank(),
+        ...raw,
+        schemaVersion: Number(raw.schemaVersion) || 1,
+        reviewQueue: Array.isArray(raw.reviewQueue) ? raw.reviewQueue : [],
+        days: raw.days && typeof raw.days === 'object' ? raw.days : {},
+        scenesDone: Array.isArray(raw.scenesDone) ? raw.scenesDone : [],
+        sceneCounts: raw.sceneCounts && typeof raw.sceneCounts === 'object' ? raw.sceneCounts : {},
+        completedSentences: raw.completedSentences && typeof raw.completedSentences === 'object' ? raw.completedSentences : {},
+      };
+
+      if (normalized.schemaVersion < PROGRESS_SCHEMA_VERSION) {
+        // v1 的句子引用来自运行时位置（如 beginner-2）。先映射到 scenes.json
+        // 中的显式 ID，再把旧 scenesDone 快照为“迁移当时”的句子集合。
+        // 该分支只执行一次并立即写回；日后新增句子不会被 scenesDone 自动补全。
+        Object.entries(normalized.completedSentences).forEach(([sceneId, keys]) => {
+          const scene = SCENES.find(s => s.id === sceneId);
+          if (scene) normalized.completedSentences[sceneId] = canonicalCompletedSentenceKeys(scene, keys);
+        });
+        normalized.scenesDone.forEach(sceneId => {
+          const scene = SCENES.find(s => s.id === sceneId);
+          if (scene) normalized.completedSentences[sceneId] = allSceneSentenceKeys(scene);
+        });
+        normalized.reviewQueue = normalizeReviewQueue(normalized.reviewQueue);
+        normalized.schemaVersion = PROGRESS_SCHEMA_VERSION;
+        localStorage.setItem(PROGRESS_KEY, JSON.stringify(normalized));
+      }
+      return normalized;
+    }
+    catch (e) { return null; }
+  },
+  _blank() {
+    return {
+      schemaVersion: PROGRESS_SCHEMA_VERSION,
+      reviewQueue: [], days: {}, totalSents: 0, scenesDone: [], sceneCounts: {},
+      completedSentences: {}, joinedAt: null, lastSceneId: null,
+    };
+  },
+  _write(p) {
+    p.schemaVersion = Math.max(Number(p.schemaVersion) || 0, PROGRESS_SCHEMA_VERSION);
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(p));
+    window.dispatchEvent(new CustomEvent('ybw-progress-change'));
+  },
+  initialReviewQueue() {
+    const p = this.read();
+    return normalizeReviewQueue(p ? p.reviewQueue : []);
+  },
+  saveReviewQueue(q) {
+    const p = this.read() || this._blank();
+    p.reviewQueue = normalizeReviewQueue(q);
+    this._write(p);
+  },
+  sceneProgress(scene, suppliedProgress) {
+    if (!scene) return 0;
+    const p = suppliedProgress || this.read() || this._blank();
+    const all = allSceneSentenceKeys(scene);
+    if (all.length === 0) return 0;
+    const completed = Array.isArray(p.completedSentences?.[scene.id]) ? p.completedSentences[scene.id] : [];
+    const completedSet = new Set(completed);
+    const done = all.filter(key => completedSet.has(key)).length;
+    return Math.min(100, Math.round(done / all.length * 100));
+  },
+  // 记录一次完成的练习：打卡、真实句数、句级完成度和常练计数。
+  recordSession(scene, sessionResult) {
+    if (!scene) return;
+    const p = this.read() || this._blank();
+    const today = ymd(new Date());
+    const sentCount = Number(sessionResult?.sentenceCount) || 0;
+    p.days[today] = (p.days[today] || 0) + (sentCount || 0);
+    p.totalSents = (Number(p.totalSents) || 0) + sentCount;
+    p.completedSentences = p.completedSentences || {};
+    const completed = new Set(Array.isArray(p.completedSentences[scene.id]) ? p.completedSentences[scene.id] : []);
+    (sessionResult?.attempts || []).forEach(a => {
+      if (a?.tierLevel && a?.sentenceId) completed.add(`${a.tierLevel}::${a.sentenceId}`);
+    });
+    p.completedSentences[scene.id] = Array.from(completed);
+    if (this.sceneProgress(scene, p) === 100) {
+      if (!p.scenesDone.includes(scene.id)) p.scenesDone.push(scene.id);
+    } else {
+      p.scenesDone = p.scenesDone.filter(id => id !== scene.id);
+    }
+    p.sceneCounts[scene.id] = (p.sceneCounts[scene.id] || 0) + 1;
+    p.joinedAt = p.joinedAt || today;
+    p.lastSceneId = scene.id;
+    this._write(p);
+  },
+  streak(days) {
+    const set = new Set(Object.keys(days || {}));
+    let s = 0; const d = new Date();
+    if (!set.has(ymd(d))) d.setDate(d.getDate() - 1); // 今天还没练不清零，从昨天起数
+    while (set.has(ymd(d))) { s++; d.setDate(d.getDate() - 1); }
+    return s;
+  },
+  heatmap(days, weeks = 4) {
+    // GitHub 式按周对齐：列=周一..周日（与 MeScreen 列头一致），行=近 weeks 周，
+    // 首格=weeks-1 周前的周一；本周今天之后的格填 null 占位（渲染为透明）。
+    const out = []; const today = new Date();
+    const dow = (today.getDay() + 6) % 7; // 周一=0 .. 周日=6
+    const start = new Date(today);
+    start.setDate(today.getDate() - dow - (weeks - 1) * 7);
+    for (let i = 0; i < weeks * 7; i++) {
+      const d = new Date(start); d.setDate(start.getDate() + i);
+      if (d > today) { out.push(null); continue; }
+      const c = (days || {})[ymd(d)] || 0;
+      out.push(c === 0 ? 0 : c <= 2 ? 1 : c <= 5 ? 2 : 3);
+    }
+    return out; // 长度 weeks*7；最后一个非 null 格 = 今天
+  },
+  stats() {
+    const p = this.read() || this._blank();
+    const joinedDays = p.joinedAt
+      ? Math.max(1, Math.round((new Date() - new Date(p.joinedAt)) / 86400000) + 1)
+      : 0;
+    const topScenes = Object.entries(p.sceneCounts)
+      .sort((a, b) => b[1] - a[1]).slice(0, 3)
+      .map(([id, times]) => ({ id, times }));
+    return {
+      streak: this.streak(p.days),
+      heatmap: this.heatmap(p.days),
+      totalDays: Object.keys(p.days).length,
+      totalSents: p.totalSents,
+      scenesDone: SCENES.filter(scene => this.sceneProgress(scene, p) === 100).length,
+      joinedDays,
+      topScenes,
+      lastSceneId: p.lastSceneId,
+    };
+  },
+};
+
+function App({ account, onSignOut }) {
+  // 主题由 <html data-theme> 驱动；监听切换事件强制重渲染，让运行时 DARK() 取到最新值。
+  const [, setThemeTick] = React.useState(0);
+  React.useEffect(() => {
+    const on = () => setThemeTick(x => x + 1);
+    window.addEventListener('ybw-theme-change', on);
+    return () => window.removeEventListener('ybw-theme-change', on);
+  }, []);
+  const [screen, setScreen] = React.useState('home');
+  const [tab, setTab] = React.useState('home');
+  // 当前分区：'daily' = 日常(陶土橙) / 'cambridge' = 剑桥(墨蓝)。由首页双色块或场景馆 Seg 决定。
+  const [zone, setZone] = React.useState('daily');
+  const [scene, setScene] = React.useState(null);
+  const [reviewQueue, setReviewQueue] = React.useState(() => Progress.initialReviewQueue());
+  const [reviewSents, setReviewSents] = React.useState(null);  // filtered sentences for review-mode practice
+  const [sessionResult, setSessionResult] = React.useState(null);
+  // 哑 state：练习完成写入 Progress 后自增，触发 App 重渲染以刷新 streak/统计派生值。
+  const [, setProgressTick] = React.useState(0);
+  // Practice context: 'review' = subset from review queue, 'tier' = full
+  // sentences for the tier the user picked, null = scene defaults.
+  // Drives chip label so we don't say "复练" for a fresh tier session.
+  const [practiceCtx, setPracticeCtx] = React.useState(null); // {kind, label} | null
+  const t = T;
+  const dark = DARK();
+
+  const onTab = (k) => {
+    setTab(k);
+    setReviewSents(null);
+    setPracticeCtx(null);
+    if (k === 'home')   setScreen('home');
+    if (k === 'scenes') setScreen('scenes');
+    if (k === 'me')     setScreen('me');
+    if (k === 'review') setScreen('review');
+  };
+
+  const openDetail = (s) => { setScene(s); setScreen('detail'); };
+  // 首页双色块进入某分区：定分区 + 切到场景馆。
+  const enterZone = (z) => { setZone(z); setTab('scenes'); setReviewSents(null); setPracticeCtx(null); setScreen('scenes'); };
+  const startReview = (sc, items) => {
+    const resolved = (items || []).map(item => ({item, sentence:resolveReviewSentence(sc, item)})).filter(x => x.sentence);
+    if (resolved.length === 0) return;
+    setScene(sc);
+    setReviewSents(resolved.map(x => x.sentence));
+    setPracticeCtx({ kind: 'review', label: `复练 · ${sc.title}`, reviewRefs:resolved.map(x => x.item) });
+    setScreen('practice');
+  };
+  const completePractice = ({ scene: doneScene, sessionResult: completed }) => {
+    if (!doneScene || !completed) return;
+    let nextQueue = reviewQueue;
+    if (practiceCtx?.kind === 'review') {
+      // 复练只删除“真实识别且通过”的句子；仍有漏词或未评分都保留。
+      const passed = new Set((completed.attempts || [])
+        .filter(a => a.graded && a.missed.length === 0)
+        .map(reviewRefKey));
+      nextQueue = reviewQueue.filter(item => !passed.has(reviewRefKey(item)));
+      nextQueue = normalizeReviewQueue([...nextQueue, ...(completed.missedRefs || [])]);
+    } else {
+      // 普通/高阶档仅把真实识别到的漏词句入队，未评分不猜测错句。
+      nextQueue = normalizeReviewQueue([...reviewQueue, ...(completed.missedRefs || [])]);
+    }
+    setReviewQueue(nextQueue);
+    Progress.saveReviewQueue(nextQueue);
+    // 记录打卡、句级完成度和本次 SessionResult，结果页只消费真实数据。
+    Progress.recordSession(doneScene, completed);
+    const persistedStats = Progress.stats();
+    setSessionResult({...completed, streak:persistedStats.streak});
+    setProgressTick(x => x + 1);
+    setScreen('result');
+  };
+
+  // 每次渲染实时读取进度派生值（练习完成后由 progressTick 触发重算）。
+  const stats = Progress.stats();
+
+  const noChrome = ['detail', 'practice', 'result'].includes(screen);
+
+  // 墨蓝重着色：进入剑桥分区（场景馆=zone；详情/练习/结果=该场景的 track）时给 Phone 容器挂
+  // data-zone="cambridge"，--primary 自动变墨蓝。首页/我的/复练保持中性陶土橙。
+  const sceneIsCam = scene && scene.track === 'cambridge';
+  const inCamZone = (['detail', 'practice', 'result'].includes(screen) && sceneIsCam)
+    || (screen === 'scenes' && zone === 'cambridge');
+  const zoneAttr = inCamZone ? 'cambridge' : undefined;
+
+  return (
+    <div>
+      <div className="stage">
+        <div className="device-shell">
+          <Phone t={t} tab={tab} setTab={onTab} noChrome={noChrome} dark={dark} zoneAttr={zoneAttr}>
+            <div key={screen} className="screen-fade" style={{height:'100%'}}>
+            {screen === 'home' && (
+              <HomeScreen t={t}
+                onEnterZone={enterZone}
+                onOpenScene={openDetail}
+                streak={stats.streak}
+                lastSceneId={stats.lastSceneId}
+                nickname={account?.nickname || '体验学员'}/>
+            )}
+            {screen === 'scenes' && (
+              <ScenesScreen t={t} onOpenScene={openDetail} board={zone} onBoard={setZone}/>
+            )}
+            {screen === 'detail' && (
+              <SceneDetailScreen t={t} scene={scene}
+                onBack={() => { setScreen(tab === 'scenes' ? 'scenes' : 'home'); }}
+                onStart={(tier) => {
+                  setReviewSents(tier ? tier.sentences : null);
+                  setPracticeCtx(tier
+                    ? { kind: 'tier', label: `${scene ? scene.title : ''} · ${tier.label}`, tierLevel:tier.level }
+                    : null);
+                  setScreen('practice');
+                }}/>
+            )}
+            {screen === 'practice' && (
+              <PracticeScreen t={t} scene={scene} sentences={reviewSents || undefined}
+                chipLabel={practiceCtx?.label}
+                context={practiceCtx}
+                onBack={() => setScreen(practiceCtx?.kind === 'review' ? 'review' : 'detail')}
+                onComplete={completePractice}/>
+            )}
+            {screen === 'result' && (
+              <ResultScreen t={t} scene={scene} sessionResult={sessionResult}
+                onContinue={() => { setTab('scenes'); setScreen('scenes'); }}
+                onHome={() => { setTab('home'); setScreen('home'); }}
+                onReview={() => { setTab('review'); setReviewSents(null); setScreen('review'); }}/>
+            )}
+            {screen === 'review' && (
+              <ReviewScreen t={t} queue={reviewQueue}
+                onPractice={startReview}
+                onOpenScene={() => { setTab('scenes'); setScreen('scenes'); }}/>
+            )}
+            {screen === 'me' && <MeScreen t={t} account={account} onSignOut={onSignOut}/>}
+            </div>
+          </Phone>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────
+// 公开体验门 (AuthGate)：这不是账号鉴权，只在本机记录 20 分钟体验会话。
+// 正式账号/付费权益上线前必须由服务端认证和授权，不再伪装验证码或超管身份。
+// ─────────────────────────────────────────────────────────────
+
+const AUTH_KEY = 'ybw.speak.experience.v2';
+const LEGACY_AUTH_KEY = 'ybw.speak.auth.v1';
+const DEMO_DURATION_MS = 20 * 60 * 1000;
+
+// 旧版体验凭据可能包含手机号；页面启动时即幂等删除，不要求用户再次进入或退出体验。
+try { localStorage.removeItem(LEGACY_AUTH_KEY); } catch (_) {}
+
+const Auth = {
+  read() {
+    try {
+      const raw = localStorage.getItem(AUTH_KEY);
+      if (!raw) return null;
+      const a = JSON.parse(raw);
+      if (!a || a.provider !== 'demo' || !Number.isFinite(a.signedInAt)) return null;
+      return {...a, nickname:typeof a.nickname === 'string' && a.nickname.trim() ? a.nickname.trim() : '体验学员'};
+    } catch { return null; }
+  },
+  write(account) {
+    localStorage.setItem(AUTH_KEY, JSON.stringify(account));
+    window.dispatchEvent(new Event('ybw-auth-change'));
+  },
+  clear() {
+    localStorage.removeItem(AUTH_KEY);
+    localStorage.removeItem(LEGACY_AUTH_KEY);
+    window.dispatchEvent(new Event('ybw-auth-change'));
+  },
+  signInDemo(nickname) {
+    localStorage.removeItem(LEGACY_AUTH_KEY);
+    const account = {
+      experienceId: `demo-${Date.now()}`,
+      signedInAt: Date.now(),
+      nickname: (nickname || '').trim().slice(0, 16) || '体验学员',
+      provider: 'demo',
+    };
+    Auth.write(account);
+    return account;
+  },
+  isDemoExpired(account) {
+    return account && account.provider === 'demo' &&
+           (Date.now() - account.signedInAt) > DEMO_DURATION_MS;
+  },
+  demoRemainingSec(account) {
+    if (!account || account.provider !== 'demo') return 0;
+    return Math.max(0, Math.ceil((DEMO_DURATION_MS - (Date.now() - account.signedInAt)) / 1000));
+  },
+};
+
+// React hook — re-renders when auth changes (this tab + other tabs).
+function useAuth() {
+  const [account, setAccount] = React.useState(() => Auth.read());
+  React.useEffect(() => {
+    const onChange = () => setAccount(Auth.read());
+    window.addEventListener('ybw-auth-change', onChange);
+    window.addEventListener('storage', onChange);
+    return () => {
+      window.removeEventListener('ybw-auth-change', onChange);
+      window.removeEventListener('storage', onChange);
+    };
+  }, []);
+  return account;
+}
+
+// Compact toast we can show on demo expiry.
+function useToast() {
+  const [msg, setMsg] = React.useState(null);
+  const show = React.useCallback((text, ms = 3500) => {
+    setMsg(text);
+    if (ms > 0) setTimeout(() => setMsg(null), ms);
+  }, []);
+  const node = msg ? (
+    <div style={{
+      position:'fixed', left:'50%', top: 22, transform:'translateX(-50%)',
+      background:'rgba(43,39,34,0.92)', color:'#fff',
+      fontFamily: Tokens.font.zh, fontSize: 13, fontWeight: 500,
+      padding:'10px 18px', borderRadius: 9999, zIndex: 9999,
+      boxShadow:'0 12px 40px rgba(0,0,0,0.25)', maxWidth: '88%',
+      textAlign:'center', lineHeight: 1.5,
+    }}>{msg}</div>
+  ) : null;
+  return { show, node };
+}
+
+function LoginCard({ onSignedIn, toast, t = T }) {
+  const [nickname, setNickname] = React.useState('');
+
+  const enterDemo = () => {
+    Auth.signInDemo(nickname);
+    toast.show('公开体验已开始 · 本次可使用 20 分钟');
+    onSignedIn();
+  };
+
+  const inputBase = {
+    width:'100%', border: 0, outline:'none', background:'transparent',
+    fontFamily: Tokens.font.zh, fontSize: 16, color: t.ink,
+  };
+
+  return (
+    <div style={{
+      width: 360, maxWidth: 'calc(100% - 32px)',
+      background: t.surface, borderRadius: 24, padding: 24,
+      boxShadow:'0 24px 60px rgba(0,0,0,0.10), 0 0 0 1px rgba(0,0,0,0.04)',
+      fontFamily: Tokens.font.zh,
+    }}>
+      <div style={{display:'flex', alignItems:'center', gap: 12, marginBottom: 22}}>
+        <img src="./assets/app-icon-180.png" alt="原版娃口语" style={{
+          width: 50, height: 50, borderRadius: 14, flexShrink: 0,
+          boxShadow:`0 8px 20px -7px ${hexA(t.accentDeep, 0.5)}`,
+        }}/>
+        <div>
+          <div className="serif" style={{fontSize: 19, fontWeight: 700, color: t.ink}}>原版娃口语</div>
+          <div style={{fontSize: 11.5, color: t.inkSoft, marginTop: 2}}>每天 5 分钟，开口练真场景</div>
+        </div>
+      </div>
+
+      <div style={{
+        background:t.accentSoft, color:t.accentDeep, borderRadius:14, padding:'11px 13px',
+        fontSize:12, lineHeight:1.6, marginBottom:18,
+      }}>
+        <b>公开体验版</b> · 无需注册，可在本机体验 20 分钟。这里不是正式账号登录，也不代表已开通付费权益。
+      </div>
+
+      <div style={{fontSize:11, fontWeight:600, color:t.inkSoft, letterSpacing:1, marginBottom:6}}>怎么称呼你（可选）</div>
+      <div style={{background:t.surfaceAlt, borderRadius:14, padding:'13px 14px', marginBottom:14}}>
+        <input
+          type="text" maxLength={16} autoComplete="nickname"
+          placeholder="例如：小雨"
+          value={nickname}
+          onChange={e => setNickname(e.target.value.slice(0, 16))}
+          style={inputBase}
+        />
+      </div>
+
+      <button className="tap"
+        onClick={enterDemo}
+        style={{
+          appearance:'none', border:0, cursor:'pointer',
+          width:'100%', background:`linear-gradient(135deg, ${t.accent}, ${t.accentDeep})`, color:'#fff',
+          fontFamily: Tokens.font.zh, fontSize: 15, fontWeight: 700,
+          padding:'15px 20px', borderRadius:14,
+          boxShadow:`0 8px 20px -12px ${hexA(t.accentDeep, 0.5)}`,
+        }}
+      >开始 20 分钟公开体验 →</button>
+
+      <div style={{
+        marginTop: 16, textAlign:'center',
+        fontSize: 10, color: t.inkMuted, lineHeight: 1.5,
+      }}>
+        进入体验即代表同意
+        <a href="./terms.html" target="_blank" rel="noopener noreferrer" style={{color:t.accent, margin:'0 2px'}}>《用户协议》</a>
+        与
+        <a href="./privacy.html" target="_blank" rel="noopener noreferrer" style={{color:t.accent, marginLeft:2}}>《隐私政策》</a>
+      </div>
+    </div>
+  );
+}
+
+// Wraps the entire app — renders LoginCard until the user is authed.
+// Polls demo expiry every second; on expiry, auto sign-out + soft toast.
+function AuthGate() {
+  const account = useAuth();
+  const toast = useToast();
+  // 主题由 <html data-theme> 驱动；监听切换事件重渲染，让 DARK() 取到最新值
+  const [, setThemeTick] = React.useState(0);
+  React.useEffect(() => {
+    const on = () => setThemeTick(x => x + 1);
+    window.addEventListener('ybw-theme-change', on);
+    return () => window.removeEventListener('ybw-theme-change', on);
+  }, []);
+  const lt = T;
+  const ldark = DARK();
+
+  // Demo expiry watch
+  React.useEffect(() => {
+    if (!account || account.provider !== 'demo') return;
+    const id = setInterval(() => {
+      if (Auth.isDemoExpired(account)) {
+        clearInterval(id);
+        Auth.clear();
+        toast.show('体验时长已满 · 请联系咨询老师开通账号，祝学得愉快 🌿', 5500);
+      }
+    }, 1000);
+    return () => clearInterval(id);
+  }, [account]);
+
+  if (!account) {
+    return (
+      <div>
+        <div className="stage">
+          <div className="device-shell">
+            <Phone t={lt} noChrome dark={ldark}>
+              <div style={{
+                height:'100%', background: lt.bg,
+                display:'flex', alignItems:'center', justifyContent:'center',
+                padding:'24px 16px',
+              }}>
+                {toast.node}
+                <LoginCard t={lt} onSignedIn={() => {}} toast={toast}/>
+              </div>
+            </Phone>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {toast.node}
+      <DemoBanner account={account}/>
+      <App account={account} onSignOut={() => Auth.clear()}/>
+    </>
+  );
+}
+
+// Tiny floating chip showing demo countdown — visible across all screens.
+function DemoBanner({ account }) {
+  const [secs, setSecs] = React.useState(() => Auth.demoRemainingSec(account));
+  React.useEffect(() => {
+    const id = setInterval(() => setSecs(Auth.demoRemainingSec(account)), 1000);
+    return () => clearInterval(id);
+  }, [account]);
+  if (secs <= 0) return null;
+  const m = Math.floor(secs / 60);
+  const s = secs % 60;
+  return (
+    <div style={{
+      position:'fixed', top: 12, left:'50%', transform:'translateX(-50%)',
+      background:'rgba(255,251,245,0.95)', backdropFilter:'blur(12px)',
+      border:'1px solid rgba(232,121,75,0.35)',
+      borderRadius: 9999, padding:'7px 14px', zIndex: 9000,
+      fontFamily: Tokens.font.zh, fontSize: 11, color:'#C55A30',
+      boxShadow:'0 6px 20px rgba(0,0,0,0.08)',
+      display:'flex', alignItems:'center', gap: 6,
+    }}>
+      <span style={{fontWeight: 600}}>体验剩余 {m}:{s.toString().padStart(2, '0')}</span>
+      <span style={{color:'#6E665A'}}>· 请联系咨询老师开通账号</span>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Scene data loader
+// ═══════════════════════════════════════════════════════════════
+//
+// We ship the same scenes.json that the iOS app bundles, and the MP3
+// clips (4 voices × 223 sentences) are served from ./audio/. Fetching
+// keeps the web and iOS in lockstep — regenerating one source of truth
+// propagates to both. The iOS JSON uses full-name fields; this
+// transformer maps them to the short names the React screens expect.
+
+// Rosie（外刊同款声线）为首选；有 rosie 片段的句子用 Rosie，没有的回落旧四声线（日常暂未重录不受影响）。
+const VOICE_ORDER = ['rosie', 'bella', 'alice', 'chris', 'george'];
+
+function transformScenesJSON(json) {
+  const cats = (json.categories || []).map(c => ({ k: c.key, label: c.label }));
+
+  // Each sentence transform — used for both tier sentences and the
+  // legacy top-level sentences fallback.
+  const xformSentence = (sen, tierLevel, sceneId) => {
+    if (!sen.id) throw new Error(`句子缺少显式 id：${sceneId}/${tierLevel}`);
+    return {
+      id: sen.id,
+      legacyIds: Array.isArray(sen.legacyIds) ? sen.legacyIds : [],
+      tierLevel,
+      en: sen.en,
+      zh: sen.zh,
+      words: sen.words || [],
+      weak: sen.weak || [],
+      audio: sen.audio || null, // {rosie,chris,...} → relative mp3 paths
+      voice: sen.voice || null,  // 该句指定声线(男声对话轮=chris),缺省=rosie(女)
+    };
+  };
+
+  // Build tiers. Every scene in the new schema has `tiers`; if a legacy
+  // `sentences`-only scene sneaks through, we wrap it as a single 初级
+  // tier so the rest of the UI only deals with one shape.
+  const xformTiers = s => {
+    if (Array.isArray(s.tiers) && s.tiers.length > 0) {
+      return s.tiers.map(t => ({
+        level: t.level,
+        label: t.label,
+        sents: t.sentenceCount ?? (t.sentences || []).length,
+        sentences: (t.sentences || []).map(sen => xformSentence(sen, t.level, s.id)),
+      }));
+    }
+    return [{
+      level: 'beginner',
+      label: '初级',
+      sents: (s.sentences || []).length,
+      sentences: (s.sentences || []).map(sen => xformSentence(sen, 'beginner', s.id)),
+    }];
+  };
+
+  const scenes = (json.scenes || []).map(s => {
+    const tiers = xformTiers(s);
+    const beg = tiers.find(t => t.level === 'beginner') || tiers[0];
+    return {
+      id: s.id,
+      // 'daily' = 日常对话跟读 (default); 'cambridge' = 剑桥考试对话.
+      track: s.track || 'daily',
+      // Only set on cambridge scenes: 'KET' | 'PET' | 'FCE'.
+      exam: s.exam || null,
+      // 剑桥备考三件套（仅 cambridge）：Part 标注 / 考点说明 / 答题模板锦囊。
+      examPart: s.examPart || '',
+      examTip: s.examTip || '',
+      templates: Array.isArray(s.templates) ? s.templates : [],
+      k: s.kind || s.category,
+      cat: s.category || s.kind,
+      title: s.title,
+      sub: s.subtitle,
+      level: s.level,
+      mins: s.minutes,
+      // Surface the 初级 tier's sentence count on the card so the
+      // catalog feels consistent — power users go into the detail to
+      // pick a higher tier.
+      sents: beg.sents,
+      progress: s.progress ?? 0,
+      isNew: !!s.isNew,
+      description: s.description || '',
+      learn: s.learn || [],
+      tiers,
+      // Legacy `sentences` field — keep a flattened view of the 初级
+      // tier for any code path we haven't migrated yet (practice/result
+      // screens that want a default).
+      sentences: beg.sentences,
+    };
+  });
+  const examTopics = (json.examTopics || []).map(c => ({ k: c.key, label: c.label }));
+  return { cats, scenes, examTopics };
+}
+
+// Prefer a voice that has a clip for this sentence; default to Bella (US♀).
+function pickVoiceForSentence(sentence, preferred) {
+  if (!sentence || !sentence.audio) return null;
+  const order = preferred
+    ? [preferred, ...VOICE_ORDER.filter(v => v !== preferred)]
+    : VOICE_ORDER;
+  for (const v of order) {
+    if (sentence.audio[v]) return { voice: v, path: sentence.audio[v] };
+  }
+  return null;
+}
+
+// Play one sentence's MP3. slow=true uses playbackRate 0.75.
+let _currentAudio = null;
+function playSentenceAudio(sentence, { voice = 'bella', slow = false } = {}) {
+  stopSentenceAudio();
+  const pick = pickVoiceForSentence(sentence, voice);
+  if (!pick) return null;
+  const a = new Audio(`./audio/${pick.path}`);
+  a.playbackRate = slow ? 0.75 : 1.0;
+  _currentAudio = a;
+  a.play().catch(() => {
+    // autoplay policy、解码或网络失败时，通知调用方把播放按钮恢复为空闲态。
+    if (_currentAudio !== a) return;
+    _currentAudio = null;
+    a.dispatchEvent(new Event('error'));
+  });
+  return a;
+}
+function stopSentenceAudio() {
+  if (_currentAudio) {
+    try {
+      _currentAudio.onended = null;
+      _currentAudio.onerror = null;
+      _currentAudio.pause();
+      _currentAudio.currentTime = 0;
+    } catch (_) {}
+    _currentAudio = null;
+  }
+}
+
+function LoadingScreen() {
+  return (
+    <div style={{
+      position:'fixed', inset: 0, display:'flex', alignItems:'center', justifyContent:'center',
+      fontFamily:'-apple-system, system-ui, sans-serif', color:'#6E665A', fontSize: 13,
+    }}>正在加载场景…</div>
+  );
+}
+
+function LoadErrorScreen({ err }) {
+  return (
+    <div style={{
+      position:'fixed', inset: 0, display:'flex', flexDirection:'column',
+      alignItems:'center', justifyContent:'center', padding: 40, textAlign:'center',
+      fontFamily:'-apple-system, system-ui, sans-serif', color:'#C55A30', fontSize: 13,
+    }}>
+      <div>场景数据加载失败 · 刷新重试</div>
+      <div style={{fontSize: 10, color:'#6E665A', marginTop: 8}}>{String(err)}</div>
+    </div>
+  );
+}
+
+const _root = ReactDOM.createRoot(document.getElementById('root'));
+_root.render(<LoadingScreen/>);
+
+fetch('./scenes.json', { cache: 'no-cache' })
+  .then(r => { if (!r.ok) throw new Error(`scenes.json ${r.status}`); return r.json(); })
+  .then(json => {
+    const { cats, scenes, examTopics } = transformScenesJSON(json);
+    SCENE_CATS = cats;
+    SCENES = scenes;
+    EXAM_TOPICS = examTopics;
+    _root.render(<AuthGate/>);
+  })
+  .catch(err => {
+    console.error('[scenes] load failed', err);
+    _root.render(<LoadErrorScreen err={err}/>);
+  });
+</script>
+</body>
+</html>

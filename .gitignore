@@ -1,0 +1,33 @@
+# Dependencies / build output
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+.cache/
+
+# Environment files and secrets (API keys live in .env.local, never commit them)
+.env
+.env.*
+*.local
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

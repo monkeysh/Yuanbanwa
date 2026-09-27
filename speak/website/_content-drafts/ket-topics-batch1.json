@@ -1,0 +1,141 @@
+{
+  "_note": "KET 新话题第一批(6个)。结构:单档8句一男一女对话(♂voice:chris/♀rosie,4组问答),A2水平简单自然。待 v4pro 双卡审后 splice 为 cambridge/KET 场景。examTopics 需补 transport/sports/festivals 键(friends用family/holidays用travel/jobs用work)。",
+  "ket-holidays": {
+    "meta": {
+      "title": "假期去哪玩", "subtitle": "Holidays and travel", "category": "travel",
+      "description": "KET 高频话题:聊度假、去过的地方、喜欢海边还是山里。A2 简单对话。",
+      "learn": ["问对方喜不喜欢度假", "说去过哪里、做了什么", "表达偏好(beach/mountains)", "用一般过去时讲经历"],
+      "examTip": "**考法** 假期旅行是 KET 高频话题。考官常问 Do you like...? / Where did you go...? / What did you do...? 回答用一般现在时说喜好、一般过去时说经历,给 1-2 句即可。",
+      "templates": [
+        { "en": "I went to ___ last ___.", "zh": "说去过的地方和时间" },
+        { "en": "I prefer ___ because ___.", "zh": "说偏好和原因" },
+        { "en": "That sounds ___!", "zh": "回应对方(fun/exciting)" }
+      ]
+    },
+    "dialogue": [
+      { "en": "Do you like going on holiday, Lily?", "zh": "你喜欢去度假吗，莉莉？", "voice": "chris" },
+      { "en": "Yes, I love it! I went to the beach last summer.", "zh": "喜欢！去年夏天我去了海边。" },
+      { "en": "That sounds fun. What did you do there?", "zh": "听起来很好玩。你在那儿做了什么？", "voice": "chris" },
+      { "en": "I swam in the sea and built sandcastles with my sister.", "zh": "我在海里游泳，还和妹妹堆了沙堡。" },
+      { "en": "Nice! Do you prefer the beach or the mountains?", "zh": "真好！你更喜欢海边还是山里？", "voice": "chris" },
+      { "en": "The beach, definitely. What about you, Tom?", "zh": "肯定是海边。你呢，汤姆？" },
+      { "en": "I like the mountains. I went skiing there last winter.", "zh": "我喜欢山里。去年冬天我去那儿滑雪了。", "voice": "chris" },
+      { "en": "Wow, that sounds exciting! I'd love to try skiing.", "zh": "哇，听起来好刺激！我也想试试滑雪。" }
+    ]
+  },
+  "ket-transport": {
+    "meta": {
+      "title": "怎么去", "subtitle": "Getting around", "category": "transport",
+      "description": "KET 高频话题:聊怎么上学、坐什么车、喜欢的交通方式。A2 简单对话。",
+      "learn": ["问对方怎么去某地", "说自己的交通方式", "说要多久", "表达喜欢的出行方式"],
+      "examTip": "**考法** 交通出行是 KET 常考。考官问 How do you get to...? / How long does it take? 回答用 I go by bus / on foot,时间用 It takes about... 简单直接即可。",
+      "templates": [
+        { "en": "I usually go by ___.", "zh": "说交通方式" },
+        { "en": "It takes about ___ minutes.", "zh": "说花多久" },
+        { "en": "I like taking the ___ because ___.", "zh": "说喜欢的方式和原因" }
+      ]
+    },
+    "dialogue": [
+      { "en": "How do you get to school, Lily?", "zh": "你怎么去学校，莉莉？", "voice": "chris" },
+      { "en": "I usually go by bus. It takes about twenty minutes.", "zh": "我一般坐公交，大概二十分钟。" },
+      { "en": "Do you ever walk or ride a bike?", "zh": "你走路或骑车去过吗？", "voice": "chris" },
+      { "en": "Sometimes I ride my bike when the weather is nice.", "zh": "天气好的时候我有时会骑自行车。" },
+      { "en": "What's your favourite way to travel?", "zh": "你最喜欢的出行方式是什么？", "voice": "chris" },
+      { "en": "I love taking the train because I can look out of the window.", "zh": "我喜欢坐火车，因为可以看窗外的风景。" },
+      { "en": "Me too. How do you get to the city centre?", "zh": "我也是。你怎么去市中心？", "voice": "chris" },
+      { "en": "I take the underground. It's fast and never gets stuck in traffic.", "zh": "我坐地铁。又快，还不会堵车。" }
+    ]
+  },
+  "ket-sports": {
+    "meta": {
+      "title": "喜欢的运动", "subtitle": "Sports and games", "category": "sports",
+      "description": "KET 高频话题:聊喜欢的运动、多久做一次、和谁一起。A2 简单对话。",
+      "learn": ["问对方喜欢什么运动", "说自己的运动和频率", "说和谁一起做", "表达擅长/喜欢"],
+      "examTip": "**考法** 运动是 KET 高频话题。考官问 What sports do you like? / How often do you...? 回答用现在时说喜好和频率(once a week / every day),给个理由更好。",
+      "templates": [
+        { "en": "My favourite sport is ___.", "zh": "说最爱的运动" },
+        { "en": "I play ___ ___ times a week.", "zh": "说频率" },
+        { "en": "I'm not very good at ___, but it's fun.", "zh": "说不擅长但喜欢" }
+      ]
+    },
+    "dialogue": [
+      { "en": "What sports do you like, Lily?", "zh": "你喜欢什么运动，莉莉？", "voice": "chris" },
+      { "en": "My favourite sport is swimming. I go to the pool every weekend.", "zh": "我最喜欢游泳。我每个周末都去泳池。" },
+      { "en": "That's great. Do you play any team sports?", "zh": "真棒。你玩团队运动吗？", "voice": "chris" },
+      { "en": "Yes, I play basketball with my friends after school.", "zh": "玩，我放学后和朋友打篮球。" },
+      { "en": "How often do you practise?", "zh": "你多久练一次？", "voice": "chris" },
+      { "en": "About twice a week. I'm not very good, but it's really fun.", "zh": "大概一周两次。我打得不太好，但很有意思。" },
+      { "en": "Do you like watching sports on TV too?", "zh": "你也喜欢在电视上看比赛吗？", "voice": "chris" },
+      { "en": "Sometimes. I love watching football with my dad.", "zh": "有时候。我喜欢和爸爸一起看足球。" }
+    ]
+  },
+  "ket-festivals": {
+    "meta": {
+      "title": "过节啦", "subtitle": "Festivals and celebrations", "category": "festivals",
+      "description": "KET 高频话题:聊喜欢的节日、怎么庆祝、和谁一起、吃什么。A2 简单对话。",
+      "learn": ["问对方喜欢什么节日", "说怎么庆祝", "说和谁一起、吃什么", "表达节日的感受"],
+      "examTip": "**考法** 节日庆祝是 KET 常考话题。考官问 What's your favourite festival? / How do you celebrate? 回答用现在时说习俗(we eat.../ we visit...),简单具体即可。",
+      "templates": [
+        { "en": "My favourite festival is ___.", "zh": "说最爱的节日" },
+        { "en": "We usually ___ together.", "zh": "说怎么庆祝" },
+        { "en": "It's my favourite because ___.", "zh": "说喜欢的原因" }
+      ]
+    },
+    "dialogue": [
+      { "en": "What's your favourite festival, Lily?", "zh": "你最喜欢的节日是什么，莉莉？", "voice": "chris" },
+      { "en": "I love Spring Festival. The whole family gets together.", "zh": "我喜欢春节。全家人都会团聚。" },
+      { "en": "That sounds lovely. What do you usually do?", "zh": "听起来真好。你们通常做什么？", "voice": "chris" },
+      { "en": "We have a big dinner and my grandma gives us red packets.", "zh": "我们吃一顿大餐，奶奶还会给我们红包。" },
+      { "en": "Nice! Do you eat any special food?", "zh": "真好！你们吃什么特别的食物吗？", "voice": "chris" },
+      { "en": "Yes, we make dumplings together. They're my favourite.", "zh": "会的，我们一起包饺子。那是我的最爱。" },
+      { "en": "Which festival do you like, Tom?", "zh": "你喜欢哪个节日，汤姆？" },
+      { "en": "I like Mid-Autumn Festival. We eat mooncakes and watch the moon.", "zh": "我喜欢中秋节。我们吃月饼，赏月亮。", "voice": "chris" }
+    ]
+  },
+  "ket-friends": {
+    "meta": {
+      "title": "我的好朋友", "subtitle": "My friends", "category": "family",
+      "description": "KET 高频话题:聊好朋友、一起做什么、朋友是什么样的人。A2 简单对话。",
+      "learn": ["介绍自己的好朋友", "说和朋友一起做什么", "描述朋友的性格", "说多久见一次"],
+      "examTip": "**考法** 朋友是 KET 高频话题。考官问 Tell me about your best friend / What do you do together? 回答用现在时描述朋友(She's kind / funny)和一起做的事,给 1-2 句即可。",
+      "templates": [
+        { "en": "My best friend is ___.", "zh": "介绍好朋友" },
+        { "en": "We like ___ together.", "zh": "说一起做什么" },
+        { "en": "She's really ___ and ___.", "zh": "描述性格" }
+      ]
+    },
+    "dialogue": [
+      { "en": "Tell me about your best friend, Lily.", "zh": "跟我说说你最好的朋友吧，莉莉。", "voice": "chris" },
+      { "en": "My best friend is Emma. We've known each other since we were six.", "zh": "我最好的朋友是艾玛。我们六岁就认识了。" },
+      { "en": "What do you like doing together?", "zh": "你们喜欢一起做什么？", "voice": "chris" },
+      { "en": "We love drawing and watching cartoons at the weekend.", "zh": "我们喜欢周末一起画画、看动画片。" },
+      { "en": "She sounds fun. What's she like?", "zh": "她听起来很有意思。她是什么样的人？", "voice": "chris" },
+      { "en": "She's really kind and always makes me laugh.", "zh": "她非常善良，总能逗我笑。" },
+      { "en": "How often do you see each other?", "zh": "你们多久见一次？", "voice": "chris" },
+      { "en": "Almost every day at school. We sit next to each other.", "zh": "几乎每天在学校见。我们坐在一起。" }
+    ]
+  },
+  "ket-jobs": {
+    "meta": {
+      "title": "长大想做什么", "subtitle": "Jobs and dreams", "category": "work",
+      "description": "KET 高频话题:聊长大想做的工作、为什么、喜欢的科目。A2 简单对话。",
+      "learn": ["说长大想做什么", "说原因", "说喜欢的科目", "表达梦想"],
+      "examTip": "**考法** 未来工作是 KET 常考话题。考官问 What do you want to be? / Why? 回答用 I want to be a... because... 说梦想和简单理由,现在时即可。",
+      "templates": [
+        { "en": "I want to be a ___.", "zh": "说想做的工作" },
+        { "en": "I want to do this because ___.", "zh": "说原因" },
+        { "en": "My favourite subject is ___.", "zh": "说喜欢的科目" }
+      ]
+    },
+    "dialogue": [
+      { "en": "What do you want to be when you grow up, Lily?", "zh": "你长大想做什么，莉莉？", "voice": "chris" },
+      { "en": "I want to be a doctor. I'd like to help sick people.", "zh": "我想当医生。我想帮助生病的人。" },
+      { "en": "That's a great job. Why do you want to do it?", "zh": "那是个很棒的工作。你为什么想做呢？", "voice": "chris" },
+      { "en": "Because my mum is a nurse, and I want to help people like her.", "zh": "因为我妈妈是护士，我想像她一样帮助别人。" },
+      { "en": "What's your favourite subject at school?", "zh": "你在学校最喜欢的科目是什么？", "voice": "chris" },
+      { "en": "I love science. It helps me understand how things work.", "zh": "我喜欢科学。它帮我理解事物是怎么运作的。" },
+      { "en": "What about you, Tom? What do you want to be?", "zh": "你呢，汤姆？你想做什么？" },
+      { "en": "I want to be a pilot. I've always dreamed of flying planes.", "zh": "我想当飞行员。我一直梦想着开飞机。", "voice": "chris" }
+    ]
+  }
+}
