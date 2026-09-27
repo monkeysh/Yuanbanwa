@@ -9,14 +9,14 @@ This file tells Claude Code how to continue work in `Speak-website/` safely.
 当前产品只有两块，且共用同一套 `PracticeScreen` / `ResultScreen` / 复练流程：
 
 1. `daily`：33 个日常对话场景（含 2026-09-26 合入的 car-breakin、insurance-claim）。
-2. `cambridge`：42 个剑桥考试场景（KET 18 / PET 12 / FCE 12）。
+2. `cambridge`：48 个剑桥考试场景（KET 18 / PET 18 / FCE 12）。
 
 “读说一体 / Rosie AI 陪练 / chatbot”方向已经搁置。`prototype-v2.html`、`prototype-chat.html` 和相关旧方案文档只供历史参考，不是当前产品。
 
 ## Current architecture
 
 - React 18 单页应用，所有组件和状态仍集中在 `index.html` 的内联 JSX 中；没有 `src/`。
-- `scenes.json` 是 Web 与 iOS 共用的内容源：75 个场景、240 个 tier、2014 条分档句子（2026-09-26 合入 B1/B2、2026-09-27 PET Part 2 加长后；其中 284 句音频待烧）。句子必须带不可变的显式 `id`；插入或排序时不得复用/改写既有 ID。
+- `scenes.json` 是 Web 与 iOS 共用的内容源：81 个场景、258 个 tier、2188 条分档句子（2026-09-26 合入日常 B1/B2、2026-09-27 PET 加强后；其中 542 个音频文件待烧）。句子必须带不可变的显式 `id`；插入或排序时不得复用/改写既有 ID。
 - 生产构建由 `scripts/build.mjs` 完成：esbuild 预编译 JSX，React / ReactDOM 自托管，应用文件名带内容哈希，`scenes.json` 请求带内容版本。部署时禁止直接上传源码 `index.html`。
 - 源码 HTTP 预览仍使用 CDN React/Babel，只用于开发；`dist/` 中不得出现 `unpkg.com`、`text/babel` 或开发版 React。
 - 进度和公开体验状态只保存在当前浏览器 localStorage；没有账号、短信验证码或后台身份。公开体验时长为 20 分钟，昵称可选。
