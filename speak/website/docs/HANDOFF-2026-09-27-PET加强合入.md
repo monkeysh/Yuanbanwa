@@ -13,10 +13,11 @@ PET 加强两批已合入 `scenes.json`:**75 → 81 场景,240 → 258 tier,1986
 2. **元数据修正**(同一提交):24 个有 Part 3 档的剑桥场景(PET 12 + FCE 12)examPart → `Part 1 + Part 2 + Part 3`,description 补 `+ Part 3 讨论`(Web 芯片与 iOS 详情页显示该字段)。脚本 `scripts/normalize_cambridge_parts.mjs`。
 3. **B1 · 6 个新 PET 话题**:pet-personal / pet-home / pet-sports / pet-transport / pet-festivals / pet-friends,每个 Part 1(8)+ Part 2(9,126–132 词)+ Part 3(12)+ 4 模板 + examTip。内容 `_content-drafts/pet-content-batch2.json`,脚本 `scripts/splice_pet_batch2.mjs`(幂等),自审 `_content-drafts/Claude-新增PET话题-第二批-自审报告-2026-09-27.md`,终审 pack `docs/新增PET话题-第二批-终审pack-2026-09-27.md`。
 4. 方案里的两项决定已落实:交接 ④「Part 2 搭档 30 秒回应」不做(是 FCE 结构);Part 3 维持「压缩跟读示范」12 句。
+5. **独立终审已做**(用户选择第 2 项):两个 pack 各由一个不带写作上下文的独立审稿实例按三步法终审。Part 2 加长:必改 0、建议 16,全部采纳(提交 29e88f1);新话题:必改 1(pet-home Part 1 人称一致)、建议 22,除一条外全部采纳(pet-home / pet-transport 的 Part 3 改为官方的第三方情境口吻并加征询、pet-sports Part 1 末题改个人打算、pet-festivals 让步式收尾等)。报告 `_content-drafts/独立终审-*.md`,回填明细在两份自审报告第八节;两个终审 pack 已按 v2 文本重新生成,可再交 Codex / GPT 复核。
 
 ## 落地步骤(音频与部署等用户点头)
 
-1. (可选)把两个终审 pack 交 Codex / GPT,结论回填后直接改 `scenes.json` 对应句并同步内容文件(句 id 不变),重跑 `npm run validate`。
+1. (可选)把两个 v2 终审 pack 交 Codex / GPT 复核;有结论就改内容文件(`pet-part2-extend.json` / `pet-content-batch2.json`),然后从 078c5a8 的 scenes.json 重新推导:`node scripts/splice_pet_part2_extend.mjs && node scripts/normalize_cambridge_parts.mjs && node scripts/splice_pet_batch2.mjs`(内容文件是唯一事实源;新话题尚未发布,句 id 可随位置重编)。
 2. 烧音频(幂等,已存在的文件跳过):
    ```bash
    cd speak/website

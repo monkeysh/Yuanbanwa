@@ -66,3 +66,21 @@
 
 - 外部终审回填后修订:直接改 `scenes.json` 对应句并同步 `pet-content-batch2.json`(句 id 不变)
 - 音频:174 句 / 258 个文件,清单 `_content-drafts/pet-topics-batch2-burn.json`;烧录 `node scripts/burn_ket_audio.mjs pet-personal pet-home pet-sports pet-transport pet-festivals pet-friends` —— 等用户点头
+
+## 八、独立终审回填(2026-09-27)
+
+报告:`_content-drafts/独立终审-新增PET话题-第二批-报告-2026-09-27.md`(独立审稿实例,三步法)。结论:**必改 1、建议 16(句级)+ 6(整组)**,题型判定"六个话题三个 Part 均符合 2020 revision 现行规格,无题型错位"。音频尚未烧,除「至少一组不按卡片顺序」一条外**全部采纳**:
+
+| 话题 | 采纳内容 |
+|---|---|
+| pet-home | **必改** part1-4 人称一致:where we spend most of our time together as a family;part1-2 去 KET 回声(looks out over the river);Part 3 整组改为官方的第三方情境口吻(This family… / the children / the grandparents / let the family decide);examTip 补「卡片说的是别人的情况,用 they could… 讨论」 |
+| pet-transport | Part 3 整组改第三方口吻(Six friends… / one of their parents / they'd),第 5 句加征询 What do you think?,第 10 句改成干净的第一条件句(will be… / they'll);part1-8 去 KET 回声(read and chat on the way);examTip 同步 |
+| pet-sports | part1-7/8 把 Part 4 风格的社会观点题换成个人打算(Do you think you'll do more sport in the future?);part2-8 floor → The court is dark green with white lines;part3-3 拆开逗号粘连;part3-5 加征询 Do you think people would join in?;part3-1 中文「最可行」→「效果最好」;examTip 注明观点题属 Part 4 |
+| pet-festivals | Part 2 女孩衣着句前移到吹蜡烛之后(人物 → 地点 → 其他细节;该组 Part 2 句 id 按位置重编,尚未发布无影响);part3-12 改让步式收尾(But if most people prefer the picnic, that's fine too),与 pet-home 的「交别人决定」区分;examTip 把「节日对家庭重不重要」归到 Part 1 末尾或 Part 4 |
+| pet-friends | part1-5 Do you find it easy…;part1-8 避免连用 Not really;part2-2 showing the other something;part3-2 软化 would be a good place to start;part3-3 busy at her new school;part3-11 先回应第 10 句的线上看电影再总结;examTip 同上归属说明 |
+| pet-personal | examTip 改为准确的 Phase 1 固定四问 + 常见 Phase 2 问句;part3-2 中文去掉多出的最高级 |
+| 六组 examTip | 场景段补一句「考场上考官只说 Please tell us what you can see in the photograph,没有分项小问题,要自己按顺序说满约一分钟」 |
+
+未采纳:「至少一组不按卡片顺序讨论」——六组已各有一次跳出卡片顺序的回应(如 pet-transport 第 9 句先收窄到两个选项),不再为此改写。
+
+落实方式:`pet-content-batch2.json` 升到 v2;从 078c5a8 的 scenes.json 重新推导(Part 2 加长 v2 → 元数据修正 → 新话题 v2)后与合入版逐场景比对,差异只落在上述句子与 examTip,其余场景完全一致。终审 pack 已按 v2 文本重新生成。

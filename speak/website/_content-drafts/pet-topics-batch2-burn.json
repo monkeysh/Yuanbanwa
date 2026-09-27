@@ -226,7 +226,7 @@
   },
   {
     "base": "pet-home_p1_02",
-    "text": "I live in a flat on the tenth floor. It has three bedrooms, and my room looks out over a park.",
+    "text": "I live in a flat on the tenth floor. It has three bedrooms, and my room looks out over the river.",
     "voices": [
       "rosie",
       "chris"
@@ -242,7 +242,7 @@
   },
   {
     "base": "pet-home_p1_04",
-    "text": "The kitchen, because that's where my family spends most of our time together, especially at dinner.",
+    "text": "The kitchen, because that's where we spend most of our time together as a family, especially at dinner.",
     "voices": [
       "rosie",
       "chris"
@@ -345,14 +345,14 @@
   },
   {
     "base": "pet-home_p3_01",
-    "text": "My parents want to do something with the empty room at home, and they've asked for ideas. What do you think?",
+    "text": "This family wants to use their empty room, and these are the ideas. What do you think they should do?",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-home_p3_02",
-    "text": "Well, a study would be really useful. You'd have a quiet place to do your homework.",
+    "text": "Well, a study would be really useful. The children would have a quiet place to do their homework.",
     "voices": [
       "rosie",
       "chris"
@@ -360,14 +360,14 @@
   },
   {
     "base": "pet-home_p3_03",
-    "text": "That's true, but I already do my homework at the kitchen table, and it works fine.",
+    "text": "That's true, but they probably do their homework at the kitchen table already, and that works fine.",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-home_p3_04",
-    "text": "OK. Then what about a guest room? Your grandparents could stay when they visit.",
+    "text": "OK. Then what about a guest room? The grandparents could stay when they visit.",
     "voices": [
       "rosie",
       "chris"
@@ -375,7 +375,7 @@
   },
   {
     "base": "pet-home_p3_05",
-    "text": "They only visit twice a year, though, so the room would be empty most of the time.",
+    "text": "Grandparents usually only visit a few times a year, though, so the room would be empty most of the time.",
     "voices": [
       "rosie"
     ]
@@ -390,7 +390,7 @@
   },
   {
     "base": "pet-home_p3_07",
-    "text": "I'm not sure my family would use it. Nobody at home really likes exercise!",
+    "text": "It's hard to say if they would use it. Not every family likes exercise!",
     "voices": [
       "rosie"
     ]
@@ -405,7 +405,7 @@
   },
   {
     "base": "pet-home_p3_09",
-    "text": "I'd love that, but my parents will probably say it's a waste of space.",
+    "text": "The children would love that, but the parents will probably say it's a waste of space.",
     "voices": [
       "rosie"
     ]
@@ -427,7 +427,7 @@
   },
   {
     "base": "pet-home_p3_12",
-    "text": "And I'd still choose the study. Let's give your parents both ideas and let them decide.",
+    "text": "And I'd still choose the study. Let's suggest both ideas and let the family decide.",
     "voices": [
       "rosie",
       "chris"
@@ -483,7 +483,7 @@
   },
   {
     "base": "pet-sports_p1_07",
-    "text": "Do you think young people do enough exercise these days?",
+    "text": "Do you think you'll do more sport in the future?",
     "voices": [
       "rosie",
       "chris"
@@ -491,7 +491,7 @@
   },
   {
     "base": "pet-sports_p1_08",
-    "text": "Not really. Most of my classmates spend hours on their phones, so I think schools should offer more sport after lessons.",
+    "text": "I hope so. I've got a lot of exams this year, so I don't have much time, but next summer I want to start swimming again.",
     "voices": [
       "rosie",
       "chris"
@@ -548,7 +548,7 @@
   },
   {
     "base": "pet-sports_p2_08",
-    "text": "The court has white lines and a dark green floor, and the basket is on a metal pole.",
+    "text": "The court is dark green with white lines, and the basket is on a metal pole.",
     "voices": [
       "rosie"
     ]
@@ -577,7 +577,7 @@
   },
   {
     "base": "pet-sports_p3_03",
-    "text": "I agree, most of us are tired enough in the morning. Dance or yoga classes after school might be more popular.",
+    "text": "I agree. Most of us are already tired in the morning. Dance or yoga classes after school might be more popular.",
     "voices": [
       "rosie"
     ]
@@ -592,7 +592,7 @@
   },
   {
     "base": "pet-sports_p3_05",
-    "text": "What about a sports competition between classes every month?",
+    "text": "What about a sports competition between classes every month? Do you think people would join in?",
     "voices": [
       "rosie"
     ]
@@ -708,7 +708,7 @@
   },
   {
     "base": "pet-transport_p1_08",
-    "text": "Yes, last summer I took a high-speed train to Beijing with my family, and I loved watching the countryside go past.",
+    "text": "Yes, last summer I took a high-speed train to Beijing with my family, and I loved having time to read and chat on the way.",
     "voices": [
       "rosie",
       "chris"
@@ -779,7 +779,7 @@
   },
   {
     "base": "pet-transport_p3_01",
-    "text": "We're all going to Suzhou for the day on Saturday. How should we travel there?",
+    "text": "Six friends are going to Suzhou for the day on Saturday. How should they travel there?",
     "voices": [
       "rosie"
     ]
@@ -809,14 +809,14 @@
   },
   {
     "base": "pet-transport_p3_05",
-    "text": "What if we ask my dad to drive us? Then we could stop wherever we want.",
+    "text": "What if one of their parents drives them? Then they could stop wherever they want. What do you think?",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-transport_p3_06",
-    "text": "Six of us won't fit in one car, and I don't think he'd want to spend his Saturday driving.",
+    "text": "Six people won't fit in one car, and a parent probably doesn't want to spend a whole Saturday driving.",
     "voices": [
       "rosie",
       "chris"
@@ -831,7 +831,7 @@
   },
   {
     "base": "pet-transport_p3_08",
-    "text": "Eighty kilometres! We'd arrive too tired to do anything.",
+    "text": "Eighty kilometres! They'd arrive too tired to do anything.",
     "voices": [
       "rosie",
       "chris"
@@ -846,7 +846,7 @@
   },
   {
     "base": "pet-transport_p3_10",
-    "text": "If we book early, the train tickets are cheaper, and we'd have more time in the city.",
+    "text": "If they book early, the train tickets will be cheaper, and they'll have more time in the city.",
     "voices": [
       "rosie",
       "chris"
@@ -861,7 +861,7 @@
   },
   {
     "base": "pet-transport_p3_12",
-    "text": "So let's go by train, and I'll check the ticket prices tonight.",
+    "text": "So we both think the train is the best choice for them.",
     "voices": [
       "rosie",
       "chris"
@@ -947,42 +947,42 @@
   },
   {
     "base": "pet-festivals_p2_03",
-    "text": "Around her, there are six or seven children wearing party hats, and they are all clapping.",
+    "text": "The girl is wearing a yellow dress, and she looks very excited.",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-festivals_p2_04",
-    "text": "On the table, there are some cups, crisps and sandwiches.",
+    "text": "Around her, there are six or seven children wearing party hats, and they are all clapping.",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-festivals_p2_05",
-    "text": "There are colourful balloons tied to the chairs, and a banner that says Happy Birthday.",
+    "text": "On the table, there are some cups, crisps and sandwiches.",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-festivals_p2_06",
-    "text": "A woman on the left is taking a photo with her phone, and she is smiling.",
+    "text": "There are colourful balloons tied to the chairs, and a banner that says Happy Birthday.",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-festivals_p2_07",
-    "text": "In the background, there is a wooden fence and a tree with a swing.",
+    "text": "A woman on the left is taking a photo with her phone, and she is smiling.",
     "voices": [
       "rosie"
     ]
   },
   {
     "base": "pet-festivals_p2_08",
-    "text": "The girl is wearing a yellow dress, and she looks very excited.",
+    "text": "In the background, there is a wooden fence and a tree with a swing.",
     "voices": [
       "rosie"
     ]
@@ -1078,7 +1078,7 @@
   },
   {
     "base": "pet-festivals_p3_12",
-    "text": "And I'd choose the lanterns, because people take something home. Let's suggest both and let the teachers decide.",
+    "text": "I'd choose the lanterns, because people can take something home. But if most people prefer the picnic, that's fine too.",
     "voices": [
       "rosie",
       "chris"
@@ -1118,7 +1118,7 @@
   },
   {
     "base": "pet-friends_p1_05",
-    "text": "Is it easy to make new friends?",
+    "text": "Do you find it easy to make new friends?",
     "voices": [
       "rosie",
       "chris"
@@ -1142,7 +1142,7 @@
   },
   {
     "base": "pet-friends_p1_08",
-    "text": "Not really. I think two or three close friends you can trust are better than a hundred people you hardly know.",
+    "text": "No, I don't think so. Two or three close friends you can trust are better than a hundred people you hardly know.",
     "voices": [
       "rosie",
       "chris"
@@ -1157,7 +1157,7 @@
   },
   {
     "base": "pet-friends_p2_02",
-    "text": "One of them is showing something on her phone, and the other is laughing.",
+    "text": "One girl is showing the other something on her phone, and her friend is laughing.",
     "voices": [
       "rosie"
     ]
@@ -1220,7 +1220,7 @@
   },
   {
     "base": "pet-friends_p3_02",
-    "text": "A video call every week would be the best way. You can see her face and really talk.",
+    "text": "A video call every week would be a good place to start. You can see her face and really talk.",
     "voices": [
       "rosie",
       "chris"
@@ -1228,7 +1228,7 @@
   },
   {
     "base": "pet-friends_p3_03",
-    "text": "I agree, though we'd have to find a time that works for everyone, because she'll have a new school.",
+    "text": "I agree, though we'd have to find a time that works for everyone, because she'll be busy at her new school.",
     "voices": [
       "rosie"
     ]
@@ -1288,7 +1288,7 @@
   },
   {
     "base": "pet-friends_p3_11",
-    "text": "So a weekly video call plus visits in the holidays seems like the best plan.",
+    "text": "That could work too, if everyone is free at the same time. So a weekly video call plus holiday visits seems best.",
     "voices": [
       "rosie"
     ]

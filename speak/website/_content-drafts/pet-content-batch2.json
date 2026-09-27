@@ -1,5 +1,5 @@
 {
-  "_note": "PET 加强 B1(2026-09-27):新增 6 个 PET(B1 Preliminary)话题 personal / home / sports / transport / festivals / friends。每话题:templates 4、Part 1 面试问答 8 句(考官问 rosie / 考生答 chris 交替)、Part 2 单图描述独白 9 句(115–130 词,rosie 单声)、Part 3 任务卡协作讨论 12 句(A=rosie / B=chris 交替;4 组自然一致、2 组保留分歧)。对照尺:docs/PET-官方题型断言-2026-07-31.md。合入脚本 scripts/splice_pet_batch2.mjs。",
+  "_note": "PET 加强 B1(2026-09-27):新增 6 个 PET(B1 Preliminary)话题 personal / home / sports / transport / festivals / friends。每话题:templates 4、Part 1 面试问答 8 句(考官问 rosie / 考生答 chris 交替)、Part 2 单图描述独白 9 句(115–130 词,rosie 单声)、Part 3 任务卡协作讨论 12 句(A=rosie / B=chris 交替;4 组自然一致、2 组保留分歧)。对照尺:docs/PET-官方题型断言-2026-07-31.md。合入脚本 scripts/splice_pet_batch2.mjs。 修订 v2(2026-09-27,独立终审 _content-drafts/独立终审-新增PET话题-第二批-报告-2026-09-27.md:必改 1、建议 16+6,除「至少一组不按卡片顺序」外全部采纳):pet-home Part 1 人称一致(必改);pet-home / pet-transport Part 3 改为官方的第三方情境口吻并加征询;pet-sports Part 1 末题改个人打算、Part 3 加征询、粘连句拆开;pet-festivals Part 2 衣着句前移(ids 按位置重编,尚未发布)、Part 3 让步式收尾;pet-friends 五处措辞;六条 examTip 补「考场没有分项小问题」与 Part 4 归属说明;两处 KET 回声改写。",
   "topics": [
     {
       "id": "pet-personal",
@@ -8,7 +8,7 @@
       "title": "聊聊我自己",
       "subtitle": "Talking about yourself",
       "examPart": "Part 1 + Part 2 + Part 3",
-      "examTip": "**考法** 个人信息是 PET 口语 Part 1 的固定开场：考官会依次问你住在哪里、是学生还是在工作、学什么、喜不喜欢学英语、上周末做了什么。这些问题每个考生都会遇到，答案要用完整句并自然带出细节或理由，通常会自然用到一般现在时、现在完成时（I've been learning English for…）和一般过去时。\n**场景** Part 2 的照片可能是某人在自己房间或家里的日常场景，要按「整体—人物动作—地点背景—其他细节」的顺序描述，用现在进行时和 There is/are 组织。Part 3 常见任务卡是帮新同学熟悉环境，要提出并回应建议、给理由，不用急着下结论。",
+      "examTip": "**考法** 个人信息是 PET 口语 Part 1 的固定开场：考官会依次问 What's your name? / Where do you live? / Do you work or are you a student? / What do you do (study)?，随后常问 Do you enjoy studying English? / What did you do last weekend? 这类日常与过去经历的问题。答案要用完整句并自然带出细节或理由，通常会自然用到一般现在时、现在完成时（I've been learning English for…）和一般过去时。\n**场景** Part 2 的照片可能是某人在自己房间或家里的日常场景，要按「整体—人物动作—地点背景—其他细节」的顺序描述，用现在进行时和 There is/are 组织。考场上考官只说 Please tell us what you can see in the photograph，没有分项小问题，要自己按顺序说满约一分钟。Part 3 常见任务卡是帮新同学熟悉环境，要提出并回应建议、给理由，不用急着下结论。",
       "templates": [
         {
           "en": "I live in ___ with ___.",
@@ -116,7 +116,7 @@
           },
           {
             "en": "Well, we could invite her to have lunch with us. That's an easy way to start talking.",
-            "zh": "嗯，我们可以邀请她一起吃午饭。这是开始聊天最简单的办法。",
+            "zh": "嗯，我们可以邀请她一起吃午饭。这是个开始聊天的简单办法。",
             "voice": "chris"
           },
           {
@@ -179,7 +179,7 @@
       "title": "聊聊我住的地方",
       "subtitle": "Home and where I live",
       "examPart": "Part 1 + Part 2 + Part 3",
-      "examTip": "**考法** 住所是 PET 口语 Part 1 的常见话题：考官通常会请你说说住的地方（Tell us about the place where you live）、最喜欢哪个房间、以后想住房子还是公寓。B1 学生要用完整句并给理由，通常会自然用到 There is/are、because、比较级和 would prefer 表达偏好。\n**场景** Part 2 的照片常是家里某个房间的生活场景，按人物、动作、家具物品、光线气氛的顺序描述，用现在进行时和方位词（next to / near / in the corner）组织。Part 3 常见任务卡是家里空房间做什么用，要逐个比较选项并给理由，意见不一致也可以，只要充分讨论。",
+      "examTip": "**考法** 住所是 PET 口语 Part 1 的常见话题：考官通常会请你说说住的地方（Tell us about the place where you live）、最喜欢哪个房间、以后想住房子还是公寓。B1 学生要用完整句并给理由，通常会自然用到 There is/are、because、比较级和 would prefer 表达偏好。\n**场景** Part 2 的照片常是家里某个房间的生活场景，按人物、动作、家具物品、光线气氛的顺序描述，用现在进行时和方位词（next to / near / in the corner）组织。考场上考官只说 Please tell us what you can see in the photograph，没有分项小问题，要自己按顺序说满约一分钟。Part 3 常见任务卡是某家人的空房间做什么用，真实考试卡片说的是别人的情况，要用 they / the children could… 来讨论，逐个比较选项并给理由，意见不一致也可以，只要充分讨论。",
       "templates": [
         {
           "en": "I live in a ___ on the ___ floor, and it has ___ rooms.",
@@ -204,8 +204,8 @@
           "zh": "说说你住的地方吧。"
         },
         {
-          "en": "I live in a flat on the tenth floor. It has three bedrooms, and my room looks out over a park.",
-          "zh": "我住在十楼的一套公寓里。有三间卧室，我的房间能看到外面的公园。",
+          "en": "I live in a flat on the tenth floor. It has three bedrooms, and my room looks out over the river.",
+          "zh": "我住在十楼的一套公寓里。有三间卧室，我的房间能看到外面的河。",
           "voice": "chris"
         },
         {
@@ -213,7 +213,7 @@
           "zh": "你在家里最喜欢哪个房间？为什么？"
         },
         {
-          "en": "The kitchen, because that's where my family spends most of our time together, especially at dinner.",
+          "en": "The kitchen, because that's where we spend most of our time together as a family, especially at dinner.",
           "zh": "厨房，因为那是我们一家人待在一起时间最多的地方，尤其是晚饭的时候。",
           "voice": "chris"
         },
@@ -278,31 +278,31 @@
         ]
       },
       "part3": {
-        "task": "**Part 3** 你和另一位考生看一张任务卡:一家人想利用家里的空房间。讨论卡片上的用途(书房、客房、小健身房、游戏室、储物间),说说哪个最合适 —— 可以各有偏好,不需要选同一个。",
+        "task": "**Part 3** 你和另一位考生看一张任务卡:一家人想利用家里的空房间。讨论卡片上的用途(书房、客房、小健身房、游戏室、储物间),说说他们选哪个最合适 —— 可以各有偏好,不需要选同一个。",
         "sentences": [
           {
-            "en": "My parents want to do something with the empty room at home, and they've asked for ideas. What do you think?",
-            "zh": "我爸妈想利用家里那个空房间，让我出主意。你觉得呢？",
+            "en": "This family wants to use their empty room, and these are the ideas. What do you think they should do?",
+            "zh": "这家人想利用家里的空房间，这些是备选方案。你觉得他们该怎么用？",
             "voice": "rosie"
           },
           {
-            "en": "Well, a study would be really useful. You'd have a quiet place to do your homework.",
-            "zh": "嗯，书房会很实用。你就有一个安静的地方写作业了。",
+            "en": "Well, a study would be really useful. The children would have a quiet place to do their homework.",
+            "zh": "嗯，书房会很实用。孩子们就有一个安静的地方写作业了。",
             "voice": "chris"
           },
           {
-            "en": "That's true, but I already do my homework at the kitchen table, and it works fine.",
-            "zh": "确实，不过我一直在餐桌上写作业，也挺好的。",
+            "en": "That's true, but they probably do their homework at the kitchen table already, and that works fine.",
+            "zh": "确实，不过他们大概已经习惯在餐桌上写作业了，那样也挺好。",
             "voice": "rosie"
           },
           {
-            "en": "OK. Then what about a guest room? Your grandparents could stay when they visit.",
-            "zh": "好吧。那客房怎么样？你爷爷奶奶来的时候可以住。",
+            "en": "OK. Then what about a guest room? The grandparents could stay when they visit.",
+            "zh": "好吧。那客房怎么样？爷爷奶奶来的时候可以住。",
             "voice": "chris"
           },
           {
-            "en": "They only visit twice a year, though, so the room would be empty most of the time.",
-            "zh": "可他们一年只来两次，房间大部分时间会空着。",
+            "en": "Grandparents usually only visit a few times a year, though, so the room would be empty most of the time.",
+            "zh": "可爷爷奶奶通常一年只来几次，房间大部分时间会空着。",
             "voice": "rosie"
           },
           {
@@ -311,8 +311,8 @@
             "voice": "chris"
           },
           {
-            "en": "I'm not sure my family would use it. Nobody at home really likes exercise!",
-            "zh": "我不确定我家人会用。家里没人真正喜欢锻炼！",
+            "en": "It's hard to say if they would use it. Not every family likes exercise!",
+            "zh": "很难说他们会不会用。不是每家人都喜欢锻炼！",
             "voice": "rosie"
           },
           {
@@ -321,8 +321,8 @@
             "voice": "chris"
           },
           {
-            "en": "I'd love that, but my parents will probably say it's a waste of space.",
-            "zh": "我会很喜欢，但我爸妈大概会说这是浪费空间。",
+            "en": "The children would love that, but the parents will probably say it's a waste of space.",
+            "zh": "孩子们会很喜欢，但父母大概会说这是浪费空间。",
             "voice": "rosie"
           },
           {
@@ -336,8 +336,8 @@
             "voice": "rosie"
           },
           {
-            "en": "And I'd still choose the study. Let's give your parents both ideas and let them decide.",
-            "zh": "而我还是会选书房。我们把两个想法都告诉你爸妈，让他们决定吧。",
+            "en": "And I'd still choose the study. Let's suggest both ideas and let the family decide.",
+            "zh": "而我还是会选书房。我们把两个想法都提出来，让这家人决定吧。",
             "voice": "chris"
           }
         ]
@@ -350,7 +350,7 @@
       "title": "聊聊运动",
       "subtitle": "Sports and exercise",
       "examPart": "Part 1 + Part 2 + Part 3",
-      "examTip": "**考法** 运动是 PET 口语 Part 1 的高频话题：考官会问你做不做运动、更喜欢参与还是观看、想尝试什么新运动，也可能问你对年轻人运动量的看法。回答要用完整句并给理由或例子，通常会自然用到频率表达（twice a week）、比较结构（prefer … to …）和 would like to。\n**场景** Part 2 的照片常是人们在运动的场面，先说整体场景，再说人物动作和衣着，最后补场地和周围物品。Part 3 常见任务卡是学校想让学生多运动，要比较几种活动的优缺点，向一个结论推进但不用急着决定。",
+      "examTip": "**考法** 运动是 PET 口语 Part 1 的高频话题：考官会问你做不做运动、更喜欢参与还是观看、想尝试什么新运动、以后会不会多做运动。回答要用完整句并给理由或例子，通常会自然用到频率表达（twice a week）、比较结构（prefer … to …）、would like to 和将来表达（I'll / I want to）。像「年轻人运动量够不够」这类社会性观点题更常出现在 Part 4。\n**场景** Part 2 的照片常是人们在运动的场面，先说整体场景，再说人物动作和衣着，最后补场地和周围物品。考场上考官只说 Please tell us what you can see in the photograph，没有分项小问题，要自己按顺序说满约一分钟。Part 3 常见任务卡是学校想让学生多运动，要比较几种活动的优缺点、中途征询对方意见，向一个结论推进但不用急着决定。",
       "templates": [
         {
           "en": "I ___ about ___ times a week, usually ___.",
@@ -398,12 +398,12 @@
           "voice": "chris"
         },
         {
-          "en": "Do you think young people do enough exercise these days?",
-          "zh": "你觉得现在的年轻人运动量够吗？"
+          "en": "Do you think you'll do more sport in the future?",
+          "zh": "你觉得以后你会多做运动吗？"
         },
         {
-          "en": "Not really. Most of my classmates spend hours on their phones, so I think schools should offer more sport after lessons.",
-          "zh": "不太够。我大多数同学一玩手机就是几个小时，所以我觉得学校放学后应该多安排些运动。",
+          "en": "I hope so. I've got a lot of exams this year, so I don't have much time, but next summer I want to start swimming again.",
+          "zh": "希望吧。今年我考试很多，没多少时间，不过明年夏天我想重新开始游泳。",
           "voice": "chris"
         }
       ],
@@ -439,8 +439,8 @@
             "zh": "地上我能看到几个包，还有一件有人脱下来的外套。"
           },
           {
-            "en": "The court has white lines and a dark green floor, and the basket is on a metal pole.",
-            "zh": "球场有白色的线和深绿色的地面，篮筐装在一根金属杆上。"
+            "en": "The court is dark green with white lines, and the basket is on a metal pole.",
+            "zh": "球场是深绿色的，画着白线，篮筐装在一根金属杆上。"
           },
           {
             "en": "Everyone looks very focused, so I think it's an important game for them.",
@@ -453,7 +453,7 @@
         "sentences": [
           {
             "en": "The school wants students to do more exercise, and these are the ideas. Which one do you think would work best?",
-            "zh": "学校想让学生多运动，这些是备选方案。你觉得哪个最可行？",
+            "zh": "学校想让学生多运动，这些是备选方案。你觉得哪个效果最好？",
             "voice": "rosie"
           },
           {
@@ -462,8 +462,8 @@
             "voice": "chris"
           },
           {
-            "en": "I agree, most of us are tired enough in the morning. Dance or yoga classes after school might be more popular.",
-            "zh": "同意，我们大多数人早上已经够累了。放学后的舞蹈或瑜伽课可能更受欢迎。",
+            "en": "I agree. Most of us are already tired in the morning. Dance or yoga classes after school might be more popular.",
+            "zh": "同意。我们大多数人早上本来就够累了。放学后的舞蹈或瑜伽课可能更受欢迎。",
             "voice": "rosie"
           },
           {
@@ -472,8 +472,8 @@
             "voice": "chris"
           },
           {
-            "en": "What about a sports competition between classes every month?",
-            "zh": "每个月办一次班级之间的运动比赛怎么样？",
+            "en": "What about a sports competition between classes every month? Do you think people would join in?",
+            "zh": "每个月办一次班级之间的运动比赛怎么样？你觉得大家会参加吗？",
             "voice": "rosie"
           },
           {
@@ -521,7 +521,7 @@
       "title": "聊聊交通出行",
       "subtitle": "Getting around town",
       "examPart": "Part 1 + Part 2 + Part 3",
-      "examTip": "**考法** 交通出行在 PET 口语 Part 1 很常见：考官会问你平时怎么上学、更喜欢火车还是汽车、你的城市出行方不方便，也可能问你有没有长途旅行的经历。回答要完整并给理由，通常会自然用到 by + 交通工具、It takes …、比较级和现在完成时（Have you ever …?）。\n**场景** Part 2 的照片可能是车站、公交站或街道，要说清人物、动作、天气和周围环境，多用方位词组织。Part 3 常见任务卡是几个人出行选交通方式，要比较时间、价钱、舒适度并给理由，向结论推进。",
+      "examTip": "**考法** 交通出行在 PET 口语 Part 1 很常见：考官会问你平时怎么上学、更喜欢火车还是汽车、你的城市出行方不方便，也可能问你有没有长途旅行的经历。回答要完整并给理由，通常会自然用到 by + 交通工具、It takes …、比较级和现在完成时（Have you ever …?）。\n**场景** Part 2 的照片可能是车站、公交站或街道，要说清人物、动作、天气和周围环境，多用方位词组织。考场上考官只说 Please tell us what you can see in the photograph，没有分项小问题，要自己按顺序说满约一分钟。Part 3 常见任务卡是几个人出行选交通方式，卡片说的是别人的情况，要用 they could… 来讨论，比较时间、价钱、舒适度并给理由，中途征询对方意见，向结论推进。",
       "templates": [
         {
           "en": "I usually get to ___ by ___, and it takes about ___ minutes.",
@@ -573,8 +573,8 @@
           "zh": "你有过长途旅行的经历吗？"
         },
         {
-          "en": "Yes, last summer I took a high-speed train to Beijing with my family, and I loved watching the countryside go past.",
-          "zh": "有，去年夏天我和家人坐高铁去北京，我很喜欢看窗外掠过的乡村风景。",
+          "en": "Yes, last summer I took a high-speed train to Beijing with my family, and I loved having time to read and chat on the way.",
+          "zh": "有，去年夏天我和家人坐高铁去北京，一路上有时间看书聊天，我很喜欢。",
           "voice": "chris"
         }
       ],
@@ -620,11 +620,11 @@
         ]
       },
       "part3": {
-        "task": "**Part 3** 你和另一位考生看一张任务卡:六个朋友周六要去邻近城市玩一天。讨论卡片上的交通方式(火车、长途汽车、请家长开车、骑自行车),说说哪种最合适 —— 比较时间、价钱和舒适度。",
+        "task": "**Part 3** 你和另一位考生看一张任务卡:六个朋友周六要去邻近城市玩一天。讨论卡片上的交通方式(火车、长途汽车、请家长开车、骑自行车),说说他们选哪种最合适 —— 比较时间、价钱和舒适度。",
         "sentences": [
           {
-            "en": "We're all going to Suzhou for the day on Saturday. How should we travel there?",
-            "zh": "我们周六要去苏州玩一天。我们该怎么去呢？",
+            "en": "Six friends are going to Suzhou for the day on Saturday. How should they travel there?",
+            "zh": "六个朋友周六要去苏州玩一天。他们该怎么去呢？",
             "voice": "rosie"
           },
           {
@@ -643,13 +643,13 @@
             "voice": "chris"
           },
           {
-            "en": "What if we ask my dad to drive us? Then we could stop wherever we want.",
-            "zh": "要不我们请我爸开车送我们？这样想在哪儿停就在哪儿停。",
+            "en": "What if one of their parents drives them? Then they could stop wherever they want. What do you think?",
+            "zh": "要不请其中一位家长开车送他们？这样想在哪儿停就在哪儿停。你觉得呢？",
             "voice": "rosie"
           },
           {
-            "en": "Six of us won't fit in one car, and I don't think he'd want to spend his Saturday driving.",
-            "zh": "六个人一辆车坐不下，而且我觉得他也不想把周六花在开车上。",
+            "en": "Six people won't fit in one car, and a parent probably doesn't want to spend a whole Saturday driving.",
+            "zh": "六个人一辆车坐不下，而且家长大概也不想把整个周六花在开车上。",
             "voice": "chris"
           },
           {
@@ -658,8 +658,8 @@
             "voice": "rosie"
           },
           {
-            "en": "Eighty kilometres! We'd arrive too tired to do anything.",
-            "zh": "八十公里！到了我们就累得什么都干不了了。",
+            "en": "Eighty kilometres! They'd arrive too tired to do anything.",
+            "zh": "八十公里！到了他们就累得什么都干不了了。",
             "voice": "chris"
           },
           {
@@ -668,8 +668,8 @@
             "voice": "rosie"
           },
           {
-            "en": "If we book early, the train tickets are cheaper, and we'd have more time in the city.",
-            "zh": "如果早点订票，火车票更便宜，我们在城里的时间也更多。",
+            "en": "If they book early, the train tickets will be cheaper, and they'll have more time in the city.",
+            "zh": "如果早点订票，火车票会更便宜，他们在城里的时间也会更多。",
             "voice": "chris"
           },
           {
@@ -678,8 +678,8 @@
             "voice": "rosie"
           },
           {
-            "en": "So let's go by train, and I'll check the ticket prices tonight.",
-            "zh": "那我们就坐火车去吧，我今晚查一下票价。",
+            "en": "So we both think the train is the best choice for them.",
+            "zh": "所以我们都觉得，火车对他们来说是最好的选择。",
             "voice": "chris"
           }
         ]
@@ -692,7 +692,7 @@
       "title": "聊聊节日庆祝",
       "subtitle": "Celebrations and special days",
       "examPart": "Part 1 + Part 2 + Part 3",
-      "examTip": "**考法** 节日与庆祝是 PET 口语 Part 1 的常见话题：考官会问你最喜欢哪个节日、怎么过生日、去年有没有特别的庆祝、节日对家庭重不重要。回答要用完整句并给理由或例子，通常会自然用到一般现在时说习惯、一般过去时说去年的经历，以及 because / so / which 这样的连接方式。\n**场景** Part 2 的照片常是生日派对或节日聚会，要说清人物、动作、桌上和周围的物品，再简短说气氛。Part 3 常见任务卡是策划一次节日或庆祝活动，要逐个比较选项、回应对方并给理由；意见不一致时可以提出折中办法，比如两个方案一起提交。",
+      "examTip": "**考法** 节日与庆祝是 PET 口语 Part 1 的常见话题：考官会问你最喜欢哪个节日、怎么过生日、去年有没有特别的庆祝；Part 1 末尾或 Part 4 也可能问节日对家庭重不重要。回答要用完整句并给理由或例子，通常会自然用到一般现在时说习惯、一般过去时说去年的经历，以及 because / so / which 这样的连接方式。\n**场景** Part 2 的照片常是生日派对或节日聚会，要说清人物、动作、桌上和周围的物品，再简短说气氛。考场上考官只说 Please tell us what you can see in the photograph，没有分项小问题，要自己按顺序说满约一分钟。Part 3 常见任务卡是策划一次节日或庆祝活动，要逐个比较选项、回应对方并给理由；意见不一致时可以让步（if most people prefer…, that's fine too）或提出两个方案一起提交。",
       "templates": [
         {
           "en": "My favourite festival is ___ because ___.",
@@ -761,6 +761,10 @@
             "zh": "一个大约十岁的女孩正在吹灭一个大巧克力蛋糕上的蜡烛。"
           },
           {
+            "en": "The girl is wearing a yellow dress, and she looks very excited.",
+            "zh": "女孩穿着黄色的裙子，看起来非常兴奋。"
+          },
+          {
             "en": "Around her, there are six or seven children wearing party hats, and they are all clapping.",
             "zh": "她周围有六七个戴着派对帽的孩子，都在鼓掌。"
           },
@@ -779,10 +783,6 @@
           {
             "en": "In the background, there is a wooden fence and a tree with a swing.",
             "zh": "背景里有一道木栅栏和一棵挂着秋千的树。"
-          },
-          {
-            "en": "The girl is wearing a yellow dress, and she looks very excited.",
-            "zh": "女孩穿着黄色的裙子，看起来非常兴奋。"
           },
           {
             "en": "I think it is a lovely afternoon, and everyone is having a great time.",
@@ -849,8 +849,8 @@
             "voice": "rosie"
           },
           {
-            "en": "And I'd choose the lanterns, because people take something home. Let's suggest both and let the teachers decide.",
-            "zh": "而我会选灯笼，因为大家能带点东西回家。我们把两个都提上去，让老师决定吧。",
+            "en": "I'd choose the lanterns, because people can take something home. But if most people prefer the picnic, that's fine too.",
+            "zh": "我会选灯笼，因为大家能带点东西回家。不过要是大多数人更喜欢野餐，那也挺好。",
             "voice": "chris"
           }
         ]
@@ -863,7 +863,7 @@
       "title": "聊聊朋友",
       "subtitle": "Friends and friendship",
       "examPart": "Part 1 + Part 2 + Part 3",
-      "examTip": "**考法** 朋友是 PET 口语 Part 1 的高频话题：考官常请你介绍一位好朋友、说说你们一起做什么、交新朋友容不容易、朋友多重不重要。回答要用完整句并给理由或例子，通常会自然用到现在完成时（we've been friends for …）、一般现在时说习惯，以及 because / but / once 这样的连接方式。\n**场景** Part 2 的照片可能是朋友在咖啡馆、公园或家里相处的场面，先说人物和动作，再说桌上物品和周围环境，最后简短推测关系和心情。Part 3 常见任务卡是朋友搬走后怎么保持联系，要比较几种方式的优缺点，回应对方并向结论推进。",
+      "examTip": "**考法** 朋友是 PET 口语 Part 1 的高频话题：考官常请你介绍一位好朋友、说说你们一起做什么、交新朋友容不容易；Part 1 末尾或 Part 4 也可能问朋友多重不重要。回答要用完整句并给理由或例子，通常会自然用到现在完成时（we've been friends for …）、一般现在时说习惯，以及 because / but / once 这样的连接方式。\n**场景** Part 2 的照片可能是朋友在咖啡馆、公园或家里相处的场面，先说人物和动作，再说桌上物品和周围环境，最后简短推测关系和心情。考场上考官只说 Please tell us what you can see in the photograph，没有分项小问题，要自己按顺序说满约一分钟。Part 3 常见任务卡是朋友搬走后怎么保持联系，要比较几种方式的优缺点，回应对方并向结论推进。",
       "templates": [
         {
           "en": "My best friend is called ___, and we met ___.",
@@ -902,8 +902,8 @@
           "voice": "chris"
         },
         {
-          "en": "Is it easy to make new friends?",
-          "zh": "交新朋友容易吗？"
+          "en": "Do you find it easy to make new friends?",
+          "zh": "你觉得交新朋友容易吗？"
         },
         {
           "en": "Not really, because I'm quite quiet when I meet new people, but once I know someone I talk a lot.",
@@ -915,8 +915,8 @@
           "zh": "你觉得朋友多重要吗？"
         },
         {
-          "en": "Not really. I think two or three close friends you can trust are better than a hundred people you hardly know.",
-          "zh": "不太重要。我觉得两三个可以信任的好朋友，胜过一百个不太熟的人。",
+          "en": "No, I don't think so. Two or three close friends you can trust are better than a hundred people you hardly know.",
+          "zh": "不，我不这么认为。两三个可以信任的好朋友，胜过一百个不太熟的人。",
           "voice": "chris"
         }
       ],
@@ -928,8 +928,8 @@
             "zh": "这张照片里，两个女孩坐在咖啡馆的一张小桌旁。"
           },
           {
-            "en": "One of them is showing something on her phone, and the other is laughing.",
-            "zh": "其中一个正在给对方看手机上的东西，另一个在笑。"
+            "en": "One girl is showing the other something on her phone, and her friend is laughing.",
+            "zh": "一个女孩正给另一个看手机上的东西，她的朋友在笑。"
           },
           {
             "en": "They both have a coffee, and there is a piece of cake in the middle of the table.",
@@ -970,13 +970,13 @@
             "voice": "rosie"
           },
           {
-            "en": "A video call every week would be the best way. You can see her face and really talk.",
-            "zh": "每周一次视频通话是最好的办法。能看到她的脸，真正聊聊天。",
+            "en": "A video call every week would be a good place to start. You can see her face and really talk.",
+            "zh": "每周一次视频通话会是个不错的起点。能看到她的脸，真正聊聊天。",
             "voice": "chris"
           },
           {
-            "en": "I agree, though we'd have to find a time that works for everyone, because she'll have a new school.",
-            "zh": "同意，不过得找一个大家都方便的时间，因为她会有新的学校。",
+            "en": "I agree, though we'd have to find a time that works for everyone, because she'll be busy at her new school.",
+            "zh": "同意，不过得找一个大家都方便的时间，因为她在新学校会很忙。",
             "voice": "rosie"
           },
           {
@@ -1015,8 +1015,8 @@
             "voice": "chris"
           },
           {
-            "en": "So a weekly video call plus visits in the holidays seems like the best plan.",
-            "zh": "所以每周一次视频通话，加上假期去看她，似乎是最好的方案。",
+            "en": "That could work too, if everyone is free at the same time. So a weekly video call plus holiday visits seems best.",
+            "zh": "那也行，只要大家能在同一时间有空。所以每周一次视频通话，加上假期去看她，似乎最好。",
             "voice": "rosie"
           },
           {
