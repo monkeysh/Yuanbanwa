@@ -1,5 +1,5 @@
 // PET 加强 B2:给现有 PET 话题的 Part 2 独白补可见细节句(内容见 _content-drafts/pet-part2-extend.json)。
-// 规则:新句插在 insertBefore 指定的句子之前;句 id 顺延(该档现有最大 n + 1),legacyIds [part2-n];
+// 规则:新句插在 insertBefore 指定的句子之前(话题级;单句可用自己的 insertBefore 覆盖,便于按可见描述的位置就近插入);句 id 顺延(该档现有最大 n + 1),legacyIds [part2-n];
 // 音频 rosie/{sid}_p2_NN.mp3(Part 2 只有 rosie 单声);现有句子的 id / 文本 / 音频零改动;
 // 档位 sentenceCount 与顶层 sentenceCount(各档之和)同步。
 // 幂等:scenes.json 先做往返校验(parse+stringify 零差异),已合入的句子(按 en 文本)跳过。
@@ -36,8 +36,8 @@ for (const [sid, spec] of Object.entries(content)) {
   if (!scene) { console.error('❌ 场景不存在:', sid); process.exit(1); }
   const tier = (scene.tiers || []).find(t => t.level === 'part2');
   if (!tier) { console.error('❌ 没有 part2 档:', sid); process.exit(1); }
-  const at = tier.sentences.findIndex(x => x.id === spec.insertBefore);
-  if (at < 0) { console.error(`❌ ${sid}: 找不到 insertBefore 句 ${spec.insertBefore}`); process.exit(1); }
+  const anchorOf = s => s.insertBefore || spec.insertBefore;
+  for (const s of spec.add) if (!tier.sentences.some(x => x.id === anchorOf(s))) { console.error(`❌ ${sid}: 找不到 insertBefore 句 ${anchorOf(s)}`); process.exit(1); }
 
   const existingEn = new Set(tier.sentences.map(x => x.en));
   const fresh = spec.add.filter(s => !existingEn.has(s.en));
@@ -59,7 +59,10 @@ for (const [sid, spec] of Object.entries(content)) {
     burnList.push({ base, text: s.en });
     return { id, legacyIds: [`part2-${n}`], en: s.en, zh: s.zh, words: tokenize(s.en), weak: [], audio: { rosie: `rosie/${base}.mp3` } };
   });
-  tier.sentences.splice(at, 0, ...fresh_sents);
+  fresh_sents.forEach((sent, k) => {            // 逐句就近插入;同一锚点的多句保持内容文件里的先后
+    const at = tier.sentences.findIndex(x => x.id === anchorOf(fresh[k]));
+    tier.sentences.splice(at, 0, sent);
+  });
   tier.sentenceCount = tier.sentences.length;
   scene.sentenceCount = scene.tiers.reduce((n, t) => n + t.sentences.length, 0);
   added += fresh_sents.length; touched++;

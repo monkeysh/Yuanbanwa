@@ -21,7 +21,7 @@
   },
   {
     "base": "pet-travel_p2_08",
-    "text": "There are a few other people swimming in the sea further away."
+    "text": "There are a few other people swimming in the sea a bit further out."
   },
   {
     "base": "pet-travel_p2_09",
@@ -37,7 +37,7 @@
   },
   {
     "base": "pet-food_p2_08",
-    "text": "The table is covered with a white cloth, and everyone has a glass of water."
+    "text": "There is a white tablecloth on the table, and everyone has a glass of water."
   },
   {
     "base": "pet-food_p2_09",
@@ -45,7 +45,7 @@
   },
   {
     "base": "pet-school_p2_08",
-    "text": "The girl has long dark hair and is wearing glasses and a green jumper."
+    "text": "The girl at the front has long dark hair and is wearing glasses and a green jumper."
   },
   {
     "base": "pet-school_p2_09",
@@ -73,7 +73,7 @@
   },
   {
     "base": "pet-entertainment_p2_07",
-    "text": "On the small table in front of them, there are two glasses of juice and a remote control."
+    "text": "On the small table in front of them, there are two drinks and a remote control."
   },
   {
     "base": "pet-technology_p2_07",
@@ -85,15 +85,15 @@
   },
   {
     "base": "pet-technology_p2_09",
-    "text": "It looks like a sunny day, and there are a few white clouds in the sky."
+    "text": "It looks like a sunny day with just a few white clouds in the sky."
   },
   {
     "base": "pet-work_p2_07",
-    "text": "The cake is white, and she is putting some strawberries on the top."
+    "text": "She is putting some strawberries on top of the white cake."
   },
   {
     "base": "pet-work_p2_08",
-    "text": "She is wearing a tall white hat, and her hair is tied up under it."
+    "text": "She also has a tall white hat on, and her hair is tied up under it."
   },
   {
     "base": "pet-work_p2_09",
@@ -101,11 +101,11 @@
   },
   {
     "base": "pet-family_p2_07",
-    "text": "The blanket is red and white, and there are some plates and cups on it."
+    "text": "There are some plates and cups on the red and white blanket."
   },
   {
     "base": "pet-family_p2_08",
-    "text": "The girl is wearing a pink dress, and the dog is small and brown."
+    "text": "The girl is wearing a pink dress, and the dog is brown."
   },
   {
     "base": "pet-family_p2_09",

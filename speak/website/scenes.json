@@ -35276,7 +35276,7 @@
               "legacyIds": [
                 "part2-8"
               ],
-              "en": "There are a few other people swimming in the sea further away.",
+              "en": "There are a few other people swimming in the sea a bit further out.",
               "zh": "远一点的海里还有几个人在游泳。",
               "words": [
                 "There",
@@ -35289,8 +35289,10 @@
                 "in",
                 "the",
                 "sea",
+                "a",
+                "bit",
                 "further",
-                "away"
+                "out"
               ],
               "weak": [],
               "audio": {
@@ -36025,6 +36027,36 @@
               }
             },
             {
+              "id": "pet-shopping-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "She is wearing a grey jumper and jeans, and she has a handbag on her shoulder.",
+              "zh": "她穿着灰色毛衣和牛仔裤，肩上挎着一个包。",
+              "words": [
+                "She",
+                "is",
+                "wearing",
+                "a",
+                "grey",
+                "jumper",
+                "and",
+                "jeans",
+                "and",
+                "she",
+                "has",
+                "a",
+                "handbag",
+                "on",
+                "her",
+                "shoulder"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-shopping_p2_07.mp3"
+              }
+            },
+            {
               "id": "pet-shopping-part2-3",
               "legacyIds": [
                 "part2-3"
@@ -36090,62 +36122,6 @@
               }
             },
             {
-              "id": "pet-shopping-part2-5",
-              "legacyIds": [
-                "part2-5"
-              ],
-              "en": "She is holding a piece of fruit and reading the label carefully.",
-              "zh": "她拿着一个水果，仔细地看着标签。",
-              "words": [
-                "She",
-                "is",
-                "holding",
-                "a",
-                "piece",
-                "of",
-                "fruit",
-                "and",
-                "reading",
-                "the",
-                "label",
-                "carefully"
-              ],
-              "weak": [],
-              "audio": {
-                "rosie": "rosie/pet-shopping_p2_05.mp3"
-              }
-            },
-            {
-              "id": "pet-shopping-part2-7",
-              "legacyIds": [
-                "part2-7"
-              ],
-              "en": "She is wearing a grey jumper and jeans, and she has a handbag on her shoulder.",
-              "zh": "她穿着灰色毛衣和牛仔裤，肩上挎着一个手提包。",
-              "words": [
-                "She",
-                "is",
-                "wearing",
-                "a",
-                "grey",
-                "jumper",
-                "and",
-                "jeans",
-                "and",
-                "she",
-                "has",
-                "a",
-                "handbag",
-                "on",
-                "her",
-                "shoulder"
-              ],
-              "weak": [],
-              "audio": {
-                "rosie": "rosie/pet-shopping_p2_07.mp3"
-              }
-            },
-            {
               "id": "pet-shopping-part2-8",
               "legacyIds": [
                 "part2-8"
@@ -36172,6 +36148,32 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-shopping_p2_08.mp3"
+              }
+            },
+            {
+              "id": "pet-shopping-part2-5",
+              "legacyIds": [
+                "part2-5"
+              ],
+              "en": "She is holding a piece of fruit and reading the label carefully.",
+              "zh": "她拿着一个水果，仔细地看着标签。",
+              "words": [
+                "She",
+                "is",
+                "holding",
+                "a",
+                "piece",
+                "of",
+                "fruit",
+                "and",
+                "reading",
+                "the",
+                "label",
+                "carefully"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-shopping_p2_05.mp3"
               }
             },
             {
@@ -36869,6 +36871,35 @@
               }
             },
             {
+              "id": "pet-food-part2-8",
+              "legacyIds": [
+                "part2-8"
+              ],
+              "en": "There is a white tablecloth on the table, and everyone has a glass of water.",
+              "zh": "桌上铺着白色桌布，每个人面前都有一杯水。",
+              "words": [
+                "There",
+                "is",
+                "a",
+                "white",
+                "tablecloth",
+                "on",
+                "the",
+                "table",
+                "and",
+                "everyone",
+                "has",
+                "a",
+                "glass",
+                "of",
+                "water"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-food_p2_08.mp3"
+              }
+            },
+            {
               "id": "pet-food-part2-3",
               "legacyIds": [
                 "part2-3"
@@ -36970,35 +37001,6 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-food_p2_05.mp3"
-              }
-            },
-            {
-              "id": "pet-food-part2-8",
-              "legacyIds": [
-                "part2-8"
-              ],
-              "en": "The table is covered with a white cloth, and everyone has a glass of water.",
-              "zh": "桌上铺着白色桌布，每个人面前都有一杯水。",
-              "words": [
-                "The",
-                "table",
-                "is",
-                "covered",
-                "with",
-                "a",
-                "white",
-                "cloth",
-                "and",
-                "everyone",
-                "has",
-                "a",
-                "glass",
-                "of",
-                "water"
-              ],
-              "weak": [],
-              "audio": {
-                "rosie": "rosie/pet-food_p2_08.mp3"
               }
             },
             {
@@ -37830,11 +37832,14 @@
               "legacyIds": [
                 "part2-8"
               ],
-              "en": "The girl has long dark hair and is wearing glasses and a green jumper.",
-              "zh": "那个女孩留着深色长发，戴着眼镜，穿着绿色毛衣。",
+              "en": "The girl at the front has long dark hair and is wearing glasses and a green jumper.",
+              "zh": "前面那个女孩留着深色长发，戴着眼镜，穿着绿色毛衣。",
               "words": [
                 "The",
                 "girl",
+                "at",
+                "the",
+                "front",
                 "has",
                 "long",
                 "dark",
@@ -51638,6 +51643,36 @@
               }
             },
             {
+              "id": "pet-entertainment-part2-7",
+              "legacyIds": [
+                "part2-7"
+              ],
+              "en": "On the small table in front of them, there are two drinks and a remote control.",
+              "zh": "他们面前的小桌上放着两杯饮料和一个遥控器。",
+              "words": [
+                "On",
+                "the",
+                "small",
+                "table",
+                "in",
+                "front",
+                "of",
+                "them",
+                "there",
+                "are",
+                "two",
+                "drinks",
+                "and",
+                "a",
+                "remote",
+                "control"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-entertainment_p2_07.mp3"
+              }
+            },
+            {
               "id": "pet-entertainment-part2-4",
               "legacyIds": [
                 "part2-4"
@@ -51664,38 +51699,6 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-entertainment_p2_04.mp3"
-              }
-            },
-            {
-              "id": "pet-entertainment-part2-7",
-              "legacyIds": [
-                "part2-7"
-              ],
-              "en": "On the small table in front of them, there are two glasses of juice and a remote control.",
-              "zh": "他们面前的小桌上放着两杯果汁和一个遥控器。",
-              "words": [
-                "On",
-                "the",
-                "small",
-                "table",
-                "in",
-                "front",
-                "of",
-                "them",
-                "there",
-                "are",
-                "two",
-                "glasses",
-                "of",
-                "juice",
-                "and",
-                "a",
-                "remote",
-                "control"
-              ],
-              "weak": [],
-              "audio": {
-                "rosie": "rosie/pet-entertainment_p2_07.mp3"
               }
             },
             {
@@ -52475,39 +52478,12 @@
               }
             },
             {
-              "id": "pet-technology-part2-4",
-              "legacyIds": [
-                "part2-4"
-              ],
-              "en": "She may be messaging a friend because she is typing on her phone.",
-              "zh": "她可能在给朋友发消息，因为她正在手机上打字。",
-              "words": [
-                "She",
-                "may",
-                "be",
-                "messaging",
-                "a",
-                "friend",
-                "because",
-                "she",
-                "is",
-                "typing",
-                "on",
-                "her",
-                "phone"
-              ],
-              "weak": [],
-              "audio": {
-                "rosie": "rosie/pet-technology_p2_04.mp3"
-              }
-            },
-            {
               "id": "pet-technology-part2-7",
               "legacyIds": [
                 "part2-7"
               ],
               "en": "She is wearing a light blue jacket and has a school bag next to her on the bench.",
-              "zh": "她穿着浅蓝色外套，长椅上她旁边放着一个书包。",
+              "zh": "她穿着浅蓝色外套，身旁的长椅上放着一个书包。",
               "words": [
                 "She",
                 "is",
@@ -52567,8 +52543,8 @@
               "legacyIds": [
                 "part2-9"
               ],
-              "en": "It looks like a sunny day, and there are a few white clouds in the sky.",
-              "zh": "看起来是个晴天，天上飘着几朵白云。",
+              "en": "It looks like a sunny day with just a few white clouds in the sky.",
+              "zh": "看起来是个晴天，天上只飘着几朵白云。",
               "words": [
                 "It",
                 "looks",
@@ -52576,9 +52552,8 @@
                 "a",
                 "sunny",
                 "day",
-                "and",
-                "there",
-                "are",
+                "with",
+                "just",
                 "a",
                 "few",
                 "white",
@@ -52590,6 +52565,33 @@
               "weak": [],
               "audio": {
                 "rosie": "rosie/pet-technology_p2_09.mp3"
+              }
+            },
+            {
+              "id": "pet-technology-part2-4",
+              "legacyIds": [
+                "part2-4"
+              ],
+              "en": "She may be messaging a friend because she is typing on her phone.",
+              "zh": "她可能在给朋友发消息，因为她正在手机上打字。",
+              "words": [
+                "She",
+                "may",
+                "be",
+                "messaging",
+                "a",
+                "friend",
+                "because",
+                "she",
+                "is",
+                "typing",
+                "on",
+                "her",
+                "phone"
+              ],
+              "weak": [],
+              "audio": {
+                "rosie": "rosie/pet-technology_p2_04.mp3"
               }
             },
             {
@@ -53345,22 +53347,20 @@
               "legacyIds": [
                 "part2-7"
               ],
-              "en": "The cake is white, and she is putting some strawberries on the top.",
-              "zh": "蛋糕是白色的，她正往蛋糕顶上放草莓。",
+              "en": "She is putting some strawberries on top of the white cake.",
+              "zh": "她正往白色蛋糕的顶上放草莓。",
               "words": [
-                "The",
-                "cake",
-                "is",
-                "white",
-                "and",
-                "she",
+                "She",
                 "is",
                 "putting",
                 "some",
                 "strawberries",
                 "on",
+                "top",
+                "of",
                 "the",
-                "top"
+                "white",
+                "cake"
               ],
               "weak": [],
               "audio": {
@@ -53372,16 +53372,17 @@
               "legacyIds": [
                 "part2-8"
               ],
-              "en": "She is wearing a tall white hat, and her hair is tied up under it.",
-              "zh": "她戴着一顶高高的白帽子，头发盘在帽子里。",
+              "en": "She also has a tall white hat on, and her hair is tied up under it.",
+              "zh": "她还戴着一顶高高的白帽子，头发盘在帽子里。",
               "words": [
                 "She",
-                "is",
-                "wearing",
+                "also",
+                "has",
                 "a",
                 "tall",
                 "white",
                 "hat",
+                "on",
                 "and",
                 "her",
                 "hair",
@@ -54201,24 +54202,21 @@
               "legacyIds": [
                 "part2-7"
               ],
-              "en": "The blanket is red and white, and there are some plates and cups on it.",
-              "zh": "毯子是红白相间的，上面放着一些盘子和杯子。",
+              "en": "There are some plates and cups on the red and white blanket.",
+              "zh": "红白相间的毯子上放着一些盘子和杯子。",
               "words": [
-                "The",
-                "blanket",
-                "is",
-                "red",
-                "and",
-                "white",
-                "and",
-                "there",
+                "There",
                 "are",
                 "some",
                 "plates",
                 "and",
                 "cups",
                 "on",
-                "it"
+                "the",
+                "red",
+                "and",
+                "white",
+                "blanket"
               ],
               "weak": [],
               "audio": {
@@ -54230,8 +54228,8 @@
               "legacyIds": [
                 "part2-8"
               ],
-              "en": "The girl is wearing a pink dress, and the dog is small and brown.",
-              "zh": "小女孩穿着粉色连衣裙，那只狗小小的、棕色的。",
+              "en": "The girl is wearing a pink dress, and the dog is brown.",
+              "zh": "小女孩穿着粉色连衣裙，那只狗是棕色的。",
               "words": [
                 "The",
                 "girl",
@@ -54244,8 +54242,6 @@
                 "the",
                 "dog",
                 "is",
-                "small",
-                "and",
                 "brown"
               ],
               "weak": [],

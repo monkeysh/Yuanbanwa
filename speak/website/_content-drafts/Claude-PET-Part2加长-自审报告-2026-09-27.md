@@ -53,3 +53,20 @@
 
 - 外部终审(Codex / GPT)回填后如有"必改",修订 `pet-part2-extend.json` 并重跑合入脚本(脚本按 en 文本判重,修订过的句子会被视为新句;届时改为直接改 scenes.json 里对应句 + 同步内容文件更稳妥)
 - 音频:28 个 rosie 文件,清单 `_content-drafts/pet-part2-extend-burn.json`;烧录 `node scripts/burn_ket_audio.mjs pet-daily pet-hobbies pet-travel pet-shopping pet-food pet-school pet-health pet-weather pet-entertainment pet-technology pet-work pet-family`(已存在的文件跳过)——等用户点头,与日常 B1/B2 的 256 个一起烧
+
+## 八、独立终审回填(2026-09-27)
+
+报告:`_content-drafts/独立终审-PET-Part2加长-报告-2026-09-27.md`(独立审稿实例,三步法)。结论:**必改 0,建议 11(句级)+ 5(组级)**,题型判定"仍是标准 Part 2 照片描述独白"。音频尚未烧,改文本零成本,**建议全部采纳**:
+
+| 组 | 采纳内容 |
+|---|---|
+| pet-travel | part2-8:further away → a bit further out |
+| pet-shopping | part2-7 中文"手提包"→"包";part2-7 前移到 part2-2 之后、part2-8 前移到 part2-4 之后(证据与推断不再隔开) |
+| pet-food | part2-8:covered with a white cloth → a white tablecloth;前移到 part2-2 之后 |
+| pet-school | part2-8:The girl → The girl at the front(指代明确) |
+| pet-entertainment | part2-7:glasses of juice → drinks(暗房里看不清饮料);前移到 part2-3 之后 |
+| pet-technology | 三句整体前移到 part2-3 之后(不再隔开 part2-4/5 的 the conversation 指代);part2-7 中文语序;part2-9 改用 with 衔接 |
+| pet-work | part2-7:on top of the white cake(并句);part2-8:She also has … on(避免两次 She is wearing) |
+| pet-family | part2-7:改为 on the red and white blanket(去 and 衔接);part2-8:去掉与 part2-3 重复的 small |
+
+落实方式:`pet-part2-extend.json` 升到 v2(句级 `insertBefore` 覆盖话题级),`splice_pet_part2_extend.mjs` 支持逐句就近插入;从 078c5a8 的 scenes.json 重新推导后与合入版逐场景比对,只有上述 11 处文本 + 4 组顺序不同,其余 73 个场景完全一致;句 id 不变。终审 pack 已按 v2 文本重新生成。

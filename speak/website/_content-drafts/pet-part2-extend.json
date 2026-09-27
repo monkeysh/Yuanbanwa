@@ -1,91 +1,179 @@
 {
-  "_note": "PET 加强 B2(2026-09-27):现有 12 个 PET 话题的 Part 2 独白各补 1-3 句可见细节(地点/背景/衣着/物品),不补心理推测。新句插在 insertBefore 指定的句子之前(即可见描述结束、推测/收尾开始处),id 顺延,音频 rosie/{sid}_p2_NN.mp3 单声;现有句子零改动。对照尺:docs/PET-官方题型断言-2026-07-31.md §四(people/activities/place/other details 路线)。",
+  "_note": "PET 加强 B2(2026-09-27):现有 12 个 PET 话题的 Part 2 独白各补 1-3 句可见细节(地点/背景/衣着/物品),不补心理推测。新句插在 insertBefore 指定的句子之前(即可见描述结束、推测/收尾开始处),id 顺延,音频 rosie/{sid}_p2_NN.mp3 单声;现有句子零改动。对照尺:docs/PET-官方题型断言-2026-07-31.md §四(people/activities/place/other details 路线)。 修订 v2(2026-09-27,独立终审 _content-drafts/独立终审-PET-Part2加长-报告-2026-09-27.md:必改 0、建议 11+5,全部采纳):further out / tablecloth / on top / 去重 small 与 She is wearing / 三处衔接改写 / 两处中文语序;shopping、food、entertainment、technology 的新句位置前移到相应可见描述之后(句级 insertBefore 覆盖话题级)。句 id 不变。",
   "pet-daily": {
     "insertBefore": "pet-daily-part2-6",
     "add": [
-      { "en": "Behind her, there is a white fridge with a few photos and notes stuck on the door.", "zh": "她身后有一台白色冰箱，冰箱门上贴着几张照片和便条。" },
-      { "en": "Next to the cooker, there is a kettle and a few clean plates on the counter.", "zh": "灶台旁边的台面上放着一个水壶和几个干净的盘子。" }
+      {
+        "en": "Behind her, there is a white fridge with a few photos and notes stuck on the door.",
+        "zh": "她身后有一台白色冰箱，冰箱门上贴着几张照片和便条。"
+      },
+      {
+        "en": "Next to the cooker, there is a kettle and a few clean plates on the counter.",
+        "zh": "灶台旁边的台面上放着一个水壶和几个干净的盘子。"
+      }
     ]
   },
   "pet-hobbies": {
     "insertBefore": "pet-hobbies-part2-5",
     "add": [
-      { "en": "The boy with the guitar is wearing a blue cap and a white T-shirt.", "zh": "弹吉他的男孩戴着一顶蓝色鸭舌帽，穿着白色T恤。" },
-      { "en": "In the background, I can see some tall trees and a small pond.", "zh": "背景里我能看到几棵高大的树和一个小池塘。" }
+      {
+        "en": "The boy with the guitar is wearing a blue cap and a white T-shirt.",
+        "zh": "弹吉他的男孩戴着一顶蓝色鸭舌帽，穿着白色T恤。"
+      },
+      {
+        "en": "In the background, I can see some tall trees and a small pond.",
+        "zh": "背景里我能看到几棵高大的树和一个小池塘。"
+      }
     ]
   },
   "pet-travel": {
     "insertBefore": "pet-travel-part2-6",
     "add": [
-      { "en": "The children have a red bucket and a small spade next to them.", "zh": "孩子们旁边放着一个红色的小桶和一把小铲子。" },
-      { "en": "There are a few other people swimming in the sea further away.", "zh": "远一点的海里还有几个人在游泳。" },
-      { "en": "Behind the family, I can see some white beach houses and a few palm trees.", "zh": "在这家人身后，我能看到几栋白色的海滨小屋和几棵棕榈树。" }
+      {
+        "en": "The children have a red bucket and a small spade next to them.",
+        "zh": "孩子们旁边放着一个红色的小桶和一把小铲子。"
+      },
+      {
+        "en": "There are a few other people swimming in the sea a bit further out.",
+        "zh": "远一点的海里还有几个人在游泳。"
+      },
+      {
+        "en": "Behind the family, I can see some white beach houses and a few palm trees.",
+        "zh": "在这家人身后，我能看到几栋白色的海滨小屋和几棵棕榈树。"
+      }
     ]
   },
   "pet-shopping": {
     "insertBefore": "pet-shopping-part2-6",
     "add": [
-      { "en": "She is wearing a grey jumper and jeans, and she has a handbag on her shoulder.", "zh": "她穿着灰色毛衣和牛仔裤，肩上挎着一个手提包。" },
-      { "en": "In her trolley, there are already some bottles of milk and a bag of apples.", "zh": "她的购物车里已经有几瓶牛奶和一袋苹果。" }
+      {
+        "en": "She is wearing a grey jumper and jeans, and she has a handbag on her shoulder.",
+        "zh": "她穿着灰色毛衣和牛仔裤，肩上挎着一个包。",
+        "insertBefore": "pet-shopping-part2-3"
+      },
+      {
+        "en": "In her trolley, there are already some bottles of milk and a bag of apples.",
+        "zh": "她的购物车里已经有几瓶牛奶和一袋苹果。",
+        "insertBefore": "pet-shopping-part2-5"
+      }
     ]
   },
   "pet-food": {
     "insertBefore": "pet-food-part2-6",
     "add": [
-      { "en": "The table is covered with a white cloth, and everyone has a glass of water.", "zh": "桌上铺着白色桌布，每个人面前都有一杯水。" },
-      { "en": "Behind them, I can see a window with the curtains closed and a picture on the wall.", "zh": "他们身后有一扇拉上窗帘的窗户，墙上还挂着一幅画。" }
+      {
+        "en": "There is a white tablecloth on the table, and everyone has a glass of water.",
+        "zh": "桌上铺着白色桌布，每个人面前都有一杯水。",
+        "insertBefore": "pet-food-part2-3"
+      },
+      {
+        "en": "Behind them, I can see a window with the curtains closed and a picture on the wall.",
+        "zh": "他们身后有一扇拉上窗帘的窗户，墙上还挂着一幅画。"
+      }
     ]
   },
   "pet-school": {
     "insertBefore": "pet-school-part2-5",
     "add": [
-      { "en": "The girl has long dark hair and is wearing glasses and a green jumper.", "zh": "那个女孩留着深色长发，戴着眼镜，穿着绿色毛衣。" },
-      { "en": "There are big windows on one side, and the light from outside makes the room bright.", "zh": "一侧有几扇大窗户，外面的光线让房间很明亮。" }
+      {
+        "en": "The girl at the front has long dark hair and is wearing glasses and a green jumper.",
+        "zh": "前面那个女孩留着深色长发，戴着眼镜，穿着绿色毛衣。"
+      },
+      {
+        "en": "There are big windows on one side, and the light from outside makes the room bright.",
+        "zh": "一侧有几扇大窗户，外面的光线让房间很明亮。"
+      }
     ]
   },
   "pet-health": {
     "insertBefore": "pet-health-part2-5",
     "add": [
-      { "en": "The girl is wearing a yellow top and white trainers, and her hair is tied back.", "zh": "女孩穿着黄色上衣和白色运动鞋，头发扎在脑后。" },
-      { "en": "Behind them, there is a playground with a slide and some swings.", "zh": "他们身后有一个游乐场，有滑梯和几个秋千。" }
+      {
+        "en": "The girl is wearing a yellow top and white trainers, and her hair is tied back.",
+        "zh": "女孩穿着黄色上衣和白色运动鞋，头发扎在脑后。"
+      },
+      {
+        "en": "Behind them, there is a playground with a slide and some swings.",
+        "zh": "他们身后有一个游乐场，有滑梯和几个秋千。"
+      }
     ]
   },
   "pet-weather": {
     "insertBefore": "pet-weather-part2-5",
     "add": [
-      { "en": "One of the children is holding a big yellow leaf in one hand.", "zh": "其中一个孩子一只手里拿着一片大大的黄叶。" },
-      { "en": "There are some tall trees along the path, and most of them have lost their leaves.", "zh": "小路两旁有几棵高大的树，大多数已经掉光了叶子。" },
-      { "en": "In the distance, I can see a man walking a dog near the gate.", "zh": "远处，我能看到一个男人在大门附近遛狗。" }
+      {
+        "en": "One of the children is holding a big yellow leaf in one hand.",
+        "zh": "其中一个孩子一只手里拿着一片大大的黄叶。"
+      },
+      {
+        "en": "There are some tall trees along the path, and most of them have lost their leaves.",
+        "zh": "小路两旁有几棵高大的树，大多数已经掉光了叶子。"
+      },
+      {
+        "en": "In the distance, I can see a man walking a dog near the gate.",
+        "zh": "远处，我能看到一个男人在大门附近遛狗。"
+      }
     ]
   },
   "pet-entertainment": {
     "insertBefore": "pet-entertainment-part2-5",
     "add": [
-      { "en": "On the small table in front of them, there are two glasses of juice and a remote control.", "zh": "他们面前的小桌上放着两杯果汁和一个遥控器。" }
+      {
+        "en": "On the small table in front of them, there are two drinks and a remote control.",
+        "zh": "他们面前的小桌上放着两杯饮料和一个遥控器。",
+        "insertBefore": "pet-entertainment-part2-4"
+      }
     ]
   },
   "pet-technology": {
-    "insertBefore": "pet-technology-part2-5",
+    "insertBefore": "pet-technology-part2-4",
     "add": [
-      { "en": "She is wearing a light blue jacket and has a school bag next to her on the bench.", "zh": "她穿着浅蓝色外套，长椅上她旁边放着一个书包。" },
-      { "en": "There is a path in front of her, and a few people are cycling past.", "zh": "她前面有一条小路，有几个人正骑车经过。" },
-      { "en": "It looks like a sunny day, and there are a few white clouds in the sky.", "zh": "看起来是个晴天，天上飘着几朵白云。" }
+      {
+        "en": "She is wearing a light blue jacket and has a school bag next to her on the bench.",
+        "zh": "她穿着浅蓝色外套，身旁的长椅上放着一个书包。"
+      },
+      {
+        "en": "There is a path in front of her, and a few people are cycling past.",
+        "zh": "她前面有一条小路，有几个人正骑车经过。"
+      },
+      {
+        "en": "It looks like a sunny day with just a few white clouds in the sky.",
+        "zh": "看起来是个晴天，天上只飘着几朵白云。"
+      }
     ]
   },
   "pet-work": {
     "insertBefore": "pet-work-part2-5",
     "add": [
-      { "en": "The cake is white, and she is putting some strawberries on the top.", "zh": "蛋糕是白色的，她正往蛋糕顶上放草莓。" },
-      { "en": "She is wearing a tall white hat, and her hair is tied up under it.", "zh": "她戴着一顶高高的白帽子，头发盘在帽子里。" },
-      { "en": "Behind her, there are some metal shelves with trays, and a big oven on the left.", "zh": "她身后有几个放着托盘的金属架子，左边还有一个大烤箱。" }
+      {
+        "en": "She is putting some strawberries on top of the white cake.",
+        "zh": "她正往白色蛋糕的顶上放草莓。"
+      },
+      {
+        "en": "She also has a tall white hat on, and her hair is tied up under it.",
+        "zh": "她还戴着一顶高高的白帽子，头发盘在帽子里。"
+      },
+      {
+        "en": "Behind her, there are some metal shelves with trays, and a big oven on the left.",
+        "zh": "她身后有几个放着托盘的金属架子，左边还有一个大烤箱。"
+      }
     ]
   },
   "pet-family": {
     "insertBefore": "pet-family-part2-5",
     "add": [
-      { "en": "The blanket is red and white, and there are some plates and cups on it.", "zh": "毯子是红白相间的，上面放着一些盘子和杯子。" },
-      { "en": "The girl is wearing a pink dress, and the dog is small and brown.", "zh": "小女孩穿着粉色连衣裙，那只狗小小的、棕色的。" },
-      { "en": "There are some big trees behind them, and I can see a lake in the distance.", "zh": "他们身后有几棵大树，远处我能看到一个湖。" }
+      {
+        "en": "There are some plates and cups on the red and white blanket.",
+        "zh": "红白相间的毯子上放着一些盘子和杯子。"
+      },
+      {
+        "en": "The girl is wearing a pink dress, and the dog is brown.",
+        "zh": "小女孩穿着粉色连衣裙，那只狗是棕色的。"
+      },
+      {
+        "en": "There are some big trees behind them, and I can see a lake in the distance.",
+        "zh": "他们身后有几棵大树，远处我能看到一个湖。"
+      }
     ]
   }
 }
